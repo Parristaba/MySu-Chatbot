@@ -1,0 +1,242 @@
+{
+
+"Is \\g<1> open for this semester?": {
+    "g1": [
+        "course registration", "internship application", "student survey", "summer school application", "dormitory application", 
+        "TA applications", "study abroad program", "scholarship application", "sports events registration", "faculty positions",
+        "graduate program registration", "job fair sign-up", "student ambassador recruitment", "conference registration", 
+        "academic advisor appointments", "peer mentoring program", "classroom equipment requests", "research assistant applications",
+        "graduate school applications", "student loan application", "summer internships", "course enrollment", "exchange program sign-up",
+        "online course enrollment", "semester course selection", "foreign language course registration", "TA recruitment", "online workshops"
+    ]
+},
+"What is the \\g<1> deadline?": {
+    "g1": [
+        "add/drop period", "course substitution application", "internship application deadline", "student feedback submission", 
+        "career seminar registration", "TA application deadline", "event registration", "scholarship submission", "study abroad deadline", 
+        "summer internship deadline", "student loan application deadline", "research proposal submission", "exam registration deadline", 
+        "graduate program application deadline", "student ambassador registration", "student club election deadline", 
+        "job fair registration deadline", "work-study program application deadline", "course withdrawal deadline", "semester fee payment deadline", 
+        "graduate application deadline", "research grant submission", "peer review submission deadline", "student project submission deadline", 
+        "course withdrawal deadline", "extracurricular sign-up deadline", "faculty feedback submission deadline", "advisor meeting registration"
+    ]
+},
+"Is \\g<1> available for this term?": {
+    "g1": [
+        "spring semester courses", "summer research program", "student representative elections", "fall term final exams", 
+        "student satisfaction survey", "study abroad opportunities", "TA positions", "sports tournaments", "part-time job opportunities", 
+        "graduate research programs", "international exchange program", "summer school courses", "summer internships", "student housing availability", 
+        "open faculty positions", "student volunteer opportunities", "university-sponsored travel programs", "academic conference participation", 
+        "student competition participation", "peer counseling positions", "study group sessions", "student advisory committee roles", 
+        "course listings for next term", "international study program availability", "on-campus job openings", "summer camp roles", 
+        "peer tutoring roles", "faculty office hours", "programming contests", "club meeting times"
+    ]
+},
+"How can I apply for \\g<1>?": {
+    "g1": [
+        "internship program", "dormitory placement", "career seminar", "student feedback survey", "sports event participation", 
+        "summer school program", "TA position", "study abroad program", "student ambassador role", "research assistant role", 
+        "volunteer program", "peer mentoring program", "summer internship program", "graduate school application", 
+        "course substitution application", "peer review participation", "club leadership role", "scholarship applications", 
+        "student survey participation", "academic advisor meetings", "job fair participation", "student project submission", 
+        "work-study program", "teaching assistant application", "conference attendance registration", "summer event sign-up"
+    ]
+},
+"What are the \\g<1> for this semester?": {
+    "g1": [
+        "important dates", "class schedules", "registration deadlines", "semester events", "career development programs", 
+        "TA deadlines", "course offerings", "exam schedules", "add/drop deadlines", "midterm exam dates", "final exam dates", 
+        "student housing application deadlines", "scholarship application timelines", "volunteer opportunities", "student election dates", 
+        "workshop schedules", "conference dates", "internship deadlines", "research proposal deadlines", "student feedback survey periods", 
+        "classroom events", "student club events", "sports events", "university holiday schedule", "study abroad orientation dates", 
+        "career counseling dates", "orientation session schedules", "club recruitment deadlines", "faculty office hours", "course registration opening"
+    ]
+},
+"When will \\g<1> be announced?": {
+    "g1": [
+        "final exam schedule", "internship application results", "student feedback results", "sports event dates", 
+        "add/drop period", "TA application results", "scholarship results", "student housing results", "academic achievement awards", 
+        "research proposal feedback", "faculty appointment results", "student election results", "part-time job results", 
+        "career fair results", "student ambassador results", "graduate school acceptance results", "study abroad results", 
+        "summer internship results", "work-study assignment results", "volunteer program results", "event registration results", 
+        "peer mentoring program feedback", "course enrollment status", "summer school program results", "conference acceptance notifications", 
+        "student ambassador announcement", "workshop participation results", "summer event outcome"
+    ]
+},
+"Can I still apply for \\g<1>?": {
+    "g1": [
+        "student survey", "internship programs", "sports event registration", "course registration", "part-time job opportunities", 
+        "TA positions", "summer courses", "work-study programs", "student feedback surveys", "scholarship programs", "summer internships", 
+        "volunteer positions", "student ambassador applications", "career fairs", "peer mentoring programs", "summer school registration", 
+        "research opportunities", "conference participation", "summer camp registration", "faculty applications", 
+        "job fair participation", "club elections", "student election registration", "club leadership applications", "graduate program applications"
+    ]
+},
+"Is there a \\g<1> this semester?": {
+    "g1": [
+        "career seminar", "student feedback survey", "sports competition", "internship orientation", "add/drop period", 
+        "TA orientation", "student events", "summer school program", "research conferences", "student club elections", 
+        "volunteer orientations", "academic conferences", "workshops", "seminars", "job fairs", "study abroad fairs", 
+        "student housing meetings", "peer mentoring events", "scholarship sessions", "student elections", 
+        "student ambassador events", "club fairs", "sports leagues", "summer internships", "faculty orientation sessions"
+    ]
+},
+"When does the \\g<1> begin?": {
+    "g1": [
+        "add/drop period", "course registration", "internship application period", "semester start date", "student elections", 
+        "TA training", "volunteer program", "summer school sessions", "career seminar", "student ambassador training", 
+        "research conference start", "student project deadlines", "work-study program", "conference registration", 
+        "faculty office hours", "course availability period", "summer internship sign-up", "peer mentoring program", 
+        "sports league registration", "job fair start date", "scholarship applications", "student representative elections", 
+        "international student orientation", "foreign exchange programs", "summer program application period", 
+        "summer internship applications", "study abroad registration"
+    ]
+},
+"How long is the \\g<1> for this semester?": {
+    "g1": [
+        "add/drop period", "exam period", "internship application window", "semester orientation", "student representative elections", 
+        "TA application period", "course substitution application period", "summer internship window", "student feedback survey period", 
+        "research proposal submission period", "summer school registration", "student ambassador registration", 
+        "career fair sign-ups", "job application deadlines", "work-study program duration", "summer event duration", 
+        "volunteer program length", "scholarship application window", "sports event length", "faculty recruitment period", 
+        "class schedule availability", "course registration open window", "course substitution period", "student housing application period", 
+        "internship period", "summer internship window"
+    ]
+},
+"What is the \\g<1> for this year?": {
+    "g1": [
+        "spring term schedule", "summer internship registration", "fall semester courses", "new student orientation", 
+        "student election dates", "TA training dates", "academic calendar", "faculty meeting dates", "sports event schedule", 
+        "research program timelines", "summer event schedule", "student feedback survey periods", "career development events", 
+        "extracurricular event schedules", "peer mentoring program dates", "job fair dates", "international student arrival schedules", 
+        "student ambassador meetings", "course registration dates", "part-time job schedules", "conference dates", 
+        "study abroad deadlines", "academic achievement awards", "volunteer program dates", "club events dates"
+    ]
+},
+"What \\g<1> are scheduled for this term?": {
+    "g1": [
+        "workshops", "career development seminars", "sports tournaments", "student events", "internship interviews", 
+        "TA office hours", "faculty meetings", "student representative elections", "club events", "volunteer opportunities", 
+        "summer programs", "study abroad sessions", "job fairs", "student ambassador meetings", "research conferences", 
+        "student competitions", "career fairs", "sports leagues", "summer camps", "academic workshops", 
+        "scholarship program seminars", "part-time job interviews", "academic advising sessions", "peer mentoring workshops"
+    ]
+},
+"Has \\g<1> been changed for this semester?": {
+    "g1": [
+        "course schedule", "exam dates", "add/drop period", "internship program", "sports events", "TA deadlines", 
+        "semester start date", "student survey dates", "career seminar schedules", "research program availability", 
+        "student feedback sessions", "student representative elections", "classroom events", "job fair dates", 
+        "volunteer opportunities", "scholarship dates", "summer school registration", "faculty appointments", 
+        "work-study program dates", "conference dates", "student club events", "student ambassador recruitment", 
+        "summer internship programs", "student housing availability"
+    ]
+},
+"What is the \\g<1> and \\g<2> deadline for \\g<3>?": {
+        "g1": [
+            "add/drop period", "internship application deadline", "course substitution application", "student feedback submission", 
+            "career seminar registration", "TA application deadline", "scholarship submission", 
+            "summer internship deadline", "student loan application deadline", "research proposal submission",
+            "graduate program application deadline", "student ambassador registration", "student club election deadline"
+            , "work-study program application deadline", "course withdrawal deadline", "semester fee payment deadline", 
+            "graduate application deadline",  "peer review submission deadline", "student project submission deadline", 
+            "course withdrawal deadline", "extracurricular sign-up deadline", "faculty feedback submission deadline", "advisor meeting registration"
+        ],
+        "g2": [
+            "student representative elections", "part-time job opportunities", "academic conference participation", "sports event registration", 
+            "peer tutoring roles", "job fair registration deadline", 
+            "student ambassador recruitment", "volunteer program registration", "conference attendance registration", "student ambassador announcement"
+        ],
+        "g3": [
+            "volunteer program sign-up", "summer research program", "peer mentoring program", "scholarship application", "academic workshops", 
+            "course enrollment", "summer school courses", "conference attendance",
+            "research assistant applications", "study abroad program", "job fair participation", "student housing availability", "faculty recruitment"
+        ]
+    },
+    "Can I apply for \\g<1>, \\g<2>, and \\g<3> together?": {
+        "g1": [
+            "student ambassador position", "internship program", "dormitory application", "career seminar", "student feedback survey", 
+            "sports event participation", "summer school program", "TA position", "study abroad program", 
+            "research assistant role", "volunteer program",   
+            "course substitution application",   "scholarship applications", 
+              "job fair participation", 
+             "teaching assistant application"
+        ],
+        "g2": [
+            "peer tutoring roles", "student housing registration", "research assistant positions", "sports event registration", "conference attendance", 
+         "volunteer program sign-up", "faculty recruitment applications"
+        ],
+        "g3": [
+            "academic conference participation", "extracurricular activities", "summer research program", "student advisory committee roles", 
+            "student club election participation", "course registration",  "graduate program registration"
+        ]
+    },
+    "When can I register for \\g<1>, \\g<2>, and \\g<3>?": {
+        "g1": [
+            "final exam schedule", "internship application results", "student feedback results", "sports event dates", 
+            "add/drop period", "TA application results", "scholarship results", "student housing results", "academic achievement awards", 
+             "part-time job results", 
+              "graduate school acceptance results", 
+             "work-study assignment results", 
+             "course enrollment status", "summer school program results", "conference acceptance notifications"
+        ],
+        "g2": [
+            "student volunteer opportunities", "summer school application results", "research proposal acceptance notifications", 
+            "job fair registration updates", "sports tournament dates", "career seminar announcements", "conference acceptance", 
+            "peer mentoring program success announcements"
+        ],
+        "g3": [
+            "academic program enrollment", "research funding announcement", "peer tutoring session sign-ups", "student club meeting schedules", 
+            "semester event schedules", "faculty course listing updates", "career center internship program registration", "job placement services", 
+            "teaching assistant sign-up period", "summer school registration announcements"
+        ]
+    },
+    "Is \\g<1> and \\g<2> open for this semester?": {
+        "g1": [
+            "course registration", "internship application", "student survey", "summer school application", "dormitory application", 
+            "TA applications", "study abroad program", "scholarship application", "sports events registration", "faculty positions",
+            "graduate program registration", "job fair sign-up", "student ambassador recruitment", "conference registration", 
+            "academic advisor appointments", "peer mentoring program", "classroom equipment requests", "research assistant applications",
+            "graduate school applications", "student loan application", "summer internships", "course enrollment", 
+             "semester course selection", "TA recruitment", "online workshops"
+        ],
+        "g2": [
+            "career seminar", "student representative elections", "sports tournaments", "part-time job opportunities", "summer research program", 
+            "fall term final exams", "study abroad opportunities", "open faculty positions", "student volunteer opportunities", "academic conference participation", 
+            "peer counseling positions", "study group sessions", "student advisory committee roles", "programming contests", "club meeting times"
+        ]
+    },
+    "What are the \\g<1> and \\g<2> deadlines?": {
+        "g1": [
+            "add/drop period", "course substitution application", "internship application deadline",
+            "career seminar registration", "TA application deadline", "event registration", "scholarship submission", "study abroad deadline", 
+            "summer internship deadline", "student loan application deadline", 
+            "graduate program application deadline", "student ambassador registration", 
+            "job fair registration deadline",  "course withdrawal deadline", 
+            "graduate application deadline", "research grant submission", "peer review submission deadline", "student project submission deadline", 
+            "course withdrawal deadline", "faculty feedback submission deadline", "advisor meeting registration"
+        ],
+        "g2": [
+            "student representative elections", "part-time job opportunities", "academic conference participation", "sports event registration", 
+            "peer tutoring roles", "job fair registration deadline", "club leadership applications", "research opportunities", 
+            "student ambassador recruitment", "volunteer program registration", "conference attendance registration", "student ambassador announcement"
+        ]
+    },
+    "Are \\g<1> and \\g<2> available for this semester?": {
+        "g1": [
+            "spring semester courses", "summer research program", "student representative elections", "fall term final exams", 
+            "student satisfaction survey", "study abroad opportunities", "TA positions", "sports tournaments", "part-time job opportunities", 
+            "graduate research programs", "international exchange program", "summer school courses", "summer internships", 
+             "student volunteer opportunities",   
+            "student competition participation", "peer counseling positions", "study group sessions", "student advisory committee roles", 
+            "course listings for next term", "international study program availability", "on-campus job openings", "summer camp roles", 
+            "peer tutoring roles", "faculty office hours"
+        ],
+        "g2": [
+            "summer school program", "academic advisor appointments", "sports event participation", "TA deadlines", "job fair registration", 
+            "faculty recruitment", "international study program availability", "student housing application", "scholarship application deadlines", 
+            "peer mentoring program", "career development opportunities", "student competition dates"
+        ]
+    }
+}
+

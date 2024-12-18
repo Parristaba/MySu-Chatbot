@@ -1,0 +1,105 @@
+{
+    "How do I \\g<1> \\g<2> for \\g<3>?": {
+        "g1": [
+            "register", "apply", "request", "submit", "check", "access", "find", "update", "download", "verify"
+        ],
+        "g2": [
+            "student housing", "internship applications", "scholarship applications", "work-study program", "vacant position", 
+            "student club membership", "research projects", "teaching awards", "career services", "faculty appointments", 
+            "procurement documents", "visa application", "alumni engagement"
+        ],
+        "g3": [
+            "international students", "graduate students", "undergraduate students", "staff", "faculty members", 
+            "job seekers", "volunteers", "interns", "researchers", "prospective students", "students with disabilities"
+        ]
+    },
+    "What \\g<1> should I consider when \\g<2> \\g<3>?": {
+        "g1": [
+            "criteria", "requirements", "guidelines", "steps", "documents", "forms", "eligibility", "procedures"
+        ],
+        "g2": [
+            "applying", "registering", "submitting", "contacting", "checking", "downloading", "updating", "accessing"
+        ],
+        "g3": [
+            "internship opportunities", "scholarship application", "research project submissions", "vacant positions", 
+            "work-study program registration", "student housing application", "teaching award nominations", "eLOGO access", 
+            "career services registration", "student club approval", "alumni relations"
+        ]
+    },
+    "Where can I \\g<1> \\g<2> \\g<3>?": {
+        "g1": [
+            "find", "access", "apply", "submit", "request", "verify", "check", "download", "update", "contact"
+        ],
+        "g2": [
+            "student housing details", "scholarship applications", "internship information", "work-study opportunities", 
+            "vacant job positions", "career services registration", "eLOGO portal", "research grant guidelines", "visa documentation", 
+            "faculty appointments", "alumni directory"
+        ],
+        "g3": [
+            "online", "through the website", "via the portal", "on the eLOGO system", "via the student information system", 
+            "at the career services desk", "on the internship platform", "via the research submission portal"
+        ]
+    },
+    "What \\g<1> are needed for \\g<2>?": {
+        "g1": [
+            "documents", "requirements", "forms", "guidelines", "criteria", "steps", "eligibility", "procedures"
+        ],
+        "g2": [
+            "scholarship applications", "internship registration", "vacant job positions", "research project submissions", 
+            "student housing registration", "work-study applications", "teaching award nominations", "student club memberships", 
+            "eLOGO registration"
+        ]
+    },
+    "Can I \\g<1> \\g<2> with \\g<3>?": {
+        "g1": [
+            "apply", "submit", "register", "check", "update", "verify", "contact", "request"
+        ],
+        "g2": [
+            "a scholarship", "an internship", "vacant job positions", "a work-study program", "student housing", 
+            "teaching awards", "career services", "student club registration", "research proposals"
+        ],
+        "g3": [
+            "a student ID", "an alumni membership", "a faculty account", "a research project portal", "an eLOGO account"
+        ]
+    },
+    "How can I \\g<1> \\g<2> for \\g<3> \\g<4>?": {
+        "g1": [
+            "find", "access", "apply", "request", "submit", "verify", "download", "check", "contact"
+        ],
+        "g2": [
+            "vacant job listings", "internship opportunities", "scholarship programs", "work-study registrations", 
+            "student housing applications", "research project guidelines", "teaching award nominations", 
+            "faculty appointment information", "student club membership"
+        ],
+        "g3": [
+            "students", "faculty", "staff", "researchers", "alumni", "job seekers", "international students", 
+            "volunteers", "prospective students"
+        ]
+    },
+    "How can \\g<1> \\g<2> \\g<3> \\g<4>?": {
+        "g1": [
+            "students", "faculty", "staff", "interns", "alumni"
+        ],
+        "g2": [
+            "apply", "register", "submit", "update", "check", "verify", "download"
+        ],
+        "g3": [
+            "internships", "scholarships", "research projects", "vacant job positions", "teaching awards", "student housing"
+        ],
+        "g4": [
+            "via the portal", "online", "in person", "through the application system", "by email"
+        ]
+    },
+    "What \\g<1> can I \\g<2> in \\g<3>?": {
+        "g1": [
+            "documents", "details", "resources", "guidelines", "information", "procedures", "criteria"
+        ],
+        "g2": [
+            "apply", "access", "find", "check", "submit", "verify", "request", "download", "update"
+        ],
+        "g3": [
+            "the student information system", "the eLOGO portal", "the internship platform", "the career services site", 
+            "the scholarship portal", "the research grant portal"
+        ]
+    }
+}
