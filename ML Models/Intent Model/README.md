@@ -81,3 +81,6 @@ ML Models/
             pytorch_model.bin
             tokenizer/
             config.json
+```
+
+**Note**: The model achived perfect accuracy score on the dataset. However, since the dataset has synthetic data only, this accuracy will probably drop when predicting human written queries.
