@@ -1,0 +1,772 @@
+[
+    {
+        "Query": "How do I register for student housing for international students?",
+        "Entities": [
+            "register",
+            "student housing",
+            "international students"
+        ]
+    },
+    {
+        "Query": "How do I apply for scholarship applications for graduate students?",
+        "Entities": [
+            "apply",
+            "scholarship applications",
+            "graduate students"
+        ]
+    },
+    {
+        "Query": "How do I request student club membership for undergraduate students?",
+        "Entities": [
+            "request",
+            "student club membership",
+            "undergraduate students"
+        ]
+    },
+    {
+        "Query": "How do I submit work-study program for staff?",
+        "Entities": [
+            "submit",
+            "work-study program",
+            "staff"
+        ]
+    },
+    {
+        "Query": "How do I access research projects for faculty members?",
+        "Entities": [
+            "access",
+            "research projects",
+            "faculty members"
+        ]
+    },
+    {
+        "Query": "How do I find vacant positions for job seekers?",
+        "Entities": [
+            "find",
+            "vacant positions",
+            "job seekers"
+        ]
+    },
+    {
+        "Query": "How do I update teaching awards for volunteers?",
+        "Entities": [
+            "update",
+            "teaching awards",
+            "volunteers"
+        ]
+    },
+    {
+        "Query": "How do I download career services for researchers?",
+        "Entities": [
+            "download",
+            "career services",
+            "researchers"
+        ]
+    },
+    {
+        "Query": "How do I verify faculty appointments for prospective students?",
+        "Entities": [
+            "verify",
+            "faculty appointments",
+            "prospective students"
+        ]
+    },
+    {
+        "Query": "What criteria should I consider when applying for scholarship application?",
+        "Entities": [
+            "criteria",
+            "applying",
+            "scholarship application"
+        ]
+    },
+    {
+        "Query": "What requirements should I consider when registering for work-study program registration?",
+        "Entities": [
+            "requirements",
+            "registering",
+            "work-study program registration"
+        ]
+    },
+    {
+        "Query": "What guidelines should I consider when submitting research project submissions?",
+        "Entities": [
+            "guidelines",
+            "submitting",
+            "research project submissions"
+        ]
+    },
+    {
+        "Query": "What steps should I consider when contacting student housing application?",
+        "Entities": [
+            "steps",
+            "contacting",
+            "student housing application"
+        ]
+    },
+    {
+        "Query": "What documents should I consider when checking teaching award nominations?",
+        "Entities": [
+            "documents",
+            "checking",
+            "teaching award nominations"
+        ]
+    },
+    {
+        "Query": "What forms should I consider when downloading eLOGO access?",
+        "Entities": [
+            "forms",
+            "downloading",
+            "eLOGO access"
+        ]
+    },
+    {
+        "Query": "What eligibility should I consider when accessing student club approval?",
+        "Entities": [
+            "eligibility",
+            "accessing",
+            "student club approval"
+        ]
+    },
+    {
+        "Query": "What procedures should I consider when checking alumni relations?",
+        "Entities": [
+            "procedures",
+            "checking",
+            "alumni relations"
+        ]
+    },
+    {
+        "Query": "Where can I find student housing details online?",
+        "Entities": [
+            "find",
+            "student housing details",
+            "online"
+        ]
+    },
+    {
+        "Query": "Where can I access scholarship applications through the website?",
+        "Entities": [
+            "access",
+            "scholarship applications",
+            "through the website"
+        ]
+    },
+    {
+        "Query": "Where can I apply for internship information via the portal?",
+        "Entities": [
+            "apply",
+            "internship information",
+            "via the portal"
+        ]
+    },
+    {
+        "Query": "Where can I submit work-study opportunities on the eLOGO system?",
+        "Entities": [
+            "submit",
+            "work-study opportunities",
+            "on the eLOGO system"
+        ]
+    },
+    {
+        "Query": "Where can I request vacant job positions via the student information system?",
+        "Entities": [
+            "request",
+            "vacant job positions",
+            "via the student information system"
+        ]
+    },
+    {
+        "Query": "Where can I verify career services registration at the career services desk?",
+        "Entities": [
+            "verify",
+            "career services registration",
+            "at the career services desk"
+        ]
+    },
+    {
+        "Query": "Where can I download faculty appointments on the internship platform?",
+        "Entities": [
+            "download",
+            "faculty appointments",
+            "on the internship platform"
+        ]
+    },
+    {
+        "Query": "Where can I update alumni directory via the research submission portal?",
+        "Entities": [
+            "update",
+            "alumni directory",
+            "via the research submission portal"
+        ]
+    },
+    {
+        "Query": "What documents are needed for student housing registration?",
+        "Entities": [
+            "documents",
+            "student housing registration"
+        ]
+    },
+    {
+        "Query": "What requirements are needed for scholarship applications?",
+        "Entities": [
+            "requirements",
+            "scholarship applications"
+        ]
+    },
+    {
+        "Query": "What forms are needed for internship registration?",
+        "Entities": [
+            "forms",
+            "internship registration"
+        ]
+    },
+    {
+        "Query": "What guidelines are needed for vacant job positions?",
+        "Entities": [
+            "guidelines",
+            "vacant job positions"
+        ]
+    },
+    {
+        "Query": "What steps are needed for work-study applications?",
+        "Entities": [
+            "steps",
+            "work-study applications"
+        ]
+    },
+    {
+        "Query": "What eligibility is needed for teaching award nominations?",
+        "Entities": [
+            "eligibility",
+            "teaching award nominations"
+        ]
+    },
+    {
+        "Query": "What procedures are needed for student club memberships?",
+        "Entities": [
+            "procedures",
+            "student club memberships"
+        ]
+    },
+    {
+        "Query": "What criteria are needed for eLOGO registration?",
+        "Entities": [
+            "criteria",
+            "eLOGO registration"
+        ]
+    },
+    {
+        "Query": "Can I apply for a scholarship with a student ID?",
+        "Entities": [
+            "apply",
+            "a scholarship",
+            "a student ID"
+        ]
+    },
+    {
+        "Query": "Can I submit an internship with an alumni membership?",
+        "Entities": [
+            "submit",
+            "an internship",
+            "an alumni membership"
+        ]
+    },
+    {
+        "Query": "Can I register for vacant job positions with a faculty account?",
+        "Entities": [
+            "register",
+            "vacant job positions",
+            "a faculty account"
+        ]
+    },
+    {
+        "Query": "Can I check work-study program with a research project portal?",
+        "Entities": [
+            "check",
+            "work-study program",
+            "a research project portal"
+        ]
+    },
+    {
+        "Query": "Can I update student housing with an eLOGO account?",
+        "Entities": [
+            "update",
+            "student housing",
+            "an eLOGO account"
+        ]
+    },
+    {
+        "Query": "Can I verify teaching awards with a student ID?",
+        "Entities": [
+            "verify",
+            "teaching awards",
+            "a student ID"
+        ]
+    },
+    {
+        "Query": "How can I find vacant job listings for students online?",
+        "Entities": [
+            "find",
+            "vacant job listings",
+            "students"
+        ]
+    },
+    {
+        "Query": "How can I access internship opportunities for faculty through the website?",
+        "Entities": [
+            "access",
+            "internship opportunities",
+            "faculty"
+        ]
+    },
+    {
+        "Query": "How can I apply for scholarship programs for staff via the portal?",
+        "Entities": [
+            "apply",
+            "scholarship programs",
+            "staff"
+        ]
+    },
+    {
+        "Query": "How can I request work-study registrations for researchers on the eLOGO system?",
+        "Entities": [
+            "request",
+            "work-study registrations",
+            "researchers on the eLOGO system"
+        ]
+    },
+    {
+        "Query": "How can I submit student housing applications for alumni at the career services desk?",
+        "Entities": [
+            "submit",
+            "student housing applications",
+            "alumni",
+            "at the career services desk"
+        ]
+    },
+    {
+        "Query": "How can I verify research project guidelines for job seekers via the portal?",
+        "Entities": [
+            "verify",
+            "research project guidelines",
+            "job seekers"
+        ]
+    },
+    {
+        "Query": "How can I download teaching award nominations for international students in person?",
+        "Entities": [
+            "download",
+            "teaching award nominations",
+            "international students"
+        ]
+    },
+    {
+        "Query": "How can students apply for scholarships via the portal?",
+        "Entities": [
+            "students",
+            "apply",
+            "scholarships",
+            "via the portal"
+        ]
+    },
+    {
+        "Query": "How can faculty register for research projects online?",
+        "Entities": [
+            "faculty",
+            "register",
+            "research projects",
+            "online"
+        ]
+    },
+    {
+        "Query": "How can staff submit vacant job positions through the application system?",
+        "Entities": [
+            "staff",
+            "submit",
+            "vacant job positions",
+            "through the application system"
+        ]
+    },
+    {
+        "Query": "How can interns update teaching awards by email?",
+        "Entities": [
+            "interns",
+            "update",
+            "teaching awards",
+            "by email"
+        ]
+    },
+    {
+        "Query": "How can alumni download student housing information through the system?",
+        "Entities": [
+            "alumni",
+            "download",
+            "student housing information",
+            "through the system"
+        ]
+    },
+    {
+        "Query": "How can students verify work-study programs on the eLOGO portal?",
+        "Entities": [
+            "students",
+            "verify",
+            "work-study programs",
+            "on the eLOGO portal"
+        ]
+    },
+    {
+        "Query": "What documents can I access in the student information system?",
+        "Entities": [
+            "documents",
+            "access",
+            "the student information system"
+        ]
+    },
+    {
+        "Query": "What details can I find in the eLOGO portal?",
+        "Entities": [
+            "details",
+            "find",
+            "the eLOGO portal"
+        ]
+    },
+    {
+        "Query": "What resources can I check in the internship platform?",
+        "Entities": [
+            "resources",
+            "check",
+            "the internship platform"
+        ]
+    },
+    {
+        "Query": "What guidelines can I request in the career services site?",
+        "Entities": [
+            "guidelines",
+            "request",
+            "the career services site"
+        ]
+    },
+    {
+        "Query": "What information can I submit in the scholarship portal?",
+        "Entities": [
+            "information",
+            "submit",
+            "the scholarship portal"
+        ]
+    },
+    {
+        "Query": "What documents can I download in the research grant portal?",
+        "Entities": [
+            "documents",
+            "download",
+            "the research grant portal"
+        ]
+    },
+    {
+        "Query": "What criteria can I verify in the student housing application?",
+        "Entities": [
+            "criteria",
+            "verify",
+            "the student housing application"
+        ]
+    },
+    {
+        "Query": "What procedures can I check in the alumni directory?",
+        "Entities": [
+            "procedures",
+            "check",
+            "the alumni directory"
+        ]
+    },
+    {
+        "Query": "How do I register for career services for job seekers?",
+        "Entities": [
+            "register",
+            "career services",
+            "job seekers"
+        ]
+    },
+    {
+        "Query": "How do I request faculty appointments for staff?",
+        "Entities": [
+            "request",
+            "faculty appointments",
+            "staff"
+        ]
+    },
+    {
+        "Query": "What guidelines are needed for student housing registration?",
+        "Entities": [
+            "guidelines",
+            "student housing registration"
+        ]
+    },
+    {
+        "Query": "Where can I submit research project guidelines on the portal?",
+        "Entities": [
+            "submit",
+            "research project guidelines",
+            "on the portal"
+        ]
+    },
+    {
+        "Query": "Can I request student housing with a faculty account?",
+        "Entities": [
+            "request",
+            "student housing",
+            "a faculty account"
+        ]
+    },
+    {
+        "Query": "How can researchers update faculty appointments online?",
+        "Entities": [
+            "researchers",
+            "update",
+            "faculty appointments",
+            "online"
+        ]
+    },
+    {
+        "Query": "Where can I check scholarship applications through the career services desk?",
+        "Entities": [
+            "check",
+            "scholarship applications",
+            "through the career services desk"
+        ]
+    },
+    {
+        "Query": "What resources can I submit in the eLOGO portal?",
+        "Entities": [
+            "resources",
+            "submit",
+            "the eLOGO portal"
+        ]
+    },
+    {
+        "Query": "Where can I download internship information in person?",
+        "Entities": [
+            "download",
+            "internship information",
+            "in person"
+        ]
+    },
+    {
+        "Query": "What details are needed for teaching award nominations?",
+        "Entities": [
+            "details",
+            "teaching award nominations"
+        ]
+    },
+    {
+        "Query": "How do I check student club membership for volunteers?",
+        "Entities": [
+            "check",
+            "student club membership",
+            "volunteers"
+        ]
+    },
+    {
+        "Query": "Can alumni verify vacant job positions via the research portal?",
+        "Entities": [
+            "alumni",
+            "verify",
+            "vacant job positions",
+            "via the research portal"
+        ]
+    },
+    {
+        "Query": "Where can I update teaching award information through the website?",
+        "Entities": [
+            "update",
+            "teaching award information",
+            "through the website"
+        ]
+    },
+    {
+        "Query": "How can faculty find research project opportunities online?",
+        "Entities": [
+            "faculty",
+            "find",
+            "research project opportunities",
+            "online"
+        ]
+    },
+    {
+        "Query": "What steps should I follow when submitting research grants?",
+        "Entities": [
+            "steps",
+            "submitting",
+            "research grants"
+        ]
+    },
+    {
+        "Query": "Can staff request work-study programs on the portal?",
+        "Entities": [
+            "staff",
+            "request",
+            "work-study programs",
+            "on the portal"
+        ]
+    },
+    {
+        "Query": "How do I download student club details for prospective students?",
+        "Entities": [
+            "download",
+            "student club details",
+            "prospective students"
+        ]
+    },
+    {
+        "Query": "How can alumni submit scholarship applications?",
+        "Entities": [
+            "alumni",
+            "submit",
+            "scholarship applications"
+        ]
+    },
+    {
+        "Query": "Where can I find work-study registration via the system?",
+        "Entities": [
+            "find",
+            "work-study registration",
+            "via the system"
+        ]
+    },
+    {
+        "Query": "How do I access internship details for graduate students?",
+        "Entities": [
+            "access",
+            "internship details",
+            "graduate students"
+        ]
+    },
+    {
+        "Query": "Can volunteers update student club approvals via email?",
+        "Entities": [
+            "volunteers",
+            "update",
+            "student club approvals",
+            "via email"
+        ]
+    },
+    {
+        "Query": "What requirements are needed for vacant position submissions?",
+        "Entities": [
+            "requirements",
+            "vacant position submissions"
+        ]
+    },
+    {
+        "Query": "Where can job seekers verify research project applications?",
+        "Entities": [
+            "job seekers",
+            "verify",
+            "research project applications"
+        ]
+    },
+    {
+        "Query": "How can staff submit teaching award forms?",
+        "Entities": [
+            "staff",
+            "submit",
+            "teaching award forms"
+        ]
+    },
+    {
+        "Query": "Can researchers check internship applications online?",
+        "Entities": [
+            "researchers",
+            "check",
+            "internship applications",
+            "online"
+        ]
+    },
+    {
+        "Query": "How do I verify student housing information for alumni?",
+        "Entities": [
+            "verify",
+            "student housing information",
+            "alumni"
+        ]
+    },
+    {
+        "Query": "Where can I access faculty appointment documents?",
+        "Entities": [
+            "access",
+            "faculty appointment documents"
+        ]
+    },
+    {
+        "Query": "What guidelines are required for eLOGO registrations?",
+        "Entities": [
+            "guidelines",
+            "eLOGO registrations"
+        ]
+    },
+    {
+        "Query": "How can I apply for vacant jobs through the career platform?",
+        "Entities": [
+            "apply",
+            "vacant jobs",
+            "through the career platform"
+        ]
+    },
+    {
+        "Query": "What eligibility should I check when updating alumni memberships?",
+        "Entities": [
+            "eligibility",
+            "updating",
+            "alumni memberships"
+        ]
+    },
+    {
+        "Query": "Can international students register for research grants online?",
+        "Entities": [
+            "international students",
+            "register",
+            "research grants",
+            "online"
+        ]
+    },
+    {
+        "Query": "How do faculty submit research guidelines for volunteers?",
+        "Entities": [
+            "faculty",
+            "submit",
+            "research guidelines",
+            "volunteers"
+        ]
+    },
+    {
+        "Query": "How can I update teaching award registrations via the eLOGO portal?",
+        "Entities": [
+            "update",
+            "teaching award registrations",
+            "via the eLOGO portal"
+        ]
+    },
+    {
+        "Query": "Where can I check work-study details through the application system?",
+        "Entities": [
+            "check",
+            "work-study details",
+            "through the application system"
+        ]
+    },
+    {
+        "Query": "What procedures are required for submitting vacant position forms?",
+        "Entities": [
+            "procedures",
+            "submitting",
+            "vacant position forms"
+        ]
+    },
+    {
+        "Query": "Can I verify career services applications with a faculty ID?",
+        "Entities": [
+            "verify",
+            "career services applications",
+            "a faculty ID"
+        ]
+    }
+]

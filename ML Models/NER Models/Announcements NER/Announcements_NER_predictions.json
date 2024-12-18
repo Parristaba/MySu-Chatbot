@@ -1,0 +1,495 @@
+[
+    {
+        "Query": "When will the class on Monday be held this semester?",
+        "Entities": [
+            "class on Monday"
+        ]
+    },
+    {
+        "Query": "What is the deadline for the add/drop period this semester?",
+        "Entities": [
+            "add/drop period"
+        ]
+    },
+    {
+        "Query": "When is the guest lecture on AI taking place?",
+        "Entities": [
+            "guest lecture on AI"
+        ]
+    },
+    {
+        "Query": "Is there a cancellation for class on Friday this week?",
+        "Entities": [
+            ""
+        ]
+    },
+    {
+        "Query": "When has the History 101 exam been rescheduled to?",
+        "Entities": [
+            "History 101 exam"
+        ]
+    },
+    {
+        "Query": "Will the university be closed next Monday?",
+        "Entities": [
+            ""
+        ]
+    },
+    {
+        "Query": "What are the new office hours for Professor Smith this semester?",
+        "Entities": [
+            "professor Smith"
+        ]
+    },
+    {
+        "Query": "Where are all classes in the Engineering department being held this semester?",
+        "Entities": [
+            "Engineering department"
+        ]
+    },
+    {
+        "Query": "Has the Chemistry 102 class moved to a new location?",
+        "Entities": [
+            "Chemistry 102 class"
+        ]
+    },
+    {
+        "Query": "What time and where is the Quantum Computing seminar this week?",
+        "Entities": [
+            "Quantum Computing seminar"
+        ]
+    },
+    {
+        "Query": "When does winter break start and end this year?",
+        "Entities": [
+            "winter break start",
+            "end this year"
+        ]
+    },
+    {
+        "Query": "When is the university career fair taking place this semester?",
+        "Entities": [
+            "university career fair"
+        ]
+    },
+    {
+        "Query": "What events are being hosted for Sustainability Week?",
+        "Entities": [
+            "Sustainability Week"
+        ]
+    },
+    {
+        "Query": "What time is the Organic Chemistry class this semester?",
+        "Entities": [
+            "Organic Chemistry class"
+        ]
+    },
+    {
+        "Query": "Has the library extended its hours for final exams this semester?",
+        "Entities": [
+            "library extended its hours for final exams"
+        ]
+    },
+    {
+        "Query": "When is the networking event hosted by the student union?",
+        "Entities": [
+            "networking event"
+        ]
+    },
+    {
+        "Query": "When is the last day to drop classes without penalty this semester?",
+        "Entities": [
+            ""
+        ]
+    },
+    {
+        "Query": "When is the campus clean-up event taking place?",
+        "Entities": [
+            "campus clean-up event"
+        ]
+    },
+    {
+        "Query": "When does registration for the Spring semester begin?",
+        "Entities": [
+            ""
+        ]
+    },
+    {
+        "Query": "What are Professor Lee’s new office hours this semester?",
+        "Entities": [
+            "Professor Lee’s new office hours"
+        ]
+    },
+    {
+        "Query": "Are all final exams being held remotely this semester?",
+        "Entities": [
+            "final exams"
+        ]
+    },
+    {
+        "Query": "When is the football match between our university and XYZ University?",
+        "Entities": [
+            "football match between our university and XYZ University"
+        ]
+    },
+    {
+        "Query": "Where will the Global Economics lecture be held this semester?",
+        "Entities": [
+            "Global Economics lecture"
+        ]
+    },
+    {
+        "Query": "Will all language classes be available online this semester?",
+        "Entities": [
+            ""
+        ]
+    },
+    {
+        "Query": "When is the international student orientation taking place?",
+        "Entities": [
+            "international student orientation"
+        ]
+    },
+    {
+        "Query": "When is the annual charity event happening this year?",
+        "Entities": [
+            "annual charity event"
+        ]
+    },
+    {
+        "Query": "What is the start and end date for the new semester?",
+        "Entities": [
+            "start and end date"
+        ]
+    },
+    {
+        "Query": "When will the health center be offering flu shots this semester?",
+        "Entities": [
+            "flu shots"
+        ]
+    },
+    {
+        "Query": "When is the scheduled campus-wide power outage?",
+        "Entities": [
+            "campus-wide power outage"
+        ]
+    },
+    {
+        "Query": "When will the new gym be open for students?",
+        "Entities": [
+            ""
+        ]
+    },
+    {
+        "Query": "When is the graduate student orientation next week?",
+        "Entities": [
+            "graduate student orientation"
+        ]
+    },
+    {
+        "Query": "When will the wellness workshops on mental health begin?",
+        "Entities": [
+            "wellness workshops on mental health"
+        ]
+    },
+    {
+        "Query": "When is the guest speaker session on Machine Learning?",
+        "Entities": [
+            "guest speaker session on Machine Learning"
+        ]
+    },
+    {
+        "Query": "When is the scholarship application deadline for next semester?",
+        "Entities": [
+            "scholarship application deadline"
+        ]
+    },
+    {
+        "Query": "When is the university arts festival happening this year?",
+        "Entities": [
+            "university arts festival"
+        ]
+    },
+    {
+        "Query": "What is the deadline for Spring course registration?",
+        "Entities": [
+            "Spring course registration"
+        ]
+    },
+    {
+        "Query": "What new elective courses are being offered by the Law faculty this semester?",
+        "Entities": [
+            "Law faculty"
+        ]
+    },
+    {
+        "Query": "When are the student council elections being held?",
+        "Entities": [
+            "student council elections"
+        ]
+    },
+    {
+        "Query": "When is the Spring Break period this year?",
+        "Entities": [
+            "Spring Break period"
+        ]
+    },
+    {
+        "Query": "When will the campus shuttle service have modified hours during the winter holidays?",
+        "Entities": [
+            "campus shuttle service"
+        ]
+    },
+    {
+        "Query": "When is the library open house event taking place?",
+        "Entities": [
+            "library open house event"
+        ]
+    },
+    {
+        "Query": "Will all university sports events be streamed this semester?",
+        "Entities": [
+            "university sports events"
+        ]
+    },
+    {
+        "Query": "When is the seminar on study techniques being held?",
+        "Entities": [
+            "seminar on study techniques"
+        ]
+    },
+    {
+        "Query": "Where can I find the course catalog for the new semester?",
+        "Entities": [
+            "course catalog for the new semester"
+        ]
+    },
+    {
+        "Query": "When does registration for the summer internship program start?",
+        "Entities": [
+            "summer internship program"
+        ]
+    },
+    {
+        "Query": "When is the exhibition on modern art taking place next week?",
+        "Entities": [
+            "exhibition on modern art"
+        ]
+    },
+    {
+        "Query": "When are the graduate student research method seminars scheduled?",
+        "Entities": [
+            "graduate student research method seminars"
+        ]
+    },
+    {
+        "Query": "When is the cultural night event held this year?",
+        "Entities": [
+            "cultural night event"
+        ]
+    },
+    {
+        "Query": "When will the Chemistry lab be closed for maintenance this week?",
+        "Entities": [
+            "Chemistry lab"
+        ]
+    },
+    {
+        "Query": "Are Business Administration classes being held remotely or in person this semester?",
+        "Entities": [
+            "Business Administration classes"
+        ]
+    },
+    {
+        "Query": "When will the Advanced Calculus lecture be held?",
+        "Entities": [
+            "Advanced Calculus lecture"
+        ]
+    },
+    {
+        "Query": "When is the IT department scheduled to update the system this weekend?",
+        "Entities": [
+            "IT department scheduled to update the system"
+        ]
+    },
+    {
+        "Query": "When is the deadline to submit course feedback forms?",
+        "Entities": [
+            "course feedback forms"
+        ]
+    },
+    {
+        "Query": "When is the art department studio tour event?",
+        "Entities": [
+            "art department studio tour event"
+        ]
+    },
+    {
+        "Query": "When will classes be canceled due to Thanksgiving?",
+        "Entities": [
+            ""
+        ]
+    },
+    {
+        "Query": "When is the community outreach event to help local schools?",
+        "Entities": [
+            "community outreach event"
+        ]
+    },
+    {
+        "Query": "When is the mentoring program for first-year students starting?",
+        "Entities": [
+            "mentoring program for first-year students"
+        ]
+    },
+    {
+        "Query": "When will the student wellness program offer free yoga sessions?",
+        "Entities": [
+            "student wellness program offers free yoga sessions"
+        ]
+    },
+    {
+        "Query": "When is the international student meet-and-greet event happening?",
+        "Entities": [
+            "international student meet-and-greet event"
+        ]
+    },
+    {
+        "Query": "When is the last day to add classes without a late fee?",
+        "Entities": [
+            "last day to add classes without a late fee"
+        ]
+    },
+    {
+        "Query": "Where can I find the final version of the course schedule for the semester?",
+        "Entities": [
+            "final version of course schedule for the semester"
+        ]
+    },
+    {
+        "Query": "When is the hackathon event being held?",
+        "Entities": [
+            "hackathon event"
+        ]
+    },
+    {
+        "Query": "When is the mandatory campus security briefing for students?",
+        "Entities": [
+            "campus security briefing"
+        ]
+    },
+    {
+        "Query": "When are the auditions for the University Orchestra taking place?",
+        "Entities": [
+            "University Orchestra"
+        ]
+    },
+    {
+        "Query": "When is the special course on Modern Art History being offered this semester?",
+        "Entities": [
+            "special course on Modern Art History"
+        ]
+    },
+    {
+        "Query": "When will free fitness classes be held at the campus fitness center?",
+        "Entities": [
+            "free fitness classes"
+        ]
+    },
+    {
+        "Query": "When will the university conduct its student satisfaction survey this semester?",
+        "Entities": [
+            "student satisfaction survey"
+        ]
+    },
+    {
+        "Query": "When is the deadline to submit internship applications for next semester?",
+        "Entities": [
+            "internship applications"
+        ]
+    },
+    {
+        "Query": "When is the cultural exchange program application deadline?",
+        "Entities": [
+            "cultural exchange program application"
+        ]
+    },
+    {
+        "Query": "When is the campus book fair taking place this semester?",
+        "Entities": [
+            "campus book fair"
+        ]
+    },
+    {
+        "Query": "When is the blood donation camp organized by the student council?",
+        "Entities": [
+            "blood donation camp"
+        ]
+    },
+    {
+        "Query": "When is the free counseling session for students this semester?",
+        "Entities": [
+            "free counseling session for students"
+        ]
+    },
+    {
+        "Query": "When does the new semester start?",
+        "Entities": [
+            ""
+        ]
+    },
+    {
+        "Query": "When will the campus coffee shop offer extended hours during finals week?",
+        "Entities": [
+            "campus coffee shop offers extended hours during finals week"
+        ]
+    },
+    {
+        "Query": "When is the career opportunities panel discussion in healthcare?",
+        "Entities": [
+            "career opportunities panel discussion in healthcare"
+        ]
+    },
+    {
+        "Query": "When will the student newsletter be published?",
+        "Entities": [
+            "student newsletter"
+        ]
+    },
+    {
+        "Query": "When are the time management workshops taking place?",
+        "Entities": [
+            "time management workshops"
+        ]
+    },
+    {
+        "Query": "When is the campus movie night scheduled?",
+        "Entities": [
+            "campus movie night"
+        ]
+    },
+    {
+        "Query": "When is the research conference scheduled for this year?",
+        "Entities": [
+            "research conference"
+        ]
+    },
+    {
+        "Query": "When is the first-year students' orientation taking place?",
+        "Entities": [
+            "first-year students' orientation"
+        ]
+    },
+    {
+        "Query": "When will the environmental sustainability forum be held this year?",
+        "Entities": [
+            "environmental sustainability forum"
+        ]
+    },
+    {
+        "Query": "When is the last day to withdraw from a class this semester?",
+        "Entities": [
+            "last day to withdraw from a class"
+        ]
+    }
+]
