@@ -38,6 +38,8 @@ For a detailed architecture overview, refer to the **[Architecture Overview](doc
 - **v0.1**: Initial architecture refinement with defined components and modules.
 - **v0.2**: Added data generation scripts for announcements and documents using templates and dictionaries.
 - **v0.3**: Implemented and tested Free-to-Use LLM models with simple, predefined instructions.
+- **v0.4**: Implemented Intent model and tested using synthetic data.
+- **v0.5**: Implemented NER models for both Announcements and Documents. Trained with synthetic data and tested using real-like data.
 
 
 ---
