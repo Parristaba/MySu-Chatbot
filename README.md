@@ -1,8 +1,3 @@
-# MySu-Chatbot
-Here’s the updated **README.md** with a **Versions** section and the **License** section removed:
-
----
-
 # **MySu ChatBot**
 
 ## **Overview**  
