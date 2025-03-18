@@ -1,11 +1,24 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List, Optional
-
-class UserSession(BaseModel):
-    session_id: str
-    query_list: List[str] = []
-    expiry_time: int  # Time-to-Live (TTL) in seconds
+from datetime import datetime, timedelta
 
 class UserQuery(BaseModel):
     session_id: str
     query_text: str
+    timestamp: datetime = Field(default_factory=datetime.utcnow)
+
+class UserSession(BaseModel):
+    session_id: str
+    user_id: Optional[str] = None
+    query_list: List[UserQuery] = []
+    last_active: datetime = Field(default_factory=datetime.utcnow)
+    expiry_time: int = 900
+
+    def add_query(self, query_text: str):
+        """Adds a new query and updates last active timestamp."""
+        self.query_list.append(UserQuery(session_id=self.session_id, query_text=query_text))
+        self.last_active = datetime.utcnow()
+
+    def is_expired(self) -> bool:
+        """Checks if the session has expired."""
+        return (datetime.utcnow() - self.last_active).total_seconds() > self.expiry_time

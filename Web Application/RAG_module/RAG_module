@@ -1,0 +1,67 @@
+# importlarla ugrsamadim valla, kolay gelsin agalar.
+
+
+
+class RAGBlock:
+
+    @staticmethod
+    def handle_parsed_query(parsed_query: ParsedQuery):
+        """
+        Processes the parsed query based on intent.
+        - Routes to separate functions for announcements and documents.
+        - Encodes query and performs similarity search (TODO).
+        """
+
+        # Concatenate entities into a string
+        entities_concat = ", ".join(parsed_query.entities)
+
+        # Create Handled_UserQuery object
+        handled_query = Handled_UserQuery(
+            type=parsed_query.intent,
+            entities_concat=entities_concat,
+            user_query=parsed_query.text
+        )
+
+        # Process separately for announcements and documents
+        if parsed_query.intent == "announcement":
+            handled_query.entities_encoded = RAGBlock.encode_announcement_query(entities_concat)
+            handled_query.retrieved_data, handled_query.similarity_score = RAGBlock.similarity_search_announcement(
+                handled_query.entities_encoded
+            )
+        elif parsed_query.intent == "document":
+            handled_query.entities_encoded = RAGBlock.encode_document_query(entities_concat)
+            handled_query.retrieved_data, handled_query.similarity_score = RAGBlock.similarity_search_document(
+                handled_query.entities_encoded
+            )
+
+        return handled_query
+
+    # ANNOUNCEMENT PATH
+    @staticmethod
+    def encode_announcement_query(entities_concat: str):
+        """
+        TODO: Encode the concatenated entities for ANNOUNCEMENT queries.
+        """
+        pass  # Pinecone/embedding model integration needed
+
+    @staticmethod
+    def similarity_search_announcement(encoded_entities):
+        """
+        TODO: Perform similarity search for ANNOUNCEMENTS.
+        """
+        return None, None  # Placeholder
+
+    # DOCUMENT PATH
+    @staticmethod
+    def encode_document_query(entities_concat: str):
+        """
+        TODO: Encode the concatenated entities for DOCUMENT queries.
+        """
+        pass  # Pinecone/embedding model integration needed
+
+    @staticmethod
+    def similarity_search_document(encoded_entities):
+        """
+        TODO: Perform similarity search for DOCUMENTS.
+        """
+        return None, None  # Placeholder
