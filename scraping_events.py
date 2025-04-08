@@ -16,8 +16,8 @@ def login():
     WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "username")))
     
     # Fill in credentials
-    driver.find_element(By.ID, "username").send_keys("sipahibasar")
-    driver.find_element(By.ID, "password").send_keys("41X41basar.")
+    driver.find_element(By.ID, "username").send_keys("username")
+    driver.find_element(By.ID, "password").send_keys("password")
     driver.find_element(By.NAME, "submit").click()
     
     # Wait until login is successful (e.g. menu or event block appears)
