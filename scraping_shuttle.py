@@ -16,8 +16,8 @@ def login_and_get_cookies():
     driver.get(LOGIN_URL)
 
     WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "username")))
-    driver.find_element(By.ID, "username").send_keys("sipahibasar")
-    driver.find_element(By.ID, "password").send_keys("41X41basar.")
+    driver.find_element(By.ID, "username").send_keys("username")
+    driver.find_element(By.ID, "password").send_keys("password")
     driver.find_element(By.NAME, "submit").click()
 
     WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "block-mysu-theme-shuttle")))
