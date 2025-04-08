@@ -22,8 +22,8 @@ def login():
     # Assuming environment variables or fixed values for USERNAME and PASSWORD
     username_input = driver.find_element(By.ID, "username")
     password_input = driver.find_element(By.ID, "password")
-    username_input.send_keys("sipahibasar")  # Replace with your username
-    password_input.send_keys("41X41basar.")  # Replace with your password
+    username_input.send_keys("username")  # Replace with your username
+    password_input.send_keys("password")  # Replace with your password
 
     submit_button = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.NAME, "submit"))
