@@ -1,9 +1,16 @@
 import requests
 from .models import UserQuery
-from orchestrator import Orchestrator  # Assuming this is the correct module import
-from nlu import NLU_get_intend  # Assuming this is the correct function import
+from orchestrator import Orchestrator  
+from nlu import NLU_get_intend  
 
-# Basarim halledersin
+# This is the endpoint we will use to determine if the user query is relevant or not. 
+""""
+The endpoint should accept a POST request with a JSON body containing the user query text.
+Relevant -> {"relevant": true}
+Not Relevant -> {"relevant": false}
+
+The model will probably be connected through a FastAPI endpoint. Other frameworks can be used as well.
+"""
 QUERY_RELEVANCE_ENDPOINT = ""
 
 class QueryFilter:

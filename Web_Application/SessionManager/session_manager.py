@@ -1,20 +1,33 @@
 import time
 import uuid
 from fastapi import Request, Response
-from .models import UserSession, UserQuery
+from Web_Application.Models.UserQuery import UserQuery
+from Web_Application.Models.UserSession import UserSession
 from config import redis_client
 from typing import Optional
 from datetime import datetime
-from query_filter import CheckQueryRelevance  # Might change the name based on the module name
+from query_filter import CheckQueryRelevance  
 
-SESSION_EXPIRY = 900  # 15 minutes expiry
+SESSION_EXPIRY = 900  
 COOKIE_NAME = "su_session_id"
 
 class SessionManager:
 
-    # So, in here, the api/message first calls the get_or_create_session method to handle user session.
-    # Then, it calls the on_message_activity method to handle user message activity.
-    # This utilizes cookies (anonymous session) to store user data and queries.
+    ''''
+    This class is responsible for handling user sessions and messages.
+
+    get_or_create_session: Retrieves or creates a session for a user based on cookies.
+    on_message_activity: Handles user message activity.
+    get_session: Retrieves session data from Redis.
+    delete_session: Deletes a session from Redis.
+
+    A cookie is set in the response to store the session ID.
+    The session data is stored in Redis with the following fields:
+    - query_list: List of UserQuery objects as dictionaries.
+    - expiry_time: Expiration time in seconds.
+    - last_active: Timestamp of the last activity.
+    '''
+
     @staticmethod
     def get_or_create_session(request: Request, response: Response) -> str:
         """
@@ -32,7 +45,7 @@ class SessionManager:
         # If no valid session found, create a new one
         session_id = str(uuid.uuid4())
         redis_client.hset(session_id, mapping={
-            "query_list": str([]),  # Store as string for Redis compatibility
+            "query_list": str([]),  
             "expiry_time": int(time.time()) + SESSION_EXPIRY,
             "last_active": int(time.time())
         })
@@ -46,10 +59,14 @@ class SessionManager:
     @staticmethod
     def on_message_activity(request: Request, response: Response, query_text: str) -> str:
         """
+        This is the main entry point for processing user queries.
+
         Handles user message activity.
         - Retrieves or creates a session based on cookies.
         - Updates session with latest query as a UserQuery object.
         - Passes the UserQuery object to CheckQueryRelevance.
+
+        The next steps will be handled by the CheckQueryRelevance module, which will determine if the query is relevant or not. 
         """
         session_id = SessionManager.get_or_create_session(request, response)
 
@@ -75,6 +92,8 @@ class SessionManager:
     def get_session(session_id: str) -> Optional[UserSession]:
         """
         Retrieves session data from Redis.
+
+        This will mainly be used by the Orchestrator to retrieve the session data during LLM feeding.
         """
         if not redis_client.exists(session_id):
             return None
@@ -90,5 +109,7 @@ class SessionManager:
     def delete_session(session_id: str):
         """
         Deletes a session from Redis.
+
+        For now, it has no use for the current implementation since redis_client.expire is used to manage session expiration.
         """
         redis_client.delete(session_id)
