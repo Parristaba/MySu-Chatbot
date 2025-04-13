@@ -6,7 +6,7 @@ from Web_Application.Models.UserSession import UserSession
 from config import redis_client
 from typing import Optional
 from datetime import datetime
-from query_filter import CheckQueryRelevance  
+from QueryFilterModule import CheckQueryRelevance  
 
 SESSION_EXPIRY = 900  
 COOKIE_NAME = "su_session_id"

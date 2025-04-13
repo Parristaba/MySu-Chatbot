@@ -1,8 +1,7 @@
 import requests
-from .models import UserQuery
-from orchestrator import Orchestrator  # Orchestrator module
-from rag import HandleParsedQuery  # RAG Block
-from Models.UserQueryHandled import UserQueryHandled
+from Models import UserQuery, UserQueryHandled
+from OrchestratorModule import Orchestrator  # Orchestrator module
+from RagModule import HandleParsedQuery  # RAG Block
 
 
 """

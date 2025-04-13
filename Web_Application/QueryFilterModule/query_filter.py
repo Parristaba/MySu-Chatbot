@@ -1,7 +1,7 @@
 import requests
-from .models import UserQuery
-from orchestrator import Orchestrator  
-from nlu import NLU_get_intend  
+from Models import UserQuery
+from OrchestratorModule import Orchestrator  
+from NluModule import NLU_get_intend  
 
 # This is the endpoint we will use to determine if the user query is relevant or not. 
 """"
