@@ -1,12 +1,12 @@
 import time
 import uuid
-from fastapi import Request, Response
+from fastapi import Request, Response  
 from Web_Application.Models.UserQuery import UserQuery
 from Web_Application.Models.UserSession import UserSession
 from config import redis_client
 from typing import Optional
 from datetime import datetime
-from query_filter import CheckQueryRelevance  
+from QueryFilter import process_query 
 
 SESSION_EXPIRY = 900  
 COOKIE_NAME = "su_session_id"
@@ -86,7 +86,7 @@ class SessionManager:
         redis_client.hset(session_id, mapping=session_data)
 
         # Send UserQuery object for further processing
-        return CheckQueryRelevance.process_query(user_query, session_id)
+        return process_query(user_query, session_id)
     
     @staticmethod
     def get_session(session_id: str) -> Optional[UserSession]:
