@@ -27,18 +27,4 @@ The API will be accessible at:
 
 ## Modules
 
-### **1️⃣ Session Manager Module**
-The **Session Manager Module** is responsible for handling user sessions. It ensures that user queries are linked to a session, allowing for context-aware interactions.
-
-**🔹 Features:**
-- Create, update, and delete user sessions.
-- Store session data using **Redis** for efficient session management.
-- Extend session expiration to maintain active conversations.
-
-**🔹 API Endpoints:**
-
-| Method  | Endpoint               | Description |
-|---------|------------------------|-------------|
-| `POST`  | `/session/`            | Create or update a user session |
-| `GET`   | `/session/{session_id}` | Retrieve session details |
-| `DELETE`| `/session/{session_id}` | Delete a user session |
+**🔹 API Endpoint:**

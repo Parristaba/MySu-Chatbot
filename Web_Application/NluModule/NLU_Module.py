@@ -1,4 +1,4 @@
-import requests
+import request
 from Models import UserQuery
 from OrchestratorModule import Orchestrator  # Orchestrator module
 from RagModule import HandleParsedQuery  # RAG Block
