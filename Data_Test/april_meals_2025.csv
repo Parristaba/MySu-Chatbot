@@ -1,0 +1,486 @@
+Date,Name,Category,Calories,Calorie Type,Lunch,Dinner
+2025-04-01,NOODLE SOUP,Corba,127,low,True,True
+2025-04-01,FOREST KABOB,Yemek - Ana Yemek,363,high,True,False
+2025-04-01,SAUTEED MUSHROOMS,Yemek - Ana Yemek,152,low,False,True
+2025-04-01,RICE,YYemek,367,high,True,False
+2025-04-01,FARFALLE WITH OLIVES,YYemek,311,medium,False,True
+2025-04-01,CARROTS WITH NUT AND GARLIC SAUCE,YYemek,77,low,False,False
+2025-04-01,SEASON SALAD,Salata,119,low,True,False
+2025-04-01,BADEMPARE DESSERT,Tatli,399,high,False,False
+2025-04-01,PUDDING WITH TAHINI,Tatli,174,low,False,True
+2025-04-01,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-01,YOĞURT,Salata,180,low,False,False
+2025-04-01,TASKI,Salata,81,low,False,False
+2025-04-02,SULEYMANIYE SOUP,Corba,112,low,True,False
+2025-04-02,ZUCCHINI SOUP,Corba,120,low,False,True
+2025-04-02,WHITE BEAN WITH MEAT,Yemek - Ana Yemek,283,medium,False,True
+2025-04-02,CHICKEN DONER,Yemek - Ana Yemek,416,high,True,False
+2025-04-02,BROCCOLI WITH TOMATO,Yemek - Ana Yemek,180,low,False,False
+2025-04-02,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-02,PIZZA AS MAIN DISH (BOLOGNESE / VEGETARIAN),Yemek - Ana Yemek,650,high,False,False
+2025-04-02,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-02,RICE WITH ORZO,YYemek,365,high,False,True
+2025-04-02,MANTI PASTA WITH YOGHURT,YYemek,244,medium,True,False
+2025-04-02,KIDNEY BEANS WITH OLIVE OIL,YYemek,117,low,False,False
+2025-04-02,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-02,MOSAİC CAKE,Tatli,331,medium,False,False
+2025-04-02,GUMMY CUSTARD,Tatli,174,low,False,False
+2025-04-02,FRUIT OF THE SEASON,Meyve,0,low,True,False
+2025-04-02,YOGURT,Salata,180,low,False,False
+2025-04-02,AYRAN,Salata,80,low,False,False
+2025-04-03,LENTIL SOUP,Corba,123,low,False,True
+2025-04-03,RICE YOGURTH AND MINT SOUP,Corba,78,low,True,False
+2025-04-03,ROAST MEATBALLS WITH PUREE,Yemek - Ana Yemek,387,high,True,False
+2025-04-03,CHICKEN CASSEROLE,Yemek - Ana Yemek,254,medium,False,True
+2025-04-03,LEEK WITH EGG AND LEMON SAUCE,Yemek - Ana Yemek,150,low,False,False
+2025-04-03,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-03,PIZZA AS MAIN DISH (TUNA FISH / MARGARITA),Yemek - Ana Yemek,650,high,False,False
+2025-04-03,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-03,RICE,YYemek,367,high,True,False
+2025-04-03,NOODLE WITH CHEESE,YYemek,317,medium,False,True
+2025-04-03,PEPPERONI BORANI WITH OLIVE OIL,YYemek,221,medium,False,False
+2025-04-03,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-03,TRILECE THREE  MILKS CAKE,Tatli,301,medium,False,False
+2025-04-03,PROFITEROLE,Tatli,341,medium,False,False
+2025-04-03,FRUIT OF THE SEASON,Meyve,0,low,False,True
+2025-04-03,YOGURT,Salata,180,low,False,False
+2025-04-03,BUTTERMİLK,Salata,55,low,True,False
+2025-04-04,TOMATO SOUP,Corba,117,low,False,True
+2025-04-04,TURKISH TRADISINOAL NOODLE SOUP,Corba,86,low,True,False
+2025-04-04,MIXED MOUSAKA WITH MINCED MEAT,Yemek - Ana Yemek,498,high,True,False
+2025-04-04,FISH BREAD,Yemek - Ana Yemek,420,high,False,False
+2025-04-04,GREEN LENTILS WITH TOMATOES,Yemek - Ana Yemek,212,medium,False,True
+2025-04-04,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-04,PIZZA AS MAIN DISH (MEAT / MUSHROOM),Yemek - Ana Yemek,650,high,False,False
+2025-04-04,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-04,RICE WITH ORZO,YYemek,365,high,True,False
+2025-04-04,SPAGHETTI WITH SAUCE,YYemek,310,medium,False,True
+2025-04-04,PINTO BEAN PILAKI WITH  OLIVE OIL,,190,low,False,False
+2025-04-04,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-04,PROFITEROLE,Tatli,341,medium,False,False
+2025-04-04,SEMOLINA HALVA,Tatli,526,high,False,True
+2025-04-04,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-04,YOGURT,Salata,180,low,False,False
+2025-04-04,TASKI,Salata,81,low,True,False
+2025-04-05,SAFAK SOUP (CREAM OF TOMATO SOUP),Corba,169,low,True,False
+2025-04-05,TOYGA SOUP,Corba,179,low,False,True
+2025-04-05,MEATBALLS IN PAN,Yemek - Ana Yemek,366,high,False,True
+2025-04-05,GRILLED CHICKEN,Yemek - Ana Yemek,324,medium,False,False
+2025-04-05,SWEAT PEAS WITH TOMATO,Yemek - Ana Yemek,215,medium,True,False
+2025-04-05,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-05,BULGUR WEATH PILAF,YYemek,297,medium,False,True
+2025-04-05,COUSOUS WITH VEGETABLES,YYemek,312,medium,True,False
+2025-04-05,OKRA COOKED IN OLIVE OIL,YYemek,156,low,False,False
+2025-04-05,SEASONAL SALAD,Salata,119,low,False,True
+2025-04-05,SEKERPARE (TURKISH SWITHEET) CHOCOLATE,Tatli,336,medium,False,False
+2025-04-05,PUDDING WITH LEMON,Tatli,174,low,True,False
+2025-04-05,SEASONAL FRUIT,Meyve,0,low,False,False
+2025-04-05,YOGURT,Salata,180,low,False,False
+2025-04-05,TASKI,Salata,81,low,False,False
+2025-04-06,MAHLUTA (TRADITIONAL) SOUP,Corba,165,low,True,False
+2025-04-06,TUTMAC (TRADITIONAL) SOUP,Corba,86,low,False,True
+2025-04-06,GREEN BEAN WITH MEAT,Yemek - Ana Yemek,282,medium,False,True
+2025-04-06,CHICKEN STEW,Yemek - Ana Yemek,371,high,True,False
+2025-04-06,MEDITERRENIAN MIXED SEASONAL VEGETABLE,Yemek - Ana Yemek,320,medium,False,False
+2025-04-06,RICE WITH CORN,YYemek,395,high,False,True
+2025-04-06,NOODLES WITH CAPPIA PEPPER,YYemek,215,medium,True,False
+2025-04-06,CORN SALAD WITH OIL,YYemek,62,low,True,False
+2025-04-06,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-06,AKDENIZ GULU (MEDITERRANEAN ROSE) DESSERT,Tatli,343,medium,False,False
+2025-04-06,TAHINI CUP,Tatli,372,high,False,False
+2025-04-06,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-06,YOGURT,Salata,180,low,False,False
+2025-04-06,AYRAN,Salata,80,low,False,True
+2025-04-07,CAULIFLOWER SOUP WITH TOMATO SAUCE,Corba,182,low,True,False
+2025-04-07,CORN SOUP,Corba,127,low,False,True
+2025-04-07,TURKISH RAVIOLI,Yemek - Ana Yemek,243,medium,True,False
+2025-04-07,SAUTEED CHICKEN,Yemek - Ana Yemek,196,low,False,True
+2025-04-07,TOMATOES BLACK EYED PEA,Yemek - Ana Yemek,101,low,False,False
+2025-04-07,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-07,PIZZA AS MAIN DISH (MIXED / PESTO SAUCE),Yemek - Ana Yemek,650,high,False,False
+2025-04-07,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-07,RICE,YYemek,367,high,False,True
+2025-04-07,BUTTERFLY PASTA WITH TOMATO SAUCE,YYemek,310,medium,False,False
+2025-04-07,SPINACH COOKED IN OLIVE OIL,YYemek,236,medium,True,False
+2025-04-07,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-07,BADEMPARE DESSERT,Tatli,399,high,False,False
+2025-04-07,PANNA COTTA,,294,medium,True,False
+2025-04-07,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-07,YOGURT,Salata,180,low,False,False
+2025-04-07,AYRAN,Salata,80,low,False,False
+2025-04-08,BARLEY NOODLE SOUP,Corba,128,low,False,True
+2025-04-08,GENDIME (TRADITIONAL) SOUP,Corba,159,low,True,False
+2025-04-08,MEAT DONER KABOB,Yemek - Ana Yemek,467,high,True,False
+2025-04-08,OVEN COOKED CHICKEN BAGUETTE,Yemek - Ana Yemek,335,medium,False,False
+2025-04-08,HARICOT BEANS SAILOR STYLE,Yemek - Ana Yemek,231,medium,False,True
+2025-04-08,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-08,PITA AS MAIN DISH (TURKISH SASUAGE / POTATO),Yemek - Ana Yemek,650,high,False,False
+2025-04-08,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-08,RICE WITH ORZO,YYemek,365,high,False,True
+2025-04-08,SPAGHETTİ WITH TOMATO SAUCE,YYemek,310,medium,True,False
+2025-04-08,BROCCOLI WITH OLIVE OIL,YYemek,238,medium,False,False
+2025-04-08,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-08,TIRAMISU,Tatli,249,medium,False,False
+2025-04-08,OVEN COOKED RICE PUDDING,Tatli,267,medium,False,False
+2025-04-08,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-08,PICLE,Salata,55,low,False,True
+2025-04-08,AYRAN,Salata,80,low,True,False
+2025-04-09,ANTEP STYLE LENTIL SOUP,Corba,127,low,False,True
+2025-04-09,BROCCOLI SOUP,Corba,115,low,True,False
+2025-04-09,IZMIR MEATBALL,Yemek - Ana Yemek,393,high,True,False
+2025-04-09,CHICKEN CUTLETS WITH EGGPLANT PUREE,Yemek - Ana Yemek,382,high,False,True
+2025-04-09,SOUR EGGPLANT OKRA,Yemek - Ana Yemek,230,medium,False,False
+2025-04-09,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-09,PIZZA AS MAIN DISH (BOLOGNESE / VEGETARIAN),YYemek,650,high,False,False
+2025-04-09,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-09,RICE WITH VEGETABLES,YYemek,443,high,True,False
+2025-04-09,PASTA WITH SAUCE,YYemek,310,medium,False,True
+2025-04-09,BRUSSELS SPROUTS WITH OLIVE OIL,YYemek,144,low,False,False
+2025-04-09,SEASONAL SALAD,Salata,119,low,True,False
+2025-04-09,WALNUT BAKLAVA,Tatli,322,medium,False,False
+2025-04-09,CHOCOLATE PUDİNG,Tatli,174,low,False,False
+2025-04-09,FRUIT OF THE SEASON,Meyve,0,low,False,True
+2025-04-09,YOGURT,Salata,180,low,False,False
+2025-04-09,TASKI,Salata,81,low,False,False
+2025-04-10,SPRING SOUP,Corba,127,low,True,False
+2025-04-10,MINESTRONE SOUP,Corba,122,low,False,True
+2025-04-10,PEPPERS STUFFED WITH MINCED MEAT AND RICE,Yemek - Ana Yemek,221,medium,False,True
+2025-04-10,CHICKEN EMINCE,Yemek - Ana Yemek,301,medium,False,False
+2025-04-10,RATATOUILLE VEGETABLES,Yemek - Ana Yemek,279,medium,True,False
+2025-04-10,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-10,PIZZA AS MAIN DISH (TUNA FISH / MARGARITA),Yemek - Ana Yemek,650,high,False,False
+2025-04-10,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-10,RICE,YYemek,367,high,True,False
+2025-04-10,MILLEFEUILLE BOREK WITH MUSHROOM AND KASHAR,YYemek,368,high,False,True
+2025-04-10,OLIVE OIL MUSHROOMS,YYemek,220,medium,False,False
+2025-04-10,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-10,ŞEKERPARE (TURKISH SWITHEET) WITH HASH,Tatli,429,high,True,False
+2025-04-10,GUMMY CUSTARD,Tatli,174,low,False,False
+2025-04-10,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-10,YOGURT,Salata,180,low,False,False
+2025-04-10,KOMPOSTO (COLD STEWED FRUITS),Salata,188,low,False,True
+2025-04-11,GREEN LENTIL WITH NOODLE SOUP,Corba,123,low,True,False
+2025-04-11,WEDDING SOUP,Corba,122,low,False,True
+2025-04-11,MIXED SEASONAL VEGETABLE POT WITH MEAT,Yemek - Ana Yemek,312,medium,True,False
+2025-04-11,MEXICAN STYLE CHICKEN,Yemek - Ana Yemek,386,high,False,False
+2025-04-11,GREEN LENTILS WITH TOMATOES,Yemek - Ana Yemek,212,medium,False,True
+2025-04-11,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-11,PIZZA AS MAIN DISH (MEAT / MUSHROOM),Yemek - Ana Yemek,650,high,False,False
+2025-04-11,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-11,RICE WITH ORZO,YYemek,365,high,True,False
+2025-04-11,MANTI PASTA WITH YOGHURT,YYemek,244,medium,False,True
+2025-04-11,OLIVE OIL CARROT HASH BROWNS,YYemek,342,medium,False,False
+2025-04-11,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-11,MOISAIC CAKE,Tatli,331,medium,False,False
+2025-04-11,ALMOND KESKUL (MILK PUDDING),Tatli,256,medium,False,True
+2025-04-11,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-11,YOGURT,Salata,180,low,False,False
+2025-04-11,AYRAN,Salata,80,low,True,False
+2025-04-12,EZOGELİN (TRADITIONAL) SOUP,Corba,256,medium,True,False
+2025-04-12,LEBENIYE (TRADITIONAL) SOUP,Corba,196,low,False,True
+2025-04-12,SWEET PEAS WITH GROUND MEAT,Yemek - Ana Yemek,271,medium,False,True
+2025-04-12,CHICKEN CHOPPING,Yemek - Ana Yemek,344,medium,True,False
+2025-04-12,CAULIFLOWER WITH TOMATO,Yemek - Ana Yemek,159,low,False,False
+2025-04-12,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-12,RICE,YYemek,367,high,False,True
+2025-04-12,PASTA WITH SAUCE,YYemek,310,medium,True,False
+2025-04-12,ZUCCHINI,YYemek,232,medium,True,False
+2025-04-12,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-12,KEMALPASHA DESSERT,Tatli,218,medium,False,False
+2025-04-12,COCONAT KESKUL (MILK PUDDING),Tatli,256,medium,False,False
+2025-04-12,SEASONAL FRUIT,Meyve,0,low,False,False
+2025-04-12,YOGURT,Salata,180,low,False,False
+2025-04-12,AYRAN,Salata,80,low,False,True
+2025-04-13,WHEAT SOUP WITH PASTE,Corba,128,low,True,False
+2025-04-13,GRAIN VEGETABLE SOUP,Corba,127,low,False,True
+2025-04-13,FARM MEATBALLS,Yemek - Ana Yemek,450,high,False,True
+2025-04-13,CHICKEN WITH CURRY SAUCE,Yemek - Ana Yemek,261,medium,True,False
+2025-04-13,VEGETABLE GRATIN,Yemek - Ana Yemek,326,medium,False,False
+2025-04-13,RICE WITH ORZO,YYemek,365,high,False,True
+2025-04-13,SPAGHETTI NAPOLITANO,YYemek,310,medium,True,False
+2025-04-13,OLIVE OIL GREEN BEAN,YYemek,152,low,True,False
+2025-04-13,SEASONAL SALAD,Salata,119,low,False,True
+2025-04-13,AKDENIZ GULU (MEDITERRANEAN ROSE) DESSERT,Tatli,343,medium,False,False
+2025-04-13,CREAM OF CHOKELLA,Tatli,139,low,False,False
+2025-04-13,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-13,YOGURT,Salata,180,low,False,False
+2025-04-13,TASKI,Salata,81,low,False,False
+2025-04-14,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-14,SHREDDED WHEAT WITH WALNUT,Tatli,372,high,True,False
+2025-04-14,GUMMY CUSTARD WITH CINNAMON,Tatli,204,medium,False,False
+2025-04-14,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-14,YOGURT,Salata,180,low,False,False
+2025-04-14,AYRAN,Salata,80,low,False,True
+2025-04-14,SAFAK SOUP (CREAM OF TOMATO SOUP),Corba,169,low,True,False
+2025-04-14,MINTED YOGURT SOUP,Corba,123,low,False,True
+2025-04-14,HUNGARIAN GULASH,Yemek - Ana Yemek,522,high,False,True
+2025-04-14,GRILLED CHICKEN,Yemek - Ana Yemek,324,medium,False,False
+2025-04-14,PINTO BEANS WITH TOMATO,Yemek - Ana Yemek,195,low,True,False
+2025-04-14,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-14,PIZZA AS MAIN DISH (MIXED / PESTO SAUCE),Yemek - Ana Yemek,650,high,False,False
+2025-04-14,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-14,RICE WITH SWEET PEA,YYemek,443,high,False,True
+2025-04-14,FUSULLI WITH MUSHROOM,YYemek,310,medium,True,False
+2025-04-14,OLIVE OIL CELERY ROOT WITH ORANGE,YYemek,149,low,False,False
+2025-04-15,ALACA (TRADITIONAL) SOUP,Corba,129,low,False,True
+2025-04-15,TUTMAC (TRADITIONAL) SOUP,Corba,86,low,True,False
+2025-04-15,MEATBALLS WITH VEGETABLES,Yemek - Ana Yemek,378,high,True,False
+2025-04-15,CHICKEN TANTUNI,Yemek - Ana Yemek,275,medium,False,True
+2025-04-15,BROCCOLI WITH TOMATO,Yemek - Ana Yemek,326,medium,False,False
+2025-04-15,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-15,PITA AS MAIN DISH (TURKISH SASUAGE / POTATO),Yemek - Ana Yemek,650,high,False,False
+2025-04-15,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-15,BULGUR WEATH PILAF,YYemek,297,medium,True,False
+2025-04-15,MANTI PASTA WITH YOGHURT,YYemek,244,medium,False,True
+2025-04-15,CHICKPEAS SALAD,YYemek,168,low,False,False
+2025-04-15,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-15,TRILECE THREE  MILKS CAKE,Tatli,301,medium,False,False
+2025-04-15,CHOCOLATE PUDİNG,Tatli,174,low,False,False
+2025-04-15,FRUIT OF THE SEASON,Meyve,0,low,False,True
+2025-04-15,YOGURT,Salata,180,low,False,False
+2025-04-15,AYRAN,Salata,80,low,True,False
+2025-04-16,TARHANA SOUP,Corba,123,low,False,True
+2025-04-16,CHICKEN BROTH SOUP,Corba,92,low,True,False
+2025-04-16,WHITE BEAN WITH MEAT,Yemek - Ana Yemek,283,medium,True,False
+2025-04-16,OVEN COOKED CHICKEN LEG,Yemek - Ana Yemek,490,high,False,False
+2025-04-16,SPINACH WITH YOGURT,Yemek - Ana Yemek,149,low,False,True
+2025-04-16,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-16,PIZZA AS MAIN DISH (BOLOGNESE / VEGETARIAN),Yemek - Ana Yemek,650,high,False,False
+2025-04-16,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-16,RICE,YYemek,367,high,True,False
+2025-04-16,NOODLE WITH VEGETABLES,YYemek,351,high,False,True
+2025-04-16,COSLOW,YYemek,67,low,False,False
+2025-04-16,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-16,BISCUIT CAKE,Tatli,304,medium,False,True
+2025-04-16,MILK HALVA,Tatli,397,high,False,False
+2025-04-16,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-16,YOGURT,Salata,180,low,False,False
+2025-04-16,PICLE,Salata,55,low,False,False
+2025-04-17,SULEYMANIYE SOUP,Corba,123,low,True,False
+2025-04-17,MUSHROOM SOUP WITH CREAM,Corba,185,low,False,True
+2025-04-17,BOWL SHAPED MEATBALLS,Yemek - Ana Yemek,415,high,False,True
+2025-04-17,,Yemek - Ana Yemek,340,medium,False,False
+2025-04-17,GREEN LENTILS WITH VEGETABLES,Yemek - Ana Yemek,231,medium,True,False
+2025-04-17,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-17,PIZZA AS MAIN DISH (TUNA FISH / MARGARITA),Yemek - Ana Yemek,650,high,False,False
+2025-04-17,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-17,RICE WITH CHICKPEA,YYemek,454,high,False,True
+2025-04-17,PENNE PASTA WITH MUSHROOM SAUCE,YYemek,360,high,True,False
+2025-04-17,BABAGANNUŞ,YYemek,354,high,False,False
+2025-04-17,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-17,APPLE PIE,Tatli,240,medium,True,False
+2025-04-17,,Tatli,267,medium,False,False
+2025-04-17,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-17,YOGURT,Salata,180,low,False,False
+2025-04-17,AYRAN,Salata,80,low,False,False
+2025-04-18,LENTIL SOUP,Corba,123,low,False,True
+2025-04-18,TURKISH TRADISINOAL NOODLE SOUP,Corba,86,low,True,False
+2025-04-18,BINDALLI,Yemek - Ana Yemek,425,high,True,False
+2025-04-18,CHICKEN CASSEROLE,Yemek - Ana Yemek,438,high,False,False
+2025-04-18,SAUTEED MUSHROOMS,Yemek - Ana Yemek,152,low,False,True
+2025-04-18,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-18,PIZZA AS MAIN DISH (MEAT / MUSHROOM),Yemek - Ana Yemek,650,high,False,False
+2025-04-18,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-18,RICE,YYemek,367,high,True,False
+2025-04-18,ROLLED PASTRY (BOREK) WITH CHEESE,YYemek,411,high,False,True
+2025-04-18,OLIVE OIL POTATOS WITH PICKLES,YYemek,141,low,False,False
+2025-04-18,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-18,TIRAMISU,Tatli,249,medium,False,False
+2025-04-18,CUP WITH BISCUIT CROQUANT,Tatli,204,medium,False,False
+2025-04-18,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-18,KOMPOSTO (COLD STEWED FRUITS),Salata,188,low,False,True
+2025-04-18,TASKI,Salata,80,low,True,False
+2025-04-19,WHEAT SOUP WITH PASTE,Corba,128,low,True,False
+2025-04-19,TOYGA SOUP,Corba,179,low,False,True
+2025-04-19,MITITE MEATBALLS,Yemek - Ana Yemek,270,medium,False,True
+2025-04-19,CHICKEN WITH BBQ SAUCE,Yemek - Ana Yemek,395,high,True,False
+2025-04-19,SANDAL SEFASI (ZUCCINI AND GREEN LENTIL),Yemek - Ana Yemek,141,low,False,False
+2025-04-19,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-19,RICE WITH ORZO,YYemek,365,high,False,True
+2025-04-19,FUSULLI WITH TOMATO SAUCE,YYemek,310,medium,True,False
+2025-04-19,BRUSSELS SPROUTS WITH OLIVE OIL,YYemek,144,low,False,False
+2025-04-19,SEASONAL SALAD,Salata,119,low,False,True
+2025-04-19,MILKY SWEET SEMOLINA PASTRY WITH POPPY SEED,Tatli,421,high,False,False
+2025-04-19,PUDDING WITH CARAMEL,Tatli,2174,high,False,False
+2025-04-19,SEASONAL FRUIT,Meyve,0,low,True,False
+2025-04-19,YOGURT,Salata,180,low,False,False
+2025-04-19,TASKI,Salata,81,low,True,False
+2025-04-20,SULEYMANIYE SOUP,Corba,112,low,False,True
+2025-04-20,BROCCOLI SOUP,Corba,115,low,True,False
+2025-04-20,ANTEP CHOPPING,Yemek - Ana Yemek,320,medium,True,False
+2025-04-20,MEXICAN STYLE CHICKEN,Yemek - Ana Yemek,386,high,False,True
+2025-04-20,OKRA WITH TOMATOES,Yemek - Ana Yemek,222,medium,False,False
+2025-04-20,BULGUR WEATH PILAF,YYemek,297,medium,True,False
+2025-04-20,FARFALLE WITH OLIVES,YYemek,310,medium,False,True
+2025-04-20,OKRA COOKED IN OLIVE OIL,YYemek,157,low,False,False
+2025-04-20,SEASONAL SALAD,Salata,119,low,True,False
+2025-04-20,BADEMPARE DESSERT,Tatli,399,high,False,False
+2025-04-20,TAHINI CUP,Tatli,372,high,False,False
+2025-04-20,FRUIT OF THE SEASON,Meyve,0,low,False,True
+2025-04-20,YOGURT,Salata,180,low,False,False
+2025-04-20,TASKI,Salata,81,low,False,False
+2025-04-21,TOMATO SOUP,Corba,117,low,False,True
+2025-04-21,MINTED YOGURT SOUP,Corba,123,low,True,False
+2025-04-21,SWEDISH MEATBALLS WITH PUREE,Yemek - Ana Yemek,470,high,True,False
+2025-04-21,CHICKEN SOUFFLE,Yemek - Ana Yemek,325,medium,False,True
+2025-04-21,BRUSSELS SPROUTS WITH TOMATO,Yemek - Ana Yemek,143,low,False,False
+2025-04-21,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-21,PIZZA AS MAIN DISH (MIXED / PESTO SAUCE),Yemek - Ana Yemek,650,high,False,False
+2025-04-21,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-21,RICE,YYemek,367,high,True,False
+2025-04-21,SPAGETTİ ALFREDO,YYemek,315,medium,False,True
+2025-04-21,PEPPERONI DOLMA WITH OLIVE OIL,YYemek,216,medium,False,False
+2025-04-21,SEASONAL SALAD,Salata,119,low,True,False
+2025-04-21,BISCUIT CAKE,Tatli,204,medium,False,False
+2025-04-21,STRAWBERRY PUDDING,Tatli,174,low,False,False
+2025-04-21,FRUIT OF THE SEASON,Meyve,0,low,False,True
+2025-04-21,YOGURT,Salata,180,low,False,False
+2025-04-21,TASKI,Salata,81,low,False,False
+2025-04-22,BARLEY NOODLE SOUP,Corba,128,low,False,True
+2025-04-22,TUTMAC (TRADITIONAL) SOUP,Corba,86,low,True,False
+2025-04-22,TURKISH RAVIOLI,Yemek - Ana Yemek,251,medium,False,True
+2025-04-22,CHICKEN WITH CURRY SAUCE,Yemek - Ana Yemek,261,medium,False,False
+2025-04-22,USAK ROASTING,Yemek - Ana Yemek,126,low,True,False
+2025-04-22,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-22,PITA AS MAIN DISH (TURKISH SASUAGE / POTATO),Yemek - Ana Yemek,650,high,False,False
+2025-04-22,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-22,MEYHANE (TAVERN) RICE,YYemek,331,medium,False,False
+2025-04-22,MANTI PASTA WITH YOGHURT,YYemek,244,medium,True,False
+2025-04-22,Z.YAĞLI BÖRÜLCE,YYemek,117,low,False,True
+2025-04-22,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-22,MILKY SWEET SEMOLINA PASTRY,Tatli,421,high,False,False
+2025-04-22,CHOCOLATE PUDİNG,Tatli,174,low,True,False
+2025-04-22,FRUIT OF THE SEASON,Meyve,0,low,False,True
+2025-04-22,YOGURT,Salata,180,low,False,False
+2025-04-22,TASKI,Salata,81,low,False,False
+2025-04-23,ANTEP STYLE LENTIL SOUP,Corba,127,low,False,True
+2025-04-23,MINESTRONE SOUP,Corba,122,low,True,False
+2025-04-23,SEHZADE KEBAB,Yemek - Ana Yemek,497,high,True,False
+2025-04-23,OVEN COOKED CHICKEN BAGUETTE,Yemek - Ana Yemek,335,medium,False,False
+2025-04-23,CHICKPEA WITH TOMATOES,Yemek - Ana Yemek,223,medium,False,True
+2025-04-23,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-23,PIZZA AS MAIN DISH (BOLOGNESE / VEGETARIAN),Yemek - Ana Yemek,650,high,False,False
+2025-04-23,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-23,RICE WITH ORZO,YYemek,365,high,True,False
+2025-04-23,ROSED SHAPED PASTRY (BOREK) WITH SPINACH,YYemek,266,medium,False,True
+2025-04-23,ARTICHOKE PILAKI,YYemek,252,medium,False,False
+2025-04-23,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-23,MOISAIC CAKE,Tatli,370,high,False,False
+2025-04-23,,Tatli,332,medium,False,False
+2025-04-23,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-23,KOMPOSTO (COLD STEWED FRUITS),Salata,188,low,True,False
+2025-04-23,AYRAN,Salata,80,low,True,False
+2025-04-24,TARHANA SOUP,Corba,123,low,True,False
+2025-04-24,RICE YOGURTH AND MINT SOUP,Corba,78,low,False,True
+2025-04-24,HAMBURGER,Yemek - Ana Yemek,350,medium,False,True
+2025-04-24,SAUTEED CHICKEN WITH MUSHROOMS,Yemek - Ana Yemek,490,high,True,False
+2025-04-24,GREEN LENTILS WITH MINT,Yemek - Ana Yemek,212,medium,False,False
+2025-04-24,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-24,PIZZA AS MAIN DISH (TUNA FISH / MARGARITA),Yemek - Ana Yemek,650,high,False,False
+2025-04-24,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-24,RICE,YYemek,367,high,True,False
+2025-04-24,,YYemek,310,medium,False,False
+2025-04-24,OLIVE OIL MIXED FRIED VEGETABLES,YYemek,265,medium,False,True
+2025-04-24,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-24,SEKERPARE (TURKISH SWITHEET),Tatli,287,medium,False,False
+2025-04-24,BAVARIAN CHOCOLATE,Tatli,240,medium,False,False
+2025-04-24,FRUIT OF THE SEASON,Meyve,0,low,True,False
+2025-04-24,YOGURT,Salata,180,low,False,False
+2025-04-24,AYRAN,Salata,80,low,True,False
+2025-04-25,TOMATO AND CHICKEN SOUP,Corba,123,low,True,False
+2025-04-25,TOYGA SOUP,Corba,179,low,False,True
+2025-04-25,CHICKPEA WITH MEAT,Yemek - Ana Yemek,344,medium,True,False
+2025-04-25,SEASONAL FISH,Yemek - Ana Yemek,310,medium,False,True
+2025-04-25,ARTICHOKE SAUTEED,Yemek - Ana Yemek,255,medium,False,False
+2025-04-25,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-25,PIZZA AS MAIN DISH (MEAT / MUSHROOM),Yemek - Ana Yemek,650,high,False,False
+2025-04-25,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-25,RICE,YYemek,367,high,True,False
+2025-04-25,SPAGHETTI NAPOLITANO,YYemek,310,medium,False,True
+2025-04-25,EGGPLANT COOKED IN OLIVE OIL W.GARLICTOMATOES,YYemek,210,medium,False,True
+2025-04-25,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-25,WALNUT KALBURABASTI (TURKISH  PASTRY SWEET),Tatli,343,medium,False,False
+2025-04-25,LATTE PUDDING,Tatli,184,low,False,False
+2025-04-25,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-25,PICLE,Salata,55,low,True,False
+2025-04-25,TASKI,Salata,81,low,False,False
+2025-04-26,CAULIFLOWER SOUP WITH TOMATO SAUCE,Corba,123,low,True,False
+2025-04-26,TURKISH TRADISINOAL NOODLE SOUP,Corba,86,low,False,True
+2025-04-26,VEGETABLE GRATIN WITH MINCED MEAT,Yemek - Ana Yemek,286,medium,False,True
+2025-04-26,CHICKEN STEW,Yemek - Ana Yemek,345,medium,False,False
+2025-04-26,HARICOT BEANS SAILOR STYLE,Yemek - Ana Yemek,231,medium,True,False
+2025-04-26,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-26,RICE WITH ORZO,YYemek,365,high,True,False
+2025-04-26,MANTI PASTA WITH YOGHURT,YYemek,244,medium,False,True
+2025-04-26,OLIVE OIL CELERY ROOT WITH ORANGE,YYemek,149,low,False,False
+2025-04-26,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-26,CARROT CAKE,Tatli,274,medium,False,False
+2025-04-26,CREAM OF CHOKELLA,Tatli,139,low,False,False
+2025-04-26,SEASONAL FRUIT,Meyve,0,low,False,True
+2025-04-26,PICLE,Salata,55,low,True,False
+2025-04-26,TASKI,Salata,81,low,False,False
+2025-04-27,EZOGELİN (TRADITIONAL) SOUP,Corba,256,medium,True,False
+2025-04-27,YOGURT SOUP,Corba,78,low,False,True
+2025-04-27,GREEN BEAN WITH MEAT,Yemek - Ana Yemek,282,medium,False,True
+2025-04-27,CHICKEN EMINCE,Yemek - Ana Yemek,301,medium,True,False
+2025-04-27,CAULIFLOWER WITH TOMATO,Yemek - Ana Yemek,159,low,False,False
+2025-04-27,RICE,YYemek,367,high,False,True
+2025-04-27,FUSULLI WITH CHEESE,YYemek,317,medium,True,False
+2025-04-27,OLIVE OIL ZUCCHINI KALYE,YYemek,137,low,False,False
+2025-04-27,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-27,CHEESE DESSERTS,Tatli,319,medium,False,False
+2025-04-27,PUDİNG WITH LEMON,Tatli,174,low,False,False
+2025-04-27,FRUIT OF THE SEASON,Meyve,0,low,True,False
+2025-04-27,YOGURT,Salata,180,low,False,False
+2025-04-27,AYRAN,Salata,80,low,False,True
+2025-04-28,SULEYMANIYE SOUP,Corba,112,low,False,True
+2025-04-28,CORN SOUP,Corba,127,low,True,False
+2025-04-28,KAYSERİ MEATBALLS,Yemek - Ana Yemek,227,medium,True,False
+2025-04-28,CHICKEN DONER,Yemek - Ana Yemek,416,high,False,False
+2025-04-28,PINTO BEANS WITH TOMATO,Yemek - Ana Yemek,197,low,False,True
+2025-04-28,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-28,PIZZA AS MAIN DISH (MIXED / PESTO SAUCE),Yemek - Ana Yemek,650,high,False,False
+2025-04-28,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-28,RICE WITH ORZO,YYemek,365,high,True,False
+2025-04-28,SPAGETTİ ALFREDO,YYemek,315,medium,False,True
+2025-04-28,HOT SPICY TOMATO DIP,YYemek,70,low,False,False
+2025-04-28,SEASONAL SALAD,Salata,119,low,True,False
+2025-04-28,ŞEKERPARE (TURKISH SWITHEET) WITH HASH,Tatli,429,high,False,False
+2025-04-28,CREAM OF CHOKELLA,Tatli,139,low,False,True
+2025-04-28,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-28,YOGURT,Salata,180,low,False,False
+2025-04-28,TASKI,Salata,81,low,False,False
+2025-04-29,WHEAT SOUP WITH PASTE,Corba,128,low,False,True
+2025-04-29,CHICKEN BROTH SOUP,Corba,92,low,True,False
+2025-04-29,MIXED DOLMA STUFFED WITH MEAT,Yemek - Ana Yemek,270,medium,True,False
+2025-04-29,CHICKEN WITH BBQ SAUCE,Yemek - Ana Yemek,490,high,False,True
+2025-04-29,SOUR EGGPLANT,Yemek - Ana Yemek,221,medium,False,False
+2025-04-29,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-29,PITA AS MAIN DISH (TURKISH SASUAGE / POTATO),Yemek - Ana Yemek,650,high,False,False
+2025-04-29,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-29,RICE,YYemek,367,high,False,True
+2025-04-29,FUSULLI WITH SAUCE,YYemek,310,medium,True,False
+2025-04-29,OLIVE OIL PENDIK PILAKI,YYemek,557,high,False,False
+2025-04-29,SEASONAL SALAD,Salata,119,low,False,False
+2025-04-29,CHOCOLATE ROLLED PASTRY,Tatli,176,low,False,False
+2025-04-29,KESKUL (MILK PUDDING) WITH STRAWBERRY SAUCE,Tatli,274,medium,True,False
+2025-04-29,FRUIT OF THE SEASON,Meyve,0,low,False,True
+2025-04-29,YOGURT,Salata,180,low,False,False
+2025-04-29,TASKI,Salata,81,low,False,False
+2025-04-30,CABBAGE STEW,Yemek - Ana Yemek,140,low,False,False
+2025-04-30,SALAD AS MAIN DISH,Yemek - Ana Yemek,200,low,False,False
+2025-04-30,PIZZA AS MAIN DISH (BOLOGNESE / VEGETARIAN),Yemek - Ana Yemek,650,high,False,False
+2025-04-30,PASTA AS MAIN DISH,Yemek - Ana Yemek,480,high,False,False
+2025-04-30,BULGUR WEATH PILAF,YYemek,297,medium,True,False
+2025-04-30,MANTI PASTA WITH YOGHURT,YYemek,244,medium,False,True
+2025-04-30,OLIVE OIL SAKSUKA,YYemek,386,high,True,False
+2025-04-30,SEASONAL SALAD,Salata,119,low,False,True
+2025-04-30,CHEESE DESSERTS,Tatli,319,medium,False,False
+2025-04-30,MILK HALVA,Tatli,397,high,False,False
+2025-04-30,FRUIT OF THE SEASON,Meyve,0,low,False,False
+2025-04-30,YOGURT,Salata,180,low,False,False
+2025-04-30,TASKI,Salata,81,low,False,False
+2025-04-30,TOMATO SOUP,Corba,117,low,True,False
+2025-04-30,YOGURT SOUP,Corba,78,low,False,True
+2025-04-30,ROAST MEATBALLS,Yemek - Ana Yemek,387,high,False,True
+2025-04-30,OVEN COOKED CHICKEN LEG,Yemek - Ana Yemek,228,medium,True,False

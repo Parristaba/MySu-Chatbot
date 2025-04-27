@@ -1,0 +1,55 @@
+Direction,Departure,Arrival,Time
+From Campus,Campus,4.Levent,19:45
+From Campus,Campus,4.Levent,20:50
+From Campus,Campus,4.Levent,19:45
+From Campus,Campus,4.Levent,19:45
+From Campus,Campus,4.Levent,19:45
+To Campus,4.Levent,Campus,21:30
+To Campus,4.Levent,Campus,20:15
+To Campus,4.Levent,Campus,19:15
+To Campus,4.Levent,Campus,20:30
+From Campus,Campus,Kadıköy,19:45
+From Campus,Campus,Kadıköy,20:50
+From Campus,Campus,Kadıköy,19:45
+From Campus,Campus,Kadıköy,19:45
+From Campus,Campus,Kadıköy,19:45
+To Campus,Kadıköy,Campus,21:30
+To Campus,Kadıköy,Campus,20:15
+To Campus,Kadıköy,Campus,19:15
+To Campus,Kadıköy,Campus,20:30
+From Campus,Campus,Kurtköy (Metro / Kadıköy line),19:45
+From Campus,Campus,Kurtköy (Metro / Kadıköy line),20:50
+From Campus,Campus,Kurtköy (Metro / Kadıköy line),19:45
+From Campus,Campus,Kurtköy (Metro / Kadıköy line),19:45
+From Campus,Campus,Kurtköy (Metro / Kadıköy line),19:45
+To Campus,Kurtköy (Metro / Kadıköy line),Campus,21:30
+To Campus,Kurtköy (Metro / Kadıköy line),Campus,20:15
+To Campus,Kurtköy (Metro / Kadıköy line),Campus,19:15
+To Campus,Kurtköy (Metro / Kadıköy line),Campus,20:30
+From Campus,Campus,Viaport,19:45
+From Campus,Campus,Viaport,20:50
+From Campus,Campus,Viaport,19:45
+From Campus,Campus,Viaport,19:45
+From Campus,Campus,Viaport,19:45
+To Campus,Viaport,Campus,21:30
+To Campus,Viaport,Campus,20:15
+To Campus,Viaport,Campus,19:15
+To Campus,Viaport,Campus,20:30
+From Campus,Campus,İçmeler (Marmaray),19:45
+From Campus,Campus,İçmeler (Marmaray),20:50
+From Campus,Campus,İçmeler (Marmaray),19:45
+From Campus,Campus,İçmeler (Marmaray),19:45
+From Campus,Campus,İçmeler (Marmaray),19:45
+To Campus,İçmeler (Marmaray),Campus,21:30
+To Campus,İçmeler (Marmaray),Campus,20:15
+To Campus,İçmeler (Marmaray),Campus,19:15
+To Campus,İçmeler (Marmaray),Campus,20:30
+From Campus,Campus,Çekmeköy,19:45
+From Campus,Campus,Çekmeköy,20:50
+From Campus,Campus,Çekmeköy,19:45
+From Campus,Campus,Çekmeköy,19:45
+From Campus,Campus,Çekmeköy,19:45
+To Campus,Çekmeköy,Campus,21:30
+To Campus,Çekmeköy,Campus,20:15
+To Campus,Çekmeköy,Campus,19:15
+To Campus,Çekmeköy,Campus,20:30
