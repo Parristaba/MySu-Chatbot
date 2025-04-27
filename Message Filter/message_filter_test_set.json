@@ -1,0 +1,394 @@
+[
+    {
+        "query": "Where is the Registrar's Office located?",
+        "label": "School Related"
+    },
+    {
+        "query": "What is the deadline for course add/drop?",
+        "label": "School Related"
+    },
+    {
+        "query": "How do I apply for dormitory housing?",
+        "label": "School Related"
+    },
+    {
+        "query": "Is there a shuttle bus from the city to campus?",
+        "label": "School Related"
+    },
+    {
+        "query": "When does the fall semester begin?",
+        "label": "School Related"
+    },
+    {
+        "query": "How can I join student clubs at the university?",
+        "label": "School Related"
+    },
+    {
+        "query": "Are there study rooms available in the library?",
+        "label": "School Related"
+    },
+    {
+        "query": "How do I access the university's Wi-Fi network?",
+        "label": "School Related"
+    },
+    {
+        "query": "What scholarships are available for undergraduate students?",
+        "label": "School Related"
+    },
+    {
+        "query": "How can I reset my campus email password?",
+        "label": "School Related"
+    },
+    {
+        "query": "What are the cafeteria opening hours?",
+        "label": "School Related"
+    },
+    {
+        "query": "How do I register for summer school classes?",
+        "label": "School Related"
+    },
+    {
+        "query": "Is the Career Office offering internship support?",
+        "label": "School Related"
+    },
+    {
+        "query": "When is the final exam schedule released?",
+        "label": "School Related"
+    },
+    {
+        "query": "Where can I find the academic calendar for 2025?",
+        "label": "School Related"
+    },
+    {
+        "query": "How do I report a lost student ID card?",
+        "label": "School Related"
+    },
+    {
+        "query": "Are there any study abroad programs available?",
+        "label": "School Related"
+    },
+    {
+        "query": "How can I meet with an academic advisor?",
+        "label": "School Related"
+    },
+    {
+        "query": "Where can I get official transcripts?",
+        "label": "School Related"
+    },
+    {
+        "query": "How can I reserve a lab room for a project?",
+        "label": "School Related"
+    },
+    {
+        "query": "What documents are needed for graduation application?",
+        "label": "School Related"
+    },
+    {
+        "query": "Where can I find information about thesis submission?",
+        "label": "School Related"
+    },
+    {
+        "query": "How to apply for student assistantship positions?",
+        "label": "School Related"
+    },
+    {
+        "query": "What is the policy for late course withdrawal?",
+        "label": "School Related"
+    },
+    {
+        "query": "How can I participate in university competitions?",
+        "label": "School Related"
+    },
+    {
+        "query": "Is the gym free for students?",
+        "label": "School Related"
+    },
+    {
+        "query": "What are the library's opening hours during exams?",
+        "label": "School Related"
+    },
+    {
+        "query": "How do I submit a petition for late registration?",
+        "label": "School Related"
+    },
+    {
+        "query": "Can graduate students use the undergraduate dorms?",
+        "label": "School Related"
+    },
+    {
+        "query": "How do I book an appointment at the Health Center?",
+        "label": "School Related"
+    },
+    {
+        "query": "When is the Career Fair happening this semester?",
+        "label": "School Related"
+    },
+    {
+        "query": "What is the English language proficiency requirement for admission?",
+        "label": "School Related"
+    },
+    {
+        "query": "How can I appeal a disciplinary decision?",
+        "label": "School Related"
+    },
+    {
+        "query": "Where can I update my student contact information?",
+        "label": "School Related"
+    },
+    {
+        "query": "Is there a mentorship program for new students?",
+        "label": "School Related"
+    },
+    {
+        "query": "Where do I pay tuition fees?",
+        "label": "School Related"
+    },
+    {
+        "query": "What software licenses does the university provide for students?",
+        "label": "School Related"
+    },
+    {
+        "query": "How can I join research projects on campus?",
+        "label": "School Related"
+    },
+    {
+        "query": "How do I contact the Financial Aid Office?",
+        "label": "School Related"
+    },
+    {
+        "query": "Can I get part-time work at the university?",
+        "label": "School Related"
+    },
+    {
+        "query": "Where do I find the lost and found office?",
+        "label": "School Related"
+    },
+    {
+        "query": "How to extend my dormitory contract for summer?",
+        "label": "School Related"
+    },
+    {
+        "query": "How can I take a leave of absence?",
+        "label": "School Related"
+    },
+    {
+        "query": "When does the spring break start?",
+        "label": "School Related"
+    },
+    {
+        "query": "Where do I get parking permits for campus?",
+        "label": "School Related"
+    },
+    {
+        "query": "How to declare a minor or double major?",
+        "label": "School Related"
+    },
+    {
+        "query": "What are the dining options on campus?",
+        "label": "School Related"
+    },
+    {
+        "query": "How do I apply for Erasmus Exchange?",
+        "label": "School Related"
+    },
+    {
+        "query": "Is there psychological counseling available on campus?",
+        "label": "School Related"
+    },
+    {
+        "query": "What's the best restaurant in Istanbul?",
+        "label": "Other"
+    },
+    {
+        "query": "How do I get a Schengen visa?",
+        "label": "Other"
+    },
+    {
+        "query": "What are the top tourist attractions in Turkey?",
+        "label": "Other"
+    },
+    {
+        "query": "How do I start investing in cryptocurrencies?",
+        "label": "Other"
+    },
+    {
+        "query": "What is the weather forecast for next week?",
+        "label": "Other"
+    },
+    {
+        "query": "Best tips for preparing sushi at home?",
+        "label": "Other"
+    },
+    {
+        "query": "How to improve my fitness for a marathon?",
+        "label": "Other"
+    },
+    {
+        "query": "What are the latest trends in fashion?",
+        "label": "Other"
+    },
+    {
+        "query": "Which mobile phone has the best camera in 2025?",
+        "label": "Other"
+    },
+    {
+        "query": "How to build a gaming PC?",
+        "label": "Other"
+    },
+    {
+        "query": "What are some must-watch Netflix series?",
+        "label": "Other"
+    },
+    {
+        "query": "How do I bake chocolate chip cookies?",
+        "label": "Other"
+    },
+    {
+        "query": "Where should I travel this summer?",
+        "label": "Other"
+    },
+    {
+        "query": "Who won the last F1 Grand Prix?",
+        "label": "Other"
+    },
+    {
+        "query": "What is the current price of Bitcoin?",
+        "label": "Other"
+    },
+    {
+        "query": "Best online courses for learning Spanish?",
+        "label": "Other"
+    },
+    {
+        "query": "How can I train my dog to sit and stay?",
+        "label": "Other"
+    },
+    {
+        "query": "What are the symptoms of vitamin D deficiency?",
+        "label": "Other"
+    },
+    {
+        "query": "How to grow indoor plants successfully?",
+        "label": "Other"
+    },
+    {
+        "query": "Which movie won Best Picture at the Oscars?",
+        "label": "Other"
+    },
+    {
+        "query": "What are some easy vegan recipes?",
+        "label": "Other"
+    },
+    {
+        "query": "How do I start a YouTube channel?",
+        "label": "Other"
+    },
+    {
+        "query": "Tips for saving money while shopping online?",
+        "label": "Other"
+    },
+    {
+        "query": "How do I install solar panels at home?",
+        "label": "Other"
+    },
+    {
+        "query": "Where can I find cheap flight tickets?",
+        "label": "Other"
+    },
+    {
+        "query": "How can I improve my public speaking skills?",
+        "label": "Other"
+    },
+    {
+        "query": "What are the best hiking trails in Europe?",
+        "label": "Other"
+    },
+    {
+        "query": "How to organize a successful birthday party?",
+        "label": "Other"
+    },
+    {
+        "query": "How do I learn photography as a beginner?",
+        "label": "Other"
+    },
+    {
+        "query": "Best strategies for winning at chess?",
+        "label": "Other"
+    },
+    {
+        "query": "How can I improve my handwriting?",
+        "label": "Other"
+    },
+    {
+        "query": "What causes climate change?",
+        "label": "Other"
+    },
+    {
+        "query": "How do I decorate a small living room?",
+        "label": "Other"
+    },
+    {
+        "query": "Best ways to manage stress naturally?",
+        "label": "Other"
+    },
+    {
+        "query": "How can I practice mindfulness every day?",
+        "label": "Other"
+    },
+    {
+        "query": "How to write a compelling resume?",
+        "label": "Other"
+    },
+    {
+        "query": "What are the basics of digital marketing?",
+        "label": "Other"
+    },
+    {
+        "query": "How to build healthy eating habits?",
+        "label": "Other"
+    },
+    {
+        "query": "Best tourist attractions in Paris?",
+        "label": "Other"
+    },
+    {
+        "query": "How to start coding in Python?",
+        "label": "Other"
+    },
+    {
+        "query": "How can I learn to dance salsa?",
+        "label": "Other"
+    },
+    {
+        "query": "How to create a personal website?",
+        "label": "Other"
+    },
+    {
+        "query": "What are the health benefits of meditation?",
+        "label": "Other"
+    },
+    {
+        "query": "Tips for preparing for a job interview?",
+        "label": "Other"
+    },
+    {
+        "query": "How can I volunteer for environmental causes?",
+        "label": "Other"
+    },
+    {
+        "query": "How do I maintain my car properly?",
+        "label": "Other"
+    },
+    {
+        "query": "How to find freelance graphic design jobs?",
+        "label": "Other"
+    },
+    {
+        "query": "How to prepare for an international trip?",
+        "label": "Other"
+    },
+    {
+        "query": "What are the benefits of regular exercise?",
+        "label": "Other"
+    }
+]

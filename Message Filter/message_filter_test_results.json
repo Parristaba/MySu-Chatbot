@@ -1,0 +1,590 @@
+[
+    {
+        "query": "Where is the Registrar's Office located?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "What is the deadline for course add/drop?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How do I apply for dormitory housing?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Is there a shuttle bus from the city to campus?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "When does the fall semester begin?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How can I join student clubs at the university?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Are there study rooms available in the library?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How do I access the university's Wi-Fi network?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "What scholarships are available for undergraduate students?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How can I reset my campus email password?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "What are the cafeteria opening hours?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How do I register for summer school classes?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Is the Career Office offering internship support?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "When is the final exam schedule released?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Where can I find the academic calendar for 2025?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How do I report a lost student ID card?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Are there any study abroad programs available?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How can I meet with an academic advisor?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Where can I get official transcripts?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How can I reserve a lab room for a project?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "What documents are needed for graduation application?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Where can I find information about thesis submission?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How to apply for student assistantship positions?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "What is the policy for late course withdrawal?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How can I participate in university competitions?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Is the gym free for students?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "What are the library's opening hours during exams?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How do I submit a petition for late registration?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Can graduate students use the undergraduate dorms?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How do I book an appointment at the Health Center?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "When is the Career Fair happening this semester?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "What is the English language proficiency requirement for admission?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How can I appeal a disciplinary decision?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Where can I update my student contact information?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Is there a mentorship program for new students?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Where do I pay tuition fees?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "What software licenses does the university provide for students?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How can I join research projects on campus?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How do I contact the Financial Aid Office?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Can I get part-time work at the university?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Where do I find the lost and found office?",
+        "true_label": "School Related",
+        "predicted_label": "Other",
+        "match": false
+    },
+    {
+        "query": "How to extend my dormitory contract for summer?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How can I take a leave of absence?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "When does the spring break start?",
+        "true_label": "School Related",
+        "predicted_label": "Other",
+        "match": false
+    },
+    {
+        "query": "Where do I get parking permits for campus?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How to declare a minor or double major?",
+        "true_label": "School Related",
+        "predicted_label": "Other",
+        "match": false
+    },
+    {
+        "query": "What are the dining options on campus?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "How do I apply for Erasmus Exchange?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "Is there psychological counseling available on campus?",
+        "true_label": "School Related",
+        "predicted_label": "School Related",
+        "match": true
+    },
+    {
+        "query": "What's the best restaurant in Istanbul?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How do I get a Schengen visa?",
+        "true_label": "Other",
+        "predicted_label": "School Related",
+        "match": false
+    },
+    {
+        "query": "What are the top tourist attractions in Turkey?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How do I start investing in cryptocurrencies?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "What is the weather forecast for next week?",
+        "true_label": "Other",
+        "predicted_label": "School Related",
+        "match": false
+    },
+    {
+        "query": "Best tips for preparing sushi at home?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How to improve my fitness for a marathon?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "What are the latest trends in fashion?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "Which mobile phone has the best camera in 2025?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How to build a gaming PC?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "What are some must-watch Netflix series?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How do I bake chocolate chip cookies?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "Where should I travel this summer?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "Who won the last F1 Grand Prix?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "What is the current price of Bitcoin?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "Best online courses for learning Spanish?",
+        "true_label": "Other",
+        "predicted_label": "School Related",
+        "match": false
+    },
+    {
+        "query": "How can I train my dog to sit and stay?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "What are the symptoms of vitamin D deficiency?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How to grow indoor plants successfully?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "Which movie won Best Picture at the Oscars?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "What are some easy vegan recipes?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How do I start a YouTube channel?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "Tips for saving money while shopping online?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How do I install solar panels at home?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "Where can I find cheap flight tickets?",
+        "true_label": "Other",
+        "predicted_label": "School Related",
+        "match": false
+    },
+    {
+        "query": "How can I improve my public speaking skills?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "What are the best hiking trails in Europe?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How to organize a successful birthday party?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How do I learn photography as a beginner?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "Best strategies for winning at chess?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How can I improve my handwriting?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "What causes climate change?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How do I decorate a small living room?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "Best ways to manage stress naturally?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How can I practice mindfulness every day?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How to write a compelling resume?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "What are the basics of digital marketing?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How to build healthy eating habits?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "Best tourist attractions in Paris?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How to start coding in Python?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How can I learn to dance salsa?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How to create a personal website?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "What are the health benefits of meditation?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "Tips for preparing for a job interview?",
+        "true_label": "Other",
+        "predicted_label": "School Related",
+        "match": false
+    },
+    {
+        "query": "How can I volunteer for environmental causes?",
+        "true_label": "Other",
+        "predicted_label": "School Related",
+        "match": false
+    },
+    {
+        "query": "How do I maintain my car properly?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How to find freelance graphic design jobs?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    },
+    {
+        "query": "How to prepare for an international trip?",
+        "true_label": "Other",
+        "predicted_label": "School Related",
+        "match": false
+    },
+    {
+        "query": "What are the benefits of regular exercise?",
+        "true_label": "Other",
+        "predicted_label": "Other",
+        "match": true
+    }
+]
