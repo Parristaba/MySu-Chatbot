@@ -1,0 +1,386 @@
+[
+  {
+    "Query": "What internships are available for students during the summer semester?",
+    "Query_handled": "summer internships",
+    "Announcement": {
+      "id": "announcement_003",
+      "title": "Applications Open for Summer 2025 Internships",
+      "date": "2025-03-09",
+      "content": "...",
+      "source": "Library Services"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_003",
+        "title": "Applications Open for Summer 2025 Internships",
+        "date": "2025-03-09",
+        "source": "Library Services",
+        "score": 0.7766710519790649
+      },
+      {
+        "id": "announcement_104",
+        "title": "Call for Applications: Summer Research Abroad Program",
+        "date": "2025-02-27",
+        "source": "Career Development & Internship Office",
+        "score": 0.9320769309997559
+      },
+      {
+        "id": "announcement_023",
+        "title": "Mandatory Internship Orientation Session Details",
+        "date": "2025-02-13",
+        "source": "Financial Affairs Office",
+        "score": 0.9395952224731445
+      },
+      {
+        "id": "announcement_083",
+        "title": "Virtual Internship Opportunities Information Session",
+        "date": "2025-01-01",
+        "source": "Financial Affairs Office",
+        "score": 0.9614195823669434
+      },
+      {
+        "id": "announcement_021",
+        "title": "Study Abroad Summer Session Applications Open",
+        "date": "2025-04-08",
+        "source": "School of Languages",
+        "score": 0.999953031539917
+      }
+    ]
+  },
+  {
+    "Query": "How can I renew my financial aid for the next academic year?",
+    "Query_handled": "renew financial aid",
+    "Announcement": {
+      "id": "announcement_006",
+      "title": "Financial Aid Renewal Applications Now Available",
+      "date": "2025-01-06",
+      "content": "...",
+      "source": "Registrar's Office"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_006",
+        "title": "Financial Aid Renewal Applications Now Available",
+        "date": "2025-01-06",
+        "source": "Registrar's Office",
+        "score": 0.6401090621948242
+      },
+      {
+        "id": "announcement_181",
+        "title": "Final Reminder: Submit Financial Aid Documents",
+        "date": "2025-01-11",
+        "source": "Registrar's Office",
+        "score": 0.9834268689155579
+      },
+      {
+        "id": "announcement_134",
+        "title": "Financial Aid Appeals Information Session",
+        "date": "2025-01-06",
+        "source": "General Secretary's Office",
+        "score": 1.0454955101013184
+      },
+      {
+        "id": "announcement_116",
+        "title": "New Scholarships for First-Generation College Students",
+        "date": "2025-01-13",
+        "source": "Career Development & Internship Office",
+        "score": 1.249873399734497
+      },
+      {
+        "id": "announcement_165",
+        "title": "Student-Led Financial Literacy Workshops Available",
+        "date": "2025-07-21",
+        "source": "Student Resources",
+        "score": 1.2536178827285767
+      }
+    ]
+  },
+  {
+    "Query": "Where can I find the registration dates and procedures for Spring 2025 courses?",
+    "Query_handled": "registration dates ## Spring 2025 courses",
+    "Announcement": {
+      "id": "announcement_001",
+      "title": "Spring 2025 Course Registration Guidelines Released",
+      "date": "2025-05-31",
+      "content": "...",
+      "source": "School of Languages"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_001",
+        "title": "Spring 2025 Course Registration Guidelines Released",
+        "date": "2025-05-31",
+        "source": "School of Languages",
+        "score": 0.551078736782074
+      },
+      {
+        "id": "announcement_119",
+        "title": "Fall 2025 Course Proposals: Faculty Submission Deadline",
+        "date": "2025-05-15",
+        "source": "Financial Affairs Office",
+        "score": 0.6848337650299072
+      },
+      {
+        "id": "announcement_109",
+        "title": "New Student Handbook for 2025-2026 Released",
+        "date": "2025-06-02",
+        "source": "Library Services",
+        "score": 0.8132871389389038
+      },
+      {
+        "id": "announcement_010",
+        "title": "Deadline to Withdraw from Spring Courses Approaching",
+        "date": "2025-03-20",
+        "source": "Library Services",
+        "score": 0.8184410333633423
+      },
+      {
+        "id": "announcement_046",
+        "title": "Updated Academic Calendar for 2025-2026",
+        "date": "2025-01-28",
+        "source": "Financial Affairs Office",
+        "score": 0.8426682353019714
+      }
+    ]
+  },
+  {
+    "Query": "Is there any update about campus shuttle services starting next semester?",
+    "Query_handled": "campus shuttle services",
+    "Announcement": {
+      "id": "announcement_013",
+      "title": "New Shuttle Service Routes Effective March 2025",
+      "date": "2025-06-19",
+      "content": "...",
+      "source": "Career Development & Internship Office"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_013",
+        "title": "New Shuttle Service Routes Effective March 2025",
+        "date": "2025-06-19",
+        "source": "Career Development & Internship Office",
+        "score": 0.6683483123779297
+      },
+      {
+        "id": "announcement_063",
+        "title": "Updates to Shuttle Bus Timetable",
+        "date": "2025-05-06",
+        "source": "Registrar's Office",
+        "score": 0.7608902454376221
+      },
+      {
+        "id": "announcement_058",
+        "title": "Campus Green Spaces Enhancement Project",
+        "date": "2025-04-10",
+        "source": "Career Development & Internship Office",
+        "score": 1.1297287940979004
+      },
+      {
+        "id": "announcement_100",
+        "title": "New Bike Rack Installations Across Campus",
+        "date": "2025-05-09",
+        "source": "General Secretary's Office",
+        "score": 1.134530782699585
+      },
+      {
+        "id": "announcement_183",
+        "title": "Updates to Campus Dining Menus for Summer",
+        "date": "2025-01-06",
+        "source": "General Secretary's Office",
+        "score": 1.1559385061264038
+      }
+    ]
+  },
+  {
+    "Query": "Do we have to attend any orientation session before starting our internship?",
+    "Query_handled": "internship orientation session",
+    "Announcement": {
+      "id": "announcement_023",
+      "title": "Mandatory Internship Orientation Session Details",
+      "date": "2025-02-13",
+      "content": "...",
+      "source": "Financial Affairs Office"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_023",
+        "title": "Mandatory Internship Orientation Session Details",
+        "date": "2025-02-13",
+        "source": "Financial Affairs Office",
+        "score": 0.2905566692352295
+      },
+      {
+        "id": "announcement_083",
+        "title": "Virtual Internship Opportunities Information Session",
+        "date": "2025-01-01",
+        "source": "Financial Affairs Office",
+        "score": 0.7101104855537415
+      },
+      {
+        "id": "announcement_053",
+        "title": "International Student Orientation Program Details",
+        "date": "2025-03-01",
+        "source": "International Relations Office",
+        "score": 0.7966086864471436
+      },
+      {
+        "id": "announcement_154",
+        "title": "Freshman Orientation Leader Applications Open",
+        "date": "2025-03-27",
+        "source": "Registrar's Office",
+        "score": 0.8652650117874146
+      },
+      {
+        "id": "announcement_182",
+        "title": "Volunteer Training for Summer Orientation",
+        "date": "2025-02-01",
+        "source": "International Relations Office",
+        "score": 0.9477736949920654
+      }
+    ]
+  },
+  {
+    "Query": "How can I apply for a parking permit renewal?",
+    "Query_handled": "parking permit renewal",
+    "Announcement": {
+      "id": "announcement_025",
+      "title": "Parking Permit Renewal Process Open",
+      "date": "2025-07-30",
+      "content": "...",
+      "source": "International Relations Office"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_025",
+        "title": "Parking Permit Renewal Process Open",
+        "date": "2025-07-30",
+        "source": "International Relations Office",
+        "score": 0.5398528575897217
+      },
+      {
+        "id": "announcement_159",
+        "title": "Reminder: Lock Bicycles at Designated Areas Only",
+        "date": "2025-07-21",
+        "source": "General Secretary's Office",
+        "score": 1.316174030303955
+      },
+      {
+        "id": "announcement_006",
+        "title": "Financial Aid Renewal Applications Now Available",
+        "date": "2025-01-06",
+        "source": "Registrar's Office",
+        "score": 1.3674947023391724
+      },
+      {
+        "id": "announcement_194",
+        "title": "Sustainability Office Hosts Campus Bike Tour",
+        "date": "2025-04-29",
+        "source": "Campus Life Office",
+        "score": 1.3894258737564087
+      },
+      {
+        "id": "announcement_130",
+        "title": "New Rules Regarding Electric Scooters on Campus",
+        "date": "2025-06-16",
+        "source": "School of Languages",
+        "score": 1.4177014827728271
+      }
+    ]
+  },
+  {
+    "Query": "Am I allowed to use a drone on campus for my final project?",
+    "Query_handled": "use a drone on campus",
+    "Announcement": {
+      "id": "announcement_034",
+      "title": "New Regulations for Drone Usage on Campus",
+      "date": "2025-04-29",
+      "content": "...",
+      "source": "Library Services"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_034",
+        "title": "New Regulations for Drone Usage on Campus",
+        "date": "2025-04-29",
+        "source": "Library Services",
+        "score": 0.3255488872528076
+      },
+      {
+        "id": "announcement_112",
+        "title": "Drone Photography Workshop: Applications Open",
+        "date": "2025-01-27",
+        "source": "Library Services",
+        "score": 0.8388924598693848
+      },
+      {
+        "id": "announcement_067",
+        "title": "Expanded Wi-Fi Coverage on Campus",
+        "date": "2025-01-02",
+        "source": "School of Languages",
+        "score": 1.121880054473877
+      },
+      {
+        "id": "announcement_058",
+        "title": "Campus Green Spaces Enhancement Project",
+        "date": "2025-04-10",
+        "source": "Career Development & Internship Office",
+        "score": 1.1695284843444824
+      },
+      {
+        "id": "announcement_070",
+        "title": "Campus Security Survey: Participation Request",
+        "date": "2025-07-21",
+        "source": "Financial Affairs Office",
+        "score": 1.1826661825180054
+      }
+    ]
+  },
+  {
+    "Query": "Are there any new programs related to entrepreneurship certification this year?",
+    "Query_handled": "entrepreneurship certification program",
+    "Announcement": {
+      "id": "announcement_061",
+      "title": "Launch of New Entrepreneurship Certificate Program",
+      "date": "2025-03-28",
+      "content": "...",
+      "source": "Registrar's Office"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_061",
+        "title": "Launch of New Entrepreneurship Certificate Program",
+        "date": "2025-03-28",
+        "source": "Registrar's Office",
+        "score": 0.5701091289520264
+      },
+      {
+        "id": "announcement_105",
+        "title": "Entrepreneurship Bootcamp for Engineering Students",
+        "date": "2025-04-30",
+        "source": "School of Languages",
+        "score": 1.111585021018982
+      },
+      {
+        "id": "announcement_098",
+        "title": "New Online Certificate in Business Analytics",
+        "date": "2025-06-05",
+        "source": "General Secretary's Office",
+        "score": 1.2404122352600098
+      },
+      {
+        "id": "announcement_115",
+        "title": "Professional Certification Exam Reimbursement Program",
+        "date": "2025-07-20",
+        "source": "Library Services",
+        "score": 1.2980186939239502
+      },
+      {
+        "id": "announcement_123",
+        "title": "CPR and First Aid Certification Class Open to All",
+        "date": "2025-05-27",
+        "source": "Student Resources",
+        "score": 1.3357939720153809
+      }
+    ]
+  }
+]

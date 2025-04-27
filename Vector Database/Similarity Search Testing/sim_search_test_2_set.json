@@ -1,0 +1,91 @@
+[
+    {
+      "Query": "What internships are available for students during the summer semester?",
+      "Query_handled": "summer internships",
+      "Announcement": {
+        "id": "announcement_003",
+        "title": "Applications Open for Summer 2025 Internships",
+        "date": "2025-03-09",
+        "content": "...",
+        "source": "Library Services"
+      }
+    },
+    {
+      "Query": "How can I renew my financial aid for the next academic year?",
+      "Query_handled": "renew financial aid",
+      "Announcement": {
+        "id": "announcement_006",
+        "title": "Financial Aid Renewal Applications Now Available",
+        "date": "2025-01-06",
+        "content": "...",
+        "source": "Registrar's Office"
+      }
+    },
+    {
+      "Query": "Where can I find the registration dates and procedures for Spring 2025 courses?",
+      "Query_handled": "registration dates ## Spring 2025 courses",
+      "Announcement": {
+        "id": "announcement_001",
+        "title": "Spring 2025 Course Registration Guidelines Released",
+        "date": "2025-05-31",
+        "content": "...",
+        "source": "School of Languages"
+      }
+    },
+    {
+      "Query": "Is there any update about campus shuttle services starting next semester?",
+      "Query_handled": "campus shuttle services",
+      "Announcement": {
+        "id": "announcement_013",
+        "title": "New Shuttle Service Routes Effective March 2025",
+        "date": "2025-06-19",
+        "content": "...",
+        "source": "Career Development & Internship Office"
+      }
+    },
+    {
+      "Query": "Do we have to attend any orientation session before starting our internship?",
+      "Query_handled": "internship orientation session",
+      "Announcement": {
+        "id": "announcement_023",
+        "title": "Mandatory Internship Orientation Session Details",
+        "date": "2025-02-13",
+        "content": "...",
+        "source": "Financial Affairs Office"
+      }
+    },
+    {
+      "Query": "How can I apply for a parking permit renewal?",
+      "Query_handled": "parking permit renewal",
+      "Announcement": {
+        "id": "announcement_025",
+        "title": "Parking Permit Renewal Process Open",
+        "date": "2025-07-30",
+        "content": "...",
+        "source": "International Relations Office"
+      }
+    },
+    {
+      "Query": "Am I allowed to use a drone on campus for my final project?",
+      "Query_handled": "use a drone on campus",
+      "Announcement": {
+        "id": "announcement_034",
+        "title": "New Regulations for Drone Usage on Campus",
+        "date": "2025-04-29",
+        "content": "...",
+        "source": "Library Services"
+      }
+    },
+    {
+      "Query": "Are there any new programs related to entrepreneurship certification this year?",
+      "Query_handled": "entrepreneurship certification program",
+      "Announcement": {
+        "id": "announcement_061",
+        "title": "Launch of New Entrepreneurship Certificate Program",
+        "date": "2025-03-28",
+        "content": "...",
+        "source": "Registrar's Office"
+      }
+    }
+  ]
+  

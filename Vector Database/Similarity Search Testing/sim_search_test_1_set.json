@@ -1,0 +1,58 @@
+[
+    {
+      "Query": "Where can I find the new location of the lost and found office for lost belongings?",
+      "Query_handled": "lost and found office ## lost belongings",
+      "Announcement": {
+        "id": "announcement_024",
+        "title": "Lost and Found Relocation Announcement",
+        "date": "2025-02-13",
+        "content": "Dear Students,\n\nWe are excited to share important updates regarding lost and found relocation announcement...\n\nSincerely,\nUniversity Administration",
+        "source": "Library Services"
+      }
+    },
+    {
+      "Query": "What are the updated drone flying regulations and drone usage policy on campus?",
+      "Query_handled": "drone flying regulations ## drone usage policy",
+      "Announcement": {
+        "id": "announcement_034",
+        "title": "New Regulations for Drone Usage on Campus",
+        "date": "2025-04-29",
+        "content": "Dear Students,\n\nWe are excited to share important updates regarding new regulations for drone usage on campus...\n\nSincerely,\nUniversity Administration",
+        "source": "Library Services"
+      }
+    },
+    {
+      "Query": "Is there a new environmental justice course or an environmental studies elective available for registration?",
+      "Query_handled": "environmental justice course ## environmental studies elective",
+      "Announcement": {
+        "id": "announcement_163",
+        "title": "New Course Announcement: Environmental Justice",
+        "date": "2025-06-20",
+        "content": "Attention Students,\n\nWe are pleased to announce new course announcement: environmental justice...\n\nBest regards,\nUniversity Administration",
+        "source": "Financial Affairs Office"
+      }
+    },
+    {
+      "Query": "Where can international students attend the tax preparation session or get tax document submission assistance?",
+      "Query_handled": "tax preparation session ## tax document submission",
+      "Announcement": {
+        "id": "announcement_192",
+        "title": "International Student Tax Preparation Workshop",
+        "date": "2025-01-26",
+        "content": "Attention Students,\n\nWe are pleased to announce international student tax preparation workshop...\n\nBest regards,\nUniversity Administration",
+        "source": "Library Services"
+      }
+    },
+    {
+      "Query": "How can I complete the spring 2025 course registration and where can I find the spring semester enrollment deadlines?",
+      "Query_handled": "spring 2025 course registration ## spring semester enrollment deadlines",
+      "Announcement": {
+        "id": "announcement_001",
+        "title": "Spring 2025 Course Registration Guidelines Released",
+        "date": "2025-05-31",
+        "content": "Dear Students,\n\nWe are excited to share important updates regarding spring 2025 course registration guidelines released...\n\nSincerely,\nUniversity Administration",
+        "source": "School of Languages"
+      }
+    }
+  ]
+  
