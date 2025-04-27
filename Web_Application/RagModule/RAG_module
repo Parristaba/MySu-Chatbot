@@ -1,0 +1,85 @@
+from typing import List
+from Models.UserQueryHandled import UserQueryHandled
+import requests
+from  OrchestratorModule import llm_action_handler
+
+
+class RAGBlock:
+
+    ANNOUNCEMENT_ENCODER_ENDPOINT = ""
+    DOCUMENT_ENCODER_ENDPOINT = ""
+
+    @staticmethod
+    def handle_parsed_query(Handled_UserQuery: UserQueryHandled):
+        """
+        Processes the parsed query based on intent.
+        - Routes to separate functions for announcements and documents.
+        - Encodes query and performs similarity search (TODO).
+        """
+    
+        # Concatenate entities into a string
+        entities_concat = ", ".join(Handled_UserQuery.entities)
+    
+        # Update the entities_concat attribute of Handled_UserQuery
+        Handled_UserQuery.entities_concat = entities_concat
+    
+        # Process separately for announcements and documents
+        if Handled_UserQuery.intent == "announcement":
+            Handled_UserQuery.entities_encoded = RAGBlock.encode_announcement_query(entities_concat)
+            Handled_UserQuery.retrieved_data, Handled_UserQuery.similarity_score = RAGBlock.similarity_search_announcement(
+                Handled_UserQuery.entities_encoded
+            )
+        elif Handled_UserQuery.intent == "document":
+            Handled_UserQuery.entities_encoded = RAGBlock.encode_document_query(entities_concat)
+            Handled_UserQuery.retrieved_data, Handled_UserQuery.similarity_score = RAGBlock.similarity_search_document(
+                Handled_UserQuery.entities_encoded
+            )
+    
+        # Pass the updated Handled_UserQuery object to the Orchestrator's llm_action_handler function
+        return llm_action_handler(Handled_UserQuery)
+
+
+    # ANNOUNCEMENT PATH
+    @staticmethod
+    def encode_announcement_query(entities_concat: str):
+        """
+        TODO: Encode the concatenated entities for ANNOUNCEMENT queries.
+        """
+
+        try :
+            # Encode the concatenated entities using the ANNOUNCEMENT_ENCODER_ENDPOINT
+            encoded_entities = requests.post(RAGBlock.ANNOUNCEMENT_ENCODER_ENDPOINT, json={"entities": entities_concat}).json()
+            return encoded_entities
+        except Exception as e:
+            print(f"Error in encoding announcement query: {e}")
+            return None
+        
+
+    @staticmethod
+    def similarity_search_announcement(encoded_entities):
+        """
+        TODO: Perform similarity search for ANNOUNCEMENTS.
+        """
+        return None, None  # Placeholder
+
+    # DOCUMENT PATH
+    @staticmethod
+    def encode_document_query(entities_concat: str):
+        """
+        TODO: Encode the concatenated entities for DOCUMENT queries.
+        """
+        try :
+            # Encode the concatenated entities using the DOCUMENT_ENCODER_ENDPOINT
+            encoded_entities = requests.post(RAGBlock.DOCUMENT_ENCODER_ENDPOINT, json={"entities": entities_concat}).json()
+            return encoded_entities
+        except Exception as e:
+            print(f"Error in encoding document query: {e}")
+            return None
+        
+
+    @staticmethod
+    def similarity_search_document(encoded_entities):
+        """
+        TODO: Perform similarity search for DOCUMENTS.
+        """
+        return None, None  # Placeholder
