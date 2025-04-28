@@ -7,9 +7,7 @@ from Web_Application.Models.UserQueryHandled import UserQueryHandled
 class UserSession(BaseModel):
     session_id: str
     user_id: Optional[str] = None
-    query_list: List[UserQuery] = []
-    # A list of all Handled_UserQuery objects, the idea here is to make the bot contextual aware of the conversatio
-    handled_query_list: List['UserQueryHandled'] = []  # TODO: Handled_UserQuery object
+    handled_query_list: List['UserQueryHandled'] = []  # Full memory of conversation
     last_active: datetime = Field(default_factory=datetime.utcnow)
     expiry_time: int = 900
 

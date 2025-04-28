@@ -1,76 +1,78 @@
-# OrchestratorModule.py
+# RagModule.py
 
-from Models import UserQuery, UserQueryHandled
-from SessionManagerModule import SessionManager
+from typing import List
+from Models.UserQueryHandled import UserQueryHandled
+from Models.RetrievedData import RetrievedData
 import requests
+from OrchestratorModule import HandleAction
 
-class Orchestrator:
+class RAGBlock:
 
-    LLM_ENDPOINT = ""  # Fill this later with your LLM endpoint
-
-    @staticmethod
-    def handle_non_relevant_query(user_query: UserQuery):
-        """
-        Handles irrelevant queries.
-        Returns a hardcoded polite message without invoking LLM.
-        """
-        return {
-            "response": "Sorry, I can only assist with Sabancı University-related topics. Please ask a school-related question!"
-        }
+    ANNOUNCEMENT_SEARCH_ENDPOINT = ""  # Fill with actual endpoint
+    DOCUMENT_SEARCH_ENDPOINT = ""  # TODO: Prepare later if document FAISS ready
 
     @staticmethod
-    def HandleNonActionIntend(intent: str, user_query: UserQuery):
+    def handle_parsed_query(Handled_UserQuery: UserQueryHandled):
         """
-        Handles non-action user messages like greetings or follow-ups.
-        Prepares a minimal payload and sends to LLM endpoint.
+        Handles the parsed user query:
+        - If announcement, queries ANNOUNCEMENT_SEARCH_ENDPOINT and updates Handled_UserQuery.
+        - If document, leaves TODO for future implementation.
         """
-        session = SessionManager.get_session(user_query.session_id)
-        past_queries = [q['query_text'] for q in session.query_list] if session else []
+        # Step 1: Concatenate entities
+        entities_concat = ", ".join(Handled_UserQuery.entities)
+        Handled_UserQuery.entities_concat = entities_concat
 
-        payload = {
-            "type": intent,  # greeting or follow-up
-            "query": user_query.query_text,
-            "past_interactions": [(q, None) for q in past_queries[-2:]]  # Only use last 2 for context
-        }
+        # Step 2: Handle based on intent
+        if Handled_UserQuery.intent == "announcement":
+            retrieved_data, similarity_score = RAGBlock.search_announcements(Handled_UserQuery.text)
+            Handled_UserQuery.retrieved_data = retrieved_data
+            Handled_UserQuery.similarity_score = similarity_score
+            Handled_UserQuery.data_status = RAGBlock.map_similarity_to_data_status(similarity_score)
 
+        elif Handled_UserQuery.intent == "document":
+            # TODO: When document FAISS namespace/endpoint is ready, implement document search
+            pass
+
+        # Step 3: Pass to Orchestrator
+        return HandleAction(Handled_UserQuery)
+
+    @staticmethod
+    def search_announcements(user_query: str):
+        """
+        Calls the ANNOUNCEMENT_SEARCH_ENDPOINT and retrieves the top 1 announcement.
+        Returns:
+            - RetrievedData object
+            - Similarity score
+        """
         try:
-            response = requests.post(Orchestrator.LLM_ENDPOINT, json=payload)
+            response = requests.post(RAGBlock.ANNOUNCEMENT_SEARCH_ENDPOINT, json={"query_text": user_query})
             if response.status_code == 200:
-                return response.json()
+                results = response.json()
+
+                # Assume the response is a single result (not a list)
+                retrieved = RetrievedData(
+                    id=results.get("id", ""),
+                    title=results.get("title", ""),
+                    date=results.get("date", ""),
+                    source=results.get("source", ""),
+                    content=results.get("content", ""),
+                )
+
+
+                # Extract the similarity score from the response
+                score=float(results.get("score", 0.0))
+            
+
+                return retrieved, score
+
             else:
-                return {"response": "Sorry, an error occurred while processing your request."}
+                print(f"Error in announcement search: Status {response.status_code}")
+                return RetrievedData(id="", title="", date="", source="", content="", score=0.0), 0.0
+
         except Exception as e:
-            print(f"Error during LLM call: {e}")
-            return {"response": "Sorry, an internal error occurred."}
-
-    @staticmethod
-    def HandleAction(handled_query: UserQueryHandled):
-        """
-        Handles action-based queries (document or announcement).
-        Prepares a minimal payload and sends to LLM endpoint.
-        """
-        session = SessionManager.get_session(handled_query.user_id)
-        past_queries = [q['query_text'] for q in session.query_list] if session else []
-
-        payload = {
-            "type": handled_query.intent,  # announcement or document
-            "query": handled_query.text,
-            "retrieved_document": handled_query.retrieved_data.content if handled_query.retrieved_data else None,
-            "past_interactions": [(q, None) for q in past_queries[-2:]],
-            "time_status": None,  # You can add time info here later if needed
-            "data_status": Orchestrator.map_similarity_to_data_status(handled_query.similarity_score)
-        }
-
-        try:
-            response = requests.post(Orchestrator.LLM_ENDPOINT, json=payload)
-            if response.status_code == 200:
-                return response.json()
-            else:
-                return {"response": "Sorry, an error occurred while processing your request."}
-        except Exception as e:
-            print(f"Error during LLM call: {e}")
-            return {"response": "Sorry, an internal error occurred."}
-
+            print(f"Error during announcement search: {e}")
+            return RetrievedData(id="", title="", date="", source="", content="", score=0.0), 0.0
+        
     @staticmethod
     def map_similarity_to_data_status(score: float) -> str:
         """

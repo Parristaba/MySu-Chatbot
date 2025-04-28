@@ -13,3 +13,4 @@ class UserQueryHandled(BaseModel):
     # An optional single retrieved data object
     retrieved_data: Optional['RetrievedData'] = None  # TODO: Retrieved data object
     similarity_score: Optional[float] = None  # TODO: Similarity score
+    data_status: Optional[str] = None  # TODO: Data status

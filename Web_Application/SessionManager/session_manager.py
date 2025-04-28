@@ -62,32 +62,32 @@ class SessionManager:
         """
         This is the main entry point for processing user queries.
 
-        Handles user message activity.
+        Handles user message activity:
         - Retrieves or creates a session based on cookies.
-        - Updates session with latest query as a UserQuery object.
-        - Passes the UserQuery object to CheckQueryRelevance.
-
-        The next steps will be handled by the CheckQueryRelevance module, which will determine if the query is relevant or not. 
+        - Creates a UserQuery object.
+        - Sends the UserQuery object to the QueryFilterModule.
+        
+        IMPORTANT:
+        - We do not save the query into the session here anymore.
+        - Only fully processed HandledUserQuery objects will be saved later after LLM call.
         """
         session_id = SessionManager.get_or_create_session(request, response)
 
-        # Create UserQuery object
-        user_query = UserQuery(session_id=session_id, query_text=query_text, timestamp=datetime.utcnow())
+        # Step 1: Create the basic UserQuery object
+        user_query = UserQuery(
+            session_id=session_id,
+            query_text=query_text,
+            timestamp=datetime.utcnow()
+        )
 
-        # Retrieve session data
+        # Step 2: Update only last_active in session
         session_data = redis_client.hgetall(session_id)
-        existing_queries = eval(session_data.get("query_list", "[]"))
-
-        # Append the new UserQuery object
-        existing_queries.append(user_query.dict())  # Store as dict for Redis compatibility
-
-        # Update session in Redis
-        session_data["query_list"] = str(existing_queries)  # Convert list of dicts to string
-        session_data["last_active"] = int(time.time())  # Update timestamp
+        session_data["last_active"] = int(time.time())
         redis_client.hset(session_id, mapping=session_data)
 
-        # Send UserQuery object for further processing
+        # Step 3: Pass UserQuery forward for processing
         return process_query(user_query)
+
     
     @staticmethod
     def get_session(session_id: str) -> Optional[UserSession]:

@@ -1,10 +1,10 @@
-# Models/RetrievedData.py
-
 from pydantic import BaseModel
+from typing import Optional
 
 class RetrievedData(BaseModel):
-    id: str
-    title: str
-    date: str
-    source: str
-    content: str
+    id: Optional[str] = None
+    title: Optional[str] = None
+    date: Optional[str] = None
+    source: Optional[str] = None
+    content: Optional[str] = None
+
