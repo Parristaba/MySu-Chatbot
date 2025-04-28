@@ -1,4 +1,4 @@
-import request
+import requests
 from Models import UserQuery
 from OrchestratorModule import Orchestrator  # Orchestrator module
 from RagModule import HandleParsedQuery  # RAG Block
@@ -20,26 +20,32 @@ class NLU:
     def NLU_get_intend(user_query: UserQuery):
         """
         Calls the intent model API and determines how to process the query.
-        - If intent is 'document', calls HandleDocumentModule.
-        - If intent is 'announcement', calls HandleAnnouncementModule.
-        - Otherwise, calls Orchestrator.HandleNonActionIntend with the returned intent.
+        Routes based on intent:
+        - document ➔ HandleDocumentModule
+        - announcement ➔ HandleAnnouncementModule
+        - greeting, goodbye, follow-up ➔ Orchestrator.HandleNonActionIntend
         """
         try:
             response = requests.post(INTENT_MODEL_ENDPOINT, json={"query_text": user_query.query_text})
             if response.status_code == 200:
-                intent = response.json().get("intent", "ambiguous")
+                intent = response.json().get("intent", None)
             else:
-                intent = "ambiguous"
+                intent = None
         except requests.RequestException:
-            intent = "ambiguous"
-            # TODO: Log error, might want to return the user a proper error message
+            intent = None
+            # TODO: Log error if necessary
 
         if intent == "document":
             return NLU.HandleDocumentModule(user_query, intent)
         elif intent == "announcement":
             return NLU.HandleAnnouncementModule(user_query, intent)
-        else:
+        elif intent in ["greeting", "goodbye", "follow-up"]:
             return Orchestrator.HandleNonActionIntend(intent, user_query)
+        else:
+            # ❗ For now, we do not have a fallback for unknown intents.
+            # Maybe we can add a intentt called "fallback" in the model and handle it here.
+            # For now, we will just call the HandleNonActionIntend function with "unknown" intent.
+            return Orchestrator.HandleNonActionIntend("unknown", user_query)
 
 
     @staticmethod
@@ -58,7 +64,7 @@ class NLU:
         handled_user_query = UserQueryHandled(
             text=user_query.query_text,
             entities=entities,
-            user_id=user_query.session_id,  # Assuming session_id is unique to user
+            user_id=user_query.session_id,
             intent=intent
         )
     

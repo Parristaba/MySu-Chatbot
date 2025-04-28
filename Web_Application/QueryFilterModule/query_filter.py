@@ -24,14 +24,16 @@ class QueryFilter:
         - If not relevant, calls `handle_non_relevant_query(user_query)` inside Orchestrator.
         """
 
-        # TODO: Implement regex filtering if necessary, sanmam ama olabilir
+        # TODO: Implement regex filtering if needed. For now, the accuracy of the model seems to be enough.
 
 
-        # Model endpointinden duzgun bool donmesi lazim burayi bi checkleriz
+        # The model endpoint should return a JSON response indicating if the query is relevant or not.
+        # If it is relevant the Relevance field will be "School Related"
+        # If it is not relevant the Relevance field will be "Other"
         try:
             response = requests.post(QUERY_RELEVANCE_ENDPOINT, json={"query_text": user_query.query_text})
             if response.status_code == 200:
-                is_relevant = response.json().get("relevant", False)
+                is_relevant = response.json().get("Relevannce") == "School Related"
             else:
                 is_relevant = False  
         except requests.RequestException:

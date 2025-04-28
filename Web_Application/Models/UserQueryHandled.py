@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from typing import List, Optional
+from Models.RetrievedData import RetrievedData
 
 
 class UserQueryHandled(BaseModel):
@@ -8,6 +9,7 @@ class UserQueryHandled(BaseModel):
     entities_concat: Optional[str] = None 
     user_query: str  
     user_id: Optional[str] = None
-    entities_encoded: Optional[List[float]] = None  # TODO: Encoding (Pinecone)
-    retrieved_data: Optional[str] = None  # TODO: Retrieved data
+    entities_encoded: Optional[List[float]] = None 
+    # An optional single retrieved data object
+    retrieved_data: Optional['RetrievedData'] = None  # TODO: Retrieved data object
     similarity_score: Optional[float] = None  # TODO: Similarity score

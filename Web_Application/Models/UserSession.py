@@ -2,11 +2,14 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 from datetime import datetime, timedelta
 from Web_Application.Models.UserQuery import UserQuery
+from Web_Application.Models.UserQueryHandled import UserQueryHandled
 
 class UserSession(BaseModel):
     session_id: str
     user_id: Optional[str] = None
     query_list: List[UserQuery] = []
+    # A list of all Handled_UserQuery objects, the idea here is to make the bot contextual aware of the conversatio
+    handled_query_list: List['UserQueryHandled'] = []  # TODO: Handled_UserQuery object
     last_active: datetime = Field(default_factory=datetime.utcnow)
     expiry_time: int = 900
 
@@ -18,3 +21,9 @@ class UserSession(BaseModel):
     def is_expired(self) -> bool:
         """Checks if the session has expired."""
         return (datetime.utcnow() - self.last_active).total_seconds() > self.expiry_time
+    
+    def get_session(self, session_id: str) -> Optional['UserSession']:
+        """Retrieves the session by session ID."""
+        if self.session_id == session_id:
+            return self
+        return None

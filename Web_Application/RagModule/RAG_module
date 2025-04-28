@@ -1,85 +1,86 @@
-from typing import List
-from Models.UserQueryHandled import UserQueryHandled
+# OrchestratorModule.py
+
+from Models import UserQuery, UserQueryHandled
+from SessionManagerModule import SessionManager
 import requests
-from  OrchestratorModule import llm_action_handler
 
+class Orchestrator:
 
-class RAGBlock:
-
-    ANNOUNCEMENT_ENCODER_ENDPOINT = ""
-    DOCUMENT_ENCODER_ENDPOINT = ""
+    LLM_ENDPOINT = ""  # Fill this later with your LLM endpoint
 
     @staticmethod
-    def handle_parsed_query(Handled_UserQuery: UserQueryHandled):
+    def handle_non_relevant_query(user_query: UserQuery):
         """
-        Processes the parsed query based on intent.
-        - Routes to separate functions for announcements and documents.
-        - Encodes query and performs similarity search (TODO).
+        Handles irrelevant queries.
+        Returns a hardcoded polite message without invoking LLM.
         """
-    
-        # Concatenate entities into a string
-        entities_concat = ", ".join(Handled_UserQuery.entities)
-    
-        # Update the entities_concat attribute of Handled_UserQuery
-        Handled_UserQuery.entities_concat = entities_concat
-    
-        # Process separately for announcements and documents
-        if Handled_UserQuery.intent == "announcement":
-            Handled_UserQuery.entities_encoded = RAGBlock.encode_announcement_query(entities_concat)
-            Handled_UserQuery.retrieved_data, Handled_UserQuery.similarity_score = RAGBlock.similarity_search_announcement(
-                Handled_UserQuery.entities_encoded
-            )
-        elif Handled_UserQuery.intent == "document":
-            Handled_UserQuery.entities_encoded = RAGBlock.encode_document_query(entities_concat)
-            Handled_UserQuery.retrieved_data, Handled_UserQuery.similarity_score = RAGBlock.similarity_search_document(
-                Handled_UserQuery.entities_encoded
-            )
-    
-        # Pass the updated Handled_UserQuery object to the Orchestrator's llm_action_handler function
-        return llm_action_handler(Handled_UserQuery)
+        return {
+            "response": "Sorry, I can only assist with Sabancı University-related topics. Please ask a school-related question!"
+        }
 
-
-    # ANNOUNCEMENT PATH
     @staticmethod
-    def encode_announcement_query(entities_concat: str):
+    def HandleNonActionIntend(intent: str, user_query: UserQuery):
         """
-        TODO: Encode the concatenated entities for ANNOUNCEMENT queries.
+        Handles non-action user messages like greetings or follow-ups.
+        Prepares a minimal payload and sends to LLM endpoint.
         """
+        session = SessionManager.get_session(user_query.session_id)
+        past_queries = [q['query_text'] for q in session.query_list] if session else []
 
-        try :
-            # Encode the concatenated entities using the ANNOUNCEMENT_ENCODER_ENDPOINT
-            encoded_entities = requests.post(RAGBlock.ANNOUNCEMENT_ENCODER_ENDPOINT, json={"entities": entities_concat}).json()
-            return encoded_entities
+        payload = {
+            "type": intent,  # greeting or follow-up
+            "query": user_query.query_text,
+            "past_interactions": [(q, None) for q in past_queries[-2:]]  # Only use last 2 for context
+        }
+
+        try:
+            response = requests.post(Orchestrator.LLM_ENDPOINT, json=payload)
+            if response.status_code == 200:
+                return response.json()
+            else:
+                return {"response": "Sorry, an error occurred while processing your request."}
         except Exception as e:
-            print(f"Error in encoding announcement query: {e}")
-            return None
-        
+            print(f"Error during LLM call: {e}")
+            return {"response": "Sorry, an internal error occurred."}
 
     @staticmethod
-    def similarity_search_announcement(encoded_entities):
+    def HandleAction(handled_query: UserQueryHandled):
         """
-        TODO: Perform similarity search for ANNOUNCEMENTS.
+        Handles action-based queries (document or announcement).
+        Prepares a minimal payload and sends to LLM endpoint.
         """
-        return None, None  # Placeholder
+        session = SessionManager.get_session(handled_query.user_id)
+        past_queries = [q['query_text'] for q in session.query_list] if session else []
 
-    # DOCUMENT PATH
-    @staticmethod
-    def encode_document_query(entities_concat: str):
-        """
-        TODO: Encode the concatenated entities for DOCUMENT queries.
-        """
-        try :
-            # Encode the concatenated entities using the DOCUMENT_ENCODER_ENDPOINT
-            encoded_entities = requests.post(RAGBlock.DOCUMENT_ENCODER_ENDPOINT, json={"entities": entities_concat}).json()
-            return encoded_entities
+        payload = {
+            "type": handled_query.intent,  # announcement or document
+            "query": handled_query.text,
+            "retrieved_document": handled_query.retrieved_data.content if handled_query.retrieved_data else None,
+            "past_interactions": [(q, None) for q in past_queries[-2:]],
+            "time_status": None,  # You can add time info here later if needed
+            "data_status": Orchestrator.map_similarity_to_data_status(handled_query.similarity_score)
+        }
+
+        try:
+            response = requests.post(Orchestrator.LLM_ENDPOINT, json=payload)
+            if response.status_code == 200:
+                return response.json()
+            else:
+                return {"response": "Sorry, an error occurred while processing your request."}
         except Exception as e:
-            print(f"Error in encoding document query: {e}")
-            return None
-        
+            print(f"Error during LLM call: {e}")
+            return {"response": "Sorry, an internal error occurred."}
 
     @staticmethod
-    def similarity_search_document(encoded_entities):
+    def map_similarity_to_data_status(score: float) -> str:
         """
-        TODO: Perform similarity search for DOCUMENTS.
+        Maps similarity score to data_status used in prompt generation.
         """
-        return None, None  # Placeholder
+        if score is None:
+            return "null"
+        if score >= 0.6:
+            return "confident"
+        elif score >= 0.3:
+            return "mediocre"
+        else:
+            return "flawed"
