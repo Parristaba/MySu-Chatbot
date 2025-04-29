@@ -1,0 +1,802 @@
+{
+  "0": {
+    "id": "announcement_001",
+    "title": "Spring 2025 Course Registration Guidelines Released"
+  },
+  "1": {
+    "id": "announcement_002",
+    "title": "Mandatory Fire Drill Scheduled for All Campus Buildings"
+  },
+  "2": {
+    "id": "announcement_003",
+    "title": "Applications Open for Summer 2025 Internships"
+  },
+  "3": {
+    "id": "announcement_004",
+    "title": "Graduation Application Deadline Approaching"
+  },
+  "4": {
+    "id": "announcement_005",
+    "title": "Library Workshop Series: Research Skills for Final Projects"
+  },
+  "5": {
+    "id": "announcement_006",
+    "title": "Financial Aid Renewal Applications Now Available"
+  },
+  "6": {
+    "id": "announcement_007",
+    "title": "New Exchange Program Partnership with University of Tokyo"
+  },
+  "7": {
+    "id": "announcement_008",
+    "title": "Campus Safety App Update Now Available for Download"
+  },
+  "8": {
+    "id": "announcement_009",
+    "title": "Student Government Elections: Candidacy Applications Open"
+  },
+  "9": {
+    "id": "announcement_010",
+    "title": "Deadline to Withdraw from Spring Courses Approaching"
+  },
+  "10": {
+    "id": "announcement_011",
+    "title": "Career Fair 2025: Registration for Companies and Students"
+  },
+  "11": {
+    "id": "announcement_012",
+    "title": "Health Services Offering Free Wellness Screenings"
+  },
+  "12": {
+    "id": "announcement_013",
+    "title": "New Shuttle Service Routes Effective March 2025"
+  },
+  "13": {
+    "id": "announcement_014",
+    "title": "Workshop on Academic Writing for Non-Native Speakers"
+  },
+  "14": {
+    "id": "announcement_015",
+    "title": "Emergency Contact Information Update Required"
+  },
+  "15": {
+    "id": "announcement_016",
+    "title": "Cybersecurity Awareness Training for Students"
+  },
+  "16": {
+    "id": "announcement_017",
+    "title": "Open House for Prospective Graduate Students"
+  },
+  "17": {
+    "id": "announcement_018",
+    "title": "Library Extended Hours for Final Exam Period"
+  },
+  "18": {
+    "id": "announcement_019",
+    "title": "Call for Volunteers: Annual Science Festival"
+  },
+  "19": {
+    "id": "announcement_020",
+    "title": "New Student Lounge Inauguration Ceremony"
+  },
+  "20": {
+    "id": "announcement_021",
+    "title": "Study Abroad Summer Session Applications Open"
+  },
+  "21": {
+    "id": "announcement_022",
+    "title": "Scholarship Opportunity: STEM Research Grants"
+  },
+  "22": {
+    "id": "announcement_023",
+    "title": "Mandatory Internship Orientation Session Details"
+  },
+  "23": {
+    "id": "announcement_024",
+    "title": "Lost and Found Relocation Announcement"
+  },
+  "24": {
+    "id": "announcement_025",
+    "title": "Parking Permit Renewal Process Open"
+  },
+  "25": {
+    "id": "announcement_026",
+    "title": "Faculty-Led Research Opportunity Announcements"
+  },
+  "26": {
+    "id": "announcement_027",
+    "title": "Renovations in Main Cafeteria Scheduled"
+  },
+  "27": {
+    "id": "announcement_028",
+    "title": "New Mental Health Counseling Services Available"
+  },
+  "28": {
+    "id": "announcement_029",
+    "title": "Survey on Campus Sustainability Initiatives"
+  },
+  "29": {
+    "id": "announcement_030",
+    "title": "Bookstore Textbook Buyback Program Details"
+  },
+  "30": {
+    "id": "announcement_031",
+    "title": "Call for Papers: Undergraduate Research Conference"
+  },
+  "31": {
+    "id": "announcement_032",
+    "title": "Tutoring Services Expansion for STEM Subjects"
+  },
+  "32": {
+    "id": "announcement_033",
+    "title": "Community Engagement Grant Applications Open"
+  },
+  "33": {
+    "id": "announcement_034",
+    "title": "New Regulations for Drone Usage on Campus"
+  },
+  "34": {
+    "id": "announcement_035",
+    "title": "Spring Break Travel Safety Tips"
+  },
+  "35": {
+    "id": "announcement_036",
+    "title": "Changes to Student Health Insurance Policy"
+  },
+  "36": {
+    "id": "announcement_037",
+    "title": "Student Housing Lottery Application Timeline"
+  },
+  "37": {
+    "id": "announcement_038",
+    "title": "Summer Language Courses Enrollment Open"
+  },
+  "38": {
+    "id": "announcement_039",
+    "title": "Faculty Excellence Awards: Nominations Now Open"
+  },
+  "39": {
+    "id": "announcement_040",
+    "title": "Music Club Organizes Annual Spring Concert"
+  },
+  "40": {
+    "id": "announcement_041",
+    "title": "Student Conduct Code Revisions Published"
+  },
+  "41": {
+    "id": "announcement_042",
+    "title": "Job Shadowing Program for Freshmen and Sophomores"
+  },
+  "42": {
+    "id": "announcement_043",
+    "title": "New Online Payment System for Tuition Fees"
+  },
+  "43": {
+    "id": "announcement_044",
+    "title": "COVID-19 Booster Vaccination Clinic Schedule"
+  },
+  "44": {
+    "id": "announcement_045",
+    "title": "Alumni Mentorship Program: Applications Open"
+  },
+  "45": {
+    "id": "announcement_046",
+    "title": "Updated Academic Calendar for 2025-2026"
+  },
+  "46": {
+    "id": "announcement_047",
+    "title": "Indoor Air Quality Improvement Initiatives"
+  },
+  "47": {
+    "id": "announcement_048",
+    "title": "Call for Nominations: Outstanding Advisor Award"
+  },
+  "48": {
+    "id": "announcement_049",
+    "title": "Graduation Cap and Gown Ordering Information"
+  },
+  "49": {
+    "id": "announcement_050",
+    "title": "Expansion of 24/7 Study Areas"
+  },
+  "50": {
+    "id": "announcement_051",
+    "title": "Outdoor Fitness Equipment Installation"
+  },
+  "51": {
+    "id": "announcement_052",
+    "title": "Guidelines for Organizing Student Events"
+  },
+  "52": {
+    "id": "announcement_053",
+    "title": "International Student Orientation Program Details"
+  },
+  "53": {
+    "id": "announcement_054",
+    "title": "Annual Blood Donation Drive on Campus"
+  },
+  "54": {
+    "id": "announcement_055",
+    "title": "Photography Competition: 'Campus Life Through Lens'"
+  },
+  "55": {
+    "id": "announcement_056",
+    "title": "Revised Library Fines and Fees Structure"
+  },
+  "56": {
+    "id": "announcement_057",
+    "title": "Data Privacy Week: Awareness Campaign"
+  },
+  "57": {
+    "id": "announcement_058",
+    "title": "Campus Green Spaces Enhancement Project"
+  },
+  "58": {
+    "id": "announcement_059",
+    "title": "Food Pantry Services Now Available to Students"
+  },
+  "59": {
+    "id": "announcement_060",
+    "title": "Undergraduate Thesis Defense Scheduling Information"
+  },
+  "60": {
+    "id": "announcement_061",
+    "title": "Launch of New Entrepreneurship Certificate Program"
+  },
+  "61": {
+    "id": "announcement_062",
+    "title": "Financial Literacy Workshop Series"
+  },
+  "62": {
+    "id": "announcement_063",
+    "title": "Updates to Shuttle Bus Timetable"
+  },
+  "63": {
+    "id": "announcement_064",
+    "title": "Public Speaking Workshops Offered This Spring"
+  },
+  "64": {
+    "id": "announcement_065",
+    "title": "Career Services Launches Job Interview Simulation Lab"
+  },
+  "65": {
+    "id": "announcement_066",
+    "title": "Environmental Science Department Hosts Earth Day Events"
+  },
+  "66": {
+    "id": "announcement_067",
+    "title": "Expanded Wi-Fi Coverage on Campus"
+  },
+  "67": {
+    "id": "announcement_068",
+    "title": "New Online Portal for Course Evaluations"
+  },
+  "68": {
+    "id": "announcement_069",
+    "title": "Writing Center Offers Specialized Workshops"
+  },
+  "69": {
+    "id": "announcement_070",
+    "title": "Campus Security Survey: Participation Request"
+  },
+  "70": {
+    "id": "announcement_071",
+    "title": "Reminder: Vaccination Records Submission Deadline"
+  },
+  "71": {
+    "id": "announcement_072",
+    "title": "Women's Leadership Forum: Call for Registrations"
+  },
+  "72": {
+    "id": "announcement_073",
+    "title": "New Student Art Exhibition Opening"
+  },
+  "73": {
+    "id": "announcement_074",
+    "title": "Intramural Sports Registration Now Open"
+  },
+  "74": {
+    "id": "announcement_075",
+    "title": "Student Emergency Fund Applications Accepted"
+  },
+  "75": {
+    "id": "announcement_076",
+    "title": "New Fitness Center Operating Hours"
+  },
+  "76": {
+    "id": "announcement_077",
+    "title": "Honor Code Awareness Week Events"
+  },
+  "77": {
+    "id": "announcement_078",
+    "title": "Film Screening Series: International Cultures"
+  },
+  "78": {
+    "id": "announcement_079",
+    "title": "Mandatory Training for Laboratory Safety"
+  },
+  "79": {
+    "id": "announcement_080",
+    "title": "Launch of Virtual Career Counseling Sessions"
+  },
+  "80": {
+    "id": "announcement_081",
+    "title": "New Master's Program in Data Science"
+  },
+  "81": {
+    "id": "announcement_082",
+    "title": "Student Organization Re-registration Period Open"
+  },
+  "82": {
+    "id": "announcement_083",
+    "title": "Virtual Internship Opportunities Information Session"
+  },
+  "83": {
+    "id": "announcement_084",
+    "title": "Campus Recycling Program Updates"
+  },
+  "84": {
+    "id": "announcement_085",
+    "title": "Writing Competition: 'Voices of the Future'"
+  },
+  "85": {
+    "id": "announcement_086",
+    "title": "Announcement Regarding On-Campus Construction Zones"
+  },
+  "86": {
+    "id": "announcement_087",
+    "title": "Research Funding Opportunities for Undergraduates"
+  },
+  "87": {
+    "id": "announcement_088",
+    "title": "Volunteer Abroad Programs Information Session"
+  },
+  "88": {
+    "id": "announcement_089",
+    "title": "Mindfulness and Stress Relief Workshop"
+  },
+  "89": {
+    "id": "announcement_090",
+    "title": "New Policy on Classroom Recording"
+  },
+  "90": {
+    "id": "announcement_091",
+    "title": "Campus Bloodborne Pathogens Safety Training"
+  },
+  "91": {
+    "id": "announcement_092",
+    "title": "Interdisciplinary Research Collaboration Grants"
+  },
+  "92": {
+    "id": "announcement_093",
+    "title": "Student-Led Climate Action Initiatives"
+  },
+  "93": {
+    "id": "announcement_094",
+    "title": "Launch of Peer Mentoring Program"
+  },
+  "94": {
+    "id": "announcement_095",
+    "title": "Guidelines for Safe Off-Campus Housing Search"
+  },
+  "95": {
+    "id": "announcement_096",
+    "title": "Summer Research Fellowships Announcement"
+  },
+  "96": {
+    "id": "announcement_097",
+    "title": "Updates to Print Services and Fees"
+  },
+  "97": {
+    "id": "announcement_098",
+    "title": "New Online Certificate in Business Analytics"
+  },
+  "98": {
+    "id": "announcement_099",
+    "title": "Student Support Services Expands Virtual Options"
+  },
+  "99": {
+    "id": "announcement_100",
+    "title": "New Bike Rack Installations Across Campus"
+  },
+  "100": {
+    "id": "announcement_101",
+    "title": "Research Ethics Seminar Registration Open"
+  },
+  "101": {
+    "id": "announcement_102",
+    "title": "Annual Spring Poetry Contest Now Accepting Entries"
+  },
+  "102": {
+    "id": "announcement_103",
+    "title": "Virtual Reality Lab Officially Open to Students"
+  },
+  "103": {
+    "id": "announcement_104",
+    "title": "Call for Applications: Summer Research Abroad Program"
+  },
+  "104": {
+    "id": "announcement_105",
+    "title": "Entrepreneurship Bootcamp for Engineering Students"
+  },
+  "105": {
+    "id": "announcement_106",
+    "title": "Climate Change Symposium: Keynote Speakers Announced"
+  },
+  "106": {
+    "id": "announcement_107",
+    "title": "Annual Faculty vs Students Soccer Match Scheduled"
+  },
+  "107": {
+    "id": "announcement_108",
+    "title": "Campus Garden Volunteering Opportunities"
+  },
+  "108": {
+    "id": "announcement_109",
+    "title": "New Student Handbook for 2025-2026 Released"
+  },
+  "109": {
+    "id": "announcement_110",
+    "title": "Social Media Policy Updates for University Accounts"
+  },
+  "110": {
+    "id": "announcement_111",
+    "title": "Health Insurance Information Session for International Students"
+  },
+  "111": {
+    "id": "announcement_112",
+    "title": "Drone Photography Workshop: Applications Open"
+  },
+  "112": {
+    "id": "announcement_113",
+    "title": "Guidelines for Pet-Friendly Housing Pilot Program"
+  },
+  "113": {
+    "id": "announcement_114",
+    "title": "Nutrition Counseling Services Now Available"
+  },
+  "114": {
+    "id": "announcement_115",
+    "title": "Professional Certification Exam Reimbursement Program"
+  },
+  "115": {
+    "id": "announcement_116",
+    "title": "New Scholarships for First-Generation College Students"
+  },
+  "116": {
+    "id": "announcement_117",
+    "title": "Workshop Series on Digital Portfolio Building"
+  },
+  "117": {
+    "id": "announcement_118",
+    "title": "Public Health Awareness Campaign: Water Safety"
+  },
+  "118": {
+    "id": "announcement_119",
+    "title": "Fall 2025 Course Proposals: Faculty Submission Deadline"
+  },
+  "119": {
+    "id": "announcement_120",
+    "title": "Reminder: Update Emergency Alert Preferences"
+  },
+  "120": {
+    "id": "announcement_121",
+    "title": "Celebration of Asian American and Pacific Islander Heritage Month"
+  },
+  "121": {
+    "id": "announcement_122",
+    "title": "Updates to Computer Lab Software for Summer 2025"
+  },
+  "122": {
+    "id": "announcement_123",
+    "title": "CPR and First Aid Certification Class Open to All"
+  },
+  "123": {
+    "id": "announcement_124",
+    "title": "Open Forum: Improving Student Experience on Campus"
+  },
+  "124": {
+    "id": "announcement_125",
+    "title": "New Online System for Academic Appeals"
+  },
+  "125": {
+    "id": "announcement_126",
+    "title": "Annual Charity Run Registration Begins"
+  },
+  "126": {
+    "id": "announcement_127",
+    "title": "Introduction to Game Design Workshop Series"
+  },
+  "127": {
+    "id": "announcement_128",
+    "title": "Religious and Spiritual Life Spring Gathering"
+  },
+  "128": {
+    "id": "announcement_129",
+    "title": "Internship Funding Grants Now Available"
+  },
+  "129": {
+    "id": "announcement_130",
+    "title": "New Rules Regarding Electric Scooters on Campus"
+  },
+  "130": {
+    "id": "announcement_131",
+    "title": "International Food Festival: Volunteer Sign-Up"
+  },
+  "131": {
+    "id": "announcement_132",
+    "title": "Expansion of Lactation Room Facilities"
+  },
+  "132": {
+    "id": "announcement_133",
+    "title": "Veterans Appreciation Event Details Released"
+  },
+  "133": {
+    "id": "announcement_134",
+    "title": "Financial Aid Appeals Information Session"
+  },
+  "134": {
+    "id": "announcement_135",
+    "title": "Student Peer Tutor Applications Open for Fall"
+  },
+  "135": {
+    "id": "announcement_136",
+    "title": "Call for Participation: University Podcast Project"
+  },
+  "136": {
+    "id": "announcement_137",
+    "title": "Diversity, Equity, and Inclusion Award Nominations Open"
+  },
+  "137": {
+    "id": "announcement_138",
+    "title": "Digital Literacy Workshops for Graduate Students"
+  },
+  "138": {
+    "id": "announcement_139",
+    "title": "Blood Drive Success: Thank You to All Donors"
+  },
+  "139": {
+    "id": "announcement_140",
+    "title": "Student Photography for Marketing Materials: Applications Open"
+  },
+  "140": {
+    "id": "announcement_141",
+    "title": "Graduate Admissions Open House Event"
+  },
+  "141": {
+    "id": "announcement_142",
+    "title": "Campus-Wide Sustainability Competition Launch"
+  },
+  "142": {
+    "id": "announcement_143",
+    "title": "Policy Update: Recording of Online Classes"
+  },
+  "143": {
+    "id": "announcement_144",
+    "title": "Coffee with the Dean: Open Discussion Sessions"
+  },
+  "144": {
+    "id": "announcement_145",
+    "title": "Spring Dance Showcase Performance Dates Announced"
+  },
+  "145": {
+    "id": "announcement_146",
+    "title": "Emergency Ride Home Program Expanded"
+  },
+  "146": {
+    "id": "announcement_147",
+    "title": "Work Study Positions for Fall 2025 Now Available"
+  },
+  "147": {
+    "id": "announcement_148",
+    "title": "Housing Accommodation Requests Deadline Reminder"
+  },
+  "148": {
+    "id": "announcement_149",
+    "title": "Mental Health Awareness Week Event Calendar"
+  },
+  "149": {
+    "id": "announcement_150",
+    "title": "Pride Month Event Proposals Open"
+  },
+  "150": {
+    "id": "announcement_151",
+    "title": "Training on Digital Accessibility Standards"
+  },
+  "151": {
+    "id": "announcement_152",
+    "title": "Final Exams: Quiet Hours Policy in Effect"
+  },
+  "152": {
+    "id": "announcement_153",
+    "title": "Introduction to Mind Mapping Techniques Workshop"
+  },
+  "153": {
+    "id": "announcement_154",
+    "title": "Freshman Orientation Leader Applications Open"
+  },
+  "154": {
+    "id": "announcement_155",
+    "title": "Thesis Formatting Help Desk Now Available"
+  },
+  "155": {
+    "id": "announcement_156",
+    "title": "New Student Research Publication Opportunities"
+  },
+  "156": {
+    "id": "announcement_157",
+    "title": "Student-Run Farmer’s Market: Vendors Wanted"
+  },
+  "157": {
+    "id": "announcement_158",
+    "title": "Election Results for Student Council Announced"
+  },
+  "158": {
+    "id": "announcement_159",
+    "title": "Reminder: Lock Bicycles at Designated Areas Only"
+  },
+  "159": {
+    "id": "announcement_160",
+    "title": "Spring Choir Auditions: Call for Singers"
+  },
+  "160": {
+    "id": "announcement_161",
+    "title": "Renew Your Club’s Official Recognition for Next Year"
+  },
+  "161": {
+    "id": "announcement_162",
+    "title": "Call for Artists: Public Art Installation Competition"
+  },
+  "162": {
+    "id": "announcement_163",
+    "title": "New Course Announcement: Environmental Justice"
+  },
+  "163": {
+    "id": "announcement_164",
+    "title": "Fitness Challenge Month Kicks Off in April"
+  },
+  "164": {
+    "id": "announcement_165",
+    "title": "Student-Led Financial Literacy Workshops Available"
+  },
+  "165": {
+    "id": "announcement_166",
+    "title": "Safety Protocol Reminders for Laboratory Classes"
+  },
+  "166": {
+    "id": "announcement_167",
+    "title": "Spring Campus Clean-Up Day Scheduled"
+  },
+  "167": {
+    "id": "announcement_168",
+    "title": "Intellectual Property Rights Awareness Workshop"
+  },
+  "168": {
+    "id": "announcement_169",
+    "title": "Introduction to Machine Learning Short Course"
+  },
+  "169": {
+    "id": "announcement_170",
+    "title": "Graduation Photo Days: Appointment Booking Open"
+  },
+  "170": {
+    "id": "announcement_171",
+    "title": "Student Leadership Development Program Enrollment Open"
+  },
+  "171": {
+    "id": "announcement_172",
+    "title": "Policy on Email Etiquette for Students Updated"
+  },
+  "172": {
+    "id": "announcement_173",
+    "title": "Cross-Cultural Communication Seminar Invitation"
+  },
+  "173": {
+    "id": "announcement_174",
+    "title": "Reminder: Academic Integrity Code Review"
+  },
+  "174": {
+    "id": "announcement_175",
+    "title": "Temporary Library Entrance Relocation"
+  },
+  "175": {
+    "id": "announcement_176",
+    "title": "New Public Speaking Club Launch"
+  },
+  "176": {
+    "id": "announcement_177",
+    "title": "Free Tax Filing Assistance Services"
+  },
+  "177": {
+    "id": "announcement_178",
+    "title": "Introduction to Podcast Production Course"
+  },
+  "178": {
+    "id": "announcement_179",
+    "title": "Spring Outdoor Yoga Classes Available"
+  },
+  "179": {
+    "id": "announcement_180",
+    "title": "End-of-Year Student Recognition Ceremony Details"
+  },
+  "180": {
+    "id": "announcement_181",
+    "title": "Final Reminder: Submit Financial Aid Documents"
+  },
+  "181": {
+    "id": "announcement_182",
+    "title": "Volunteer Training for Summer Orientation"
+  },
+  "182": {
+    "id": "announcement_183",
+    "title": "Updates to Campus Dining Menus for Summer"
+  },
+  "183": {
+    "id": "announcement_184",
+    "title": "Pet Therapy Event to Relieve Exam Stress"
+  },
+  "184": {
+    "id": "announcement_185",
+    "title": "Fellowship Application Writing Workshop"
+  },
+  "185": {
+    "id": "announcement_186",
+    "title": "New Graduate Certificate in Public Policy Announced"
+  },
+  "186": {
+    "id": "announcement_187",
+    "title": "Lost and Found Auction to Support Student Fund"
+  },
+  "187": {
+    "id": "announcement_188",
+    "title": "World Languages Day Event Details Released"
+  },
+  "188": {
+    "id": "announcement_189",
+    "title": "Safety Escort Service Available During Evenings"
+  },
+  "189": {
+    "id": "announcement_190",
+    "title": "Student Art Showcase Submissions Now Open"
+  },
+  "190": {
+    "id": "announcement_191",
+    "title": "Spring Short-Term Study Abroad Programs Announced"
+  },
+  "191": {
+    "id": "announcement_192",
+    "title": "International Student Tax Preparation Workshop"
+  },
+  "192": {
+    "id": "announcement_193",
+    "title": "Career Closet Open for Students Needing Professional Attire"
+  },
+  "193": {
+    "id": "announcement_194",
+    "title": "Sustainability Office Hosts Campus Bike Tour"
+  },
+  "194": {
+    "id": "announcement_195",
+    "title": "Dean’s List and Honor Roll Certificates Available"
+  },
+  "195": {
+    "id": "announcement_196",
+    "title": "Revised Campus Event Reservation Guidelines"
+  },
+  "196": {
+    "id": "announcement_197",
+    "title": "Virtual Reality in Education: Open Demo Sessions"
+  },
+  "197": {
+    "id": "announcement_198",
+    "title": "Introduction to Grant Writing for Beginners"
+  },
+  "198": {
+    "id": "announcement_199",
+    "title": "Student Media Positions Open for 2025-2026"
+  },
+  "199": {
+    "id": "announcement_200",
+    "title": "End-of-Semester Residence Hall Closing Information"
+  }
+}

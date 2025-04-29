@@ -1,64 +1,68 @@
-# search_engine.py
 
+import os
 import json
 import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
+from functools import lru_cache
 
 # === CONFIGURATION ===
-FAISS_INDEX_FILE = "C:/Users/kagan_ntaijui/Desktop/MySu Chatbot Repo/MySu-Chatbot/Vector Database/faiss_announcements.index"
-METADATA_FILE = "MySu-Chatbot/Vector Database/metadata_announcements.json"
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
-TOP_K = 5  # Default number of results
 
-# === STEP 1: Initialization (Run Once) ===
-print("[Search Engine] Initializing model, FAISS index, and metadata...")
+ANNOUNCEMENTS_FOLDER = "C:/Users/kagan_ntaijui/Desktop/MySu-Chatbot/Vector Database/Embeddings/Announcements"
+DOCUMENTS_FOLDER = "C:/Users/kagan_ntaijui/Desktop/MySu-Chatbot/Vector Database/Embeddings/Documents"
 
-# Load FAISS index
-index = faiss.read_index(FAISS_INDEX_FILE)
 
-# Load metadata
-with open(METADATA_FILE, "r", encoding="utf-8") as f:
-    metadata = json.load(f)
+@lru_cache(maxsize=1)
+def load_model():
+    print("[1/5] Loading Sentence-BERT model...")
+    return SentenceTransformer(EMBEDDING_MODEL_NAME)
 
-# Load Sentence-BERT model
-model = SentenceTransformer(EMBEDDING_MODEL_NAME)
 
-print("[Search Engine] Initialization complete.")
+def load_faiss_and_metadata(folder, faiss_name, metadata_name):
+    index_path = os.path.join(folder, faiss_name)
+    metadata_path = os.path.join(folder, metadata_name)
 
-# === STEP 2: Search Function ===
-def search_announcements(user_query, top_k=TOP_K):
+    index = faiss.read_index(index_path)
+    with open(metadata_path, "r", encoding="utf-8") as f:
+        metadata = json.load(f)
+
+    return index, metadata
+
+
+def search_similar_content(query: str, is_document: bool, k: int = 3):
     """
-    Search similar announcements given a user query.
-    
+    Searches either the documents or announcements index based on the flag.
     Args:
-        user_query (str): Text input from the user.
-        top_k (int): Number of top results to return.
-    
+        query (str): the user's search query
+        is_document (bool): True if searching documents, False for announcements
+        k (int): number of top results to return
+
     Returns:
-        list: List of dictionaries with announcement info.
+        List of top-k matching metadata entries
     """
-    # Embed the user query
-    query_vector = model.encode([user_query])
-    query_vector = np.array(query_vector).astype("float32")
+    model = load_model()
 
-    # Search the FAISS index
-    distances, indices = index.search(query_vector, top_k)
+    if is_document:
+        folder = DOCUMENTS_FOLDER
+        faiss_name = "faiss_documents.index"
+        metadata_name = "metadata_documents.json"
+    else:
+        folder = ANNOUNCEMENTS_FOLDER
+        faiss_name = "faiss_announcements.index"
+        metadata_name = "metadata_announcements.json"
 
-    # Collect results
+    index, metadata = load_faiss_and_metadata(folder, faiss_name, metadata_name)
+
+    query_vec = model.encode([query])
+    query_vec = np.array(query_vec).astype("float32")
+
+    distances, indices = index.search(query_vec, k)
+
     results = []
-    for idx, dist in zip(indices[0], distances[0]):
-        if idx == -1:
-            continue
-
-        announcement_info = metadata.get(str(idx), {})
-        result = {
-            "id": announcement_info.get("id", ""),
-            "title": announcement_info.get("title", ""),
-            "date": announcement_info.get("date", ""),
-            "source": announcement_info.get("source", ""),
-            "score": float(dist)
-        }
-        results.append(result)
+    for idx in indices[0]:
+        if str(idx) in metadata:
+            results.append(metadata[str(idx)])
 
     return results
+

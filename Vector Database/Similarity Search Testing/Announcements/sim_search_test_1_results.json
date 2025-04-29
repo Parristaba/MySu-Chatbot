@@ -1,0 +1,242 @@
+[
+  {
+    "Query": "Where can I find the new location of the lost and found office for lost belongings?",
+    "Query_handled": "lost and found office ## lost belongings",
+    "Announcement": {
+      "id": "announcement_024",
+      "title": "Lost and Found Relocation Announcement",
+      "date": "2025-02-13",
+      "content": "Dear Students,\n\nWe are excited to share important updates regarding lost and found relocation announcement...\n\nSincerely,\nUniversity Administration",
+      "source": "Library Services"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_024",
+        "title": "Lost and Found Relocation Announcement",
+        "date": "2025-02-13",
+        "source": "Library Services",
+        "score": 1.2502156496047974
+      },
+      {
+        "id": "announcement_095",
+        "title": "Guidelines for Safe Off-Campus Housing Search",
+        "date": "2025-04-07",
+        "source": "General Secretary's Office",
+        "score": 1.5459994077682495
+      },
+      {
+        "id": "announcement_155",
+        "title": "Thesis Formatting Help Desk Now Available",
+        "date": "2025-07-21",
+        "source": "Career Development & Internship Office",
+        "score": 1.5650959014892578
+      },
+      {
+        "id": "announcement_187",
+        "title": "Lost and Found Auction to Support Student Fund",
+        "date": "2025-01-28",
+        "source": "Registrar's Office",
+        "score": 1.5717839002609253
+      },
+      {
+        "id": "announcement_015",
+        "title": "Emergency Contact Information Update Required",
+        "date": "2025-04-23",
+        "source": "School of Languages",
+        "score": 1.5951621532440186
+      }
+    ]
+  },
+  {
+    "Query": "What are the updated drone flying regulations and drone usage policy on campus?",
+    "Query_handled": "drone flying regulations ## drone usage policy",
+    "Announcement": {
+      "id": "announcement_034",
+      "title": "New Regulations for Drone Usage on Campus",
+      "date": "2025-04-29",
+      "content": "Dear Students,\n\nWe are excited to share important updates regarding new regulations for drone usage on campus...\n\nSincerely,\nUniversity Administration",
+      "source": "Library Services"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_034",
+        "title": "New Regulations for Drone Usage on Campus",
+        "date": "2025-04-29",
+        "source": "Library Services",
+        "score": 0.6577631235122681
+      },
+      {
+        "id": "announcement_112",
+        "title": "Drone Photography Workshop: Applications Open",
+        "date": "2025-01-27",
+        "source": "Library Services",
+        "score": 1.207270622253418
+      },
+      {
+        "id": "announcement_130",
+        "title": "New Rules Regarding Electric Scooters on Campus",
+        "date": "2025-06-16",
+        "source": "School of Languages",
+        "score": 1.491814374923706
+      },
+      {
+        "id": "announcement_113",
+        "title": "Guidelines for Pet-Friendly Housing Pilot Program",
+        "date": "2025-05-25",
+        "source": "Student Resources",
+        "score": 1.5307118892669678
+      },
+      {
+        "id": "announcement_016",
+        "title": "Cybersecurity Awareness Training for Students",
+        "date": "2025-05-24",
+        "source": "Registrar's Office",
+        "score": 1.544471263885498
+      }
+    ]
+  },
+  {
+    "Query": "Is there a new environmental justice course or an environmental studies elective available for registration?",
+    "Query_handled": "environmental justice course ## environmental studies elective",
+    "Announcement": {
+      "id": "announcement_163",
+      "title": "New Course Announcement: Environmental Justice",
+      "date": "2025-06-20",
+      "content": "Attention Students,\n\nWe are pleased to announce new course announcement: environmental justice...\n\nBest regards,\nUniversity Administration",
+      "source": "Financial Affairs Office"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_163",
+        "title": "New Course Announcement: Environmental Justice",
+        "date": "2025-06-20",
+        "source": "Financial Affairs Office",
+        "score": 0.5256471633911133
+      },
+      {
+        "id": "announcement_093",
+        "title": "Student-Led Climate Action Initiatives",
+        "date": "2025-02-02",
+        "source": "School of Languages",
+        "score": 1.0434929132461548
+      },
+      {
+        "id": "announcement_058",
+        "title": "Campus Green Spaces Enhancement Project",
+        "date": "2025-04-10",
+        "source": "Career Development & Internship Office",
+        "score": 1.0738776922225952
+      },
+      {
+        "id": "announcement_066",
+        "title": "Environmental Science Department Hosts Earth Day Events",
+        "date": "2025-01-16",
+        "source": "General Secretary's Office",
+        "score": 1.0993982553482056
+      },
+      {
+        "id": "announcement_142",
+        "title": "Campus-Wide Sustainability Competition Launch",
+        "date": "2025-07-06",
+        "source": "Financial Affairs Office",
+        "score": 1.151886224746704
+      }
+    ]
+  },
+  {
+    "Query": "Where can international students attend the tax preparation session or get tax document submission assistance?",
+    "Query_handled": "tax preparation session ## tax document submission",
+    "Announcement": {
+      "id": "announcement_192",
+      "title": "International Student Tax Preparation Workshop",
+      "date": "2025-01-26",
+      "content": "Attention Students,\n\nWe are pleased to announce international student tax preparation workshop...\n\nBest regards,\nUniversity Administration",
+      "source": "Library Services"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_192",
+        "title": "International Student Tax Preparation Workshop",
+        "date": "2025-01-26",
+        "source": "Library Services",
+        "score": 0.9087844491004944
+      },
+      {
+        "id": "announcement_177",
+        "title": "Free Tax Filing Assistance Services",
+        "date": "2025-01-19",
+        "source": "Library Services",
+        "score": 1.061093807220459
+      },
+      {
+        "id": "announcement_062",
+        "title": "Financial Literacy Workshop Series",
+        "date": "2025-03-22",
+        "source": "School of Languages",
+        "score": 1.2889271974563599
+      },
+      {
+        "id": "announcement_155",
+        "title": "Thesis Formatting Help Desk Now Available",
+        "date": "2025-07-21",
+        "source": "Career Development & Internship Office",
+        "score": 1.3247737884521484
+      },
+      {
+        "id": "announcement_115",
+        "title": "Professional Certification Exam Reimbursement Program",
+        "date": "2025-07-20",
+        "source": "Library Services",
+        "score": 1.3522931337356567
+      }
+    ]
+  },
+  {
+    "Query": "How can I complete the spring 2025 course registration and where can I find the spring semester enrollment deadlines?",
+    "Query_handled": "spring 2025 course registration ## spring semester enrollment deadlines",
+    "Announcement": {
+      "id": "announcement_001",
+      "title": "Spring 2025 Course Registration Guidelines Released",
+      "date": "2025-05-31",
+      "content": "Dear Students,\n\nWe are excited to share important updates regarding spring 2025 course registration guidelines released...\n\nSincerely,\nUniversity Administration",
+      "source": "School of Languages"
+    },
+    "Retrieved_Results": [
+      {
+        "id": "announcement_119",
+        "title": "Fall 2025 Course Proposals: Faculty Submission Deadline",
+        "date": "2025-05-15",
+        "source": "Financial Affairs Office",
+        "score": 0.46244877576828003
+      },
+      {
+        "id": "announcement_001",
+        "title": "Spring 2025 Course Registration Guidelines Released",
+        "date": "2025-05-31",
+        "source": "School of Languages",
+        "score": 0.5213130116462708
+      },
+      {
+        "id": "announcement_010",
+        "title": "Deadline to Withdraw from Spring Courses Approaching",
+        "date": "2025-03-20",
+        "source": "Library Services",
+        "score": 0.694859504699707
+      },
+      {
+        "id": "announcement_109",
+        "title": "New Student Handbook for 2025-2026 Released",
+        "date": "2025-06-02",
+        "source": "Library Services",
+        "score": 0.701622724533081
+      },
+      {
+        "id": "announcement_147",
+        "title": "Work Study Positions for Fall 2025 Now Available",
+        "date": "2025-06-29",
+        "source": "Career Development & Internship Office",
+        "score": 0.796271562576294
+      }
+    ]
+  }
+]
