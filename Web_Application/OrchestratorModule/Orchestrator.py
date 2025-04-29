@@ -2,14 +2,21 @@
 
 from Models import UserQuery, UserQueryHandled
 from SessionManager import SessionManager
-import requests
 from Models.LLMInfo import LLMInfo
+from LLMResponseBuilder import (  # Assuming these functions live in this module
+    BuildResponsesAction,
+    BuildResponsesFollowUp,
+    BuildResponsesNonAction
+)
+# import requests  # Legacy API support, if endpoints are used again
 
 class Orchestrator:
 
+    """
     LLM_GREETING_ENDPOINT = ""  # To be filled later
     LLM_FOLLOWUP_ENDPOINT = ""  # To be filled later
-    LLM_ACTION_ENDPOINT = ""  # To be filled later
+    LLM_ACTION_ENDPOINT = ""    # To be filled later
+    """
 
     @staticmethod
     def handle_non_relevant_query(user_query: UserQuery):
@@ -24,95 +31,95 @@ class Orchestrator:
     def HandleNonActionIntend(intent: str, user_query: UserQuery):
         """
         Handles non-action user messages like greetings or follow-ups.
-        Decides based on intent and sends to the proper LLM endpoint.
+        Decides based on intent and calls local builder instead of endpoint.
         """
         session = SessionManager.get_session(user_query.session_id)
         if not session:
             return {"response": "Session expired or invalid. Please try again."}
 
         if intent in ["greeting", "goodbye"]:
-            # GREETING / GOODBYE: Simple payload
             payload = {
                 "type": intent,
                 "query": user_query.query_text
             }
 
-            endpoint = Orchestrator.LLM_GREETING_ENDPOINT
+            # Local builder function replaces API call
+            response = BuildResponsesNonAction(query=payload["query"], type=payload["type"])
+
+            # --- Legacy API usage (if re-enabled) ---
+            # endpoint = Orchestrator.LLM_GREETING_ENDPOINT
+            # try:
+            #     response = requests.post(endpoint, json=payload)
+            #     return response.json() if response.status_code == 200 else fallback_response
+            # except Exception as e:
+            #     print(f"LLM call error: {e}")
+            #     return fallback_response
 
         elif intent == "follow-up":
-            # FOLLOW-UP: Need past handled queries too
             past_handled_queries = session.handled_query_list[-2:] if session.handled_query_list else []
             past_llm_infos = [LLMInfo.from_handled_query(past) for past in past_handled_queries]
 
-            payload = {
-                "type": intent,
-                "query": user_query.query_text,
-                "past_interactions": [info.dict() for info in past_llm_infos]
-            }
+            response = BuildResponsesFollowUp(
+                query=user_query.query_text,
+                past_interactions=[info.dict() for info in past_llm_infos],
+            )
 
-            endpoint = Orchestrator.LLM_FOLLOWUP_ENDPOINT
+            # --- Legacy API usage (if re-enabled) ---
+            # endpoint = Orchestrator.LLM_FOLLOWUP_ENDPOINT
+            # payload = {
+            #     "type": "follow-up",
+            #     "query": user_query.query_text,
+            #     "past_interactions": [info.dict() for info in past_llm_infos]
+            # }
+            # try:
+            #     response = requests.post(endpoint, json=payload)
+            #     return response.json() if response.status_code == 200 else fallback_response
+            # except Exception as e:
+            #     print(f"LLM call error: {e}")
+            #     return fallback_response
 
         else:
-            # Fallback in case of unknown intent (should not happen)
-            payload = {
-                "type": intent,
-                "query": user_query.query_text
-            }
-            endpoint = Orchestrator.LLM_GREETING_ENDPOINT  # Fallback to basic endpoint
+            response = BuildResponsesNonAction(query=user_query.query_text, type=intent)
 
-        # Send the payload
-        try:
-            response = requests.post(endpoint, json=payload)
-            if response.status_code == 200:
-                return response.json()
-            else:
-                return {"response": "Sorry, an error occurred while processing your request."}
-        except Exception as e:
-            print(f"Error during LLM call: {e}")
-            return {"response": "Sorry, an internal error occurred."}
+        return response
 
     @staticmethod
     def HandleAction(handled_query: UserQueryHandled):
         """
         Handles action-based queries (announcement/document).
-        Prepares a structured payload and sends to LLM action endpoint.
+        Uses local response builder with LLMInfo structure.
         """
-        # Step 1: Fetch the user's session
         session = SessionManager.get_session(handled_query.user_id)
         if not session:
             return {"response": "Session expired or invalid. Please try again."}
 
-        # Step 2: Convert past handled queries to LLMInfo (use only last 2)
         past_handled_queries = session.handled_query_list[-2:] if session.handled_query_list else []
         past_llm_infos = [LLMInfo.from_handled_query(past) for past in past_handled_queries]
-
-        # Step 3: Convert current handled query to LLMInfo
         current_llm_info = LLMInfo.from_handled_query(handled_query)
 
-        # Step 4: Build the payload
-        payload = {
-            "current_interaction": current_llm_info.dict(),
-            "past_interactions": [info.dict() for info in past_llm_infos]
-        }
+        response = BuildResponsesAction(
+            current_interaction=current_llm_info.dict(),
+            past_interactions=[info.dict() for info in past_llm_infos]
+        )
 
-        # Step 5: Send the payload to LLM action endpoint
-        try:
-            response = requests.post(Orchestrator.LLM_ACTION_ENDPOINT, json=payload)
-            if response.status_code == 200:
-                llm_response = response.json()
-            else:
-                llm_response = {"response": "Sorry, an error occurred while processing your request."}
-        except Exception as e:
-            print(f"Error during LLM call: {e}")
-            llm_response = {"response": "Sorry, an internal error occurred."}
+        # --- Legacy API usage (if re-enabled) ---
+        # endpoint = Orchestrator.LLM_ACTION_ENDPOINT
+        # payload = {
+        #     "current_interaction": current_llm_info.dict(),
+        #     "past_interactions": [info.dict() for info in past_llm_infos]
+        # }
+        # try:
+        #     response = requests.post(endpoint, json=payload)
+        #     llm_response = response.json() if response.status_code == 200 else fallback_response
+        # except Exception as e:
+        #     print(f"LLM call error: {e}")
+        #     llm_response = fallback_response
 
-        # Step 6: Update session memory (keep max 2 past handled queries)
+        # Update session with current query
         if len(session.handled_query_list) >= 2:
-            session.handled_query_list.pop(0)  # Remove oldest query
-
+            session.handled_query_list.pop(0)
         session.handled_query_list.append(handled_query)
 
-        # Step 7: Save updated session back to Redis
         SessionManager.save_session(session)
 
-        return llm_response
+        return response

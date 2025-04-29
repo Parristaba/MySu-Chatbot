@@ -30,7 +30,8 @@ def load_faiss_and_metadata(folder, faiss_name, metadata_name):
     return index, metadata
 
 
-def search_similar_content(query: str, is_document: bool, k: int = 3):
+# TODO: This should return similarity score and document_id, rather than the whole object.
+def search_similar_content(query: str, is_document: bool, k: int = 1):
     """
     Searches either the documents or announcements index based on the flag.
     Args:

@@ -51,44 +51,37 @@ class NLU:
     @staticmethod
     def HandleDocumentModule(user_query: UserQuery, intent: str):
         """
-        Calls the Document NER model and processes the extracted entities.
-        - Constructs a UserQueryHandled object.
-        - Sends it to RAG's HandleParsedQuery function.
+        Processes document-type user queries by pruning the query instead of using NER.
+        Constructs a UserQueryHandled object with pruned query for RAG retrieval.
         """
-        try:
-            response = requests.post(DOCUMENT_NER_ENDPOINT, json={"query_text": user_query.query_text})
-            entities = response.json().get("entities", [])
-        except requests.RequestException:
-            entities = []
-    
+
+        # TODO: Define a endpoint for this, or import the function directly
+        pruned = prune_query(user_query.query_text)
+
         handled_user_query = UserQueryHandled(
             text=user_query.query_text,
-            entities=entities,
+            query_pruned=pruned,
             user_id=user_query.session_id,
             intent=intent
         )
-    
+
         return HandleParsedQuery(handled_user_query)
-    
-    
+
     @staticmethod
     def HandleAnnouncementModule(user_query: UserQuery, intent: str):
         """
-        Calls the Announcement NER model and processes the extracted entities.
-        - Constructs a UserQueryHandled object.
-        - Sends it to RAG's HandleParsedQuery function.
+        Processes announcement-type user queries by pruning the query instead of using NER.
+        Constructs a UserQueryHandled object with pruned query for RAG retrieval.
         """
-        try:
-            response = requests.post(ANNOUNCEMENT_NER_ENDPOINT, json={"query_text": user_query.query_text})
-            entities = response.json().get("entities", [])
-        except requests.RequestException:
-            entities = []
-    
+
+        # TODO: Define a endpoint for this, or import the function directly
+        pruned = prune_query(user_query.query_text)
+
         handled_user_query = UserQueryHandled(
             text=user_query.query_text,
-            entities=entities,
+            query_pruned=pruned,
             user_id=user_query.session_id,
             intent=intent
         )
-    
+
         return HandleParsedQuery(handled_user_query)

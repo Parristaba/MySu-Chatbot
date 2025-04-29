@@ -2,77 +2,60 @@
 
 from typing import List
 from Models.UserQueryHandled import UserQueryHandled
-from Models.RetrievedData import RetrievedData
-import requests
+# TODO: Import the new unified search function from the SimilarityModule
+# from SimilarityModule import search_similar_content  # Your new unified search function
 from OrchestratorModule import HandleAction
 
 class RAGBlock:
 
+    """ TODO: Decide if we want to keep the legacy API calls or not.
     ANNOUNCEMENT_SEARCH_ENDPOINT = ""  # Fill with actual endpoint
-    DOCUMENT_SEARCH_ENDPOINT = ""  # TODO: Prepare later if document FAISS ready
+    DOCUMENT_SEARCH_ENDPOINT = ""  # Fill with actual endpoint
+    """
 
     @staticmethod
     def handle_parsed_query(Handled_UserQuery: UserQueryHandled):
         """
         Handles the parsed user query:
-        - If announcement, queries ANNOUNCEMENT_SEARCH_ENDPOINT and updates Handled_UserQuery.
-        - If document, leaves TODO for future implementation.
+        - Performs similarity search using pruned query string.
+        - Routes based on intent (announcement/document).
+        - Updates Handled_UserQuery with retrieved info and forwards to orchestrator.
         """
-        # Step 1: Concatenate entities
-        entities_concat = ", ".join(Handled_UserQuery.entities)
-        Handled_UserQuery.entities_concat = entities_concat
 
-        # Step 2: Handle based on intent
+        query_pruned = Handled_UserQuery.query_pruned
+
         if Handled_UserQuery.intent == "announcement":
-            retrieved_data, similarity_score = RAGBlock.search_announcements(Handled_UserQuery.text)
-            Handled_UserQuery.retrieved_data = retrieved_data
-            Handled_UserQuery.similarity_score = similarity_score
-            Handled_UserQuery.data_status = RAGBlock.map_similarity_to_data_status(similarity_score)
+            document_id, similarity_score = search_similar_content(query=query_pruned, is_document=False)
+
+            # Optional legacy API call (disabled)
+            # try:
+            #     response = requests.post(RAGBlock.ANNOUNCEMENT_SEARCH_ENDPOINT, json={"query_text": query_pruned})
+            #     # TODO: Parse response as before if endpoint re-enabled
+            # except:
+            #     pass
 
         elif Handled_UserQuery.intent == "document":
-            # TODO: When document FAISS namespace/endpoint is ready, implement document search
-            pass
+            document_id, similarity_score = search_similar_content(query=query_pruned, is_document=True)
 
-        # Step 3: Pass to Orchestrator
+            # Optional legacy API call (disabled)
+            # try:
+            #     response = requests.post(RAGBlock.DOCUMENT_SEARCH_ENDPOINT, json={"query_text": query_pruned})
+            #     # TODO: Parse response as before if endpoint re-enabled
+            # except:
+            #     pass
+
+        else:
+            # Unknown intent fallback
+            # TODO: Handle this case appropriately
+            # For now, we can just return a default response or raise an error
+            return 
+
+        Handled_UserQuery.retrieved_data_id = document_id
+        Handled_UserQuery.similarity_score = similarity_score
+        Handled_UserQuery.data_status = RAGBlock.map_similarity_to_data_status(similarity_score)
+
         return HandleAction(Handled_UserQuery)
 
-    @staticmethod
-    def search_announcements(user_query: str):
-        """
-        Calls the ANNOUNCEMENT_SEARCH_ENDPOINT and retrieves the top 1 announcement.
-        Returns:
-            - RetrievedData object
-            - Similarity score
-        """
-        try:
-            response = requests.post(RAGBlock.ANNOUNCEMENT_SEARCH_ENDPOINT, json={"query_text": user_query})
-            if response.status_code == 200:
-                results = response.json()
-
-                # Assume the response is a single result (not a list)
-                retrieved = RetrievedData(
-                    id=results.get("id", ""),
-                    title=results.get("title", ""),
-                    date=results.get("date", ""),
-                    source=results.get("source", ""),
-                    content=results.get("content", ""),
-                )
-
-
-                # Extract the similarity score from the response
-                score=float(results.get("score", 0.0))
-            
-
-                return retrieved, score
-
-            else:
-                print(f"Error in announcement search: Status {response.status_code}")
-                return RetrievedData(id="", title="", date="", source="", content="", score=0.0), 0.0
-
-        except Exception as e:
-            print(f"Error during announcement search: {e}")
-            return RetrievedData(id="", title="", date="", source="", content="", score=0.0), 0.0
-        
     @staticmethod
     def map_similarity_to_data_status(score: float) -> str:
         """
@@ -80,7 +63,7 @@ class RAGBlock:
         """
         if score is None:
             return "null"
-        if score >= 0.6:
+        elif score >= 0.6:
             return "confident"
         elif score >= 0.3:
             return "mediocre"
