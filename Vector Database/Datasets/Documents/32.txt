@@ -1,0 +1,20 @@
+-----------------------
+# ID: document_032
+# Title: Graduation Requirements
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/graduation-conditions
+-----------------------
+
+In order to graduate from undergraduate programs, students applying for graduation must meet all the conditions specified in the Sabancı University Undergraduate Regulations. (Click here for the Sabancı University Undergraduate Regulations.)
+
+Students must have completed at least their last two semesters as full-time students at Sabancı University.
+
+The required SU credits and ECTS credits for graduation from the enrolled diploma program must be completed. (Graduation tracking should be done via the "Degree Evaluation" form in the Information System.)
+
+Both the Cumulative GPA (CGPA) and the Program GPA must be at least 2.00.
+
+Additionally, students who started their studies in the Foundations Development Year (FDY) must successfully complete the TLL 001 course. (As of the 2020-2021 Academic Year, the content of TLL 001 has been included in TLL 101 and TLL 102, which are offered at the undergraduate level, and will no longer be provided as a separate course. For students admitted before the 2020-2021 Academic Year, this requirement remains in effect, and the course will continue to be offered.)
+
+ 
+
+Important Notes
+Failed courses, as well as language courses for students in the Faculty of Engineering and Natural Sciences, are not included in the Degree Evaluation Form. However, while these courses are included in the Cumulative GPA (CGPA), they are not included in the Program GPA.

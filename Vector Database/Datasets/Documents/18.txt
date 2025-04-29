@@ -1,0 +1,77 @@
+-----------------------
+# ID: document_018
+# Title: Grading System
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/node/4
+-----------------------
+
+GRADING SYSTEM
+ 
+Grades are given on a scale of 4.00. The grades and grading symbols applicable to all programs are as follows:
+
+
+Letter Grade 
+Grade Points 
+A 
+4 
+A-
+3.7 
+B+ 
+3.3 
+B 
+3 
+B-
+2.7 
+C+ 
+2.3 
+C 
+2 
+C-
+1.7 
+D+ 
+1.3 
+D 
+1 
+F 
+0
+
+Other Grading Symbols:
+
+P    : Progressing (For students continuing their work in courses not included in the GPA)
+
+S    : Satisfactory (Passed in courses not included in the GPA)
+
+SL  : Granted to students who achieve satisfactory performance on the English Language Proficiency Exam.
+
+EL  : Granted to students exempt from the English Language Proficiency Exam.
+
+U    : Unsatisfactory (Failed in courses not included in the GPA)
+
+UL  : Granted to students who do not achieve satisfactory performance on the English Language Proficiency Exam.
+
+I      : Incomplete (Result of an unfinished course or missed exam)
+
+T     : Transfer (Courses transferred from another educational institution)
+
+W    : Withdrawn
+
+NA  : Non Attendance  (Failed due to absenteeism, functions similarly to an F/U grade)
+
+ 
+
+To pass a course at the undergraduate level, the minimum passing grade is D for courses included in the GPA and S for courses not included in the GPA.
+
+To pass a course at the graduate level, the minimum passing grade is C for courses included in the GPA and S for courses not included in the GPA.
+
+ 
+
+Calculation of Grade Point Averages
+
+The total score you receive for a course is obtained by multiplying the course's SU credit by the grade point value of the grade earned. For example, a student who receives a "B" in a 3 SU credit course will have a total score of 3 * 3.0 = 9.0. 
+
+All grade point averages are displayed with two decimal places in the system and all documents. For example, if the calculated average is 2.8769, it will be shown as 2.87.
+
+Term Grade Point Average (TGPA): It is calculated by dividing the total score obtained from all courses taken in the relevant term by the total SU credits of these courses.
+Cumulative Grade Point Average (CGPA): It is calculated by dividing the total score earned from all courses taken since entering the university by the total SU credits of these courses. The most recent grade is considered for repeated courses, and all courses taken are displayed on the transcript.
+Program Cumulative Grade Point Average (PGPA): It is calculated by dividing the total score obtained from courses counted towards the program requirements used to fulfill graduation obligations by the total SU credits of these courses.
+Important Note
+The average grade criterion, which is part of the graduation requirements of the enrolled program, must be met for both the Cumulative Grade Point Average (CGPA) and the Program Cumulative Grade Point Average (PGPA).

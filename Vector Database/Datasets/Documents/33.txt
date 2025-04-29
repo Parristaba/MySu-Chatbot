@@ -1,0 +1,35 @@
+-----------------------
+# ID: document_033
+# Title: Degree Evaluation
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/degree-evaluation
+-----------------------
+
+After logging into the  Information System, follow the steps below for graduation tracking:
+
+Click on the "Student & Financial Aid" menu.
+Select "Degree Audit & Graduation."
+Click on "Degree Evaluation (Summary)."
+Select the term for graduation tracking and click the "Generate New Request" button.
+ 
+
+Actions Available on the Degree Evaluation (Summary) Page:
+
+1. "View Previous Evaluations" allows you to view previously generated graduation evaluation reports.
+
+Program: Displays the program under evaluation.
+Submission Date: Shows the date when the evaluation was performed.
+Request Number: Indicates the sequence number of the evaluation request.
+ 
+
+2. "Generate New Evaluation" allows you to create a new evaluation.
+
+The Program, Degree, and Major information is displayed.
+Select the "Program" and choose the "Term" (e.g., Fall 2024-2025).
+Click "Generate Request."
+Graduation requirements will be displayed based on the selected parameters.
+ 
+
+Important Notes:
+In graduation tracking, courses taken in the evaluation term are considered as if they were passed with the minimum required grade. However, once final grades are assigned at the end of the term, these courses are included in the Cumulative GPA (CGPA) calculation.
+
+The evaluation report will indicate whether graduation requirements have been met with "Met" or "Not Met." If all requirements are fulfilled, "Met" will be displayed; otherwise, "Not Met" will appear.

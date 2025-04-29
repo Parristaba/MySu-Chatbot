@@ -1,0 +1,9 @@
+-----------------------
+# ID: document_031
+# Title: Application for Graduation
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/application-graduation
+-----------------------
+
+he graduation process at Sabancı University begins with the student's application. Students who are eligible to graduate must submit their graduation applications through the Information System within the dates specified in the academic calendar after enrolling in the semester. For the application to be valid, the student must successfully complete the courses they are enrolled in for that semester.
+
+Graduation applications are only valid for the semester in which they are submitted. If a student does not meet the graduation requirements by the end of the semester, they must reapply in the following term.

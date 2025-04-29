@@ -1,0 +1,22 @@
+-----------------------
+# ID: document_019
+# Title: Academic Assesment
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/node/4
+-----------------------
+
+At the end of each semester, the descriptions of academic performance evaluations determined by the Cumulative Grade Point Average (CGPA) are presented in the tables below;
+
+1. Academic Assessment for Undergraduate Students
+
+CumulativeGrade Point Average (CGPA):
+> 2.00 Satisfactory 
+< 2.00 Probation 
+Consecutively < 2.00 Continued Probation
+
+
+At the end of any semester, undergraduate students who are enrolled in at least 15 SU credits and do not have grades of 'F', 'U', or 'NA' will be considered Honor or High Honor students if their Term Grade Point Averages fall within the following ranges. This evaluation is indicated on the students' transcripts.
+
+Term Grade Point Average (TGPA):
+≥ 3.50 High Honor 
+≥ 3.00 and < 3.50 Honor
+

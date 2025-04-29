@@ -1,0 +1,60 @@
+-----------------------
+# ID: document_001
+# Title: 2024-2025 Academic Calendar: 1st Grade and Undergraduate Programs
+# Hyperlink: https://apps.sabanciuniv.edu/custom/academic-calendar/?lang=en
+-----------------------
+
+## JANUARY 2025
+- **13-04 Jan-Feb 2025**: Internship Period (Between Fall-Spring Semesters) [Lisans]
+- **13 Jan-04 Jun 2025**: Internship Period (Spring Semester) [Lisans]
+- **15-17 Jan 2025**: Tuition Fee Payments (For Registered, Transfer, and New Graduate Students) [1st Grade, Lisans]
+- **22-24 Jan 2025**: Initial University Registration (For Exchange Program Students) [Lisans]
+- **23-24 Jan 2025**: University Introduction - Orientation Program (For Exchange and Graduate Program Students) [Lisans]
+- **24 Jan 2025**: Last Day for Special Student Application [Lisans]
+- **27-28 Jan 2025**: University Registration (For Transfer Students under Additional Article 1) [Lisans]
+- **29-31 Jan 2025**: Course Registration [Lisans]
+- **30-31 Jan 2025**: Course Registration [1st Grade]
+
+## FEBRUARY 2025
+- **03 Feb 2025**: Classes Begin [1st Grade]
+- **05 Feb 2025**: Classes Begin [Lisans]
+- **07 Feb 2025**: Last Day for Internship Report Submission (Between Fall-Spring Semesters) [Lisans]
+- **10 Feb 2025**: Last Day for Entering Internship Grades (Between Fall-Spring Semesters) [Lisans]
+- **13-14 Feb 2025**: Add-Drop Period [Lisans]
+- **28 Feb 2025**: Last Day for Semester Leave Application [1st Grade]
+
+## MARCH 2025
+- **07 Mar 2025**: Last Day for Semester Leave Application [Lisans]
+- **17 Mar-05 May 2025**: Graduation Application (For 2024-2025 Academic Year Spring and Summer graduates) [Lisans]
+- **24 Mar-25 Apr 2025**: Course Withdrawal Period (W) [Lisans]
+- **30 Mar-01 Apr 2025**: Ramadan Holiday (March 29, 2025 Eve) [1st Grade, Lisans]
+- **31 Mar-04 Apr 2025**: Mid-semester Break [1st Grade, Lisans]
+
+## APRIL 2025
+- **07-18 Apr 2025**: Major Fest (Diploma Program Introduction Event) [Lisans]
+- **10 Apr 2025**: Sakıp Sabancı Award and Memorial Ceremony [1st Grade, Lisans]
+- **19 Apr 2025**: A Day with Families on Campus [1st Grade, Lisans]
+- **23 Apr 2025**: National Sovereignty and Children's Day (Official Holiday) [1st Grade, Lisans]
+- **28 Apr-09 May 2025**: Major Declaration, Major Change, Double Major and Minor Program Applications for 2024-2025 Academic Year Summer Term [Lisans]
+- **30 Apr-04 Jun 2025**: Course Exemption Procedures [Lisans]
+
+## MAY 2025
+- **01-02 May 2025**: Labor and Solidarity Day (Official Holiday) [1st Grade, Lisans]
+- **19 May 2025**: Commemoration of Atatürk, Youth and Sports Day (Official Holiday) [1st Grade, Lisans]
+- **21 May 2025**: Make-up for Wednesday classes of April 23 "National Sovereignty and Children's Day" [Lisans]
+- **22 May 2025**: Make-up for Thursday classes of May 1 "Labor and Solidarity Day" [Lisans]
+- **23 May 2025**: Make-up for Monday classes of May 19 "Commemoration of Atatürk, Youth and Sports Day" [Lisans]
+- **23 May 2025**: End of Classes [Lisans]
+- **24 May-04 Jun 2025**: Final Exams [Lisans]
+- **28 May 2025**: End of Classes [1st Grade]
+- **28 May 2025**: Final Exams [1st Grade]
+
+## JUNE 2025
+- **03 Jun 2025**: Last Day for Grade Entry [1st Grade]
+- **04-20 Jun 2025**: Submission Period for Language Proficiency Exam Certificates for Exemption from Foundation Development Year and English Language Assessment Exam [1st Grade]
+- **05-09 Jun 2025**: Eid al-Adha Holiday [1st Grade, Lisans]
+- **10 Jun 2025**: Last Day for Internship Report Submission (Spring Semester) [Lisans]
+- **13 Jun 2025**: Last Day for Grade Entry [Lisans]
+- **13 Jun 2025**: Last Day for Entering Internship Grades (Spring Semester) [Lisans]
+- **17 Jun 2025**: English Language Assessment Exam [1st Grade]
+- **28 Jun 2025**: Graduation Ceremony [Lisans]

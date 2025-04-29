@@ -1,0 +1,24 @@
+-----------------------
+# ID: document_024
+# Title: Information System Course Registrations
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/information-system
+-----------------------
+
+Information System is opened for course registrations within the period announced in the Academic Calendar.  Students who do not complete course registrations during the "Course Registration" period or who want to change their course registrations, can modify their schedule during the "Course Add/Drop" period.
+
+Information System is opened at 10:00 on the first day and closed at 17:00 on the last day of the course registration and course add/drop days. The system is closed periodically for backup on the course registration days. The closed hours are announced in the Information System main page.
+
+Course registrations are done by performing the following steps on the Information System:
+
+Browse through Student Services & Financial Aid.
+Click Registration.
+Select Term.
+Click Add / Drop Classes.
+Enter the course CRN to the CRN edit boxes.
+Click Submit Changes.
+You can alternatively click Look - Up Classes to Add menu then select the course and click register button.
+The registered courses will be listed in the "Current Schedule" block of the "Add - Drop Classes" menu.
+The registered courses can be dropped during the course registration period.
+To drop a course, "Web Drop Course" should be selected from the "Action" area of the "Current Schedule" block.
+"Submit Changes" button in the "Add / Drop Classes" menu should be clicked so that course registration and course add/drop requests are processed by the system.
+After clicking the "Submit Changes" button, you should wait the resulting response page to confirm that the course registration actions(add/drop/section change) are completed successfully. Registration error descriptions can be viewed via "Registration Errors" link. After your last action, if there are any error messages, the last course registration request will not be committed by the system.

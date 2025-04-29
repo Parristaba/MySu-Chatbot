@@ -1,0 +1,15 @@
+-----------------------
+# ID: document_012
+# Title: Undergraduate, Repeating A Course
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/repeating-courses
+-----------------------
+
+Conditions of repeating a course is stated as below.
+
+Students who get an 'F', 'U', 'NA' or 'W' grade for University Courses offered in first year of education ; must take the subject course again in the following first semester it is given.
+Students who get an 'F', 'U', 'NA' or 'W' grade for elective or courses dropped from the curriculum, should take a substitute course approved by his/her advisor. 
+For students who complete all courses offered in his/her diploma programs and other graduation  requirements;  this condition is not required.
+Students may repeat the courses in which they received passing grades ( (A, A-, B+, B, B-, C+,C, C-, D+, D) within 3 semesters at maximum following the semester they have taken it. The periods of semester leave and summer semester are not included in the semester counts.
+In the calculation of CGPA*, the previous point received for the repeated courses is replaced with the new point however all the registered courses of the student are shown in the transcript.
+
+* CGPA is calculated with SU credits.

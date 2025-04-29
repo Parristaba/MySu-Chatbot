@@ -1,0 +1,19 @@
+-----------------------
+# ID: document_025
+# Title: Registration of Freshman University Courses
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/freshman-univ-courses
+-----------------------
+
+Registration to Freshman University Courses (the courses defined below), will be performed by Student Resources Unit (SR) for the students who have not taken these courses and for those who have to repeat them. Freshman courses added by Student Resources can not be dropped. Undergraduate students can log in to the course registration system only during the add-drop dates in the first two semesters of their undergraduate education (freshman 1st semester and freshman 2nd semester), and can change their course sections and/or take another course additionally during these dates, if they want. Old freshman students can change their sections both in registration week and on add/drop period.
+
+
+Required courses for students those started University as of 2017-2018 Fall semester: AL 102, CIP 101N, HIST 191, HIST 192, IF 100, MATH 101, MATH 102, NS 101, NS 102, SPS 101, SPS 102, TLL 101, TLL 102
+
+Required courses for students those started University before 2017-2018 Fall semester: CIP 101, ENG 101, ENG 102, HIST 191, HIST 192, MATH 101, MATH 102, MJC 100*, NS 101, NS 102, PROJ 102, SPS 101, SPS 102, TLL 101, TLL 102
+*MJC 100 course is required for students those started University as of 2012-2013 Fall semester.
+
+ 
+
+The students who provide the prerequsite condition wil be registered to prerequisite courses; the students who do not provide prerequisite conditions can be registered to these courses after the approval of advisors. If the student gets "F", "U", "NA" or "W" from two courses from the co-requisite Universty courses and if the courses are opened at the same semester, the student will be registered to the course coded with 101(191). Students, who are registered to freshman courses by SR, will be restricted to drop these courses; but they will be allowed to make section changes.
+
+To make a section change: Please click "Submit Changes" at the "Add/Drop Classes" menu, select "Action Web Drop Course" from the "Current Schedule", and enter the CRN of the course to be added in "Add Classes Worksheet" part; and then "Submit Changes ". The message "You cannot drop the course. To make a section change, add and drop within the same transaction." will be displayed in case of trying to drop the course without adding its other section.

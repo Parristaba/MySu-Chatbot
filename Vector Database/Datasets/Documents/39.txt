@@ -1,0 +1,25 @@
+-----------------------
+# ID: document_039
+# Title: Major Degree Requirements
+# Hyperlink: https://suis.sabanciuniv.edu/prod/SU_DEGREE.p_list_degree?P_LEVEL=UG&P_LANG=EN&P_PRG_TYPE=
+-----------------------
+
+
+To view Degree Reqirements for the following major programs:
+Computer Science and Engineering
+Data Science and Analytics
+Economics
+Electronics Engineering
+Industrial Engineering (Previous Name: Manufacturing Systems Engineering)
+Management
+Materials Science and Nano Engineering (Previous Name: Materials Science and Engineering)
+Mechatronics Engineering
+Molecular Biology, Genetics and Bioengineering (Pre. Name: Biological Sciences and Bioengineering)
+Political Science and International Relations
+Psychology
+Visual Arts and Visual Communications Design
+
+Click on the program you are enrolled to.
+Select the term you are enrolled to the university
+
+From there, you can find the major degree requirements.

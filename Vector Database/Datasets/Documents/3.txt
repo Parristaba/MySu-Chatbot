@@ -1,0 +1,311 @@
+-----------------------
+# ID: document_003
+# Title: PURE Program 2024-2025 Summer Term Projects List
+# Hyperlink: https://pure.sabanciuniv.edu/projects?faculty=All&term=2024-2025+Summer&field_project_program_value=All
+-----------------------
+
+ID: 1
+Title: A Comprehensive Algorithm for Simulating Lunar Regolith: Integrating Chemical, Crystalline, and Amorphous Properties
+Related Areas: [Computer Science and Engineering, Materials Science ve Nano Engineering]
+Supervisors: Melike Nur Önder, Mehmet Ali Gülgün
+Quota: 3
+
+ID: 2
+Title: An Anthology of Contemporary Turkish Anglophone Writers 
+Related Areas: [Cultural Studies, Turkish Studies]
+Supervisors: Neriman Kuyucu
+Quota: 2
+
+ID: 3
+Title: An Integrated Approach for Navigating Energy Surface of Functional Proteins
+Related Areas: [Computer Science and Engineering, Molecular Biology, Genetics and Bioengineering, Materials Science ve Nano Engineering, Physics]
+Supervisors: Canan Atılgan, Ali Rana Atılgan, Büşra Tayhan, Kübranur Kazan
+Quota: 2
+
+ID: 4
+Title: Analyzing Ground-Drone-Satellite Communications over Terahertz (THz) Links
+Related Areas: [Electronics Engineering]
+Supervisors: Çağlar Tunç
+Quota: 4
+
+ID: 5
+Title: Automated Autobiographical Interview 
+Related Areas: [Computer Science and Engineering, Electronics Engineering, Materials Science ve Nano Engineering, Industrial Engineering, Economics, Visual Arts and Visual Communications Design, Cultural Studies, Psychology, Political Science, Management, History]
+Supervisors: Çağla Aydın
+Quota: 3
+
+ID: 6
+Title: Biosensor Development for Immune Checkpoint Molecules 
+Related Areas: [Molecular Biology, Genetics and Bioengineering]
+Supervisors: Meral Yüce
+Quota: 1
+
+ID: 7
+Title: Bridging the Chemical Profile and Biomedical Effects of Türkiye Medicinal and Aromatic Plant's Essential Oil: A New Approach Toward Aromatherapy
+Related Areas: [Molecular Biology, Genetics and Bioengineering]
+Supervisors: Tanveer Alam
+Quota: 4
+
+ID: 8
+Title: Characterization of plant beneficial bacteria and their extracellular vesicles
+Related Areas: [Computer Science and Engineering, Molecular Biology, Genetics and Bioengineering]
+Supervisors: Stuart J. Lucas
+Quota: 2
+
+ID: 9
+Title: Circuits and Systems Performance Benchmarking using ML
+Related Areas: [Computer Science and Engineering, Electronics Engineering]
+Supervisors: Korkut Kaan Tokgöz
+Quota: 5
+
+ID: 10
+Title: Classification of pollen images with deep learning
+Related Areas: [Computer Science and Engineering]
+Supervisors: Erchan Aptoula
+Quota: 2
+
+ID: 11
+Title: Data Augmentation and Deep Learning for FET Modeling
+Related Areas: [Computer Science and Engineering, Electronics Engineering]
+Supervisors: Korkut Kaan Tokgöz
+Quota: 3
+
+ID: 12
+Title: Detection of Circulating Tumor Cells via Hydrodynamic Cavitation on a Chip
+Related Areas: [Molecular Biology, Genetics and Bioengineering, Mechatronics Engineering]
+Supervisors: Morteza Ghorbani, Ali Koşar
+Quota: 2
+
+ID: 13
+Title: Detergent dissolution intensification via energy-efficient hydrodynamic cavitation reactors
+Related Areas: [Materials Science ve Nano Engineering, Mechatronics Engineering]
+Supervisors: Morteza Ghorbani, Ali Koşar
+Quota: 2
+
+ID: 14
+Title: Determining Reliable Routes Effectively using Drones after a Disaster
+Related Areas: [Computer Science and Engineering, Industrial Engineering, Business Analytics]
+Supervisors: Tonguç Ünlüyurt
+Quota: 4
+
+ID: 15
+Title: Developing Accelerators for Homomorphic Encryption
+Related Areas: [Computer Science and Engineering, Electronics Engineering, ​Mathematics]
+Supervisors: Erkay Savaş, Atıl Utku Ay
+Quota: 5
+
+ID: 16
+Title: Developing AI-Compatible Instructional Design Datasets: A Computer Science Research Project
+Related Areas: [Computer Science and Engineering]
+Supervisors: İlkem Kayıcan Dipcin
+Quota: 5
+
+ID: 17
+Title: Development of an Efficient and Accessible Astrocyte Differentiation Protocol from MSCs
+Related Areas: [Molecular Biology, Genetics and Bioengineering]
+Supervisors: İrem Kırış
+Quota: 1
+
+ID: 18
+Title: Development of Novel Hydrogel Alternatives to PDMS for Microfluidic Chip Platforms
+Related Areas: [Molecular Biology, Genetics and Bioengineering, Materials Science ve Nano Engineering]
+Supervisors: Nur Mustafaoğlu
+Quota: 2
+
+ID: 19
+Title: Dissecting the molecular mechanisms of ALS pathogenesis
+Related Areas: [Molecular Biology, Genetics and Bioengineering]
+Supervisors: Umut Şahin
+Quota: 2
+
+ID: 20
+Title: Effect of branched flow to particle and heat transport in disordered systems
+Related Areas: [Materials Science ve Nano Engineering, Physics]
+Supervisors: Alhun Aydın
+Quota: 2
+
+ID: 21
+Title: Enhanced Sampling Approaches to Investigate Drug Transport in AdeC
+Related Areas: [Molecular Biology, Genetics and Bioengineering, Materials Science ve Nano Engineering, Physics]
+Supervisors: Canan Atılgan, Işık Kantarcıoğlu, Ata Göktuğ Çim
+Quota: 2
+
+ID: 22
+Title: Examining Machine Learning Applications in Communication Networks
+Related Areas: [Electronics Engineering]
+Supervisors: Çağlar Tunç
+Quota: 4
+
+ID: 23
+Title: Forever Chemicals: An Analytical Study of Their Impact on Humans and the Environment
+Related Areas: [Molecular Biology, Genetics and Bioengineering, Materials Science ve Nano Engineering, Mechatronics Engineering, Industrial Engineering, Psychology]
+Supervisors: Morteza Ghorbani
+Quota: 3
+
+ID: 24
+Title: Identifying the Role of NEK1 in Driving Amyotrophic Lateral Sclerosis (ALS) by Molecular Modeling
+Related Areas: [Molecular Biology, Genetics and Bioengineering]
+Supervisors: Canan Atılgan, Umut Şahin, Büşra Tayhan
+Quota: 2
+
+ID: 25
+Title: Integrated circuit design and technology in a nutshell
+Related Areas: [-]
+Supervisors: Yaşar Gürbüz
+Quota: 5
+
+ID: 26
+Title: Integration Processes in Episodic Memory
+Related Areas: [Computer Science and Engineering, Electronics Engineering, Visual Arts and Visual Communications Design, Cultural Studies, Psychology, Political Science, International Studies, Management, Turkish Studies]
+Supervisors: Nihan Alp
+Quota: 4
+
+ID: 27
+Title: Intent Management using Explainable AI (xAI) and Large Language Models (LLMs)
+Related Areas: [Computer Science and Engineering, Electronics Engineering, Industrial Engineering]
+Supervisors: Çağlar Tunç
+Quota: 4
+
+ID: 28
+Title: Investigating the mechanistic underpinnings of silicon (Si) absorption in contrasting varieties of soybean (Glycine max L.)
+Related Areas: [Molecular Biology, Genetics and Bioengineering]
+Supervisors: Devrim Coşkun
+Quota: 2
+
+ID: 29
+Title: Machine Learning for THz Band Drone Communications
+Related Areas: [Computer Science and Engineering, Electronics Engineering]
+Supervisors: Akhtar Saeed, Özgür Gürbüz, Çağlar Tunç
+Quota: 4
+
+ID: 30
+Title: Magnetostriction and Strain-Dependent Anisotropy in Heusler Alloys
+Related Areas: [Electronics Engineering, Materials Science ve Nano Engineering, Mechatronics Engineering, Physics]
+Supervisors: Burç Mısırlıoğlu
+Quota: 5
+
+ID: 31
+Title: Mapping Minority Experiences: SGM Psychology and Psychometric Validation of SGM Measures
+Related Areas: [Cultural Studies, Psychology]
+Supervisors: İlkan Can İpekçi
+Quota: 4
+
+ID: 32
+Title: Measuring Firm Level AI Risk
+Related Areas: [Computer Science and Engineering, Industrial Engineering, Management, Business Analytics]
+Supervisors: Şerif Aziz Şimşir, Onur Varol
+Quota: 2
+
+ID: 33
+Title: Millimeter-Wave and Sub-Terahertz CMOS Circuits
+Related Areas: [Electronics Engineering]
+Supervisors: Korkut Kaan Tokgöz
+Quota: 5
+
+ID: 34
+Title: Mind Compression: Exploring How Semantic Similarity Reduces Cognitive Load
+Related Areas: [Psychology]
+Supervisors: Eren Günseli
+Quota: 3
+
+ID: 35
+Title: Mold-free, benchtop green machining of self-standing doughs of advanced ceramics
+Related Areas: [Materials Science ve Nano Engineering]
+Supervisors: Özge Akbulut
+Quota: 1
+
+ID: 36
+Title: Nanocellulose production from waste paper for future textile applications
+Related Areas: [Materials Science ve Nano Engineering]
+Supervisors: Syed Farhan Hasany
+Quota: 4
+
+ID: 37
+Title: Optimal Design of a Small-Scale Multi-Energy Hub for a Sustainable Campus Microgrid
+Related Areas: [Industrial Engineering, ​Mathematics, Economics]
+Supervisors: Nikolaos Koltsaklis
+Quota: 2
+
+ID: 38
+Title: Piezoresistive Pressure Sensor Design and Optimization
+Related Areas: [Computer Science and Engineering, Electronics Engineering, Materials Science ve Nano Engineering, Mechatronics Engineering]
+Supervisors: Korkut Kaan Tokgöz
+Quota: 3
+
+ID: 39
+Title: Political connections and state contracts in Turkish municipalities
+Related Areas: [Political Science, International Studies, Turkish Studies]
+Supervisors: Fatih Serkant Adıgüzel, Berk Esen
+Quota: 5
+
+ID: 40
+Title: Prior-Learned Chunk Utilization in Memory: Automatic Retrieval vs. Controlled Access
+Related Areas: [Psychology]
+Supervisors: Eren Günseli
+Quota: 3
+
+ID: 41
+Title: Reversibly opening the blood-brain barrier
+Related Areas: [Molecular Biology, Genetics and Bioengineering, Materials Science ve Nano Engineering]
+Supervisors: Nur Mustafaoğlu
+Quota: 4
+
+ID: 42
+Title: Role of Context in Temporal Integration
+Related Areas: [Computer Science and Engineering, Molecular Biology, Genetics and Bioengineering, Electronics Engineering, Industrial Engineering, Visual Arts and Visual Communications Design, Cultural Studies, Psychology]
+Supervisors: Nihan Alp
+Quota: 3
+
+ID: 43
+Title: Scene Perception
+Related Areas: [Computer Science and Engineering, Molecular Biology, Genetics and Bioengineering, Electronics Engineering, Visual Arts and Visual Communications Design, Cultural Studies, Psychology, International Studies, Management, Turkish Studies]
+Supervisors: Nihan Alp
+Quota: 4
+
+ID: 44
+Title: Secure Architecture Design for Post-Quantum Cryptography Algorithms
+Related Areas: [Computer Science and Engineering, Electronics Engineering]
+Supervisors: Erkay Savaş, Atıl Utku Ay
+Quota: 2
+
+ID: 45
+Title: Smart Systems for Disaster Preparedness and Response
+Related Areas: [Computer Science and Engineering, Molecular Biology, Genetics and Bioengineering, Electronics Engineering, Materials Science ve Nano Engineering, Mechatronics Engineering, Industrial Engineering, ​Mathematics, Physics, Economics, Visual Arts and Visual Communications Design, Cultural Studies, Psychology, Political Science, International Studies, Management, History, Business Analytics, Turkish Studies]
+Supervisors: Altuğ Tanaltay, Hüsnü Yenigün
+Quota: 3
+
+ID: 46
+Title: Synthesis of Lignin-Based Nanomaterials
+Related Areas: [Materials Science ve Nano Engineering]
+Supervisors: Serap Hayat Soytaş
+Quota: 2
+
+ID: 47
+Title: Techno-Economic Optimization of Hydrogen-Based Seasonal Energy Storage in Multi-Energy Systems
+Related Areas: [Mechatronics Engineering, Industrial Engineering, ​Mathematics, Economics]
+Supervisors: Nikolaos Koltsaklis
+Quota: 1
+
+ID: 48
+Title: thermal latent curing agents for epoxy resins, prepregs, and composites
+Related Areas: [Materials Science ve Nano Engineering]
+Supervisors: Bekir Dızman
+Quota: 2
+
+ID: 49
+Title: THz Band Integrated Sensing and Communications for 6G
+Related Areas: [Computer Science and Engineering, Electronics Engineering]
+Supervisors: Akhtar Saeed, Özgür Gürbüz
+Quota: 4
+
+ID: 50
+Title: Time-Series Data with Optimized RNNs
+Related Areas: [Computer Science and Engineering, Electronics Engineering]
+Supervisors: Korkut Kaan Tokgöz
+Quota: 3
+
+ID: 51
+Title: Two-Channel Microfluidic Chip Designs for Blood-Brain Barrier Modeling
+Related Areas: [Molecular Biology, Genetics and Bioengineering, Materials Science ve Nano Engineering, Mechatronics Engineering]
+Supervisors: Nur Mustafaoğlu
+Quota: 2

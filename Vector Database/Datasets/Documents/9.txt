@@ -1,0 +1,36 @@
+-----------------------
+# ID: document_009
+# Title: Undergraduate, Withdraw From A Course 
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/withdraw-course
+-----------------------
+
+A- Application Requirements
+
+ Course withdrawal process is only for undergraduate students.
+
+It can be done only for compulsory Fall and Spring terms, within the dates announced on Academic Calendar.
+
+Maximum 2 course withdrawals can be done in a semester; while it is maximum 6 in total throughout the entire education period.
+
+The course is graded with “W” if it is withdrawn. It is not included in the calculation of credit and grade point average.
+
+Withdrawn course can be repeated.
+
+If a course is repeated (including the courses graded with “W”), it is not possible to withdraw it.
+
+ 
+B- Application Steps:
+
+Students, who would like to withdraw from a course within the announced dates:
+
+Are required to apply through ”Information System / Student & Financial Aid / Registration / Request to Withdrawal Form”
+
+Applications are submitted to the approval of the course instructor online. Also, instructor receives an e-mail about each course withdrawal request, once it is submitted.
+
+Instructor may “approve” or “reject” the course withdrawal request through the online system.
+
+If the instructor approves course withdrawal request, system registration is created automatically to be processed; and, students can follow the process from the system.
+
+Application approved by the instructor is processed.
+
+Approved applications can be viewed on the transcript in the end of application process.

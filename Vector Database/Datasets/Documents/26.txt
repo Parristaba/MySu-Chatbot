@@ -1,0 +1,33 @@
+-----------------------
+# ID: document_026
+# Title: Course Registration Overrides
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/registration-overrides
+-----------------------
+
+Students who receive the following Registration Errors can directly apply to the primary instructors of the courses for removal of the restrictions which causes these errors. The primary instructors are listed in Course Schedule and marked with a "(P)" next to them. 
+
+REGISTRATION ERROR	REGISTRATION OVERRIDES	REGISTRATION PERMITS
+Approval Needed ( Old definition: SPECIAL APPROVAL) (*)	Approval needed from the Primary Instructor	"Approval Needed"
+CLASS RESTRICTION	Class Restrictions	"Class Restriction Waiving"
+PREQ and TEST SCORE-ERROR	Pre-Requisite overrides	"Pre-Reqs. Waiving"
+CORQ <Ders Adı ve CRN> REQ	Co-requisite overrides	"Co-Reqs. Waiving"
+TIME CONFLICT	Time Conflict Overrides	"Time Conflict Permit"
+ 
+
+(*) Approval Needed:  Should be requested only when “Approval Needed” warning is received. This permission can not be used for other restrictions.
+
+
+Submission of Course Registration Override Requests:
+
+"Registration override requests" should be submitted until 12:00 a.m. on the last day of the course registrations by following the instructions specified below. 
+
+Click the application "IS -» Student -» Registration -» Application for Course Registration Override".
+Select the registration term and related registration override request for the course that you want to register.
+The details of the registration override and permit application is displayed in the list. If registration override is given then "Approve" is displayed, if the requests is rejected "Reject" is displayed.
+Course Registration after Override Request is Approved;
+
+If the instructor approves the request, the student should register to the course in person via Information System.
+
+Time Conflict Override Requests: Time conflict override, sent by a student for two conflicted courses, should be approved by both instructor of registered course and instructor of not registered course via the system. The course to which the instructor does not give for time conflict approval, will be dropped from registration list of students. 
+
+Class Restriction Override Requests: Class restriction override requests will be opened at second day of course registration period. 

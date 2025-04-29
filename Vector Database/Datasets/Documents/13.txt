@@ -1,0 +1,73 @@
+-----------------------
+# ID: document_013
+# Title: Undergraduate, Major Declaration
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/undergraduate-major-declaration
+-----------------------
+
+General Rules Regarding Major Declaration
+
+The purpose of major declaration is to receive the diploma program selections of undergraduate students who are not yet enrolled in a diploma program and plan to graduate, and to place them in the diploma programs they wish to graduate from.
+
+Major Declarations are taken in two stages: First Declaration and Final Declaration
+
+ 
+First Declaration
+
+Newly registered undergraduate students make their First Declaration by rating the diploma programs they plan to graduate from in order of preference during their initial registration at the University, taking into account the following points:
+
+A maximum of 3 diploma programs can be selected from the existing undergraduate diploma programs. The total points assigned to the diploma programs must equal 100.
+The points assigned to the diploma programs must not be equal.
+First Declaration must be made in order to complete the initial registration process at the University and to register for courses.
+
+
+Final Declaration
+
+This declaration is used for placing students who have successfully completed the common program into a diploma program. Therefore, each student must make their Final declaration by selecting from the existing undergraduate diploma programs through the Information System at one of the stages below, within the dates specified in the Academic Calendar:
+
+1. Students who have passed all of the following common program courses or are registered for these courses in the relevant semester can make their major declarations as early as their 2nd semester:
+
+SPS 101, MATH 101, NS 101, HIST 191, TLL 101, AL 102, IF 100
+2. Students who were admitted to the University before the 2020-2021 academic year and have not completed the above courses may apply if they meet the following conditions previously defined based on credits:
+
+Undergraduate students in their 2nd semester who are expected to complete at least 34 SU credits or 60 ECTS credits by the end of the semester.
+Undergraduate students in their 3rd semester who are expected to complete at least 49 SU credits or 90 ECTS credits by the end of the semester.
+Undergraduate students who have not yet declared a diploma program in the above two stages or have not been placed in a diploma program despite declaring one, and who are expected to complete at least 58 SU credits or 94 ECTS credits by the end of the relevant semester.
+ 
+Important Points
+
+Students who meet the above course requirement and are in their 3rd semester, as well as students expected to complete at least 58 SU credits or 94 ECTS credits, will have a hold placed on their student records if they do not make their Final declaration within the specified dates. Declarations after this stage can only be made with the decision of the Faculty Administrative Board.
+During the final declaration stage, only one diploma program can be declared. However, students who declare a program in a different score type from the one they were admitted with must also declare a diploma program in the same score type as their university admission.
+ 
+Evaluation of Final Declarations
+If the above-mentioned course, semester, credit, etc., conditions are met:
+
+a) In final declaration made in the same score type, students are directly placed in the diploma program they have declared..
+
+b) In final declaration made in a different score type, the notifications are evaluated by the faculties as a lateral transfer (*).
+
+Students can apply for a different score type diploma program declaration under internal transfer at the latest during the 4th semester of their undergraduate studies. In the evaluation of these applications, the central placement score that the student received in the year they took the central exam must not be lower than the minimum base score of other equivalent diploma programs at other universities for the diploma program they wish to transfer to. Students who do not meet this requirement will be placed in the diploma program they have declared, which is in the same score type as their university admission.
+Applications for lateral transfer to a diploma program in a different score type made by students during the 5th and subsequent semesters of their undergraduate studies are evaluated according to the provisions of Additional Article 1 of the relevant YÖK regulation. According to these provisions, the central placement score that the student received in the year they took the central exam must not be lower than the minimum base score of the program group to which the diploma program they wish to transfer belongs at SÜ. Applications under Additional Article 1 can be made at most once, and only for students who were centrally placed by OSYM, provided they are placed by the beginning of the last semester of graduation.
+c) Applications made in the Fall semester are evaluated for placement in the following Spring semester; applications made in the Spring semester are evaluated for placement in the following Summer semester (applications made in the Spring semester under Additional Article 1 are evaluated for placement in the following Fall semester); and applications made in the Summer semester are evaluated for placement in the Fall semester of the following academic year.
+ 
+Important Points
+
+In addition to the above conditions, applications made for FENS programs must meet the requirement of being ranked in the top 300,000 as specified in the YKS guide.
+Undergraduate students who have been admitted as international students can apply for a diploma program notification at the latest during their 4th semester. In the evaluation of these applications, students must meet the international student admission requirements of the program group to which the program they wish to transfer belongs in the year the students were admitted to the University. Students who do not meet these requirements will be placed in the diploma program they have declared, which is in the same program group as their university admission.
+If the above conditions are not met, no placement in any diploma program will be made, and students must make their final notification again in the following semesters within the above conditions. 
+ 
+For 2024-2025 academic year quotas, click here
+
+For the minimum base scores of national programs, click here.
+
+ 
+(*) Lateral transfers within the scope of the "Regulation on the Principles of Transfer between Associate Degree and Undergraduate Programs, Double Major, Minor, and Credit Transfer between Institutions in Higher Education Institutions."
+
+(**) ECTS credit requirements apply to students admitted in the 2013-2014 academic year and later.
+
+ 
+Making Final Declaration Through the Student Information System
+1. Log in through the Student Information System.
+
+2. Navigate to Student Services & Financial Aid > Degree Audit & Graduation > 'Major Declaration for Undergraduate Students.'
+
+You can view your declaration made so far in the 'Your Current Major Declarations' section.

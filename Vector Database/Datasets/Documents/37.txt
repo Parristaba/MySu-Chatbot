@@ -1,0 +1,25 @@
+-----------------------
+# ID: document_037
+# Title: Course Scheduling
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/course-scheduling-0
+-----------------------
+
+Course schedule is announced at least two weeks before the relevant semester course registrations begin. 
+The advertised course schedule can be accessed at "Information System/Course Schedule".
+The opening of the days indicated by the letter code in the course schedule is as follows:
+M: Monday
+T: Tuesday
+W: Wednesday
+R: Thursday
+F: Friday
+S: Saturday
+The presentation type of the course can be accessed from the Type section in the course schedule. Explanations of the information in the Type field are as follows:
+Class: Physical/In Class
+Online: Distance Education
+Asynchronous: Asynchronous (Video Training)
+Requests for changes related to the curriculum made by the instructors, course schedule changes made by the SR's conformity check as follows: According to the types of requests described below and the dates of transmission to the SR, by checking the eligibility of the request by the SR:
+Day and time changes: Course registrations are processed immediately outside the course add-drop period and before the announcement of the course schedule. If the changes are requested after the announcement of the course schedule, this changes informed to the SR with an approval from the Dean.
+Class and faculty member change request: The change request is processed on the same day of the receiving.
+Capacity change request: Capacity changes are not made during the course registration and the add-drop period. However, capacity increase or reduction requests who made before course registration, are processed immediately. Capacity increase is also made after course registrations, but capacity reduction can not be done for the course add-drop period.
+Changes after the announcement of the curriculum are announced by the faculty.
+The programs of the graduate professional courses are prepared by the relevant institute and delivered to the SR. The communicated curriculum is entered into the Information System by the SR and information is given to students by the institute.

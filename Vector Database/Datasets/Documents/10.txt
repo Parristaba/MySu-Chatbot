@@ -1,0 +1,27 @@
+-----------------------
+# ID: document_010
+# Title: Undergraduate, Course Substitution
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/node/45
+-----------------------
+
+Course substitutions are done in Fall,Spring and Summer semester within the dates stated in the Academic Calendar. Requests must be submitted to Student Resources according to the rules stated below;
+
+Courses with the same codes, according to repeate a course, as it will be automatically substituted,  you do not need to do course substitution.
+Elective courses (Core Electives, Area Elective, Free Elective) with different codes and courses replaced with the ones taken out of the program can be substituted.
+In course substitution, one course correspond to  only one course.
+Courses taken in the same semester cannot be substituted.
+Last taken course, (course taken in the term that course substitution will be done) can be substituted in the course that is taken in the previous semester. 
+Courses graded with "C" or above, cannot be substituted.
+"C-" "D+" or "D" graded courses,  within maximum 3 semesters taken this grade,   can be substituted with "F", "U", "NA" , "W"  graded courses taken in any semester.  (summer semester and on leave periods are excluded).
+Students can take courses instead of the courses transferred from other universities with "T" grade. In such case, course substitution process should be followed.
+Credits of the courses used in course substitution, is not required to be equal.
+Previously taken courses are exempted from GPA (calculated with SU credits) with the course substitution. But all taken courses are listed in the transcript.
+Please follow the steps stated below to fill the course substitution application on the "Information System";
+Student & Financial Aid
+Registration
+The courses taken in previous semesters are listed in ‘Previously Taken Course’ and the current courses which are available for substitution are listed in ‘Substitute Course’.
+Select the courses for substitution and click "Add to course Substitution List". (Added courses can be changed, before creating the course substitution form)
+If you want to make a change in the selected courses, you can ‘Delete’ them. The courses which are deleted will be added to lists above. You can add these courses to the chart again by matching them with other courses.
+Click "Submit". (Important! If "Submit" is not clicked, the course substitution application is not completed. It is not allowed to make change after this step)
+System registration is created automatically to be processed; and, students can follow the process from the system after creating the course substitution form.
+Applications can be viewed on the transcript in the end of application process.

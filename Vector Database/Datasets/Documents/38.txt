@@ -1,0 +1,27 @@
+-----------------------
+# ID: document_038
+# Title: Exam Scheduling
+# Hyperlink: https://mysu.sabanciuniv.edu/sr/en/exam-scheduling-0
+-----------------------
+
+Midterm programming: 
+ 
+Midterm exams of first grade university courses are programmed by the Foundation Development Directorate.
+All other courses are organized by the faculty member. Classroom reservations required for the midterm exams of these courses are also made by the academic members through the "Event Management".
+The date / time / class changes in the announced midterm program will be announced by the course instructor at least two weeks before the examination date, in the course and on the internal web.
+The midterm exams are displayed on "mySu/SUcalendar/Mid-Term".
+ 
+Final exam programming:
+
+ 
+The exams of all our faculty members who wish to schedule the final exams by the SR are during the exam period started in the Academic Calendar.
+Final examinations are prepared taking into account the students enrolled on the last working day of the second week following the deadline for the add-drop period for the relevant semester.
+The final exam program is formed by taking care not to program more than one final exam on the same day.
+The end-of-term exam length for each ourse is programmed as two and a half hours.
+Final exams are programmed between 09:00-11:30, 11:50-14:20, 14:40-17:10, 17:30-20:00 by placing a total of four test sessions.
+There is no final examination for a class discussion, seminar, problem solving or laboratory hours.
+Prepared final exam program will be announced on the web five weeks before the final exam dates who started in the Academic Calendar.
+The changes requested for the final exam program can be made at the latest four weeks before the exam date.
+All changes, who is requested after the announcement of the final exam program, can only be made with the approval of the dean.
+The faculty members are responsible for the announcement of the changes, who made by the dean approval within the university at least one month before the exam date.
+Final exams can be viewed from “Information System/Final Program”.
