@@ -41,123 +41,120 @@ class Orchestrator:
             "response": "Sorry, I can only assist with Sabancı University-related topics. Please ask a school-related question!"
         }
 
+    
     @staticmethod
     def HandleNonActionIntend(intent: str, user_query: UserQuery):
         """
         Handles non-action user queries such as greetings or follow-ups.
         Determines the intent and uses local response builders to generate responses.
-
+    
         Args:
             intent (str): The intent of the user query (e.g., "greeting", "follow-up").
             user_query (UserQuery): The user query object containing query details.
-
+    
         Returns:
             dict: The generated response based on the intent.
         """
-        # Retrieve the session associated with the user's query
         session = SessionManager.get_session(user_query.session_id)
         if not session:
             return {"response": "Session expired or invalid. Please try again."}
-
-        # Handle greeting or goodbye intents
+    
         if intent in ["greeting", "goodbye"]:
             payload = {
                 "type": intent,
                 "query": user_query.query_text
             }
-
-            # Use local response builder to generate the response
             response = BuildResponsesNonAction(query=payload["query"], type=payload["type"])
-
+    
             # --- Legacy API usage (if re-enabled) ---
             # endpoint = Orchestrator.LLM_GREETING_ENDPOINT
             # try:
             #     response = requests.post(endpoint, json=payload)
-            #     return response.json() if response.status_code == 200 else fallback_response
+            #     return response.json() if response.status_code == 200 else {"response": "Fallback response"}
             # except Exception as e:
             #     print(f"LLM call error: {e}")
-            #     return fallback_response
-
-        # Handle follow-up intents
+            #     return {"response": "Fallback response"}
+    
         elif intent == "follow-up":
-            # Retrieve past interactions from the session
             past_handled_queries = session.get_past_interactions()
-            past_llm_infos = [LLMInfo.from_handled_query(past) for past in past_handled_queries]
-
-            # Use local response builder to generate the follow-up response
+            if not past_handled_queries:
+                return {"response": "No past interactions found for follow-up."}
+    
+            # Use the last handled query for follow-up
+            last_handled_query = past_handled_queries[-1]
+            last_llm_info = LLMInfo.from_handled_query(last_handled_query)
+    
             response = BuildResponsesFollowUp(
-                query=user_query.query_text,
-                past_interactions=[info.dict() for info in past_llm_infos],
+                type=last_llm_info.type,
+                query=last_llm_info.query,
+                retrieved_data_id=last_llm_info.retrieved_data_id,
+                data_status=last_llm_info.data_status
             )
-
+    
             # --- Legacy API usage (if re-enabled) ---
             # endpoint = Orchestrator.LLM_FOLLOWUP_ENDPOINT
             # payload = {
             #     "type": "follow-up",
             #     "query": user_query.query_text,
-            #     "past_interactions": [info.dict() for info in past_llm_infos]
+            #     "retrieved_data_id": last_llm_info.retrieved_data_id,
+            #     "data_status": last_llm_info.data_status
             # }
             # try:
             #     response = requests.post(endpoint, json=payload)
-            #     return response.json() if response.status_code == 200 else fallback_response
+            #     return response.json() if response.status_code == 200 else {"response": "Fallback response"}
             # except Exception as e:
             #     print(f"LLM call error: {e}")
-            #     return fallback_response
-
-        # Handle unknown intents (fallback case)
+            #     return {"response": "Fallback response"}
+    
         else:
-            # TODO: Define behavior for unknown intents if necessary.
-            # Currently, this returns an empty response.
             response = ""
-
+    
         return response
-
+    
     @staticmethod
     def HandleAction(handled_query: UserQueryHandled):
         """
         Handles action-based queries such as announcements or documents.
         Uses the LLMInfo structure to build responses and integrates with session management.
-
+    
         Args:
             handled_query (UserQueryHandled): The processed user query object containing
             details about the query and its intent.
-
+    
         Returns:
             dict: The generated response for the action-based query.
         """
-        # Retrieve the session associated with the user's query
         session = SessionManager.get_session(handled_query.user_id)
         if not session:
             return {"response": "Session expired or invalid. Please try again."}
-
-        # Retrieve past interactions from the session
-        past_handled_queries = session.get_past_interactions()
-        past_llm_infos = [LLMInfo.from_handled_query(past) for past in past_handled_queries]
+    
+        # Use the current handled query for action-based response
         current_llm_info = LLMInfo.from_handled_query(handled_query)
-
-        # Use local response builder to generate the action-based response
+    
         response = BuildResponsesAction(
-            current_interaction=current_llm_info.dict(),
-            past_interactions=[info.dict() for info in past_llm_infos]
+            type=current_llm_info.type,
+            query=current_llm_info.query,
+            retrieved_data_id=current_llm_info.retrieved_data_id,
+            data_status=current_llm_info.data_status
         )
-
+    
         # --- Legacy API usage (if re-enabled) ---
         # endpoint = Orchestrator.LLM_ACTION_ENDPOINT
         # payload = {
-        #     "current_interaction": current_llm_info.dict(),
-        #     "past_interactions": [info.dict() for info in past_llm_infos]
+        #     "type": current_llm_info.type,
+        #     "query": current_llm_info.query,
+        #     "retrieved_data_id": current_llm_info.retrieved_data_id,
+        #     "data_status": current_llm_info.data_status
         # }
         # try:
         #     response = requests.post(endpoint, json=payload)
-        #     llm_response = response.json() if response.status_code == 200 else fallback_response
+        #     return response.json() if response.status_code == 200 else {"response": "Fallback response"}
         # except Exception as e:
         #     print(f"LLM call error: {e}")
-        #     llm_response = fallback_response
-
+        #     return {"response": "Fallback response"}
+    
         # Update the session with the current query
         session.update_past_interactions(handled_query)
-
-        # Save the updated session state
         SessionManager.save_session(session)
-
+    
         return response
