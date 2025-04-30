@@ -25,3 +25,13 @@ class UserSession(BaseModel):
         if self.session_id == session_id:
             return self
         return None
+    
+    def get_past_interactions(self) -> List[UserQueryHandled]:
+        """Returns the last two handled queries."""
+        return self.handled_query_list[-2:] if len(self.handled_query_list) >= 2 else self.handled_query_list[:]
+    
+    def update_past_interactions(self, handled_query: UserQueryHandled):
+        """Updates the session with the current handled query."""
+        if len(self.handled_query_list) >= 2:
+            self.handled_query_list.pop(0)
+        self.handled_query_list.append(handled_query)

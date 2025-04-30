@@ -56,7 +56,7 @@ class Orchestrator:
             #     return fallback_response
 
         elif intent == "follow-up":
-            past_handled_queries = session.handled_query_list[-2:] if session.handled_query_list else []
+            past_handled_queries = session.get_past_interactions()
             past_llm_infos = [LLMInfo.from_handled_query(past) for past in past_handled_queries]
 
             response = BuildResponsesFollowUp(
@@ -79,7 +79,9 @@ class Orchestrator:
             #     return fallback_response
 
         else:
-            response = BuildResponsesNonAction(query=user_query.query_text, type=intent)
+            # TODO: There will probably be no unknown intents aside from the fallback one.
+            # So, we will leave this as an empty "response" for now.
+            response = ""
 
         return response
 
@@ -93,7 +95,7 @@ class Orchestrator:
         if not session:
             return {"response": "Session expired or invalid. Please try again."}
 
-        past_handled_queries = session.handled_query_list[-2:] if session.handled_query_list else []
+        past_handled_queries = session.get_past_interactions()
         past_llm_infos = [LLMInfo.from_handled_query(past) for past in past_handled_queries]
         current_llm_info = LLMInfo.from_handled_query(handled_query)
 
@@ -116,10 +118,9 @@ class Orchestrator:
         #     llm_response = fallback_response
 
         # Update session with current query
-        if len(session.handled_query_list) >= 2:
-            session.handled_query_list.pop(0)
-        session.handled_query_list.append(handled_query)
+        session.update_past_interactions(handled_query)
 
+        # Save session state
         SessionManager.save_session(session)
 
         return response

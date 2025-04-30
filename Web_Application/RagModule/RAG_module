@@ -25,7 +25,7 @@ class RAGBlock:
         query_pruned = Handled_UserQuery.query_pruned
 
         if Handled_UserQuery.intent == "announcement":
-            document_id, similarity_score = search_similar_content(query=query_pruned, is_document=False)
+            data_id, similarity_score = searchSimilarContent(query=query_pruned, is_document=False)
 
             # Optional legacy API call (disabled)
             # try:
@@ -35,7 +35,7 @@ class RAGBlock:
             #     pass
 
         elif Handled_UserQuery.intent == "document":
-            document_id, similarity_score = search_similar_content(query=query_pruned, is_document=True)
+            data_id, similarity_score = searchSimilarContent(query=query_pruned, is_document=True)
 
             # Optional legacy API call (disabled)
             # try:
@@ -50,7 +50,7 @@ class RAGBlock:
             # For now, we can just return a default response or raise an error
             return 
 
-        Handled_UserQuery.retrieved_data_id = document_id
+        Handled_UserQuery.retrieved_data_id = data_id
         Handled_UserQuery.similarity_score = similarity_score
         Handled_UserQuery.data_status = RAGBlock.map_similarity_to_data_status(similarity_score)
 

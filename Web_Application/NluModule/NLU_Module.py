@@ -5,6 +5,11 @@ from RagModule import HandleParsedQuery  # RAG Block
 from Models.UserQueryHandled import UserQueryHandled
 
 
+# TODO: Define determineIntent function in a separate module or import it from an existing one.
+# TODO: Define pruneQuery function in a separate module or import it from an existing one.
+
+
+
 """
 These enpoints will be defined later.
 
@@ -19,11 +24,14 @@ class NLU:
     @staticmethod
     def NLU_get_intend(user_query: UserQuery):
         """
-        Calls the intent model API and determines how to process the query.
+        Determines the intent of the query and processes it accordingly.
         Routes based on intent:
         - document ➔ HandleDocumentModule
         - announcement ➔ HandleAnnouncementModule
         - greeting, goodbye, follow-up ➔ Orchestrator.HandleNonActionIntend
+        """
+
+        # Legacy API call (commented out)
         """
         try:
             response = requests.post(INTENT_MODEL_ENDPOINT, json={"query_text": user_query.query_text})
@@ -34,6 +42,10 @@ class NLU:
         except requests.RequestException:
             intent = None
             # TODO: Log error if necessary
+        """
+
+        # New logic using the `determine_intent` function
+        intent = determineIntent(user_query.query_text)
 
         if intent == "document":
             return NLU.HandleDocumentModule(user_query, intent)
@@ -43,11 +55,10 @@ class NLU:
             return Orchestrator.HandleNonActionIntend(intent, user_query)
         else:
             # ❗ For now, we do not have a fallback for unknown intents.
-            # Maybe we can add a intentt called "fallback" in the model and handle it here.
+            # Maybe we can add an intent called "fallback" in the model and handle it here.
             # For now, we will just call the HandleNonActionIntend function with "unknown" intent.
             return Orchestrator.HandleNonActionIntend("unknown", user_query)
-
-
+        
     @staticmethod
     def HandleDocumentModule(user_query: UserQuery, intent: str):
         """
@@ -56,7 +67,7 @@ class NLU:
         """
 
         # TODO: Define a endpoint for this, or import the function directly
-        pruned = prune_query(user_query.query_text)
+        pruned = pruneQuery(user_query.query_text)
 
         handled_user_query = UserQueryHandled(
             text=user_query.query_text,
@@ -75,7 +86,7 @@ class NLU:
         """
 
         # TODO: Define a endpoint for this, or import the function directly
-        pruned = prune_query(user_query.query_text)
+        pruned = pruneQuery(user_query.query_text)
 
         handled_user_query = UserQueryHandled(
             text=user_query.query_text,
