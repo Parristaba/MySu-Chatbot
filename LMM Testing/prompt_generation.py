@@ -27,29 +27,26 @@ class PromptGenerator:
     def generate_prompt(self) -> str:
         if self.type == "document":
             system_instructions = (
-                "You are an official assistant for Sabancı University. Maintain a formal, precise, and polite tone.\n"
-                "When answering:\n"
-                "- Use the retrieved documents if available.\n"
-                "- If no document is found, state it clearly and politely.\n"
-                "- If a document is marked as flawed or outdated, clearly warn the user.\n"
-                "- Always cite information if possible.\n"
-                "- Respond with a concise and direct answer to the user's query.\n"
-                "- Summarize or extract the relevant points.\n"
-                "- Do not explain your reasoning or thought process. Provide the final answer immediately.\n"
-                "- Always include the document hyperlink in your response."
+                "You are an official assistant for Sabancı University. Respond clearly and formally.\n"
+                "Rules:\n"
+                "- Do not use or reference any prior knowledge.\n"
+                "- Never include <think> or internal reasoning.\n"
+                "- ONLY use the provided document for the answer.\n"
+                "- Include and cite the document hyperlink.\n"
+                "- Never repeat full paragraphs.\n"
+                "- Limit your answer to 10 lines or less.\n"
+                "- Do not speculate."
             )
         else:
             system_instructions = (
-                "You are an official assistant for Sabancı University. Maintain a formal, precise, and polite tone.\n"
-                "When answering:\n"
-                "- Use the retrieved documents if available.\n"
-                "- If no document is found, state it clearly and politely.\n"
-                "- If a document is marked as flawed or outdated, clearly warn the user.\n"
-                "- Always cite information if possible.\n"
-                "- Respond with a concise and direct answer to the user's query, without copying the full announcement unless explicitly requested.\n"
-                "- Summarize or extract the relevant points rather than repeating formal memos in full.\n"
-                "- Do not explain your reasoning or thought process. Provide the final answer immediately.\n"
-                "- Remind the user that announcements may change and they should double-check them if needed."
+                "You are an official assistant for Sabancı University. Respond clearly and formally.\n"
+                "Rules:\n"
+                "- Never include <think> or internal reasoning.\n"
+                "- ONLY use the retrieved announcement.\n"
+                "- Mention that announcements may change.\n"
+                "- Limit answer to 10 lines.\n"
+                "- Do not speculate.\n"
+                "- Cite information clearly but concisely."
             )
 
         if self.type == "greeting" or self.type == "goodbye":
@@ -66,56 +63,54 @@ class PromptGenerator:
     def _generate_greeting_prompt(self, system_instructions: str) -> str:
         return (f"{system_instructions}\n\n"
                 f"User message: {self.query}\n\n"
-                f"Respond politely and briefly in one sentence, acknowledging the greeting or gratitude.")
+                f"Respond politely in one line. Acknowledge greeting or thanks.")
 
     def _generate_followup_prompt(self, system_instructions: str) -> str:
-        # === TODO: Add document/announcement resolution logic using retrieved_data_id ===
         return (f"{system_instructions}\n\n"
                 f"User query: {self.query}\n\n"
-                f"Answer based on the previous document or announcement retrieved. Keep the answer short, relevant, and formal.")
+                f"Respond based on the previously retrieved document or announcement. Keep it formal, brief, and avoid speculation.")
 
     def _generate_announcement_prompt(self, system_instructions: str) -> str:
         if self.data_status == "confident":
-            retrieval_info = (f"Here is the confidently retrieved information:\n{self.retrieved_document}\n")
-            instruction = "Answer the user's query accurately and concisely based on the provided document. Reminder: Always advise the user to double-check announcements if needed."
+            retrieval_info = f"### Announcement Start ###\n{self.retrieved_document}\n### Announcement End ###"
+            instruction = "Respond using only the announcement above. Remind the user to verify from official sources."
         elif self.data_status == "mediocre":
-            retrieval_info = (f"Here is the information found, but it might be partially incomplete:\n{self.retrieved_document}\n")
-            instruction = "Answer the user's query, informing them that the information may not be fully complete. Reminder: Announcements may change, and users should double-check."
+            retrieval_info = f"### Possibly Incomplete Announcement ###\n{self.retrieved_document}\n### End ###"
+            instruction = "Content may be partial. Use only what's given and suggest the user check the official page."
         elif self.data_status == "flawed":
-            retrieval_info = (f"Warning: The following information might be flawed:\n{self.retrieved_document}\n")
-            instruction = "Caution the user that the information might not be reliable. Suggest checking the announcement manually."
+            retrieval_info = f"### Flawed Content Warning ###\n{self.retrieved_document}\n### End ###"
+            instruction = "This content may be unreliable. Warn the user and refer them to official channels."
         else:
-            retrieval_info = "We could not retrieve any relevant document."
-            instruction = "Inform the user politely that no relevant information was found, while remaining concise."
+            retrieval_info = "No relevant announcement found."
+            instruction = "Politely inform the user no relevant announcement could be retrieved."
 
         return (f"{system_instructions}\n\n"
-                f"[Current Interaction]\n{retrieval_info}\n\n"
+                f"{retrieval_info}\n\n"
                 f"User query: {self.query}\n\n"
                 f"{instruction}")
 
     def _generate_document_prompt(self, system_instructions: str) -> str:
         if not self.retrieved_data_id or self.retrieved_data_id not in self.metadata:
-            return f"{system_instructions}\n\nWe could not retrieve any relevant document.\nUser query: {self.query}"
+            return f"{system_instructions}\n\nDocument not found.\nUser query: {self.query}"
 
-        chunks = [entry for entry in self.metadata.values()
-                  if entry.get("doc_id") == self.retrieved_data_id]
+        chunks = [entry for entry in self.metadata.values() if entry.get("doc_id") == self.retrieved_data_id]
         chunks = sorted(chunks, key=lambda x: x["chunk_index"])
 
         if not chunks:
-            return f"{system_instructions}\n\nNo valid document chunks found.\nUser query: {self.query}"
+            return f"{system_instructions}\n\nNo document chunks available.\nUser query: {self.query}"
 
-        full_doc_text = "\n\n".join([chunk["chunk_text"] for chunk in chunks])
+        full_doc_text = "\n\n".join(chunk["chunk_text"] for chunk in chunks)
         title = chunks[0].get("title", "")
         hyperlink = chunks[0].get("hyperlink", "")
 
-        doc_header = f"Document Title: {title}\nHyperlink: {hyperlink}\n"
-        retrieval_info = f"{doc_header}\nFull Document:\n{full_doc_text}"
+        doc_context = f"### Begin Document: {title} ###\n{full_doc_text}\n### End Document ###"
 
-        instruction = ("Answer the user's query based on the full document below."
-                       " Provide a concise, formal response. The user should also be directed to the document hyperlink for more details:"
-                       f" {hyperlink}")
+        instruction = (
+            f"Based ONLY on the document above, answer the user's query. Keep your reply under 10 lines.\n"
+            f"Do not speculate or hallucinate. Always cite this hyperlink: {hyperlink}"
+        )
 
         return (f"{system_instructions}\n\n"
-                f"[Current Interaction]\n{retrieval_info}\n\n"
+                f"{doc_context}\n\n"
                 f"User query: {self.query}\n\n"
                 f"{instruction}")
