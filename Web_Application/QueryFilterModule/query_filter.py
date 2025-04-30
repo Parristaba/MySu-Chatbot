@@ -1,48 +1,53 @@
 import requests
-from Models import UserQuery
-from OrchestratorModule import Orchestrator  
-from NluModule import NLU_get_intend  
+from Models import UserQuery  # Importing the UserQuery model for query representation
+from OrchestratorModule import Orchestrator  # Importing the Orchestrator for handling non-relevant queries
+from NluModule import NLU_get_intend  # Importing the NLU module to determine the intent of relevant queries
 
-# This is the endpoint we will use to determine if the user query is relevant or not. 
+# TODO: Implement and import the checkRelevance function from the ML model.
+
+# Placeholder for the endpoint used to determine if a user query is relevant or not.
 """
 The endpoint should accept a POST request with a JSON body containing the user query text.
-Relevant -> {"relevant": true}
-Not Relevant -> {"relevant": false}
+Expected responses:
+    - Relevant: {"relevant": true}
+    - Not Relevant: {"relevant": false}
 
-The model will probably be connected through a FastAPI endpoint. Other frameworks can be used as well.
+This endpoint is expected to be implemented using a FastAPI service or another framework.
 """
 QUERY_RELEVANCE_ENDPOINT = ""
 
-# New function to replace the API call
-def checkRelevance(query_text: str) -> str:
-    """
-    Simulates the relevance-checking logic.
-    Returns "School Related" if relevant, otherwise "Other".
-    """
-    # Replace this logic with the actual implementation
-    if "school" in query_text.lower():
-        return "School Related"
-    return "Other"
 
 class QueryFilter:
+    """
+    A class responsible for filtering and routing user queries based on their relevance.
+    """
 
     @staticmethod
     def process_query(user_query: UserQuery):
         """
-        Determines if the query is relevant or not and routes it accordingly.
-        - Uses `checkRelevance` to determine relevance.
-        - If relevant, calls `NLU_get_intend(user_query)`.
-        - If not relevant, calls `handle_non_relevant_query(user_query)` inside Orchestrator.
+        Processes a user query to determine its relevance and routes it accordingly.
+
+        Workflow:
+        - Uses `checkRelevance` to determine if the query is relevant.
+        - If relevant, calls `NLU_get_intend(user_query)` to determine the intent.
+        - If not relevant, calls `handle_non_relevant_query(user_query)` in the Orchestrator.
+
+        Args:
+            user_query (UserQuery): The user's query object.
+
+        Returns:
+            The result of either the NLU intent determination or the Orchestrator's handling of non-relevant queries.
         """
 
-        # TODO: Implement regex filtering if needed. For now, the accuracy of the model seems to be enough.
+        # TODO: Implement regex filtering if additional pre-processing is required.
+        # For now, the accuracy of the model is assumed to be sufficient.
 
-        # Legacy API call (commented out)
+        # Legacy API call for relevance checking (commented out for reference)
         """
         try:
             response = requests.post(QUERY_RELEVANCE_ENDPOINT, json={"query_text": user_query.query_text})
             if response.status_code == 200:
-                is_relevant = response.json().get("Relevannce") == "School Related"
+                is_relevant = response.json().get("relevant") == True
             else:
                 is_relevant = False  
         except requests.RequestException:
@@ -50,10 +55,10 @@ class QueryFilter:
         """
 
         # New logic using the `checkRelevance` function
-        # TODO: Implement the checkRelevance function to call the actual model
+        # Replace `checkRelevance` with the actual model call when ready
         is_relevant = checkRelevance(user_query.query_text) == "School Related"
 
         if is_relevant:
-            return NLU_get_intend(user_query) 
+            return NLU_get_intend(user_query)  # Process relevant queries to determine intent
         else:
-            return Orchestrator.handle_non_relevant_query(user_query)
+            return Orchestrator.handle_non_relevant_query(user_query)  # Handle non-relevant queries

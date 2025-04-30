@@ -1,22 +1,31 @@
 from pydantic import BaseModel
 from typing import List, Optional
 
-
 class UserQueryHandled(BaseModel):
-    type: str # 'document', 'announcement', 'greeting', 'follow-up'
-    pruned_query: str  # The pruned version of the user query
-    user_query: str  
-    user_id: Optional[str] = None # The user ID to retrieve the session
-    # The session will be used to retrieve the past interactions
-    retrieved_data_id: Optional[str] = None
-    similarity_score: Optional[float] = None
-    data_status: Optional[str] = None
+    """
+    A Pydantic model representing a processed or handled user query in the chatbot system.
 
-    # We removed the RetrievedData object from here to avoid circular references.
-    # This way we can save memory and avoid having to serialize the whole object.
-    # If changes are needed, we can later refer this part.
-    # retrieved_data: Optional['RetrievedData'] = None #
+    Attributes:
+        type (str): The type of query, e.g., 'document', 'announcement', 'greeting', or 'follow-up'.
+        pruned_query (str): A simplified or cleaned version of the user's original query.
+        user_query (str): The original query text from the user.
+        user_id (Optional[str]): An optional identifier for the user, used to retrieve session data.
+        retrieved_data_id (Optional[str]): An optional identifier for the data retrieved in response to the query.
+        similarity_score (Optional[float]): An optional score indicating the similarity of the query to retrieved data.
+        data_status (Optional[str]): An optional status of the retrieved data, e.g., 'processed' or 'pending'.
+    """
+    type: str  # The type of query, e.g., 'document', 'announcement', 'greeting', or 'follow-up'
+    pruned_query: str  # A simplified or cleaned version of the user's original query
+    user_query: str  # The original query text from the user
+    user_id: Optional[str] = None  # Optional user ID to retrieve session data
+    retrieved_data_id: Optional[str] = None  # Optional ID for the data retrieved in response to the query
+    similarity_score: Optional[float] = None  # Optional similarity score for the query and retrieved data
+    data_status: Optional[str] = None  # Optional status of the retrieved data
 
-    # We do the encoding and the similarity search in the same module, to avoid loading the model multiple times.
-    # This way we can save memory and avoid having to serialize the whole object.
+    # Note: The `RetrievedData` object was removed to avoid circular references and reduce memory usage.
+    # If needed, this can be referenced or reintroduced later.
+    # retrieved_data: Optional['RetrievedData'] = None
+
+    # Note: Encoding and similarity search are handled in the same module to avoid loading the model multiple times.
+    # This approach optimizes memory usage and avoids serializing the entire object.
     # query_encoded: Optional[List[float]] = None

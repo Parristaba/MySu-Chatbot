@@ -89,13 +89,17 @@ class SessionManager:
         return process_query(user_query)
 
     
+
+    # This is an old method that is not used anymore.
+    # It is kept here for reference and future use if needed.
+    """
     @staticmethod
     def get_session(session_id: str) -> Optional[UserSession]:
-        """
+        """"""
         Retrieves session data from Redis.
 
         This will mainly be used by the Orchestrator to retrieve the session data during LLM feeding.
-        """
+        """""""
         if not redis_client.exists(session_id):
             return None
 
@@ -105,7 +109,10 @@ class SessionManager:
             query_list=eval(session_data.get("query_list", "[]")),
             last_active=int(session_data["last_active"])
         )
+    """
 
+    # This method is not used, but kept for future use if needed.
+    # Note that deletions are handled by the Redis expiration mechanism.
     @staticmethod
     def delete_session(session_id: str):
         """
