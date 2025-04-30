@@ -11,17 +11,31 @@ from LLMResponseBuilder import (  # Assuming these functions live in this module
 # import requests  # Legacy API support, if endpoints are used again
 
 class Orchestrator:
+    """
+    The Orchestrator class is responsible for managing user queries and routing them
+    to the appropriate handlers. It supports both action-based queries (e.g., announcements/documents)
+    and non-action queries (e.g., greetings, follow-ups). It also integrates with session management
+    and response building mechanisms.
 
+    Note: Legacy API endpoints are currently disabled but can be re-enabled if needed.
     """
-    LLM_GREETING_ENDPOINT = ""  # To be filled later
-    LLM_FOLLOWUP_ENDPOINT = ""  # To be filled later
-    LLM_ACTION_ENDPOINT = ""    # To be filled later
-    """
+
+    # Placeholder for potential API endpoints (currently unused)
+    LLM_GREETING_ENDPOINT = ""  # Endpoint for greeting-related queries
+    LLM_FOLLOWUP_ENDPOINT = ""  # Endpoint for follow-up queries
+    LLM_ACTION_ENDPOINT = ""    # Endpoint for action-based queries
 
     @staticmethod
     def handle_non_relevant_query(user_query: UserQuery):
         """
-        Handles irrelevant queries directly without calling LLM.
+        Handles queries that are not relevant to the chatbot's scope.
+        These queries are processed locally without involving the LLM.
+
+        Args:
+            user_query (UserQuery): The user query object containing query details.
+
+        Returns:
+            dict: A response indicating the query is out of scope.
         """
         return {
             "response": "Sorry, I can only assist with Sabancı University-related topics. Please ask a school-related question!"
@@ -30,20 +44,29 @@ class Orchestrator:
     @staticmethod
     def HandleNonActionIntend(intent: str, user_query: UserQuery):
         """
-        Handles non-action user messages like greetings or follow-ups.
-        Decides based on intent and calls local builder instead of endpoint.
+        Handles non-action user queries such as greetings or follow-ups.
+        Determines the intent and uses local response builders to generate responses.
+
+        Args:
+            intent (str): The intent of the user query (e.g., "greeting", "follow-up").
+            user_query (UserQuery): The user query object containing query details.
+
+        Returns:
+            dict: The generated response based on the intent.
         """
+        # Retrieve the session associated with the user's query
         session = SessionManager.get_session(user_query.session_id)
         if not session:
             return {"response": "Session expired or invalid. Please try again."}
 
+        # Handle greeting or goodbye intents
         if intent in ["greeting", "goodbye"]:
             payload = {
                 "type": intent,
                 "query": user_query.query_text
             }
 
-            # Local builder function replaces API call
+            # Use local response builder to generate the response
             response = BuildResponsesNonAction(query=payload["query"], type=payload["type"])
 
             # --- Legacy API usage (if re-enabled) ---
@@ -55,10 +78,13 @@ class Orchestrator:
             #     print(f"LLM call error: {e}")
             #     return fallback_response
 
+        # Handle follow-up intents
         elif intent == "follow-up":
+            # Retrieve past interactions from the session
             past_handled_queries = session.get_past_interactions()
             past_llm_infos = [LLMInfo.from_handled_query(past) for past in past_handled_queries]
 
+            # Use local response builder to generate the follow-up response
             response = BuildResponsesFollowUp(
                 query=user_query.query_text,
                 past_interactions=[info.dict() for info in past_llm_infos],
@@ -78,9 +104,10 @@ class Orchestrator:
             #     print(f"LLM call error: {e}")
             #     return fallback_response
 
+        # Handle unknown intents (fallback case)
         else:
-            # TODO: There will probably be no unknown intents aside from the fallback one.
-            # So, we will leave this as an empty "response" for now.
+            # TODO: Define behavior for unknown intents if necessary.
+            # Currently, this returns an empty response.
             response = ""
 
         return response
@@ -88,17 +115,27 @@ class Orchestrator:
     @staticmethod
     def HandleAction(handled_query: UserQueryHandled):
         """
-        Handles action-based queries (announcement/document).
-        Uses local response builder with LLMInfo structure.
+        Handles action-based queries such as announcements or documents.
+        Uses the LLMInfo structure to build responses and integrates with session management.
+
+        Args:
+            handled_query (UserQueryHandled): The processed user query object containing
+            details about the query and its intent.
+
+        Returns:
+            dict: The generated response for the action-based query.
         """
+        # Retrieve the session associated with the user's query
         session = SessionManager.get_session(handled_query.user_id)
         if not session:
             return {"response": "Session expired or invalid. Please try again."}
 
+        # Retrieve past interactions from the session
         past_handled_queries = session.get_past_interactions()
         past_llm_infos = [LLMInfo.from_handled_query(past) for past in past_handled_queries]
         current_llm_info = LLMInfo.from_handled_query(handled_query)
 
+        # Use local response builder to generate the action-based response
         response = BuildResponsesAction(
             current_interaction=current_llm_info.dict(),
             past_interactions=[info.dict() for info in past_llm_infos]
@@ -117,10 +154,10 @@ class Orchestrator:
         #     print(f"LLM call error: {e}")
         #     llm_response = fallback_response
 
-        # Update session with current query
+        # Update the session with the current query
         session.update_past_interactions(handled_query)
 
-        # Save session state
+        # Save the updated session state
         SessionManager.save_session(session)
 
         return response

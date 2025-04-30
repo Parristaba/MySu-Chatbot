@@ -3,63 +3,93 @@
 from typing import List
 from Models.UserQueryHandled import UserQueryHandled
 # TODO: Import the new unified search function from the SimilarityModule
-# from SimilarityModule import search_similar_content  # Your new unified search function
+# from SimilarityModule import search_similar_content  # Unified function for similarity search
 from OrchestratorModule import HandleAction
 
 class RAGBlock:
-
-    """ TODO: Decide if we want to keep the legacy API calls or not.
-    ANNOUNCEMENT_SEARCH_ENDPOINT = ""  # Fill with actual endpoint
-    DOCUMENT_SEARCH_ENDPOINT = ""  # Fill with actual endpoint
     """
+    RAGBlock class handles the retrieval-augmented generation (RAG) process.
+    It processes user queries, performs similarity searches, and routes the results
+    based on the intent (e.g., announcement or document). It also maps similarity scores
+    to data statuses for downstream processing.
+    """
+
+    # TODO: Decide if legacy API calls should be retained or removed.
+    # These endpoints are placeholders for potential API integrations.
+    ANNOUNCEMENT_SEARCH_ENDPOINT = ""  # Replace with actual endpoint if needed
+    DOCUMENT_SEARCH_ENDPOINT = ""  # Replace with actual endpoint if needed
 
     @staticmethod
     def handle_parsed_query(Handled_UserQuery: UserQueryHandled):
         """
-        Handles the parsed user query:
-        - Performs similarity search using pruned query string.
-        - Routes based on intent (announcement/document).
-        - Updates Handled_UserQuery with retrieved info and forwards to orchestrator.
+        Processes a parsed user query and determines the appropriate action:
+        - Performs a similarity search using the pruned query string.
+        - Routes the query based on its intent (announcement or document).
+        - Updates the Handled_UserQuery object with retrieved data and forwards it to the orchestrator.
+
+        Args:
+            Handled_UserQuery (UserQueryHandled): The parsed user query object containing
+            the pruned query string, intent, and other metadata.
+
+        Returns:
+            Result of the HandleAction function after processing the query.
         """
 
+        # Extract the pruned query string from the user query object
         query_pruned = Handled_UserQuery.query_pruned
 
+        # Handle queries with intent "announcement"
         if Handled_UserQuery.intent == "announcement":
+            # Perform similarity search for announcements
             data_id, similarity_score = searchSimilarContent(query=query_pruned, is_document=False)
 
-            # Optional legacy API call (disabled)
+            # Optional: Legacy API call for announcements (currently disabled)
             # try:
             #     response = requests.post(RAGBlock.ANNOUNCEMENT_SEARCH_ENDPOINT, json={"query_text": query_pruned})
-            #     # TODO: Parse response as before if endpoint re-enabled
+            #     # TODO: Parse response if endpoint is re-enabled
             # except:
             #     pass
 
+        # Handle queries with intent "document"
         elif Handled_UserQuery.intent == "document":
+            # Perform similarity search for documents
             data_id, similarity_score = searchSimilarContent(query=query_pruned, is_document=True)
 
-            # Optional legacy API call (disabled)
+            # Optional: Legacy API call for documents (currently disabled)
             # try:
             #     response = requests.post(RAGBlock.DOCUMENT_SEARCH_ENDPOINT, json={"query_text": query_pruned})
-            #     # TODO: Parse response as before if endpoint re-enabled
+            #     # TODO: Parse response if endpoint is re-enabled
             # except:
             #     pass
 
+        # Handle unknown or unsupported intents
         else:
-            # Unknown intent fallback
-            # TODO: Handle this case appropriately
-            # For now, we can just return a default response or raise an error
+            # TODO: Implement appropriate handling for unknown intents.
+            # For now, return a default response or raise an error.
             return 
 
+        # Update the user query object with retrieved data and similarity score
         Handled_UserQuery.retrieved_data_id = data_id
         Handled_UserQuery.similarity_score = similarity_score
         Handled_UserQuery.data_status = RAGBlock.map_similarity_to_data_status(similarity_score)
 
+        # Forward the updated query object to the orchestrator for further processing
         return HandleAction(Handled_UserQuery)
 
     @staticmethod
     def map_similarity_to_data_status(score: float) -> str:
         """
-        Maps similarity score to data_status used in prompt generation.
+        Maps a similarity score to a data status label, which is used in prompt generation.
+
+        Args:
+            score (float): The similarity score obtained from the search.
+
+        Returns:
+            str: A label indicating the quality of the similarity score:
+                 - "null" if the score is None.
+                 - "confident" if the score is >= 0.6.
+                 - "mediocre" if the score is >= 0.3 but < 0.6.
+                 - "flawed" if the score is < 0.3.
         """
         if score is None:
             return "null"
