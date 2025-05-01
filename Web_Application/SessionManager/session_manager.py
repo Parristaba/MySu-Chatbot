@@ -1,12 +1,12 @@
 import time
 import uuid
 from fastapi import Request, Response  
-from Web_Application.Models.UserQuery import UserQuery
-from Web_Application.Models.UserSession import UserSession
 from config import redis_client
 from typing import Optional
 from datetime import datetime
-from QueryFilterModule import process_query 
+from Web_Application.QueryFilterModule import process_query
+from Web_Application.Models.UserQuery import UserQuery
+from Web_Application.Models.UserSession import UserSession 
 
 
 SESSION_EXPIRY = 900  

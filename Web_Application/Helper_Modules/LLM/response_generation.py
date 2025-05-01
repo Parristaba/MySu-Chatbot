@@ -1,6 +1,6 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
-from Web_Application.LLM.prompt_generation import PromptGenerator
+from Web_Application.Helper_Modules.LLM import PromptGenerator
 import psutil
 import re
 

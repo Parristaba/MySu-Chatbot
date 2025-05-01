@@ -1,12 +1,7 @@
-import sys
-import os
-
-
-
 from Web_Application.Models import UserQuery  # Importing the UserQuery model for query representation
 from Web_Application.OrchestratorModule import Orchestrator  # Importing the Orchestrator for handling non-relevant queries
 from Web_Application.NluModule import NLU_get_intend  # Importing the NLU module to determine the intent of relevant queries
-from Message_Filter.message_filter import checkRelevance  # Importing the relevance checking function
+from Web_Application.Helper_Modules.RelevanceFilter import checkRelevance  # Importing the relevance checking function
 
 
 # Placeholder for the endpoint used to determine if a user query is relevant or not.
