@@ -3,7 +3,7 @@
 from Models import UserQuery, UserQueryHandled
 from SessionManager import SessionManager
 from Models.LLMInfo import LLMInfo
-from LLM.Zephyr import BuildResponsesAction, BuildResponsesFollowUp, BuildResponsesNonAction
+from Web_Application.Helper_Modules.LLM import BuildResponsesAction, BuildResponsesFollowUp, BuildResponsesNonAction
 # import requests  # Legacy API support, if endpoints are used again
 
 class Orchestrator:
