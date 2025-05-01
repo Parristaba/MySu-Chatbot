@@ -1,11 +1,11 @@
 # Ignore Deepseek Model folder
-LMM Testing/Deepseek Model/
+LLM/Deepseek Model/
 
 # Ignore Zephyr Model folder
-LMM Testing/Zephyr Model/
+LLM/Zephyr Model/
 
 # Ignore Intent Model folder
-Natural Language Understanding/Intent Model/
+NLU/Intent Model/
 
 # Ignore NLU Model folder
-Message Filter/Filter Model/
+Message_Filter/Filter Model/

@@ -5,6 +5,9 @@ from Models.UserQueryHandled import UserQueryHandled
 # TODO: Import the new unified search function from the SimilarityModule
 # from SimilarityModule import search_similar_content  # Unified function for similarity search
 from OrchestratorModule import HandleAction
+from Vector_Database import search_similar_content  # Placeholder for the actual import
+from NLU import pruneQuery  # Placeholder for the actual import
+
 
 class RAGBlock:
     """
@@ -35,32 +38,19 @@ class RAGBlock:
             Result of the HandleAction function after processing the query.
         """
 
-        # Extract the pruned query string from the user query object
-        query_pruned = Handled_UserQuery.query_pruned
+        # Extract the pruned query string and intent from the user query object
+        query_pruned = Handled_UserQuery.pruned_query
+        intent = Handled_UserQuery.get("intent", "")
 
         # Handle queries with intent "announcement"
-        if Handled_UserQuery.intent == "announcement":
+        if intent == "announcement":
             # Perform similarity search for announcements
-            data_id, similarity_score = searchSimilarContent(query=query_pruned, is_document=False)
-
-            # Optional: Legacy API call for announcements (currently disabled)
-            # try:
-            #     response = requests.post(RAGBlock.ANNOUNCEMENT_SEARCH_ENDPOINT, json={"query_text": query_pruned})
-            #     # TODO: Parse response if endpoint is re-enabled
-            # except:
-            #     pass
+            data_id, similarity_score = search_similar_content(query=query_pruned, is_document=False, k=1)
 
         # Handle queries with intent "document"
-        elif Handled_UserQuery.intent == "document":
+        elif intent == "document":
             # Perform similarity search for documents
-            data_id, similarity_score = searchSimilarContent(query=query_pruned, is_document=True)
-
-            # Optional: Legacy API call for documents (currently disabled)
-            # try:
-            #     response = requests.post(RAGBlock.DOCUMENT_SEARCH_ENDPOINT, json={"query_text": query_pruned})
-            #     # TODO: Parse response if endpoint is re-enabled
-            # except:
-            #     pass
+            data_id, similarity_score = search_similar_content(query=query_pruned, is_document=True, k=1)
 
         # Handle unknown or unsupported intents
         else:
@@ -69,9 +59,9 @@ class RAGBlock:
             return 
 
         # Update the user query object with retrieved data and similarity score
-        Handled_UserQuery.retrieved_data_id = data_id
-        Handled_UserQuery.similarity_score = similarity_score
-        Handled_UserQuery.data_status = RAGBlock.map_similarity_to_data_status(similarity_score)
+        Handled_UserQuery["retrieved_data_id"] = data_id
+        Handled_UserQuery["similarity_score"] = similarity_score
+        Handled_UserQuery["data_status"] = RAGBlock.map_similarity_to_data_status(similarity_score)
 
         # Forward the updated query object to the orchestrator for further processing
         return HandleAction(Handled_UserQuery)
@@ -87,15 +77,13 @@ class RAGBlock:
         Returns:
             str: A label indicating the quality of the similarity score:
                  - "null" if the score is None.
-                 - "confident" if the score is >= 0.6.
-                 - "mediocre" if the score is >= 0.3 but < 0.6.
-                 - "flawed" if the score is < 0.3.
+                 - "confident" if the score is less than 2.0.
+                 - "flawed" if the score is greater than or equal to 2.0.
         """
         if score is None:
             return "null"
-        elif score >= 0.6:
-            return "confident"
-        elif score >= 0.3:
-            return "mediocre"
-        else:
+        elif score >= 2.0:
             return "flawed"
+        else:
+            return "confident"
+        

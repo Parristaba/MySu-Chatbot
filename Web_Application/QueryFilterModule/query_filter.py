@@ -1,9 +1,13 @@
-import requests
-from Models import UserQuery  # Importing the UserQuery model for query representation
-from OrchestratorModule import Orchestrator  # Importing the Orchestrator for handling non-relevant queries
-from NluModule import NLU_get_intend  # Importing the NLU module to determine the intent of relevant queries
+import sys
+import os
 
-# TODO: Implement and import the checkRelevance function from the ML model.
+
+
+from Web_Application.Models import UserQuery  # Importing the UserQuery model for query representation
+from Web_Application.OrchestratorModule import Orchestrator  # Importing the Orchestrator for handling non-relevant queries
+from Web_Application.NluModule import NLU_get_intend  # Importing the NLU module to determine the intent of relevant queries
+from Message_Filter.message_filter import checkRelevance  # Importing the relevance checking function
+
 
 # Placeholder for the endpoint used to determine if a user query is relevant or not.
 """
@@ -29,8 +33,9 @@ class QueryFilter:
 
         Workflow:
         - Uses `checkRelevance` to determine if the query is relevant.
-        - If relevant, calls `NLU_get_intend(user_query)` to determine the intent.
-        - If not relevant, calls `handle_non_relevant_query(user_query)` in the Orchestrator.
+        - If School Related, calls `NLU_get_intend(user_query)` to determine the intent.
+        - If Other, calls `handle_non_relevant_query(user_query)` in the Orchestrator.
+        - If greeting, calls `handle_greeting(user_query)` in the Orchestrator.
 
         Args:
             user_query (UserQuery): The user's query object.
@@ -42,23 +47,17 @@ class QueryFilter:
         # TODO: Implement regex filtering if additional pre-processing is required.
         # For now, the accuracy of the model is assumed to be sufficient.
 
-        # Legacy API call for relevance checking (commented out for reference)
-        """
-        try:
-            response = requests.post(QUERY_RELEVANCE_ENDPOINT, json={"query_text": user_query.query_text})
-            if response.status_code == 200:
-                is_relevant = response.json().get("relevant") == True
-            else:
-                is_relevant = False  
-        except requests.RequestException:
-            is_relevant = False  
-        """
+    
+        predicted_label, confidence = checkRelevance(user_query)
 
-        # New logic using the `checkRelevance` function
-        # Replace `checkRelevance` with the actual model call when ready
-        is_relevant = checkRelevance(user_query.query_text) == "School Related"
-
-        if is_relevant:
-            return NLU_get_intend(user_query)  # Process relevant queries to determine intent
+        if predicted_label == "Non-School":
+            # If the query is not relevant, handle it using the Orchestrator
+            return Orchestrator.handle_non_relevant_query(user_query)
+        elif predicted_label == "Greeting":
+            intent = "greeting"
+            # If the query is a greeting, handle it using the Orchestrator
+            return Orchestrator.HandleNonActionIntend(intent, user_query)
         else:
-            return Orchestrator.handle_non_relevant_query(user_query)  # Handle non-relevant queries
+            # If the query is relevant, determine its intent using NLU
+            return NLU_get_intend(user_query)
+        

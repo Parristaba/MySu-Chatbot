@@ -3,9 +3,12 @@ from Models import UserQuery  # Represents the user's query in the chatbot syste
 from OrchestratorModule import Orchestrator  # Handles non-actionable intents
 from RagModule import HandleParsedQuery  # Handles retrieval-augmented generation (RAG) queries
 from Models.UserQueryHandled import UserQueryHandled  # Represents a processed user query
+from NluModule import determineIntent  # Function to determine the intent of a user query
 
 # TODO: Define the `determineIntent` function in a separate module or import it from an existing one.
 # TODO: Define the `pruneQuery` function in a separate module or import it from an existing one.
+
+from NLU import pruneQuery  # Function to prune the user query for RAG retrieval
 
 """
 Endpoints for intent and NER models.
@@ -30,7 +33,7 @@ class NLU:
         Routes based on intent:
         - "document" ➔ HandleDocumentModule
         - "announcement" ➔ HandleAnnouncementModule
-        - "greeting", "goodbye", "follow-up" ➔ Orchestrator.HandleNonActionIntend
+        - "follow-up" ➔ Orchestrator.HandleNonActionIntend
         - Unknown intents ➔ Orchestrator.HandleNonActionIntend with "unknown" intent
 
         Args:
@@ -60,7 +63,7 @@ class NLU:
             return NLU.HandleDocumentModule(user_query, intent)
         elif intent == "announcement":
             return NLU.HandleAnnouncementModule(user_query, intent)
-        elif intent in ["greeting", "follow-up"]:
+        elif intent in ["follow-up"]:
             return Orchestrator.HandleNonActionIntend(intent, user_query)
         else:
             # Handle unknown intents by routing them to the Orchestrator with "unknown" intent

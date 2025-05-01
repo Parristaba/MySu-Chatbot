@@ -119,7 +119,6 @@ def BuildResponsesAction(type: str, query: str, retrieved_data_id: str, data_sta
     
     return {
         "response": final_response,
-        "memory": get_memory_usage()
     }
 
 def BuildResponsesFollowUp(type: str, query: str, retrieved_data_id: str, data_status: str) -> dict:
@@ -161,7 +160,6 @@ def BuildResponsesFollowUp(type: str, query: str, retrieved_data_id: str, data_s
     
     return {
         "response": final_response,
-        "memory": get_memory_usage()
     }
 
 def BuildResponsesNonAction(type: str, query: str) -> dict:
@@ -186,7 +184,6 @@ def BuildResponsesNonAction(type: str, query: str) -> dict:
     
     return {
         "response": assistant_text,
-        "memory": get_memory_usage()
     }
 
 if __name__ == "__main__":
