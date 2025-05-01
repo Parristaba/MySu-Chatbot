@@ -1,0 +1,140 @@
+[
+    {
+        "type": "announcement",
+        "query": "Where is the new location for the Lost and Found office?",
+        "retrieved_document": "Dear Students,\n\nWe would like to inform you that the Lost and Found Office has been relocated. Effective from March 1st, 2025, all lost items will be handled through the new office at Building C, Ground Floor, Room 105. The new location is equipped with better facilities to ensure faster processing and safekeeping of personal belongings. Students who have lost items prior to the relocation are also encouraged to check the new office. Operating hours remain the same: 9:00 AM - 5:00 PM on weekdays.\n\nSincerely,\nStudent Services",
+        "past_interactions": [],
+        "time_status": "2025-04-27 12:56:18.702244",
+        "data_status": "confident"
+    },
+    {
+        "type": "announcement",
+        "query": "Has the cafeteria updated its opening hours?",
+        "retrieved_document": "Dear Students,\n\nThe university cafeteria has made slight adjustments to its opening hours effective from February 15th, 2025. The new opening hours will be from 8:00 AM to 6:30 PM on weekdays. Weekend service remains suspended until further notice due to low demand. Menu updates will also occur twice per week instead of once, aiming to introduce a broader range of meal options. We hope these changes enhance your campus experience.\n\nWarm regards,\nFacility Management",
+        "past_interactions": [
+            [
+                "What are the old cafeteria hours?",
+                "The cafeteria was open from 7:30 AM to 7:00 PM on weekdays previously."
+            ]
+        ],
+        "time_status": "2025-04-27 12:56:18.702259",
+        "data_status": "mediocre"
+    },
+    {
+        "type": "document",
+        "query": "When is the summer school registration deadline?",
+        "retrieved_document": "The summer school registration for the academic year 2024-2025 will commence on May 5th, 2025, and end on May 19th, 2025. Late registration will not be entertained unless justified by a medical or emergency reason, accompanied by proper documentation. Course offerings are listed on the academic portal and are subject to minimum enrollment requirements.\n\nPlease refer to the official Summer Programs Guide for full policies.",
+        "past_interactions": [],
+        "time_status": "2025-04-27 12:56:18.702262",
+        "data_status": "confident"
+    },
+    {
+        "type": "followup",
+        "query": "Are there exceptions for 4th-year students regarding summer school?",
+        "retrieved_document": null,
+        "past_interactions": [
+            [
+                "When is the summer school registration deadline?",
+                "Registration is open from May 5th to May 19th."
+            ],
+            [
+                "What documents are needed for summer school?",
+                "Only standard enrollment form and advisor approval are required."
+            ]
+        ],
+        "time_status": "2025-04-27 12:56:18.702264",
+        "data_status": "null"
+    },
+    {
+        "type": "greeting",
+        "query": "Thanks for helping me out!",
+        "retrieved_document": null,
+        "past_interactions": [],
+        "time_status": "2025-04-27 12:56:18.702266",
+        "data_status": null
+    },
+    {
+        "type": "announcement",
+        "query": "Are there new parking regulations for students?",
+        "retrieved_document": "Attention all students,\n\nEffective from March 20th, 2025, new parking regulations have been introduced. All students must display updated parking permits on their vehicles. The designated student parking zones are now limited to Parking Lot B and C. Unauthorized vehicles parked outside these zones will be fined. Temporary parking passes for visitors are available at the Security Office.\n\nUniversity Transportation Services",
+        "past_interactions": [
+            [
+                "Where can I get a parking permit?",
+                "Permits are issued at the Security Office, Building A basement."
+            ]
+        ],
+        "time_status": "2025-04-27 12:56:18.702269",
+        "data_status": "flawed"
+    },
+    {
+        "type": "document",
+        "query": "Where is the academic calendar posted?",
+        "retrieved_document": "The updated academic calendar for the 2025-2026 academic year has been posted on the Registrar's Office page as of January 10th, 2025. It outlines all key dates including registration periods, holidays, and graduation ceremonies.\n\nCheck the Registrar's official portal for updates.",
+        "past_interactions": [],
+        "time_status": "2025-04-27 12:56:18.702271",
+        "data_status": "confident"
+    },
+    {
+        "type": "followup",
+        "query": "Is the internship deadline different for graduate students?",
+        "retrieved_document": null,
+        "past_interactions": [
+            [
+                "When is the undergraduate internship deadline?",
+                "Deadline is June 30, 2025, for undergraduates."
+            ],
+            [
+                "Where to submit internship applications?",
+                "Submit via Career Center Portal."
+            ]
+        ],
+        "time_status": "2025-04-27 12:56:18.702274",
+        "data_status": "null"
+    },
+    {
+        "type": "followup",
+        "query": "Can you also tell me if cafeteria hours apply for weekend brunch?",
+        "retrieved_document": null,
+        "past_interactions": [
+            [
+                "Has the cafeteria updated its opening hours?",
+                "Weekday hours are now 8:00 AM - 6:30 PM; weekend service suspended."
+            ],
+            [
+                "Are there new food menu items?",
+                "Menu will rotate twice weekly starting February."
+            ]
+        ],
+        "time_status": "2025-04-27 12:56:18.702276",
+        "data_status": "null"
+    },
+    {
+        "type": "announcement",
+        "query": "Is there any news about scholarship deadlines?",
+        "retrieved_document": null,
+        "past_interactions": [
+            [
+                "How to apply for scholarships?",
+                "Scholarship applications are processed via the Student Information System (SIS)."
+            ]
+        ],
+        "time_status": "2025-04-27 12:56:18.702279",
+        "data_status": "null"
+    },
+    {
+        "type": "document",
+        "query": "What is the maximum course load allowed for summer school?",
+        "retrieved_document": "Students enrolled in summer school may register for a maximum of 2 courses, totaling no more than 8 credits, unless approved otherwise by academic advisors for specific graduation plans.",
+        "past_interactions": [],
+        "time_status": "2025-04-27 12:56:18.702281",
+        "data_status": "mediocre"
+    },
+    {
+        "type": "announcement",
+        "query": "Can you tell me about both library renovations and Wi-Fi upgrades?",
+        "retrieved_document": "Dear Community,\n\nWe are pleased to announce major updates:\n\n- Library Renovations: Starting June 2025, extensive renovations to enhance study spaces and create new digital resource zones.\n- Wi-Fi Upgrades: Campus-wide wireless network speed will double, with installation of 200+ new routers completed by September 2025.\n\nWe appreciate your patience during these upgrades.\n\nAdministration Office",
+        "past_interactions": [],
+        "time_status": "2025-04-27 12:56:18.702284",
+        "data_status": "confident"
+    }
+]

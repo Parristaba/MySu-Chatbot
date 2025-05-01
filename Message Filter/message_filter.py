@@ -1,56 +1,50 @@
-import json
 import torch
+import torch.nn.functional as F
 from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassification
-from tqdm import tqdm
-
-# Paths
-model_path = "MySu-Chatbot/Message Filter/distilbert_message_filter"
-test_data_path = "MySu-Chatbot\Message Filter\message_filter_test_set.json"
-output_path = "MySu-Chatbot\Message Filter\message_filter_test_results.json"
 
 # Load model and tokenizer
-device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
-model = DistilBertForSequenceClassification.from_pretrained(model_path).to(device)
+model_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\Message Filter\Filter Model"
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 tokenizer = DistilBertTokenizerFast.from_pretrained(model_path)
+model = DistilBertForSequenceClassification.from_pretrained(model_path)
+model.to(device)
+model.eval()
 
-# Load test data
-with open(test_data_path, 'r', encoding='utf-8') as f:
-    test_data = json.load(f)
+# Label mapping
+label_map = {
+    0: "Non-School",
+    1: "School",
+    2: "Greeting"
+}
 
-# Prepare output
-predicted_data = []
-true_count = 0
-false_count = 0
+def checkRelevance(query: str):
+    """
+    Classifies the relevance of a user query.
 
-print("Running predictions...")
+    Args:
+        query (str): The input text query from the user.
 
-for item in tqdm(test_data):
-    text = item["query"]
-    label = 1 if item["label"] == "School Related" else 0
+    Returns:
+        tuple[str, float]: A tuple containing:
+            - Predicted class label (e.g., "School", "Greeting", "Non-School")
+            - Confidence score for the prediction
+    """
+    inputs = tokenizer(query, return_tensors="pt", truncation=True, padding=True).to(device)
 
-    inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True).to(device)
-    outputs = model(**inputs)
-    prediction = torch.argmax(outputs.logits, dim=1).item()
+    with torch.no_grad():
+        outputs = model(**inputs)
+        logits = outputs.logits
+        predicted_label = torch.argmax(logits, dim=1).item()
+        confidence = F.softmax(logits, dim=1)[0][predicted_label].item()
 
-    match = prediction == label
+    return label_map[predicted_label], confidence
 
-    if match:
-        true_count += 1
-    else:
-        false_count += 1
-
-    predicted_data.append({
-        "query": text,
-        "true_label": item["label"],
-        "predicted_label": "School Related" if prediction == 1 else "Other",
-        "match": match
-    })
-
-# Save predictions
-with open(output_path, 'w', encoding='utf-8') as f:
-    json.dump(predicted_data, f, indent=4, ensure_ascii=False)
-
-# Print results
-print(f"True predictions: {true_count}")
-print(f"False predictions: {false_count}")
-print(f"Saved detailed predictions to {output_path}")
+# Example usage
+if __name__ == "__main__":
+    while True:
+        user_query = input("\nEnter a query (or 'exit' to quit): ")
+        if user_query.lower() == "exit":
+            break
+        label, score = checkRelevance(user_query)
+        print(f"Predicted: {label} (confidence: {score:.2f})")

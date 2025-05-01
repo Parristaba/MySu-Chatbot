@@ -60,7 +60,7 @@ class NLU:
             return NLU.HandleDocumentModule(user_query, intent)
         elif intent == "announcement":
             return NLU.HandleAnnouncementModule(user_query, intent)
-        elif intent in ["greeting", "goodbye", "follow-up"]:
+        elif intent in ["greeting", "follow-up"]:
             return Orchestrator.HandleNonActionIntend(intent, user_query)
         else:
             # Handle unknown intents by routing them to the Orchestrator with "unknown" intent

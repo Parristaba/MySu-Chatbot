@@ -38,7 +38,7 @@ def generate_announcement_combinations(announcements):
         for g1, g2 in itertools.product(g1_values, g2_values):
             query = pattern.replace("\\g<1>", g1).replace("\\g<2>", g2)
             generated_data.append({
-                "Intent": "Documents",
+                "Intent": "Announcements",
                 "Query": query,
                 "Entities": [g1, g2]
             })
@@ -48,7 +48,7 @@ def generate_announcement_combinations(announcements):
             for g1, g2, g3 in itertools.product(g1_values, g2_values, g3_values):
                 query = pattern.replace("\\g<1>", g1).replace("\\g<2>", g2).replace("\\g<3>", g3)
                 generated_data.append({
-                    "Intent": "Documents",
+                    "Intent": "Announcements",
                     "Query": query,
                     "Entities": [g1, g2, g3]
                 })
@@ -59,7 +59,7 @@ def generate_announcement_combinations(announcements):
                 # Remove any lingering \\g<3> if g3 values are not present
                 query = query.replace("\\g<3>", "")
                 generated_data.append({
-                    "Intent": "Documents",
+                    "Intent": "Announcements",
                     "Query": query,
                     "Entities": [g1, g2]
                 })
