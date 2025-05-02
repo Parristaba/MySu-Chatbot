@@ -2,7 +2,7 @@
 
 from typing import List
 from Web_Application.Models.UserQueryHandled import UserQueryHandled
-from Web_Application.OrchestratorModule import Orchestrator
+from Web_Application.OrchestratorModule.Orchestrator import Orchestrator
 from Web_Application.Helper_Modules.SimilaritySearch.similarity_search import search_similar_content
 
 
@@ -20,46 +20,47 @@ class RAGBlock:
     DOCUMENT_SEARCH_ENDPOINT = ""  # Replace with actual endpoint if needed
 
     @staticmethod
-    def handle_parsed_query(Handled_UserQuery: UserQueryHandled):
+    def HandleParsedQuery(Handled_UserQuery: UserQueryHandled):
         """
         Processes a parsed user query and determines the appropriate action:
         - Performs a similarity search using the pruned query string.
         - Routes the query based on its intent (announcement or document).
         - Updates the Handled_UserQuery object with retrieved data and forwards it to the orchestrator.
-
+    
         Args:
             Handled_UserQuery (UserQueryHandled): The parsed user query object containing
             the pruned query string, intent, and other metadata.
-
+    
         Returns:
             Result of the HandleAction function after processing the query.
         """
-
+    
         # Extract the pruned query string and intent from the user query object
         query_pruned = Handled_UserQuery.pruned_query
-        intent = Handled_UserQuery.get("intent", "")
-
+        intent = Handled_UserQuery.intent  # Access the 'intent' attribute directly
+    
         # Handle queries with intent "announcement"
         if intent == "announcement":
             # Perform similarity search for announcements
-            data_id, similarity_score = search_similar_content(query=query_pruned, is_document=False, k=1)
-
-        # Handle queries with intent "document"
+            results = search_similar_content(query=query_pruned, is_document=False, k=1)
         elif intent == "document":
             # Perform similarity search for documents
-            data_id, similarity_score = search_similar_content(query=query_pruned, is_document=True, k=1)
-
-        # Handle unknown or unsupported intents
+            results = search_similar_content(query=query_pruned, is_document=True, k=1)
         else:
-            # TODO: Implement appropriate handling for unknown intents.
-            # For now, return a default response or raise an error.
-            return 
-
+            # Handle unknown or unsupported intents
+            return {"response": "Unknown intent"}
+    
+        # Ensure results are not empty
+        if results:
+            similarity_score, data_id = results[0]  # Extract the top result
+        else:
+            similarity_score, data_id = None, None  # Handle case where no results are found
+    
         # Update the user query object with retrieved data and similarity score
-        Handled_UserQuery["retrieved_data_id"] = data_id
-        Handled_UserQuery["similarity_score"] = similarity_score
-        Handled_UserQuery["data_status"] = RAGBlock.map_similarity_to_data_status(similarity_score)
-
+        Handled_UserQuery.retrieved_data_id = data_id
+        Handled_UserQuery.similarity_score = similarity_score
+        Handled_UserQuery.data_status = RAGBlock.map_similarity_to_data_status(similarity_score)
+    
         # Forward the updated query object to the orchestrator for further processing
         return Orchestrator.HandleAction(Handled_UserQuery)
 

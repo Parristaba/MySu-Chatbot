@@ -57,7 +57,7 @@ class PromptGenerator:
         print(f"[DEBUG] Looking for announcement ID: {self.retrieved_data_id}")
 
         # Load full announcements database
-        announcements_db_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\Vector Database\Datasets\announcements.json"
+        announcements_db_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\Vector_Database\Development\Datasets\announcements.json"
         try:
             with open(announcements_db_path, "r", encoding="utf-8") as f:
                 announcements_db = json.load(f)
@@ -85,9 +85,6 @@ class PromptGenerator:
             if self.data_status == "confident":
                 retrieval_info = f"ANNOUNCEMENT:\n{title}\n\n{content}"
                 instruction = "Use only this announcement to answer. Write a 2-3 sentence summary."
-            elif self.data_status == "mediocre":
-                retrieval_info = f"POSSIBLY INCOMPLETE ANNOUNCEMENT:\n{title}\n\n{content}"
-                instruction = "This announcement may be incomplete. Write a careful 2-3 sentence summary."
             elif self.data_status == "flawed":
                 retrieval_info = f"UNRELIABLE ANNOUNCEMENT:\n{title}\n\n{content}"
                 instruction = "This may be unreliable. Write a 2-3 sentence summary with appropriate caution."

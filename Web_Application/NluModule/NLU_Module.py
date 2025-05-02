@@ -1,7 +1,7 @@
 import requests
 from Web_Application.Models import UserQuery  # Represents the user's query in the chatbot system
 from Web_Application.OrchestratorModule.Orchestrator import Orchestrator  # Handles non-actionable intents
-from Web_Application.RagModule import RAG_module  # Handles retrieval-augmented generation (RAG) queries
+from Web_Application.RagModule.RAG_module import RAGBlock  # Handles retrieval-augmented generation (RAG) queries
 from Web_Application.Models.UserQueryHandled import UserQueryHandled  # Represents a processed user query
 from Web_Application.Helper_Modules.IntentDetection.check_intent import determineIntent  # Function to determine the intent of a user query
 from Web_Application.Helper_Modules.QueryPruning.query_pruning import prune_query  # Function to prune the user query
@@ -52,18 +52,22 @@ class NLU:
             intent = None
             # TODO: Log error if necessary
         """
-
-        # New logic using the `determineIntent` function
-        intent = determineIntent(user_query.query_text)
-
+        
+        intent_tuple = determineIntent(user_query.query_text)
+        intent = intent_tuple[0]  # Extract the intent string
+        print(f"[DEBUG] Determined Intent: {intent}")
+        
         if intent == "document":
+            print(f"[DEBUG] Entering HandleDocumentModule with intent: {intent}")
             return NLU.HandleDocumentModule(user_query, intent)
         elif intent == "announcement":
+            print(f"[DEBUG] Entering HandleAnnouncementModule with intent: {intent}")
             return NLU.HandleAnnouncementModule(user_query, intent)
         elif intent in ["follow-up"]:
+            print(f"[DEBUG] Entering HandleNonActionIntend with intent: {intent}")
             return Orchestrator.HandleNonActionIntend(intent, user_query)
         else:
-            # Handle unknown intents by routing them to the Orchestrator with "unknown" intent
+            print(f"[DEBUG] Unknown intent: {intent}. Routing to Orchestrator.")
             return Orchestrator.HandleNonActionIntend("unknown", user_query)
 
     @staticmethod
@@ -81,17 +85,22 @@ class NLU:
             The result of the RAG retrieval process.
         """
 
-        # TODO: Define an endpoint for this or import the function directly
         pruned = prune_query(user_query.query_text)
 
+        print(f"[DEBUG] Pruned Query: {pruned}")
+        print(f"[DEBUG] User ID: {user_query.session_id}")
+        print(f"[DEBUG] Original Query: {user_query.query_text}")
+        print(f"[DEBUG] Intent: {intent}")
+
+
         handled_user_query = UserQueryHandled(
-            text=user_query.query_text,
-            query_pruned=pruned,
+            user_query=user_query.query_text,
+            pruned_query=pruned,
             user_id=user_query.session_id,
             intent=intent
         )
 
-        return RAG_module.HandleParsedQuery(handled_user_query)
+        return RAGBlock.HandleParsedQuery(handled_user_query)
 
     @staticmethod
     def HandleAnnouncementModule(user_query: UserQuery, intent: str):
@@ -107,15 +116,19 @@ class NLU:
         Returns:
             The result of the RAG retrieval process.
         """
-
-        # TODO: Define an endpoint for this or import the function directly
+        
         pruned = prune_query(user_query.query_text)
 
+        print(f"[DEBUG] Pruned Query: {pruned}")
+        print(f"[DEBUG] User ID: {user_query.session_id}")
+        print(f"[DEBUG] Original Query: {user_query.query_text}")
+        print(f"[DEBUG] Intent: {intent}")
+
         handled_user_query = UserQueryHandled(
-            text=user_query.query_text,
-            query_pruned=pruned,
+            user_query=user_query.query_text,
+            pruned_query=pruned,
             user_id=user_query.session_id,
             intent=intent
         )
 
-        return RAG_module.HandleParsedQuery(handled_user_query)
+        return RAGBlock.HandleParsedQuery(handled_user_query)

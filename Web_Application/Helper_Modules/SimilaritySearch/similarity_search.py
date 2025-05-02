@@ -9,8 +9,8 @@ from functools import lru_cache
 # === CONFIGURATION ===
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
-ANNOUNCEMENTS_FOLDER = "C:/Users/kagan_ntaijui/Desktop/MySu-Chatbot/Vector Database/Embeddings/Announcements"
-DOCUMENTS_FOLDER = "C:/Users/kagan_ntaijui/Desktop/MySu-Chatbot/Vector Database/Embeddings/Documents"
+ANNOUNCEMENTS_FOLDER = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\Vector_Database\Embeddings\Announcements"
+DOCUMENTS_FOLDER = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\Vector_Database\Embeddings\Documents"
 
 
 @lru_cache(maxsize=1)

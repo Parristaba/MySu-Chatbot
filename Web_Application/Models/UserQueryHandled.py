@@ -14,7 +14,7 @@ class UserQueryHandled(BaseModel):
         similarity_score (Optional[float]): An optional score indicating the similarity of the query to retrieved data.
         data_status (Optional[str]): An optional status of the retrieved data, e.g., 'processed' or 'pending'.
     """
-    type: str  # The type of query, e.g., 'document', 'announcement', 'greeting', or 'follow-up'
+    intent: str  # The type of query, e.g., 'document', 'announcement', 'greeting', or 'follow-up'
     pruned_query: str  # A simplified or cleaned version of the user's original query
     user_query: str  # The original query text from the user
     user_id: Optional[str] = None  # Optional user ID to retrieve session data

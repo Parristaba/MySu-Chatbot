@@ -1,6 +1,6 @@
 from Web_Application.Models import UserQuery  # Importing the UserQuery model for query representation
 from Web_Application.OrchestratorModule.Orchestrator import Orchestrator  # Importing the Orchestrator for handling non-relevant queries
-from Web_Application.NluModule import  NLU_Module  # Importing the NLU module to determine the intent of relevant queries
+from Web_Application.NluModule.NLU_Module import  NLU  # Importing the NLU module to determine the intent of relevant queries
 from Web_Application.Helper_Modules.RelevanceFilter.check_relevance import checkRelevance  # Importing the relevance checking function
 
 
@@ -51,13 +51,15 @@ class QueryFilter:
 
         if predicted_label == "Non-School":
             # If the query is not relevant, handle it using the Orchestrator
+            print(f"[DEBUG] Entering HandleNonRelevantQuery with query: {user_query_text}")
             return Orchestrator.handle_non_relevant_query(user_query)
         elif predicted_label == "Greeting":
             intent = "greeting"
-            print(f"[DEBUG] now passing to Orchestrator")
+            print(f"[DEBUG] Entering HandleNonActionIntend with intent: {intent}")
             # If the query is a greeting, handle it using the Orchestrator
             return Orchestrator.HandleNonActionIntend(intent, user_query)
         else:
             # If the query is relevant, determine its intent using NLU
-            return NLU_Module.NLU_get_intend(user_query)
+            print(f"[DEBUG] Entering NLU_get_intend with query: {user_query_text}")
+            return NLU.NLU_get_intend(user_query)
         

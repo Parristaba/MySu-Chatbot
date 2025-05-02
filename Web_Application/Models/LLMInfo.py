@@ -33,7 +33,7 @@ class LLMInfo(BaseModel):
         """
         return LLMInfo(
             query=handled_query.user_query,
-            type=handled_query.type,
+            type=handled_query.intent,
             data_status=handled_query.data_status,
             retrieved_data_id=handled_query.retrieved_data_id
         )
