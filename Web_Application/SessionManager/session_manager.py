@@ -10,7 +10,6 @@ from Web_Application.Models.UserQuery import UserQuery
 from Web_Application.Models.UserSession import UserSession
 from Web_Application.Models.UserQueryHandled import UserQueryHandled
 
-
 SESSION_EXPIRY = 900
 COOKIE_NAME = "su_session_id"
 
@@ -22,57 +21,56 @@ class SessionManager:
     """
 
     @staticmethod
-    def get_or_create_session(request: Request, response: Response) -> str:
+    def get_or_create_session(request: Request, response: Response, external_session_id: Optional[str] = None) -> str:
         """
-        Retrieves or creates a session based on cookies.
-        Stores a full UserSession object in Redis as JSON.
+        Retrieves or creates a session.
+        - If `external_session_id` is provided (e.g., from Bot Framework), use that directly.
+        - Otherwise, use cookies to manage the session.
         """
-        session_id = request.cookies.get(COOKIE_NAME)
+        if external_session_id:
+            session_id = external_session_id
+        else:
+            session_id = request.cookies.get(COOKIE_NAME)
 
         if session_id and redis_client.exists(session_id):
-            # Extend expiration
             redis_client.expire(session_id, SESSION_EXPIRY)
             return session_id
 
-        # Create new session
-        session_id = str(uuid.uuid4())
+        # Create a new session
+        session_id = session_id or str(uuid.uuid4())
         session = UserSession(session_id=session_id)
-
         redis_client.set(session_id, json.dumps(session.dict(), default=str))
         redis_client.expire(session_id, SESSION_EXPIRY)
 
-        # Set session ID in cookie
-        response.set_cookie(
-            key=COOKIE_NAME,
-            value=session_id,
-            max_age=SESSION_EXPIRY,
-            httponly=True,
-            secure=True
-        )
+        # Only set a cookie if this is not a bot-based session
+        if not external_session_id:
+            response.set_cookie(
+                key=COOKIE_NAME,
+                value=session_id,
+                max_age=SESSION_EXPIRY,
+                httponly=True,
+                secure=True
+            )
 
         return session_id
 
     @staticmethod
-    def on_message_activity(request: Request, response: Response, query_text: str) -> str:
+    def on_message_activity(request: Request, response: Response, query_text: str, external_session_id: Optional[str] = None) -> str:
         """
-        Main entry for handling incoming messages.
-        - Retrieves or creates a session
-        - Updates last_active
-        - Creates UserQuery
-        - Forwards it for processing
+        Handles incoming user messages:
+        - Uses external_session_id if provided (for bot framework).
+        - Updates or creates session.
+        - Forwards to query filter module.
         """
-        session_id = SessionManager.get_or_create_session(request, response)
+        session_id = SessionManager.get_or_create_session(request, response, external_session_id)
 
-        # Fetch session from Redis
         session = SessionManager.get_session(session_id)
         if session is None:
             session = UserSession(session_id=session_id)
 
-        # Update last_active
         session.last_active = datetime.utcnow()
         SessionManager.save_session(session)
 
-        # Build user query and forward it
         user_query = UserQuery(
             session_id=session_id,
             query_text=query_text,
@@ -91,7 +89,6 @@ class SessionManager:
 
         try:
             data = json.loads(raw_data)
-            # Convert handled_query_list items into actual objects
             data["handled_query_list"] = [
                 UserQueryHandled(**item) for item in data.get("handled_query_list", [])
             ]
@@ -107,7 +104,6 @@ class SessionManager:
         Saves the entire session model into Redis as JSON.
         """
         try:
-            # Serialize to JSON and save
             redis_client.set(session.session_id, json.dumps(session.dict(), default=str))
             redis_client.expire(session.session_id, session.expiry_time)
         except Exception as e:

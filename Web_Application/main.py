@@ -35,6 +35,38 @@ async def message_endpoint(message: UserMessage, request: Request, response: Res
     )
     return {"response": chatbot_response}
 
+@app.post("/botframework")
+async def botframework_endpoint(request: Request, response: Response):
+    """
+    Endpoint to support Bot Framework messages.
+    Extracts `text` and `from.id` from standard Bot Framework Activity payload.
+    Uses `from.id` as session ID to track user state.
+    """
+    activity = await request.json()
+
+    # Extract user message text and user ID
+    user_text = activity.get("text", "")
+    session_id = activity.get("from", {}).get("id")
+
+    if not user_text or not session_id:
+        return {"type": "message", "text": "Missing user ID or message."}
+
+    # Process message using chatbot logic with external session ID
+    chatbot_response = SessionManager.on_message_activity(
+        request=request,
+        response=response,
+        query_text=user_text,
+        external_session_id=session_id
+    )
+
+    # Return response in Bot Framework format
+    return {
+        "type": "message",
+        "text": chatbot_response
+    }
+
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("Web_Application.main:app", host="127.0.0.1", port=8000, reload=True)
