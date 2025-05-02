@@ -43,13 +43,18 @@ class QueryFilter:
         # For now, the accuracy of the model is assumed to be sufficient.
 
     
-        predicted_label, confidence = checkRelevance(user_query)
+        user_query_text = user_query.query_text
+        predicted_label, confidence = checkRelevance(user_query_text)
+
+        print(f"[DEBUG] Predicted Label: {predicted_label}, Confidence: {confidence}")
+        
 
         if predicted_label == "Non-School":
             # If the query is not relevant, handle it using the Orchestrator
             return Orchestrator.handle_non_relevant_query(user_query)
         elif predicted_label == "Greeting":
             intent = "greeting"
+            print(f"[DEBUG] now passing to Orchestrator")
             # If the query is a greeting, handle it using the Orchestrator
             return Orchestrator.HandleNonActionIntend(intent, user_query)
         else:

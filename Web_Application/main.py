@@ -2,6 +2,8 @@ from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from Web_Application.SessionManager.session_manager import SessionManager
+import uuid
+import requests
 
 import sys
 import os
@@ -37,33 +39,38 @@ async def message_endpoint(message: UserMessage, request: Request, response: Res
 
 @app.post("/botframework")
 async def botframework_endpoint(request: Request, response: Response):
-    """
-    Endpoint to support Bot Framework messages.
-    Extracts `text` and `from.id` from standard Bot Framework Activity payload.
-    Uses `from.id` as session ID to track user state.
-    """
     activity = await request.json()
-
-    # Extract user message text and user ID
     user_text = activity.get("text", "")
-    session_id = activity.get("from", {}).get("id")
+    user_id = activity.get("from", {}).get("id")
+    service_url = activity.get("serviceUrl")
+    conversation_id = activity.get("conversation", {}).get("id")
 
-    if not user_text or not session_id:
-        return {"type": "message", "text": "Missing user ID or message."}
+    if not all([user_text, user_id, service_url, conversation_id]):
+        return {"error": "Missing required fields"}
 
-    # Process message using chatbot logic with external session ID
+    # Call your core logic
     chatbot_response = SessionManager.on_message_activity(
         request=request,
         response=response,
         query_text=user_text,
-        external_session_id=session_id
+        external_session_id=user_id
     )
+    message_text = chatbot_response.get("response", "[Empty response]")
 
-    # Return response in Bot Framework format
-    return {
+    # ✅ Send message to Bot Framework
+    reply_payload = {
         "type": "message",
-        "text": chatbot_response
+        "text": message_text,
+        "from": {"id": "bot"},
+        "recipient": {"id": user_id},
+        "conversation": {"id": conversation_id},
+        "id": str(uuid.uuid4())
     }
+
+    reply_url = f"{service_url}/v3/conversations/{conversation_id}/activities"
+    requests.post(reply_url, json=reply_payload)
+
+    return {"status": "sent"}
 
 
 

@@ -54,12 +54,16 @@ class Orchestrator:
         session = SessionManager.get_session(user_query.session_id)
         if not session:
             return {"response": "Session expired or invalid. Please try again."}
-    
+        
+
+        print(f"[DEBUG] Handling non-action intent: {intent}")
+        print(f"[DEBUG] User query: {user_query.query_text}")
         if intent in ["greeting", "goodbye"]:
             payload = {
                 "type": intent,
                 "query": user_query.query_text
             }
+            print(f"[DEBUG] Payload for LLM: {payload}")
             response = BuildResponsesNonAction(query=payload["query"], type=payload["type"])
     
             # --- Legacy API usage (if re-enabled) ---
@@ -104,7 +108,9 @@ class Orchestrator:
     
         else:
             response = ""
-    
+
+
+        print(f"[DEBUG] Generated response: {response}")
         return response
     
     @staticmethod

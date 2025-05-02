@@ -27,7 +27,7 @@ class PromptGenerator:
     def generate_prompt(self) -> str:
         """Generate appropriate prompt based on the type"""
         if self.type == "greeting" or self.type == "goodbye":
-            return self._generate_greeting_prompt()
+            return self._generate_casual_interaction_prompt()
         elif self.type == "followup":
             return self._generate_followup_prompt()
         elif self.type == "announcement":
@@ -39,9 +39,12 @@ class PromptGenerator:
                    f"USER: {self.query}\n\n"
                    f"ASSISTANT: ")
     
-    def _generate_greeting_prompt(self) -> str:
-        return (f"You are a helpful assistant for Sabancı University. Respond professionally.\n\n"
+    def _generate_casual_interaction_prompt(self) -> str:
+        return (f"You are a helpful assistant for Sabancı University.\n\n"
                 f"USER: {self.query}\n\n"
+                f"Respond naturally but briefly to this casual interaction (greeting, thanks, or goodbye). "
+                f"Keep your response to exactly 1 sentence. "
+                f"Do not make up sample conversations or generate additional hypothetical exchanges.\n\n"
                 f"ASSISTANT: ")
     
     def _generate_followup_prompt(self) -> str:
@@ -92,10 +95,6 @@ class PromptGenerator:
                 retrieval_info = "No relevant announcement found."
                 instruction = "Inform the user no matching announcement was found."
 
-        print(f"[DEBUG] -------------------------------------")
-        print(f"[DEBUG] Retrieval info: {retrieval_info}")
-        print(f"[DEBUG] Instruction: {instruction}")        
-        print(f"[DEBUG] -------------------------------------")
 
         return (f"You are a helpful assistant for Sabancı University.\n\n"
                 f"{retrieval_info}\n\n"
