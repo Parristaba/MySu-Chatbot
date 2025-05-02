@@ -1,14 +1,11 @@
 import requests
-from Models import UserQuery  # Represents the user's query in the chatbot system
-from OrchestratorModule import Orchestrator  # Handles non-actionable intents
-from RagModule import HandleParsedQuery  # Handles retrieval-augmented generation (RAG) queries
-from Models.UserQueryHandled import UserQueryHandled  # Represents a processed user query
-from NluModule import determineIntent  # Function to determine the intent of a user query
+from Web_Application.Models import UserQuery  # Represents the user's query in the chatbot system
+from Web_Application.OrchestratorModule.Orchestrator import Orchestrator  # Handles non-actionable intents
+from Web_Application.RagModule import RAG_module  # Handles retrieval-augmented generation (RAG) queries
+from Web_Application.Models.UserQueryHandled import UserQueryHandled  # Represents a processed user query
+from Web_Application.Helper_Modules.IntentDetection.check_intent import determineIntent  # Function to determine the intent of a user query
+from Web_Application.Helper_Modules.QueryPruning.query_pruning import prune_query  # Function to prune the user query
 
-# TODO: Define the `determineIntent` function in a separate module or import it from an existing one.
-# TODO: Define the `pruneQuery` function in a separate module or import it from an existing one.
-
-from NLU import pruneQuery  # Function to prune the user query for RAG retrieval
 
 """
 Endpoints for intent and NER models.
@@ -85,7 +82,7 @@ class NLU:
         """
 
         # TODO: Define an endpoint for this or import the function directly
-        pruned = pruneQuery(user_query.query_text)
+        pruned = prune_query(user_query.query_text)
 
         handled_user_query = UserQueryHandled(
             text=user_query.query_text,
@@ -94,7 +91,7 @@ class NLU:
             intent=intent
         )
 
-        return HandleParsedQuery(handled_user_query)
+        return RAG_module.HandleParsedQuery(handled_user_query)
 
     @staticmethod
     def HandleAnnouncementModule(user_query: UserQuery, intent: str):
@@ -112,7 +109,7 @@ class NLU:
         """
 
         # TODO: Define an endpoint for this or import the function directly
-        pruned = pruneQuery(user_query.query_text)
+        pruned = prune_query(user_query.query_text)
 
         handled_user_query = UserQueryHandled(
             text=user_query.query_text,
@@ -121,4 +118,4 @@ class NLU:
             intent=intent
         )
 
-        return HandleParsedQuery(handled_user_query)
+        return RAG_module.HandleParsedQuery(handled_user_query)

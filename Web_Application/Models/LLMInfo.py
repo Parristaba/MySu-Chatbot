@@ -1,14 +1,9 @@
 from pydantic import BaseModel
 from typing import List, Optional
 from datetime import datetime
+from Web_Application.Models.UserQueryHandled import UserQueryHandled
 
-# Models/LLMInfo.py
-# This module defines the LLMInfo class, which represents information about a query
-# handled by the system, including its type and associated metadata.
 
-from pydantic import BaseModel
-from typing import Optional
-from Models.UserQueryHandled import UserQueryHandled
 
 class LLMInfo(BaseModel):
     """

@@ -2,8 +2,8 @@
 
 from typing import List
 from Web_Application.Models.UserQueryHandled import UserQueryHandled
-from Web_Application.OrchestratorModule import HandleAction
-from Vector_Database import search_similar_content  # Placeholder for the actual import
+from Web_Application.OrchestratorModule import Orchestrator
+from Web_Application.Helper_Modules.SimilaritySearch.similarity_search import search_similar_content
 
 
 class RAGBlock:
@@ -61,7 +61,7 @@ class RAGBlock:
         Handled_UserQuery["data_status"] = RAGBlock.map_similarity_to_data_status(similarity_score)
 
         # Forward the updated query object to the orchestrator for further processing
-        return HandleAction(Handled_UserQuery)
+        return Orchestrator.HandleAction(Handled_UserQuery)
 
     @staticmethod
     def map_similarity_to_data_status(score: float) -> str:

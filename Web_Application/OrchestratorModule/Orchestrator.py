@@ -1,9 +1,8 @@
 # OrchestratorModule.py
 
-from Models import UserQuery, UserQueryHandled
-from SessionManager import SessionManager
-from Models.LLMInfo import LLMInfo
-from Web_Application.Helper_Modules.LLM import BuildResponsesAction, BuildResponsesFollowUp, BuildResponsesNonAction
+from Web_Application.Models import UserQuery, UserQueryHandled
+from Web_Application.Models.LLMInfo import LLMInfo
+from Web_Application.Helper_Modules.LLM.response_generation import BuildResponsesAction, BuildResponsesFollowUp, BuildResponsesNonAction
 # import requests  # Legacy API support, if endpoints are used again
 
 class Orchestrator:
@@ -51,6 +50,7 @@ class Orchestrator:
         Returns:
             dict: The generated response based on the intent.
         """
+        from Web_Application.SessionManager.session_manager import SessionManager
         session = SessionManager.get_session(user_query.session_id)
         if not session:
             return {"response": "Session expired or invalid. Please try again."}
@@ -120,6 +120,7 @@ class Orchestrator:
         Returns:
             dict: The generated response for the action-based query.
         """
+        from Web_Application.SessionManager.session_manager import SessionManager
         session = SessionManager.get_session(handled_query.user_id)
         if not session:
             return {"response": "Session expired or invalid. Please try again."}

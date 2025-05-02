@@ -3,7 +3,7 @@ import torch.nn.functional as F
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
 
 # Load the saved model and tokenizer
-model_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\Natural Language Understanding\Intent Model\DistilBert Trained - 2 Classes"
+model_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\NLU_Models\Intent_Model\DistillBERT_Intent_Model"
 tokenizer = DistilBertTokenizer.from_pretrained(f"{model_path}/tokenizer")
 model = DistilBertForSequenceClassification.from_pretrained(model_path)
 

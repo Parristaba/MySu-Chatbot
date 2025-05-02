@@ -2,10 +2,10 @@ import time
 import uuid
 import json
 from fastapi import Request, Response
-from config import redis_client
+from Web_Application.config import redis_client
 from typing import Optional
 from datetime import datetime
-from Web_Application.QueryFilterModule import process_query
+from Web_Application.QueryFilterModule import query_filter
 from Web_Application.Models.UserQuery import UserQuery
 from Web_Application.Models.UserSession import UserSession
 from Web_Application.Models.UserQueryHandled import UserQueryHandled
@@ -78,7 +78,7 @@ class SessionManager:
             query_text=query_text,
             timestamp=datetime.utcnow()
         )
-        return process_query(user_query)
+        return query_filter.process_query(user_query)
 
     @staticmethod
     def get_session(session_id: str) -> Optional[UserSession]:

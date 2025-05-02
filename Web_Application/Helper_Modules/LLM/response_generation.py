@@ -1,13 +1,13 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
-from Web_Application.Helper_Modules.LLM import PromptGenerator
+from Web_Application.Helper_Modules.LLM.prompt_generation import PromptGenerator
 import psutil
 import re
 
 # === Configuration ===
-MODEL_PATH = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\LMM Testing\Zephyr Model"
-DOCUMENT_METADATA_PATH = "C:/Users/kagan_ntaijui/Desktop/MySu-Chatbot/Vector Database/Embeddings/Documents/metadata_documents.json"
-ANNOUNCEMENT_METADATA_PATH = "C:/Users/kagan_ntaijui/Desktop/MySu-Chatbot/Vector Database/Embeddings/Announcements/metadata_announcements.json"
+MODEL_PATH = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\LL_Models\Zephyr_Model"
+DOCUMENT_METADATA_PATH = "C:/Users/kagan_ntaijui/Desktop/MySu-Chatbot/Vector_Database/Embeddings/Documents/metadata_documents.json"
+ANNOUNCEMENT_METADATA_PATH = "C:/Users/kagan_ntaijui/Desktop/MySu-Chatbot/Vector_Database/Embeddings/Announcements/metadata_announcements.json"
 
 # === Load Model & Tokenizer (Once) ===
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, trust_remote_code=True)

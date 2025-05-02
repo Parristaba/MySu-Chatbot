@@ -1,7 +1,7 @@
 from Web_Application.Models import UserQuery  # Importing the UserQuery model for query representation
-from Web_Application.OrchestratorModule import Orchestrator  # Importing the Orchestrator for handling non-relevant queries
-from Web_Application.NluModule import NLU_get_intend  # Importing the NLU module to determine the intent of relevant queries
-from Web_Application.Helper_Modules.RelevanceFilter import checkRelevance  # Importing the relevance checking function
+from Web_Application.OrchestratorModule.Orchestrator import Orchestrator  # Importing the Orchestrator for handling non-relevant queries
+from Web_Application.NluModule import  NLU_Module  # Importing the NLU module to determine the intent of relevant queries
+from Web_Application.Helper_Modules.RelevanceFilter.check_relevance import checkRelevance  # Importing the relevance checking function
 
 
 # Placeholder for the endpoint used to determine if a user query is relevant or not.
@@ -54,5 +54,5 @@ class QueryFilter:
             return Orchestrator.HandleNonActionIntend(intent, user_query)
         else:
             # If the query is relevant, determine its intent using NLU
-            return NLU_get_intend(user_query)
+            return NLU_Module.NLU_get_intend(user_query)
         

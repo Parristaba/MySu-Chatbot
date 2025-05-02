@@ -3,7 +3,7 @@ import torch.nn.functional as F
 from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassification
 
 # Load model and tokenizer
-model_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\Message Filter\Filter Model"
+model_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\RelevanceFilterModel\RelevanceFilter_Model"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 tokenizer = DistilBertTokenizerFast.from_pretrained(model_path)

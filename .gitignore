@@ -2,12 +2,12 @@
 LL_Models/Deepseek - Depreciated/Deepseek Model/
 
 # Ignore Zephyr Model folder
-LL_Models/Zephyr Model/
+LL_Models/Zephyr_Model/
 
 # Ignore Intent Model folder
-NLU_Models/Intent Model/DistillBERT Intent Model/
+NLU_Models/Intent_Model/DistillBERT_Intent_Model/
 
 # Ignore Relevance Model folder
-RelevanceFilter Model/RelevanceFilter Model/
+RelevanceFilterModel/RelevanceFilter_Model/
 
 
