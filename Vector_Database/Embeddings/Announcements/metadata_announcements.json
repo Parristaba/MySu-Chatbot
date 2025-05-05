@@ -1,802 +1,116 @@
 {
   "0": {
     "id": "announcement_001",
-    "title": "Spring 2025 Course Registration Guidelines Released"
+    "title": "Course Substitution Application",
+    "date": "Wednesday, April 30, 2025",
+    "body": "Undergraduate and graduate students who want to have course substitution must apply within the following dates. Application Dates: Applications will be received until 16.30 on the last day on the following dates. Undergraduate & Graduate (Except for the programs mentioned below): April 30 – June 4, 2025 Information Technology, Data Analytics, Energy Technologies and Management, Cyber Security, Digital Transformation in Industry (non-thesis): April 30 - May 30, 2025 Business Analytics, Finance, Executive Master of Business Administration, Action Research and Transformation, Business Administration for Professionals, Marketing (non-thesis): July 21 - August 22, 2025 How to Apply? It is done through the Student Information System (Bannerweb). The application steps are as follows: Log in to the Information System page. Click on the “Student & Financial Aid” option. The \"Request to Course Subtitution Form\" in the \"Registration\" field is created by selecting all courses to be substituted at once. Since it is an electronic approval system, there is no need to bring the form printout to the Student Resources Unit. Applications can be viewed from the transcript upon the announcement of end-of-term grades. You can find detailed information on the Student Resources internal web page."
   },
   "1": {
-    "id": "announcement_002",
-    "title": "Mandatory Fire Drill Scheduled for All Campus Buildings"
+    "id": "announcement_010",
+    "title": "CS Courses Final Exam Schedule",
+    "date": "Friday, April 25, 2025",
+    "body": "Computer Science (CS) Course Final Exam Schedule has been published: CS201 A (Programming Fundamentals) final exam: 31.05.2025, 09:00–11:30 CS201 B (Programming Fundamentals) final exam: 31.05.2025, 09:00–11:30 CS204 A (Advanced Programming) final exam: 01.06.2025, 14:40–17:10 CS204 B (Advanced Programming) final exam: 01.06.2025, 14:40–17:10 CS300 A (Data Structures) final exam: 01.06.2025, 09:00–11:30 CS300 B (Data Structures) final exam: 01.06.2025, 09:00–11:30 CS301 0 (Algorithms) final exam: 03.06.2025, 09:00–11:30 CS302 0 (Formal Lang&Automata Theory) final exam: 26.05.2025, 14:40–17:10 CS303 A (Logic&Digital System Design) final exam: 24.05.2025, 09:00–11:30 CS303 B (Logic&Digital System Design) final exam: 24.05.2025, 09:00–11:30 CS305 0 (Programming Languages) final exam: 24.05.2025, 14:40–17:10 CS307 0 (Operating Systems) final exam: 31.05.2025, 09:00–11:30 CS308 0 (Software Engineering) final exam: 27.05.2025, 11:50–14:20 CS310 0 (Mobile Application Development) final exam: 02.06.2025, 11:50–14:20 CS403 0 (Distributed Systems) final exam: 03.06.2025, 14:40–17:10 CS407 0 (Theory of Computation) final exam: 28.05.2025, 14:40–17:10 CS408 0 (Computer Networks) final exam: 25.05.2025, 11:50–14:20 CS412 0 (Machine Learning) final exam: 29.05.2025, 14:40–17:10 CS432 0 (Computer and Network Security) final exam: 27.05.2025 CS436 0 (Cloud Computing) final exam: 30.05.2025, 11:50–14:20 CS460 0 (Automated Debugging) final exam: 02.06.2025, 17:30–20:00"
   },
   "2": {
-    "id": "announcement_003",
-    "title": "Applications Open for Summer 2025 Internships"
+    "id": "announcement_011",
+    "title": "BIO Courses Final Exam Schedule",
+    "date": "Friday, April 25, 2025",
+    "body": "Bioinformatics (BIO) Courses Final Exam Schedule has been published: BIO301 0 (Intro. to Molecular Biology) final exam: 24.05.2025, 14:40–17:10 BIO308 0 (Plant Physiology) final exam: 28.05.2025, 14:40–17:10 BIO322 0 (Biochemistry II) final exam: 31.05.2025, 11:50–14:20 BIO330 0 (Environmental Plant Biology) final exam: 29.05.2025, 14:40–17:10 BIO332 0 (Cell Biology) final exam: 25.05.2025, 11:50–14:20 BIO335 0 (Analytical Techniques) final exam: 27.05.2025, 11:50–14:20 BIO467 0 (Signal Transduction) final exam: 27.05.2025, 11:50–14:20 BIO567 0 (Signal Transduction) final exam: 27.05.2025, 11:50–14:20"
   },
   "3": {
-    "id": "announcement_004",
-    "title": "Graduation Application Deadline Approaching"
+    "id": "announcement_012",
+    "title": "MATH Courses Final Exam Schedule",
+    "date": "Friday, April 25, 2025",
+    "body": "Mathematics (MATH) Courses Final Exam Schedule has been published: MATH101 A (Calculus I) final exam: 25.05.2025, 14:40–17:10 MATH101 B (Calculus I) final exam: 25.05.2025, 14:40–17:10 MATH102 A (Calculus II) final exam: 24.05.2025, 14:40–17:10 MATH102 B (Calculus II) final exam: 24.05.2025, 14:40–17:10 MATH102 C (Calculus II) final exam: 24.05.2025, 14:40–17:10 MATH201 A (Linear Algebra) final exam: 29.05.2025, 14:40–17:10 MATH201 B (Linear Algebra) final exam: 29.05.2025, 14:40–17:10 MATH202 0 (Differential Equations) final exam: 27.05.2025, 17:30–20:00 MATH203 A (Introduction to Probability) final exam: 25.05.2025, 11:50–14:20 MATH203 B (Introduction to Probability) final exam: 25.05.2025, 11:50–14:20 MATH204 A (Discrete Mathematics) final exam: 28.05.2025, 14:40–17:10 MATH204 B (Discrete Mathematics) final exam: 28.05.2025, 14:40–17:10 MATH204 C (Discrete Mathematics) final exam: 28.05.2025, 14:40–17:10 MATH206 0 (Vector Calculus) final exam: 25.05.2025, 17:30–20:00 MATH305 0 (Complex Calculus) final exam: 28.05.2025, 11:50–14:20 MATH306 A (Statistical Modelling) final exam: 26.05.2025, 09:00–11:30 MATH306 B (Statistical Modelling) final exam: 26.05.2025, 09:00–11:30 MATH322 0 (Partial Differential Equations) final exam: 28.05.2025, 11:50–14:20"
   },
   "4": {
-    "id": "announcement_005",
-    "title": "Library Workshop Series: Research Skills for Final Projects"
+    "id": "announcement_013",
+    "title": "TTL Courses Final Exam Schedule",
+    "date": "Friday, April 25, 2025",
+    "body": "Turkish Language and Literature (TLL) Courses Final Exam Schedule has been published: TLL 101.A1Y - Turkish Language&Literature I - 27.05.2025 - 09:00-11:30 TLL 101.A2 - Turkish Language&Literature I - 27.05.2025 - 09:00-11:30 TLL 101.A3 - Turkish Language&Literature I - 27.05.2025 - 09:00-11:30 TLL 101.C1 - Turkish Language&Literature I - 27.05.2025 - 09:00-11:30 TLL 101.D1 - Turkish Language&Literature I - 27.05.2025 - 09:00-11:30 TLL 101.D2 - Turkish Language&Literature I - 27.05.2025 - 09:00-11:30 TLL 101.D3 - Turkish Language&Literature I - 27.05.2025 - 09:00-11:30 TLL 101.E1 - Turkish Language&Literature I - 27.05.2025 - 09:00-11:30 TLL 101.E2 - Turkish Language&Literature I - 27.05.2025 - 09:00-11:30 TLL 101.E3 - Turkish Language&Literature I - 27.05.2025 - 09:00-11:30"
   },
   "5": {
-    "id": "announcement_006",
-    "title": "Financial Aid Renewal Applications Now Available"
+    "id": "announcement_014",
+    "title": "IE Courses Final Exam Schedule",
+    "date": "Friday, April 25, 2025",
+    "body": "Industrial Engineering (IE) Courses Final Exam Schedule has been published: IE303 0 (Decision Economics) final exam: 30.05.2025, 17:30–20:00 IE304 0 (Product.& Serv.Sys Plan&Design) final exam: 26.05.2025, 17:30–20:00 IE305 0 (Simulation) final exam: 26.05.2025, 09:00–11:30 IE309 0 (Manufacturing Processes I) final exam: 02.06.2025, 09:00–11:30 IE311 A (Operations Research I) final exam: 29.05.2025, 14:40–17:10 IE311 B (Operations Research I) final exam: 29.05.2025, 14:40–17:10 IE312 0 (Operations Research II) final exam: 29.05.2025, 17:30–20:00 IE313 0 (Operations Research III) final exam: 26.05.2025, 11:50–14:20 IE401 0 (Produc.&Service Sys.Operations) final exam: 03.06.2025, 09:00–11:30 IE403 0 (Quality Planning & Control) final exam: 27.05.2025, 17:30–20:00 IE404 0 (Digital Transformation) final exam: 29.05.2025, 09:00–11:30 IE405 0 (Decision Analysis) final exam: 24.05.2025, 09:00–11:30 IE409 0 (Project Scheduling & Managemen) final exam: 04.06.2025, 09:00–11:30 IE411 0 (Modeling&Analysis of Large Sys) final exam: 25.05.2025, 14:40–17:10 IE413 0 (Informations Systems) final exam: 24.05.2025, 17:30–20:00 IE432 0 (Stochastic Models in Finance) final exam: 01.06.2025, 09:00–11:30 IE512 0 (Graph Theory&Network Flows) final exam: 03.06.2025, 14:40–17:10"
   },
   "6": {
-    "id": "announcement_007",
-    "title": "New Exchange Program Partnership with University of Tokyo"
+    "id": "announcement_015",
+    "title": "ECON Courses Final Exam Schedule",
+    "date": "Friday, April 25, 2025",
+    "body": "Economy (ECON) Courses Final Exam Schedule has been published: ECON201 A (Games and Strategies) final exam: 31.05.2025, 14:40–17:10 ECON201 B (Games and Strategies) final exam: 31.05.2025, 17:30–20:00 ECON201 C (Games and Strategies) final exam: 31.05.2025, 17:30–20:00 ECON202 A (Macroeconomics) final exam: 01.06.2025, 09:00–11:30 ECON202 B (Macroeconomics) final exam: 01.06.2025, 09:00–11:30 ECON202 C (Macroeconomics) final exam: 04.06.2025, 09:00–11:30 ECON202 D (Macroeconomics) final exam: 03.06.2025, 17:30–20:00 ECON204 B (Microeconomics) final exam: 27.05.2025, 17:30–20:00 ECON301 0 (Econometrics) final exam: 25.05.2025, 09:00–11:30 ECON312 0 (Behavioral Economics) final exam: 27.05.2025, 17:30–20:00 ECON345 0 (International Finance) final exam: 02.06.2025, 17:30–20:00 ECON360 0 (Advanced Macroeconomics) final exam: 31.05.2025, 09:00–11:30 ECON400 0 (History of Economic Thought) final exam: 24.05.2025, 09:00–11:30"
   },
   "7": {
-    "id": "announcement_008",
-    "title": "Campus Safety App Update Now Available for Download"
+    "id": "announcement_016",
+    "title": "About Suspension of Educational Activities",
+    "date": "Wednesday, April 23, 2025",
+    "body": "Dear Students, Due to the earthquake that occurred in Istanbul on April 23, 2025, and in accordance with the decision taken by the Council of Higher Education (YÖK), all universities in Istanbul will suspend educational activities on April 24–25, 2025. Within this scope, there will be no classes held at our University on the specified dates. Additionally, the exams that were scheduled to take place on our Tuzla Campus over the weekend (April 26–27) will be postponed to a later date to be determined by the respective course instructors. Updates and information regarding new exam schedules and further developments will be communicated to you by the relevant academic departments. We kindly present this for your information and wish you all good health."
   },
   "8": {
-    "id": "announcement_009",
-    "title": "Student Government Elections: Candidacy Applications Open"
+    "id": "announcement_017",
+    "title": "ADP MATH 101 Workshop 2 (22 Apr. 2025)",
+    "date": "Tuesday, April 22, 2025",
+    "body": "Dear Students, Academic Support Program (ASP) provides MATH 101 workshops to help with your coursework throughout the semester. The second of these workshops is “Derivatives, Maxima and Minima, Optimization”.  This review will help you with your current course material. All MATH 101 students are welcome to attend. Best wishes. Date: TUESDAY, 22/04/2025 Time: 19:40 Place:\tFENS-G029 *\tThis workshop will be only in English. Date: TUESDAY, 22/04/2025 Time:\t19:40 Place:\tFENS-G029\tPlace:\tFENS-L062 *\tThis workshop will be only in Turkish."
   },
   "9": {
-    "id": "announcement_010",
-    "title": "Deadline to Withdraw from Spring Courses Approaching"
+    "id": "announcement_018",
+    "title": "Erasmus+ Internship 3rd Application Call",
+    "date": "Monday, April 21, 2025",
+    "body": "Dear Students, Erasmus+ Internship 3rd Application Call's deadline is tomorrow! 3rd Call: April 7 - April 22, 2025 (it will be evaluated with 0 grant). *Please ensure that an official acceptance letter or email confirming your acceptance (including relevant dates and full company details) is uploaded by the application deadline. We encourage you to start searching for internship opportunities as soon as possible. For more information, please visit our website. If you are not yet a member of our CareerLink platform, where you can find internship postings, please sign up here to access sample CVs and useful links to find an internship in the \"Document Library\" section. If you have questions you can send an e-mail to intern@sabanciuniv.edu."
   },
   "10": {
-    "id": "announcement_011",
-    "title": "Career Fair 2025: Registration for Companies and Students"
+    "id": "announcement_019",
+    "title": "PLANNED WIFI MAINTENANCE: APRIL 15, 2025 17:00 - 18:00",
+    "date": "Tuesday, April 15, 2025",
+    "body": "When: April 15, 2025 Tuesday between 17:00 - 18:00 Expected Duration: One hour Description: There will be wired and wireless network maintenance in the dormitories at Tuzla Campus. User Impact: During the Maintenance, there will be service cuts on the wired and wireless connections. You have questions or need help, you can contact us via SUTicket."
   },
   "11": {
-    "id": "announcement_012",
-    "title": "Health Services Offering Free Wellness Screenings"
+    "id": "announcement_002",
+    "title": "Application to Double Major and Minor Programs",
+    "date": "Tuesday, April 29, 2025",
+    "body": "Students who wish to enroll in a double major or minor program for the 2024–2025 Academic Year Summer Term must apply within the dates specified below. Application Dates: April 28 – May 9, 2025 How to Apply? It is made online with the Student Petition Form, which must be submitted to the Dean’s Office of the Faculty hosting the double major or minor program. The application requirements must be fulfilled as of the beginning of the Summer Term when the evaluation will take place. Important Note for International Students For applications to FENS programs, in addition to other requirements, applicants must meet the condition of being ranked within the top 300,000 in the quantitative score type according to the YKS guide. Therefore, international students are not eligible to enroll in double major programs within FENS. You can find detailed information on the Student Resources internal web page."
   },
   "12": {
-    "id": "announcement_013",
-    "title": "New Shuttle Service Routes Effective March 2025"
+    "id": "announcement_003",
+    "title": "Major Declaration and Diploma Program Change",
+    "date": "Tuesday, April 29, 2025",
+    "body": "Students who have not yet declared a diploma program or who wish to request a change of diploma program are required to submit their applications within the dates specified below: Application Dates: April 28 – May 9, 2025 Who Can Apply? A. Major Declaration: Students who have completed the following courses and are at least in their second semester of study are eligible to declare their diploma program: - SPS 101 - MATH 101 - NS 101 - HIST 191 - TLL 101 - AL 102 (ENG 101 for students admitted before the 2017–2018 academic year) - IF 100 (only for students admitted in the 2017–2018 academic year and later) Students who enrolled prior to the 2020–2021 academic year and who have not completed the above courses may still apply, provided they meet the previously established credit-based requirements. B. Diploma Program Change: Students who have already declared a diploma program and wish to transfer to a different one must apply through the internal transfer process. Application Procedures A. Major Declaration: Applications must be submitted through the Student Information System (Bannerweb) by following these steps: Log into the Information System page. Click on \"Student & Financial Aid.\" Proceed through the \"Degree Audit and Graduation\" section and select \"Major Declaration for Undergraduate Students\" to complete your application. B. Diploma Program Change: Applications for a change of diploma program must be submitted online via the Student Petition Form and directed to the Dean’s Office of the relevant faculty. Important Note for International Students Applications for major declarations or program changes that involve a different type of admission score than the one originally used for university enrollment are considered within the scope of transfer procedures, in accordance with the regulations of the Council of Higher Education (YÖK). In accordance with the relevant YÖK regulations and decisions: - International students must meet the admission criteria applicable to the target program group for the year of their initial enrollment. However, students who were admitted based solely on their high school GPA are excluded from internal transfer regulations and therefore are not eligible to apply for a diploma program with a different admission score type or to transfer to another program. - Students who are in their fifth semester or later and who apply to declare or change a diploma program involving a different admission score type will have their applications evaluated under the provisions of Additional Article 1 (EK Madde-1) concerning horizontal transfers. Since international students do not have a central placement score (ÖSYM score), it is not possible for them to declare or transfer to a diploma program with a different admission score type. For detailed information, please visit the Student Resources internal website"
   },
   "13": {
-    "id": "announcement_014",
-    "title": "Workshop on Academic Writing for Non-Native Speakers"
+    "id": "announcement_004",
+    "title": "Information Center will be OPEN on May 1",
+    "date": "Wednesday, April 30, 2025",
+    "body": "Dear Information Center Users, Information Center will be open on Thursday, May 1, 2025. Best regards, Information Center"
   },
   "14": {
-    "id": "announcement_015",
-    "title": "Emergency Contact Information Update Required"
+    "id": "announcement_005",
+    "title": "No Classes on 2 May 2025, Friday / Student Resources",
+    "date": "Monday, April 28, 2025",
+    "body": "Dear Students, As stated in the Academic Calendar at the beginning of the semester, there will be no classes on Friday, May 2. You can follow all other important dates from the Academic Calendar."
   },
   "15": {
-    "id": "announcement_016",
-    "title": "Cybersecurity Awareness Training for Students"
+    "id": "announcement_006",
+    "title": "Graduation Application for 2024-2025 Spring and Summer Semesters",
+    "date": "Thursday, April 17, 2025",
+    "body": "All eligible students must submit a graduation application to ensure a smooth graduation process for the Spring and Summer Semesters of the 2024-2025 Academic Year. Failure to apply, even if all program requirements are met, will result in non-graduation. Graduation Application Period: March 17, 2025 - May 05, 2025 Who Can Apply? Undergraduate and graduate students set to fulfill program requirements by the end of the Spring and Summer Semesters are eligible. Previously applied students anticipating completion of the program requirements in the 2024-2025 Academic Year Spring and Summer Semesters must reapply. Application Procedure: Graduation applications are submitted through the Student Information System (Bannerweb). Follow these steps: Access the Information System page. Click on \"Student  & Financial Aid\" Navigate to \"Degree Audit and Graduation\" and complete the \"Graduation Application Form\" selecting the graduation period as 202402 - Spring 2024-2025 or 202403 - Summer 2024-2025. Tracking Graduation: Monitor your graduation progress via the Student Information System (Bannerweb) with the following steps: Access the Information System  page. Click on the \"Student & Financial Aid\" menu. Select \"Grade Audit & Graduation\" Click on \"Degree Evaluation (Summary)\" Choose the graduation period: 202402 – Spring 2024-2025 or 202403 - Summer 2024-2025. Click the \"Generate New Request\" button Detailed information is available on the Student Resources internal web page"
   },
   "16": {
-    "id": "announcement_017",
-    "title": "Open House for Prospective Graduate Students"
+    "id": "announcement_007",
+    "title": "Attention Foreign Students Undertaking Mandatory Internship in Turkey",
+    "date": "Thursday, April 10, 2025",
+    "body": "To the Attention of Our Foreign Students Who Will Undertake a Mandatory Internship in Turkey As part of the mandatory internship program, \"Accident at Work and Occupational Disease Insurance\" is required. Undertaking an internship without this insurance will be considered a voluntary internship. However, within the scope of the new procedure of the Ministry of Labor, our foreign students who will do their mandatory internship in Turkey are required to get the e-Exemption Certificate. Without this document, the university does not cover insurance against “Accident at Work and Occupational Disease Insurance” by the university. For our foreign students who will do an internship within the scope of a Mandatory Internship, the university provides the e-Exemption Certificate through consultancy. To be able to get this document, the following documents must be sent to the intern@sabanciuniv.edu e-mail ADDRESS AT LEAST ONE MONTH BEFORE THE İNTERNSHIP START DATE after the institution/company where the internship will be done is finalized. Copy of passport ID page Copy of student residence in Turkey (single pdf) Active student document (student can obtain it from SR or e-government) Information form (prepared by consultancy firm for student to fill out) Internship acceptance document from the institution where the student did the internship (barcoded and cap-based, the company where the internship will be done was requested to prepare such a document) Full address of the company where the student will do the internship (can be written on the information form) If the student is married, spouse's name, surname and nationality Workplace internship contract (must be wet-signed and stamped by the student, the institution where the student will work and the rectorate/ It can be requested by the Career Development &Internship Office.) Internship letter (prepared by the Career Development &Internship Office) After the e-Exemption Certificate have received, it will be shared via the student’s e-mail address."
   },
   "17": {
-    "id": "announcement_018",
-    "title": "Library Extended Hours for Final Exam Period"
+    "id": "announcement_008",
+    "title": "2024-2025 Spring Term Student Feedback on Teaching and Learning",
+    "date": "Monday, May 5, 2025",
+    "body": "Dear Students, We strongly invite you to participate in the “Student Feedback on Teaching and Learning”. Please click here to reach the surveys open in your courses. The final entry for your feedback is on May 23, 2025 at 23:55. Please note that this is an anonymous survey and no private information will be shared with any third party. P.S. For your technical questions or problems, bagem@sabanciuniv.edu Best wishes,"
   },
   "18": {
-    "id": "announcement_019",
-    "title": "Call for Volunteers: Annual Science Festival"
-  },
-  "19": {
-    "id": "announcement_020",
-    "title": "New Student Lounge Inauguration Ceremony"
-  },
-  "20": {
-    "id": "announcement_021",
-    "title": "Study Abroad Summer Session Applications Open"
-  },
-  "21": {
-    "id": "announcement_022",
-    "title": "Scholarship Opportunity: STEM Research Grants"
-  },
-  "22": {
-    "id": "announcement_023",
-    "title": "Mandatory Internship Orientation Session Details"
-  },
-  "23": {
-    "id": "announcement_024",
-    "title": "Lost and Found Relocation Announcement"
-  },
-  "24": {
-    "id": "announcement_025",
-    "title": "Parking Permit Renewal Process Open"
-  },
-  "25": {
-    "id": "announcement_026",
-    "title": "Faculty-Led Research Opportunity Announcements"
-  },
-  "26": {
-    "id": "announcement_027",
-    "title": "Renovations in Main Cafeteria Scheduled"
-  },
-  "27": {
-    "id": "announcement_028",
-    "title": "New Mental Health Counseling Services Available"
-  },
-  "28": {
-    "id": "announcement_029",
-    "title": "Survey on Campus Sustainability Initiatives"
-  },
-  "29": {
-    "id": "announcement_030",
-    "title": "Bookstore Textbook Buyback Program Details"
-  },
-  "30": {
-    "id": "announcement_031",
-    "title": "Call for Papers: Undergraduate Research Conference"
-  },
-  "31": {
-    "id": "announcement_032",
-    "title": "Tutoring Services Expansion for STEM Subjects"
-  },
-  "32": {
-    "id": "announcement_033",
-    "title": "Community Engagement Grant Applications Open"
-  },
-  "33": {
-    "id": "announcement_034",
-    "title": "New Regulations for Drone Usage on Campus"
-  },
-  "34": {
-    "id": "announcement_035",
-    "title": "Spring Break Travel Safety Tips"
-  },
-  "35": {
-    "id": "announcement_036",
-    "title": "Changes to Student Health Insurance Policy"
-  },
-  "36": {
-    "id": "announcement_037",
-    "title": "Student Housing Lottery Application Timeline"
-  },
-  "37": {
-    "id": "announcement_038",
-    "title": "Summer Language Courses Enrollment Open"
-  },
-  "38": {
-    "id": "announcement_039",
-    "title": "Faculty Excellence Awards: Nominations Now Open"
-  },
-  "39": {
-    "id": "announcement_040",
-    "title": "Music Club Organizes Annual Spring Concert"
-  },
-  "40": {
-    "id": "announcement_041",
-    "title": "Student Conduct Code Revisions Published"
-  },
-  "41": {
-    "id": "announcement_042",
-    "title": "Job Shadowing Program for Freshmen and Sophomores"
-  },
-  "42": {
-    "id": "announcement_043",
-    "title": "New Online Payment System for Tuition Fees"
-  },
-  "43": {
-    "id": "announcement_044",
-    "title": "COVID-19 Booster Vaccination Clinic Schedule"
-  },
-  "44": {
-    "id": "announcement_045",
-    "title": "Alumni Mentorship Program: Applications Open"
-  },
-  "45": {
-    "id": "announcement_046",
-    "title": "Updated Academic Calendar for 2025-2026"
-  },
-  "46": {
-    "id": "announcement_047",
-    "title": "Indoor Air Quality Improvement Initiatives"
-  },
-  "47": {
-    "id": "announcement_048",
-    "title": "Call for Nominations: Outstanding Advisor Award"
-  },
-  "48": {
-    "id": "announcement_049",
-    "title": "Graduation Cap and Gown Ordering Information"
-  },
-  "49": {
-    "id": "announcement_050",
-    "title": "Expansion of 24/7 Study Areas"
-  },
-  "50": {
-    "id": "announcement_051",
-    "title": "Outdoor Fitness Equipment Installation"
-  },
-  "51": {
-    "id": "announcement_052",
-    "title": "Guidelines for Organizing Student Events"
-  },
-  "52": {
-    "id": "announcement_053",
-    "title": "International Student Orientation Program Details"
-  },
-  "53": {
-    "id": "announcement_054",
-    "title": "Annual Blood Donation Drive on Campus"
-  },
-  "54": {
-    "id": "announcement_055",
-    "title": "Photography Competition: 'Campus Life Through Lens'"
-  },
-  "55": {
-    "id": "announcement_056",
-    "title": "Revised Library Fines and Fees Structure"
-  },
-  "56": {
-    "id": "announcement_057",
-    "title": "Data Privacy Week: Awareness Campaign"
-  },
-  "57": {
-    "id": "announcement_058",
-    "title": "Campus Green Spaces Enhancement Project"
-  },
-  "58": {
-    "id": "announcement_059",
-    "title": "Food Pantry Services Now Available to Students"
-  },
-  "59": {
-    "id": "announcement_060",
-    "title": "Undergraduate Thesis Defense Scheduling Information"
-  },
-  "60": {
-    "id": "announcement_061",
-    "title": "Launch of New Entrepreneurship Certificate Program"
-  },
-  "61": {
-    "id": "announcement_062",
-    "title": "Financial Literacy Workshop Series"
-  },
-  "62": {
-    "id": "announcement_063",
-    "title": "Updates to Shuttle Bus Timetable"
-  },
-  "63": {
-    "id": "announcement_064",
-    "title": "Public Speaking Workshops Offered This Spring"
-  },
-  "64": {
-    "id": "announcement_065",
-    "title": "Career Services Launches Job Interview Simulation Lab"
-  },
-  "65": {
-    "id": "announcement_066",
-    "title": "Environmental Science Department Hosts Earth Day Events"
-  },
-  "66": {
-    "id": "announcement_067",
-    "title": "Expanded Wi-Fi Coverage on Campus"
-  },
-  "67": {
-    "id": "announcement_068",
-    "title": "New Online Portal for Course Evaluations"
-  },
-  "68": {
-    "id": "announcement_069",
-    "title": "Writing Center Offers Specialized Workshops"
-  },
-  "69": {
-    "id": "announcement_070",
-    "title": "Campus Security Survey: Participation Request"
-  },
-  "70": {
-    "id": "announcement_071",
-    "title": "Reminder: Vaccination Records Submission Deadline"
-  },
-  "71": {
-    "id": "announcement_072",
-    "title": "Women's Leadership Forum: Call for Registrations"
-  },
-  "72": {
-    "id": "announcement_073",
-    "title": "New Student Art Exhibition Opening"
-  },
-  "73": {
-    "id": "announcement_074",
-    "title": "Intramural Sports Registration Now Open"
-  },
-  "74": {
-    "id": "announcement_075",
-    "title": "Student Emergency Fund Applications Accepted"
-  },
-  "75": {
-    "id": "announcement_076",
-    "title": "New Fitness Center Operating Hours"
-  },
-  "76": {
-    "id": "announcement_077",
-    "title": "Honor Code Awareness Week Events"
-  },
-  "77": {
-    "id": "announcement_078",
-    "title": "Film Screening Series: International Cultures"
-  },
-  "78": {
-    "id": "announcement_079",
-    "title": "Mandatory Training for Laboratory Safety"
-  },
-  "79": {
-    "id": "announcement_080",
-    "title": "Launch of Virtual Career Counseling Sessions"
-  },
-  "80": {
-    "id": "announcement_081",
-    "title": "New Master's Program in Data Science"
-  },
-  "81": {
-    "id": "announcement_082",
-    "title": "Student Organization Re-registration Period Open"
-  },
-  "82": {
-    "id": "announcement_083",
-    "title": "Virtual Internship Opportunities Information Session"
-  },
-  "83": {
-    "id": "announcement_084",
-    "title": "Campus Recycling Program Updates"
-  },
-  "84": {
-    "id": "announcement_085",
-    "title": "Writing Competition: 'Voices of the Future'"
-  },
-  "85": {
-    "id": "announcement_086",
-    "title": "Announcement Regarding On-Campus Construction Zones"
-  },
-  "86": {
-    "id": "announcement_087",
-    "title": "Research Funding Opportunities for Undergraduates"
-  },
-  "87": {
-    "id": "announcement_088",
-    "title": "Volunteer Abroad Programs Information Session"
-  },
-  "88": {
-    "id": "announcement_089",
-    "title": "Mindfulness and Stress Relief Workshop"
-  },
-  "89": {
-    "id": "announcement_090",
-    "title": "New Policy on Classroom Recording"
-  },
-  "90": {
-    "id": "announcement_091",
-    "title": "Campus Bloodborne Pathogens Safety Training"
-  },
-  "91": {
-    "id": "announcement_092",
-    "title": "Interdisciplinary Research Collaboration Grants"
-  },
-  "92": {
-    "id": "announcement_093",
-    "title": "Student-Led Climate Action Initiatives"
-  },
-  "93": {
-    "id": "announcement_094",
-    "title": "Launch of Peer Mentoring Program"
-  },
-  "94": {
-    "id": "announcement_095",
-    "title": "Guidelines for Safe Off-Campus Housing Search"
-  },
-  "95": {
-    "id": "announcement_096",
-    "title": "Summer Research Fellowships Announcement"
-  },
-  "96": {
-    "id": "announcement_097",
-    "title": "Updates to Print Services and Fees"
-  },
-  "97": {
-    "id": "announcement_098",
-    "title": "New Online Certificate in Business Analytics"
-  },
-  "98": {
-    "id": "announcement_099",
-    "title": "Student Support Services Expands Virtual Options"
-  },
-  "99": {
-    "id": "announcement_100",
-    "title": "New Bike Rack Installations Across Campus"
-  },
-  "100": {
-    "id": "announcement_101",
-    "title": "Research Ethics Seminar Registration Open"
-  },
-  "101": {
-    "id": "announcement_102",
-    "title": "Annual Spring Poetry Contest Now Accepting Entries"
-  },
-  "102": {
-    "id": "announcement_103",
-    "title": "Virtual Reality Lab Officially Open to Students"
-  },
-  "103": {
-    "id": "announcement_104",
-    "title": "Call for Applications: Summer Research Abroad Program"
-  },
-  "104": {
-    "id": "announcement_105",
-    "title": "Entrepreneurship Bootcamp for Engineering Students"
-  },
-  "105": {
-    "id": "announcement_106",
-    "title": "Climate Change Symposium: Keynote Speakers Announced"
-  },
-  "106": {
-    "id": "announcement_107",
-    "title": "Annual Faculty vs Students Soccer Match Scheduled"
-  },
-  "107": {
-    "id": "announcement_108",
-    "title": "Campus Garden Volunteering Opportunities"
-  },
-  "108": {
-    "id": "announcement_109",
-    "title": "New Student Handbook for 2025-2026 Released"
-  },
-  "109": {
-    "id": "announcement_110",
-    "title": "Social Media Policy Updates for University Accounts"
-  },
-  "110": {
-    "id": "announcement_111",
-    "title": "Health Insurance Information Session for International Students"
-  },
-  "111": {
-    "id": "announcement_112",
-    "title": "Drone Photography Workshop: Applications Open"
-  },
-  "112": {
-    "id": "announcement_113",
-    "title": "Guidelines for Pet-Friendly Housing Pilot Program"
-  },
-  "113": {
-    "id": "announcement_114",
-    "title": "Nutrition Counseling Services Now Available"
-  },
-  "114": {
-    "id": "announcement_115",
-    "title": "Professional Certification Exam Reimbursement Program"
-  },
-  "115": {
-    "id": "announcement_116",
-    "title": "New Scholarships for First-Generation College Students"
-  },
-  "116": {
-    "id": "announcement_117",
-    "title": "Workshop Series on Digital Portfolio Building"
-  },
-  "117": {
-    "id": "announcement_118",
-    "title": "Public Health Awareness Campaign: Water Safety"
-  },
-  "118": {
-    "id": "announcement_119",
-    "title": "Fall 2025 Course Proposals: Faculty Submission Deadline"
-  },
-  "119": {
-    "id": "announcement_120",
-    "title": "Reminder: Update Emergency Alert Preferences"
-  },
-  "120": {
-    "id": "announcement_121",
-    "title": "Celebration of Asian American and Pacific Islander Heritage Month"
-  },
-  "121": {
-    "id": "announcement_122",
-    "title": "Updates to Computer Lab Software for Summer 2025"
-  },
-  "122": {
-    "id": "announcement_123",
-    "title": "CPR and First Aid Certification Class Open to All"
-  },
-  "123": {
-    "id": "announcement_124",
-    "title": "Open Forum: Improving Student Experience on Campus"
-  },
-  "124": {
-    "id": "announcement_125",
-    "title": "New Online System for Academic Appeals"
-  },
-  "125": {
-    "id": "announcement_126",
-    "title": "Annual Charity Run Registration Begins"
-  },
-  "126": {
-    "id": "announcement_127",
-    "title": "Introduction to Game Design Workshop Series"
-  },
-  "127": {
-    "id": "announcement_128",
-    "title": "Religious and Spiritual Life Spring Gathering"
-  },
-  "128": {
-    "id": "announcement_129",
-    "title": "Internship Funding Grants Now Available"
-  },
-  "129": {
-    "id": "announcement_130",
-    "title": "New Rules Regarding Electric Scooters on Campus"
-  },
-  "130": {
-    "id": "announcement_131",
-    "title": "International Food Festival: Volunteer Sign-Up"
-  },
-  "131": {
-    "id": "announcement_132",
-    "title": "Expansion of Lactation Room Facilities"
-  },
-  "132": {
-    "id": "announcement_133",
-    "title": "Veterans Appreciation Event Details Released"
-  },
-  "133": {
-    "id": "announcement_134",
-    "title": "Financial Aid Appeals Information Session"
-  },
-  "134": {
-    "id": "announcement_135",
-    "title": "Student Peer Tutor Applications Open for Fall"
-  },
-  "135": {
-    "id": "announcement_136",
-    "title": "Call for Participation: University Podcast Project"
-  },
-  "136": {
-    "id": "announcement_137",
-    "title": "Diversity, Equity, and Inclusion Award Nominations Open"
-  },
-  "137": {
-    "id": "announcement_138",
-    "title": "Digital Literacy Workshops for Graduate Students"
-  },
-  "138": {
-    "id": "announcement_139",
-    "title": "Blood Drive Success: Thank You to All Donors"
-  },
-  "139": {
-    "id": "announcement_140",
-    "title": "Student Photography for Marketing Materials: Applications Open"
-  },
-  "140": {
-    "id": "announcement_141",
-    "title": "Graduate Admissions Open House Event"
-  },
-  "141": {
-    "id": "announcement_142",
-    "title": "Campus-Wide Sustainability Competition Launch"
-  },
-  "142": {
-    "id": "announcement_143",
-    "title": "Policy Update: Recording of Online Classes"
-  },
-  "143": {
-    "id": "announcement_144",
-    "title": "Coffee with the Dean: Open Discussion Sessions"
-  },
-  "144": {
-    "id": "announcement_145",
-    "title": "Spring Dance Showcase Performance Dates Announced"
-  },
-  "145": {
-    "id": "announcement_146",
-    "title": "Emergency Ride Home Program Expanded"
-  },
-  "146": {
-    "id": "announcement_147",
-    "title": "Work Study Positions for Fall 2025 Now Available"
-  },
-  "147": {
-    "id": "announcement_148",
-    "title": "Housing Accommodation Requests Deadline Reminder"
-  },
-  "148": {
-    "id": "announcement_149",
-    "title": "Mental Health Awareness Week Event Calendar"
-  },
-  "149": {
-    "id": "announcement_150",
-    "title": "Pride Month Event Proposals Open"
-  },
-  "150": {
-    "id": "announcement_151",
-    "title": "Training on Digital Accessibility Standards"
-  },
-  "151": {
-    "id": "announcement_152",
-    "title": "Final Exams: Quiet Hours Policy in Effect"
-  },
-  "152": {
-    "id": "announcement_153",
-    "title": "Introduction to Mind Mapping Techniques Workshop"
-  },
-  "153": {
-    "id": "announcement_154",
-    "title": "Freshman Orientation Leader Applications Open"
-  },
-  "154": {
-    "id": "announcement_155",
-    "title": "Thesis Formatting Help Desk Now Available"
-  },
-  "155": {
-    "id": "announcement_156",
-    "title": "New Student Research Publication Opportunities"
-  },
-  "156": {
-    "id": "announcement_157",
-    "title": "Student-Run Farmer’s Market: Vendors Wanted"
-  },
-  "157": {
-    "id": "announcement_158",
-    "title": "Election Results for Student Council Announced"
-  },
-  "158": {
-    "id": "announcement_159",
-    "title": "Reminder: Lock Bicycles at Designated Areas Only"
-  },
-  "159": {
-    "id": "announcement_160",
-    "title": "Spring Choir Auditions: Call for Singers"
-  },
-  "160": {
-    "id": "announcement_161",
-    "title": "Renew Your Club’s Official Recognition for Next Year"
-  },
-  "161": {
-    "id": "announcement_162",
-    "title": "Call for Artists: Public Art Installation Competition"
-  },
-  "162": {
-    "id": "announcement_163",
-    "title": "New Course Announcement: Environmental Justice"
-  },
-  "163": {
-    "id": "announcement_164",
-    "title": "Fitness Challenge Month Kicks Off in April"
-  },
-  "164": {
-    "id": "announcement_165",
-    "title": "Student-Led Financial Literacy Workshops Available"
-  },
-  "165": {
-    "id": "announcement_166",
-    "title": "Safety Protocol Reminders for Laboratory Classes"
-  },
-  "166": {
-    "id": "announcement_167",
-    "title": "Spring Campus Clean-Up Day Scheduled"
-  },
-  "167": {
-    "id": "announcement_168",
-    "title": "Intellectual Property Rights Awareness Workshop"
-  },
-  "168": {
-    "id": "announcement_169",
-    "title": "Introduction to Machine Learning Short Course"
-  },
-  "169": {
-    "id": "announcement_170",
-    "title": "Graduation Photo Days: Appointment Booking Open"
-  },
-  "170": {
-    "id": "announcement_171",
-    "title": "Student Leadership Development Program Enrollment Open"
-  },
-  "171": {
-    "id": "announcement_172",
-    "title": "Policy on Email Etiquette for Students Updated"
-  },
-  "172": {
-    "id": "announcement_173",
-    "title": "Cross-Cultural Communication Seminar Invitation"
-  },
-  "173": {
-    "id": "announcement_174",
-    "title": "Reminder: Academic Integrity Code Review"
-  },
-  "174": {
-    "id": "announcement_175",
-    "title": "Temporary Library Entrance Relocation"
-  },
-  "175": {
-    "id": "announcement_176",
-    "title": "New Public Speaking Club Launch"
-  },
-  "176": {
-    "id": "announcement_177",
-    "title": "Free Tax Filing Assistance Services"
-  },
-  "177": {
-    "id": "announcement_178",
-    "title": "Introduction to Podcast Production Course"
-  },
-  "178": {
-    "id": "announcement_179",
-    "title": "Spring Outdoor Yoga Classes Available"
-  },
-  "179": {
-    "id": "announcement_180",
-    "title": "End-of-Year Student Recognition Ceremony Details"
-  },
-  "180": {
-    "id": "announcement_181",
-    "title": "Final Reminder: Submit Financial Aid Documents"
-  },
-  "181": {
-    "id": "announcement_182",
-    "title": "Volunteer Training for Summer Orientation"
-  },
-  "182": {
-    "id": "announcement_183",
-    "title": "Updates to Campus Dining Menus for Summer"
-  },
-  "183": {
-    "id": "announcement_184",
-    "title": "Pet Therapy Event to Relieve Exam Stress"
-  },
-  "184": {
-    "id": "announcement_185",
-    "title": "Fellowship Application Writing Workshop"
-  },
-  "185": {
-    "id": "announcement_186",
-    "title": "New Graduate Certificate in Public Policy Announced"
-  },
-  "186": {
-    "id": "announcement_187",
-    "title": "Lost and Found Auction to Support Student Fund"
-  },
-  "187": {
-    "id": "announcement_188",
-    "title": "World Languages Day Event Details Released"
-  },
-  "188": {
-    "id": "announcement_189",
-    "title": "Safety Escort Service Available During Evenings"
-  },
-  "189": {
-    "id": "announcement_190",
-    "title": "Student Art Showcase Submissions Now Open"
-  },
-  "190": {
-    "id": "announcement_191",
-    "title": "Spring Short-Term Study Abroad Programs Announced"
-  },
-  "191": {
-    "id": "announcement_192",
-    "title": "International Student Tax Preparation Workshop"
-  },
-  "192": {
-    "id": "announcement_193",
-    "title": "Career Closet Open for Students Needing Professional Attire"
-  },
-  "193": {
-    "id": "announcement_194",
-    "title": "Sustainability Office Hosts Campus Bike Tour"
-  },
-  "194": {
-    "id": "announcement_195",
-    "title": "Dean’s List and Honor Roll Certificates Available"
-  },
-  "195": {
-    "id": "announcement_196",
-    "title": "Revised Campus Event Reservation Guidelines"
-  },
-  "196": {
-    "id": "announcement_197",
-    "title": "Virtual Reality in Education: Open Demo Sessions"
-  },
-  "197": {
-    "id": "announcement_198",
-    "title": "Introduction to Grant Writing for Beginners"
-  },
-  "198": {
-    "id": "announcement_199",
-    "title": "Student Media Positions Open for 2025-2026"
-  },
-  "199": {
-    "id": "announcement_200",
-    "title": "End-of-Semester Residence Hall Closing Information"
+    "id": "announcement_009",
+    "title": "Would You Like To Be A Mentor in the Fall 2025 Semester?",
+    "date": "Monday, April 28, 2025",
+    "body": "You can find detailed information about the Mentorship Program and the application form in the CIAD webpage. The deadline for application is May 2nd Friday/5pm"
   }
 }

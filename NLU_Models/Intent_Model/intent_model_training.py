@@ -13,19 +13,23 @@ class IntentDataset(Dataset):
         self.data = data
         self.tokenizer = tokenizer
         self.max_length = max_length
-        self.label_map = {
-            "Announcements": 0,
-            "Documents": 1
-        }
 
     def __len__(self):
         return len(self.data)
 
     def __getitem__(self, idx):
-        query = self.data[idx]["Query"]
-        label = self.label_map[self.data[idx]["Intent"]]
-        encoded = self.tokenizer(query, truncation=True, padding='max_length',
-                                 max_length=self.max_length, return_tensors='pt')
+        query = self.data[idx]["text"]
+        label_str = self.data[idx]["label"]
+        label_map = {"announcement": 0, "document": 1}
+        label = label_map[label_str]
+
+        encoded = self.tokenizer(
+            query,
+            truncation=True,
+            padding="max_length",
+            max_length=self.max_length,
+            return_tensors="pt"
+        )
         input_ids = encoded["input_ids"].squeeze()
         attention_mask = encoded["attention_mask"].squeeze()
 
@@ -35,28 +39,25 @@ class IntentDataset(Dataset):
             "label": torch.tensor(label, dtype=torch.long)
         }
 
-# Intent Classification Model
+
+# Model Definition
 class IntentClassificationModel(nn.Module):
     def __init__(self, num_labels):
-        super(IntentClassificationModel, self).__init__()
+        super().__init__()
         self.distilbert = DistilBertModel.from_pretrained("distilbert-base-uncased")
-        self.fc = nn.Linear(self.distilbert.config.hidden_size, num_labels)
+        self.classifier = nn.Linear(self.distilbert.config.hidden_size, num_labels)
 
     def forward(self, input_ids, attention_mask):
         outputs = self.distilbert(input_ids=input_ids, attention_mask=attention_mask)
         cls_output = outputs.last_hidden_state[:, 0, :]
-        logits = self.fc(cls_output)
-        return logits
+        return self.classifier(cls_output)
 
-# Load data
-def load_data(announcement_file, document_file):
-    with open(announcement_file, 'r') as f:
-        announcements = json.load(f)
-    with open(document_file, 'r') as f:
-        documents = json.load(f)
-    return announcements + documents
+# Load .jsonl data
+def load_jsonl(filepath):
+    with open(filepath, "r", encoding="utf-8") as f:
+        return [json.loads(line) for line in f]
 
-# Train
+# Training
 def train_model(model, data_loader, optimizer, device, epochs=4):
     model.train()
     criterion = nn.CrossEntropyLoss()
@@ -74,9 +75,9 @@ def train_model(model, data_loader, optimizer, device, epochs=4):
             optimizer.step()
             total_loss += loss.item()
 
-        print(f"Epoch {epoch + 1}/{epochs}, Loss: {total_loss / len(data_loader):.4f}")
+        print(f"Epoch {epoch+1}/{epochs} | Loss: {total_loss / len(data_loader):.4f}")
 
-# Evaluate
+# Evaluation
 def evaluate_model(model, data_loader, device):
     model.eval()
     all_preds, all_labels = [], []
@@ -95,54 +96,54 @@ def evaluate_model(model, data_loader, device):
     print(classification_report(
         all_labels,
         all_preds,
-        target_names=["Announcements", "Documents"]
+        target_names=["announcement", "document"]
     ))
 
-# Save
+# Save model & tokenizer
 def save_model(model, tokenizer, save_dir):
     os.makedirs(save_dir, exist_ok=True)
     torch.save(model.state_dict(), os.path.join(save_dir, "pytorch_model.bin"))
-    tokenizer.save_pretrained(os.path.join(save_dir, "tokenizer"))
+    tokenizer.save_pretrained(save_dir)
     config = DistilBertConfig.from_pretrained("distilbert-base-uncased")
     config.num_labels = 2
     with open(os.path.join(save_dir, "config.json"), "w") as f:
         f.write(config.to_json_string())
 
-# Main
+# Main Function
 def main():
-    announcement_file = "Data Generation/Generated Data/generated_announcements.json"
-    document_file = "Data Generation/Generated Data/generated_documents.json"
-    save_dir = "Natural Language Understanding/Intent Model/DistilBert Trained - 2 Classes"
+    dataset_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\NLU_Models\Intent_Model\Dataset\intent_dataset.jsonl"  # unified dataset
+    save_dir = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\NLU_Models\Intent_Model\Final_Model"  # directory to save the model
 
     batch_size = 32
     learning_rate = 2e-5
     epochs = 4
     max_length = 128
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Using device: {device}")
+    print(f"🚀 Using device: {device}")
 
     tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased")
-    data = load_data(announcement_file, document_file)
+    data = load_jsonl(dataset_path)
 
-    label_map = {"Announcements": 0, "Documents": 1}
-    labels = [label_map[item["Intent"]] for item in data]
-
+    labels = [item["label"] for item in data]
     train_data, test_data = train_test_split(data, test_size=0.2, stratify=labels, random_state=42)
     train_dataset = IntentDataset(train_data, tokenizer, max_length)
     test_dataset = IntentDataset(test_data, tokenizer, max_length)
+
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     test_loader = DataLoader(test_dataset, batch_size=batch_size)
 
     model = IntentClassificationModel(num_labels=2).to(device)
     optimizer = AdamW(model.parameters(), lr=learning_rate)
 
-    print("Starting Training...")
+    print("🧠 Starting training...")
     train_model(model, train_loader, optimizer, device, epochs)
 
-    print("Evaluating on Test Data...")
+    print("\n📊 Evaluating on test set...")
     evaluate_model(model, test_loader, device)
 
     save_model(model, tokenizer, save_dir)
+    print(f"\n✅ Model saved to {save_dir}")
 
 if __name__ == "__main__":
     main()
+

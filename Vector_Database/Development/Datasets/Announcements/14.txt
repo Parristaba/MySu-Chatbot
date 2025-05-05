@@ -1,0 +1,25 @@
+-----------------------
+# ID: announcement_014
+# Title: IE Courses Final Exam Schedule
+# Date: Friday, April 25, 2025
+-----------------------
+
+Industrial Engineering (IE) Courses Final Exam Schedule has been published:
+
+IE303 0 (Decision Economics) final exam: 30.05.2025, 17:30–20:00
+IE304 0 (Product.& Serv.Sys Plan&Design) final exam: 26.05.2025, 17:30–20:00
+IE305 0 (Simulation) final exam: 26.05.2025, 09:00–11:30
+IE309 0 (Manufacturing Processes I) final exam: 02.06.2025, 09:00–11:30
+IE311 A (Operations Research I) final exam: 29.05.2025, 14:40–17:10
+IE311 B (Operations Research I) final exam: 29.05.2025, 14:40–17:10
+IE312 0 (Operations Research II) final exam: 29.05.2025, 17:30–20:00
+IE313 0 (Operations Research III) final exam: 26.05.2025, 11:50–14:20
+IE401 0 (Produc.&Service Sys.Operations) final exam: 03.06.2025, 09:00–11:30
+IE403 0 (Quality Planning & Control) final exam: 27.05.2025, 17:30–20:00
+IE404 0 (Digital Transformation) final exam: 29.05.2025, 09:00–11:30
+IE405 0 (Decision Analysis) final exam: 24.05.2025, 09:00–11:30
+IE409 0 (Project Scheduling & Managemen) final exam: 04.06.2025, 09:00–11:30
+IE411 0 (Modeling&Analysis of Large Sys) final exam: 25.05.2025, 14:40–17:10
+IE413 0 (Informations Systems) final exam: 24.05.2025, 17:30–20:00
+IE432 0 (Stochastic Models in Finance) final exam: 01.06.2025, 09:00–11:30
+IE512 0 (Graph Theory&Network Flows) final exam: 03.06.2025, 14:40–17:10

@@ -2,17 +2,19 @@ import torch
 import torch.nn.functional as F
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
 
-# Load the saved model and tokenizer
-model_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\NLU_Models\Intent_Model\DistillBERT_Intent_Model"
-tokenizer = DistilBertTokenizer.from_pretrained(f"{model_path}/tokenizer")
+# 🔄 New model path
+model_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\NLU_Models\Intent_Model\Final_Model"
+
+# 🔧 Load tokenizer and model
+tokenizer = DistilBertTokenizer.from_pretrained(model_path)
 model = DistilBertForSequenceClassification.from_pretrained(model_path)
 
-# Use GPU if available
+# 🚀 Device setup
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 model.eval()
 
-# Mapping of output indices to intents
+# 🔁 Class label mapping
 label_to_intent = {
     0: "announcement",
     1: "document"
@@ -20,14 +22,7 @@ label_to_intent = {
 
 def determineIntent(query_text):
     """
-    Determines the intent of a given user query.
-
-    Args:
-        query_text (str): The user's query text.
-
-    Returns:
-        str: The predicted intent label.
-        float: Confidence score for the predicted class.
+    Predict the intent label and confidence score for a given query.
     """
     inputs = tokenizer(query_text, truncation=True, padding="max_length", max_length=128, return_tensors="pt")
     inputs = {k: v.to(device) for k, v in inputs.items()}
@@ -41,7 +36,7 @@ def determineIntent(query_text):
     intent = label_to_intent.get(predicted_label, "unknown")
     return intent, confidence
 
-# Example usage
+# ▶ Example usage
 if __name__ == "__main__":
     user_query = input("Enter a query: ")
     intent, confidence = determineIntent(user_query)

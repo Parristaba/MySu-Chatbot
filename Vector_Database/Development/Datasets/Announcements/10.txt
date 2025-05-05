@@ -1,0 +1,29 @@
+-----------------------
+# ID: announcement_010
+# Title: CS Courses Final Exam Schedule
+# Date: Friday, April 25, 2025
+-----------------------
+
+Computer Science (CS) Course Final Exam Schedule has been published:
+
+CS201 A (Programming Fundamentals) final exam: 31.05.2025, 09:00–11:30  
+CS201 B (Programming Fundamentals) final exam: 31.05.2025, 09:00–11:30  
+CS204 A (Advanced Programming) final exam: 01.06.2025, 14:40–17:10  
+CS204 B (Advanced Programming) final exam: 01.06.2025, 14:40–17:10  
+CS300 A (Data Structures) final exam: 01.06.2025, 09:00–11:30  
+CS300 B (Data Structures) final exam: 01.06.2025, 09:00–11:30  
+CS301 0 (Algorithms) final exam: 03.06.2025, 09:00–11:30  
+CS302 0 (Formal Lang&Automata Theory) final exam: 26.05.2025, 14:40–17:10  
+CS303 A (Logic&Digital System Design) final exam: 24.05.2025, 09:00–11:30  
+CS303 B (Logic&Digital System Design) final exam: 24.05.2025, 09:00–11:30  
+CS305 0 (Programming Languages) final exam: 24.05.2025, 14:40–17:10  
+CS307 0 (Operating Systems) final exam: 31.05.2025, 09:00–11:30  
+CS308 0 (Software Engineering) final exam: 27.05.2025, 11:50–14:20  
+CS310 0 (Mobile Application Development) final exam: 02.06.2025, 11:50–14:20  
+CS403 0 (Distributed Systems) final exam: 03.06.2025, 14:40–17:10  
+CS407 0 (Theory of Computation) final exam: 28.05.2025, 14:40–17:10  
+CS408 0 (Computer Networks) final exam: 25.05.2025, 11:50–14:20  
+CS412 0 (Machine Learning) final exam: 29.05.2025, 14:40–17:10  
+CS432 0 (Computer and Network Security) final exam: 27.05.2025  
+CS436 0 (Cloud Computing) final exam: 30.05.2025, 11:50–14:20  
+CS460 0 (Automated Debugging) final exam: 02.06.2025, 17:30–20:00  

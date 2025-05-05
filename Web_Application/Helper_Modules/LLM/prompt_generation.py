@@ -53,51 +53,45 @@ class PromptGenerator:
                 f"ASSISTANT: ")
     
     def _generate_announcement_prompt(self) -> str:
-        # Debug: show the received ID
         print(f"[DEBUG] Looking for announcement ID: {self.retrieved_data_id}")
 
-        # Load full announcements database
-        announcements_db_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\Vector_Database\Development\Datasets\announcements.json"
-        try:
-            with open(announcements_db_path, "r", encoding="utf-8") as f:
-                announcements_db = json.load(f)
-            print(f"[DEBUG] Loaded {len(announcements_db)} announcements from JSON.")
-        except Exception as e:
-            print(f"[ERROR] Failed to load announcements.json: {e}")
+        if not self.metadata:
+            print("[ERROR] Announcement metadata not loaded.")
             return (f"You are a helpful assistant for Sabancı University.\n\n"
                     f"USER: {self.query}\n\n"
-                    f"ASSISTANT: I could not access the announcements database. Please try again later.")
+                    f"ASSISTANT: I could not access the announcements metadata. Please try again later.")
 
-        # Find matching announcement content
-        match = next((a for a in announcements_db if a.get("id") == self.retrieved_data_id), None)
+        match = next((a for a in self.metadata.values() if a.get("id") == self.retrieved_data_id), None)
 
         if not match:
-            print("[WARNING] Announcement not found in the JSON file.")
+            print("[WARNING] Announcement not found in metadata.")
             retrieval_info = "No relevant announcement found."
             instruction = "Inform the user no matching announcement was found."
         else:
             title = match.get("title", "No title")
-            content = match.get("content", "[No content]")
+            content = match.get("body", "[No content]")
+            date = match.get("date", "Unknown date")
 
             print(f"[DEBUG] Matched announcement title: {title}")
             print(f"[DEBUG] Matched content (first 100 chars): {content[:100]}")
+            print(f"[DEBUG] Announcement date: {date}")
 
             if self.data_status == "confident":
-                retrieval_info = f"ANNOUNCEMENT:\n{title}\n\n{content}"
+                retrieval_info = f"ANNOUNCEMENT ({date}):\n{title}\n\n{content}"
                 instruction = "Use only this announcement to answer. Write a 2-3 sentence summary."
             elif self.data_status == "flawed":
-                retrieval_info = f"UNRELIABLE ANNOUNCEMENT:\n{title}\n\n{content}"
+                retrieval_info = f"UNRELIABLE ANNOUNCEMENT ({date}):\n{title}\n\n{content}"
                 instruction = "This may be unreliable. Write a 2-3 sentence summary with appropriate caution."
             else:
                 retrieval_info = "No relevant announcement found."
                 instruction = "Inform the user no matching announcement was found."
-
 
         return (f"You are a helpful assistant for Sabancı University.\n\n"
                 f"{retrieval_info}\n\n"
                 f"USER: {self.query}\n\n"
                 f"{instruction} End with a reminder that announcements may change.\n\n"
                 f"ASSISTANT: ")
+
 
 
 

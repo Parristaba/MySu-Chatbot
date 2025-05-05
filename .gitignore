@@ -10,4 +10,5 @@ NLU_Models/Intent_Model/DistillBERT_Intent_Model/
 # Ignore Relevance Model folder
 RelevanceFilterModel/RelevanceFilter_Model/
 
-
+# Ignore Final Model folder
+NLU_Models/Intent_Model/Final_Model/

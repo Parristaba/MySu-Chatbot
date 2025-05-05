@@ -1,0 +1,27 @@
+-----------------------
+# ID: announcement_012
+# Title: MATH Courses Final Exam Schedule
+# Date: Friday, April 25, 2025
+-----------------------
+
+Mathematics (MATH) Courses Final Exam Schedule has been published:
+
+MATH101 A (Calculus I) final exam: 25.05.2025, 14:40–17:10
+MATH101 B (Calculus I) final exam: 25.05.2025, 14:40–17:10
+MATH102 A (Calculus II) final exam: 24.05.2025, 14:40–17:10
+MATH102 B (Calculus II) final exam: 24.05.2025, 14:40–17:10
+MATH102 C (Calculus II) final exam: 24.05.2025, 14:40–17:10
+MATH201 A (Linear Algebra) final exam: 29.05.2025, 14:40–17:10
+MATH201 B (Linear Algebra) final exam: 29.05.2025, 14:40–17:10
+MATH202 0 (Differential Equations) final exam: 27.05.2025, 17:30–20:00
+MATH203 A (Introduction to Probability) final exam: 25.05.2025, 11:50–14:20
+MATH203 B (Introduction to Probability) final exam: 25.05.2025, 11:50–14:20
+MATH204 A (Discrete Mathematics) final exam: 28.05.2025, 14:40–17:10
+MATH204 B (Discrete Mathematics) final exam: 28.05.2025, 14:40–17:10
+MATH204 C (Discrete Mathematics) final exam: 28.05.2025, 14:40–17:10
+MATH206 0 (Vector Calculus) final exam: 25.05.2025, 17:30–20:00
+MATH305 0 (Complex Calculus) final exam: 28.05.2025, 11:50–14:20
+MATH306 A (Statistical Modelling) final exam: 26.05.2025, 09:00–11:30
+MATH306 B (Statistical Modelling) final exam: 26.05.2025, 09:00–11:30
+MATH322 0 (Partial Differential Equations) final exam: 28.05.2025, 11:50–14:20
+

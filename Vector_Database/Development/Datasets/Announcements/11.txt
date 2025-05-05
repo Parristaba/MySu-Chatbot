@@ -1,0 +1,16 @@
+-----------------------
+# ID: announcement_011
+# Title: BIO Courses Final Exam Schedule
+# Date: Friday, April 25, 2025
+-----------------------
+
+Bioinformatics (BIO) Courses Final Exam Schedule has been published:
+
+BIO301 0 (Intro. to Molecular Biology) final exam: 24.05.2025, 14:40–17:10  
+BIO308 0 (Plant Physiology) final exam: 28.05.2025, 14:40–17:10  
+BIO322 0 (Biochemistry II) final exam: 31.05.2025, 11:50–14:20  
+BIO330 0 (Environmental Plant Biology) final exam: 29.05.2025, 14:40–17:10  
+BIO332 0 (Cell Biology) final exam: 25.05.2025, 11:50–14:20  
+BIO335 0 (Analytical Techniques) final exam: 27.05.2025, 11:50–14:20  
+BIO467 0 (Signal Transduction) final exam: 27.05.2025, 11:50–14:20  
+BIO567 0 (Signal Transduction) final exam: 27.05.2025, 11:50–14:20  

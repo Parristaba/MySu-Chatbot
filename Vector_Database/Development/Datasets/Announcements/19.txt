@@ -1,0 +1,15 @@
+-----------------------
+# ID: announcement_019
+# Title: PLANNED WIFI MAINTENANCE: APRIL 15, 2025 17:00 - 18:00
+# Date: Tuesday, April 15, 2025
+-----------------------
+
+When: April 15, 2025 Tuesday between 17:00 - 18:00
+
+Expected Duration: One hour
+
+Description: There will be wired and wireless network maintenance in the dormitories at Tuzla Campus.
+
+User Impact: During the Maintenance, there will be service cuts on the wired and wireless connections.
+
+ You have questions or need help, you can contact us via SUTicket.

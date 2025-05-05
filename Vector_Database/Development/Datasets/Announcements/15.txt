@@ -1,0 +1,21 @@
+-----------------------
+# ID: announcement_015
+# Title: ECON Courses Final Exam Schedule
+# Date: Friday, April 25, 2025
+-----------------------
+
+Economy (ECON) Courses Final Exam Schedule has been published:
+
+ECON201 A (Games and Strategies) final exam: 31.05.2025, 14:40–17:10  
+ECON201 B (Games and Strategies) final exam: 31.05.2025, 17:30–20:00  
+ECON201 C (Games and Strategies) final exam: 31.05.2025, 17:30–20:00  
+ECON202 A (Macroeconomics) final exam: 01.06.2025, 09:00–11:30  
+ECON202 B (Macroeconomics) final exam: 01.06.2025, 09:00–11:30  
+ECON202 C (Macroeconomics) final exam: 04.06.2025, 09:00–11:30  
+ECON202 D (Macroeconomics) final exam: 03.06.2025, 17:30–20:00  
+ECON204 B (Microeconomics) final exam: 27.05.2025, 17:30–20:00  
+ECON301 0 (Econometrics) final exam: 25.05.2025, 09:00–11:30  
+ECON312 0 (Behavioral Economics) final exam: 27.05.2025, 17:30–20:00  
+ECON345 0 (International Finance) final exam: 02.06.2025, 17:30–20:00  
+ECON360 0 (Advanced Macroeconomics) final exam: 31.05.2025, 09:00–11:30  
+ECON400 0 (History of Economic Thought) final exam: 24.05.2025, 09:00–11:30  
