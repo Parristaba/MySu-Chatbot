@@ -184,6 +184,46 @@ def extract_context_passage(generator, truncate: bool = False, max_words: int = 
         print(f"[ERROR] Exception in extract_context_passage: {e}")
         return ""
 
+
+def generate_no_match_response(query: str) -> str:
+    """
+    Generates a polite fallback response using the LLM when no relevant document is found.
+    """
+    prompt = (
+        f"You are a helpful assistant for Sabancı University.\n\n"
+        f"The user asked: \"{query}\"\n\n"
+        f"However, you couldn't find any relevant or verified information in the system to answer this question.\n"
+        f"Generate a short, empathetic response that politely explains you do not have enough information.\n"
+        f"Do not make any assumptions. Do not confirm or deny anything.\n"
+        f"Use neutral language. Keep it factual and helpful.\n\n"
+        f"ASSISTANT:"
+    )
+
+
+    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+
+    try:
+        outputs = model.generate(**inputs, **response_gen_kwargs)
+        response_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+        # Extract clean assistant response
+        assistant_text = response_text.split("ASSISTANT:", 1)[-1].strip()
+
+        # Append university fallback link
+        if not assistant_text.endswith("."):
+            assistant_text += "."
+        assistant_text += " You can check https://mysu.sabanciuniv.edu/ for the information you are looking for."
+
+        return assistant_text
+
+    except Exception as e:
+        print(f"[ERROR] Exception during fallback response generation: {e}")
+        return (
+            "I couldn't find any specific information about that right now. "
+            "You can check https://mysu.sabanciuniv.edu/ for more details."
+        )
+
+
 def BuildResponsesAction(type: str, query: str, retrieved_data_id: str, data_status: str) -> dict:
     print(f"[DEBUG] BuildResponsesAction called with type={type}, query='{query}', retrieved_data_id={retrieved_data_id}")
     
@@ -220,9 +260,11 @@ def BuildResponsesAction(type: str, query: str, retrieved_data_id: str, data_sta
     # ❌ If validator fails, do not proceed to response generation
     if not validate_document_relevance(query, passage):
         print("[DEBUG] Document validation failed - content not relevant to query")
+        fallback_response = generate_no_match_response(query)
         return {
-            "response": "I couldn't find any information that directly answers your question. Please try rephrasing or check the Student Resources page."
+            "response": fallback_response
         }
+
 
     print("[DEBUG] Document validation passed - proceeding with response generation")
     
