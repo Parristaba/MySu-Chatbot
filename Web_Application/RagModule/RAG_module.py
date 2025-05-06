@@ -60,6 +60,7 @@ class RAGBlock:
         Handled_UserQuery.retrieved_data_id = data_id
         Handled_UserQuery.similarity_score = similarity_score
         Handled_UserQuery.data_status = RAGBlock.map_similarity_to_data_status(similarity_score)
+        print(f"[DEBUG] Retrieved Data Status: {Handled_UserQuery.data_status}")
     
         # Forward the updated query object to the orchestrator for further processing
         return Orchestrator.HandleAction(Handled_UserQuery)

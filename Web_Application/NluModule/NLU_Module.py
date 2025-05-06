@@ -55,7 +55,10 @@ class NLU:
         
         intent_tuple = determineIntent(user_query.query_text)
         intent = intent_tuple[0]  # Extract the intent string
-        print(f"[DEBUG] Determined Intent: {intent}")
+        similarity_score = intent_tuple[1]  # Extract the similarity score
+        print(f"[DEBUG] Original Query: {user_query.query_text}")
+        print(f"[DEBUG] Intent: {intent}")
+        print(f"[DEBUG] Similarity Score: {similarity_score:.4f}")
         
         if intent == "document":
             print(f"[DEBUG] Entering HandleDocumentModule with intent: {intent}")
@@ -87,12 +90,6 @@ class NLU:
 
         pruned = prune_query(user_query.query_text)
 
-        print(f"[DEBUG] Pruned Query: {pruned}")
-        print(f"[DEBUG] User ID: {user_query.session_id}")
-        print(f"[DEBUG] Original Query: {user_query.query_text}")
-        print(f"[DEBUG] Intent: {intent}")
-
-
         handled_user_query = UserQueryHandled(
             user_query=user_query.query_text,
             pruned_query=pruned,
@@ -118,11 +115,6 @@ class NLU:
         """
         
         pruned = prune_query(user_query.query_text)
-
-        print(f"[DEBUG] Pruned Query: {pruned}")
-        print(f"[DEBUG] User ID: {user_query.session_id}")
-        print(f"[DEBUG] Original Query: {user_query.query_text}")
-        print(f"[DEBUG] Intent: {intent}")
 
         handled_user_query = UserQueryHandled(
             user_query=user_query.query_text,

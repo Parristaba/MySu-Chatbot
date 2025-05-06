@@ -48,6 +48,9 @@ def determineIntent(query_text):
     predicted_label = anchor_labels[best_idx].item()
     similarity_score = similarities[best_idx].item()
 
+    print(f"[DEBUG] Intent Detected inside determineIntent: {label_to_intent.get(predicted_label, 'unknown')}")
+    print(f"[DEBUG] Similarity Score inside determineIntent: {similarity_score:.4f}")
+
     intent = label_to_intent.get(predicted_label, "unknown")
     return intent, similarity_score
 

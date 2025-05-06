@@ -76,6 +76,8 @@ class SessionManager:
             query_text=query_text,
             timestamp=datetime.utcnow()
         )
+
+        print(f"[Debug] Session ID: {session_id}")
         print(f"[Debug] User query: {user_query.query_text}")
         print(f"[Debug] Now processing the query...")
         return QueryFilter.process_query(user_query)

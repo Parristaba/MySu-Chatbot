@@ -40,12 +40,15 @@ class PromptGenerator:
                    f"ASSISTANT: ")
     
     def _generate_casual_interaction_prompt(self) -> str:
-        return (f"You are a helpful assistant for Sabancı University.\n\n"
-                f"USER: {self.query}\n\n"
-                f"Respond naturally but briefly to this casual interaction (greeting, thanks, or goodbye). "
-                f"Keep your response to exactly 1 sentence. "
-                f"Do not make up sample conversations or generate additional hypothetical exchanges.\n\n"
-                f"ASSISTANT: ")
+        return (
+        "You are a helpful assistant for Sabancı University.\n\n"
+        f"The user wrote: \"{self.query}\"\n\n"
+        "Decide whether this message is a greeting, a thank you, a goodbye, or none of them.\n"
+        "If it is a greeting, thank you, or goodbye, respond naturally and politely in one sentence.\n"
+        "If it is none of these, respond with only the word: 'None'.\n\n"
+        "ASSISTANT:"
+    )
+
     
     def _generate_followup_prompt(self) -> str:
         return (f"You are a helpful assistant for Sabancı University. Respond to follow-up questions.\n\n"
@@ -71,11 +74,7 @@ class PromptGenerator:
             title = match.get("title", "No title")
             content = match.get("body", "[No content]")
             date = match.get("date", "Unknown date")
-
-            print(f"[DEBUG] Matched announcement title: {title}")
-            print(f"[DEBUG] Matched content (first 100 chars): {content[:100]}")
-            print(f"[DEBUG] Announcement date: {date}")
-
+            
             if self.data_status == "confident":
                 retrieval_info = f"ANNOUNCEMENT ({date}):\n{title}\n\n{content}"
                 instruction = "Use only this announcement to answer. Write a 2-3 sentence summary."
@@ -116,7 +115,7 @@ class PromptGenerator:
         full_doc_text = "\n\n".join(chunk["chunk_text"] for chunk in chunks)
         title = chunks[0].get("title", "Sabancı University Document")
         hyperlink = chunks[0].get("hyperlink", "")
-        
+
         # Create a simplified prompt with clear instructions
         prompt = (
             f"You are a helpful assistant for Sabancı University.\n\n"

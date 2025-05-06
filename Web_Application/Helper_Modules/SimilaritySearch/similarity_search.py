@@ -71,5 +71,9 @@ def search_similar_content(query: str, is_document: bool, k: int = 1):
             if item_id:  # Ensure the ID exists in the metadata
                 results.append((dist, item_id))
 
+    print(f"[DEBUG] Found the following results for query '{query}':")
+    print(f"[DEBUG] Distances: {distances[0]}")
+    print(f"[DEBUG] Title from Metadata: {metadata.get(str(idx), {}).get('title', 'N/A')}")
+
     return results
 
