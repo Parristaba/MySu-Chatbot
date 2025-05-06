@@ -4,7 +4,9 @@
 # Date: Friday, April 25, 2025
 -----------------------
 
-Computer Science (CS) Course Final Exam Schedule has been published:
+Computer Science (CS) Course Final Exam Schedule has been published.
+
+You can find the final exam dates for CS courses below:
 
 CS201 A (Programming Fundamentals) final exam: 31.05.2025, 09:00–11:30  
 CS201 B (Programming Fundamentals) final exam: 31.05.2025, 09:00–11:30  

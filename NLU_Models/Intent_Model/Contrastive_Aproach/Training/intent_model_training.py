@@ -111,7 +111,7 @@ def save_model(model, tokenizer, save_dir):
 
 # Main Function
 def main():
-    dataset_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\NLU_Models\Intent_Model\Dataset\intent_dataset.jsonl"  # unified dataset
+    dataset_path = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\NLU_Models\Intent_Model\Dataset\intent_dataset_augmented.jsonl"  # unified dataset
     save_dir = r"C:\Users\kagan_ntaijui\Desktop\MySu-Chatbot\NLU_Models\Intent_Model\Final_Model"  # directory to save the model
 
     batch_size = 32
