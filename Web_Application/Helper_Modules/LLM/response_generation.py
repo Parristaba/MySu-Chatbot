@@ -192,10 +192,13 @@ def generate_no_match_response(query: str) -> str:
     prompt = (
         f"You are a helpful assistant for Sabancı University.\n\n"
         f"The user asked: \"{query}\"\n\n"
-        f"However, you couldn't find any relevant or verified information in the system to answer this question.\n"
-        f"Generate a short, empathetic response that politely explains you do not have enough information.\n"
-        f"Do not make any assumptions. Do not confirm or deny anything.\n"
-        f"Use neutral language. Keep it factual and helpful.\n\n"
+        f"IMPORTANT INSTRUCTION: You have NO information about this topic in your knowledge base.\n"
+        f"You MUST acknowledge that you cannot answer this question.\n"
+        f"DO NOT attempt to provide any specific information about Sabancı University policies, programs, people, or services.\n" 
+        f"Choose one of these exact responses and do not deviate:\n"
+        f"1. I'm sorry, but I don't have information about that. Please contact the relevant department at Sabancı University for assistance.\n"
+        f"2. I don't have enough information to answer your question about that. You may want to check the official Sabancı University website or contact the appropriate office directly.\n"
+        f"3. I apologize, but I cannot provide information on this topic as it's not in my knowledge base. Please refer to official Sabancı University resources for accurate information.\n\n"
         f"ASSISTANT:"
     )
 
